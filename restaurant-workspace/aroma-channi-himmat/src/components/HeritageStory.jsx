@@ -1,5 +1,6 @@
 import React from 'react';
 import { Quote, Sparkles, UtensilsCrossed } from 'lucide-react';
+import roganJoshImg from '../assets/rogan-josh.jpg';
 
 export default function HeritageStory() {
   return (
@@ -14,9 +15,13 @@ export default function HeritageStory() {
               {/* Primary Image: Slow simmered brass degh / Wazwan art */}
               <div className="relative rounded-xl overflow-hidden border border-white/[0.08] aspect-[4/5]">
                 <img
-                  src="https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=1000&q=85"
+                  src={roganJoshImg}
                   alt="Authentic Kashmiri Wazwan Rogan Josh simmered in copper degh"
                   className="w-full h-full object-cover filter brightness-90 hover:scale-[1.03] transition-transform duration-700"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=85";
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-transparent to-transparent opacity-80" />
                 

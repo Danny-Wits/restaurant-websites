@@ -1,4 +1,7 @@
 // Complete restaurant data sourced from brand-spec.json and enhanced with rich gastronomy details
+import roganJoshImg from '../assets/rogan-josh.jpg';
+import drumsOfHeavenImg from '../assets/drums-of-heaven.jpg';
+import penneAlfredoImg from '../assets/penne-alfredo.jpg';
 
 export const restaurantData = {
   name: "Aroma Multi Cuisine Restaurant",
@@ -99,7 +102,7 @@ export const restaurantData = {
       price: 640,
       diet: "non-veg",
       spiceLevel: 2,
-      image: "https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=900&q=85",
+      image: roganJoshImg,
       badge: "Royal Wazwan Anthem",
       tagline: "Slow-simmered in mustard oil & wild cockscomb flower extract",
       description: "Prime bone-in mutton braised gently with bruised Kashmiri fennel, dry mountain ginger, and the royal crimson luster of mountain mawal blossoms.",
@@ -307,7 +310,7 @@ export const restaurantData = {
           spiceLevel: 2,
           isChefSpecial: true,
           category: "kashmiri-curries",
-          image: "https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=700&q=80",
+          image: roganJoshImg,
           description: "The jewel of Kashmiri dining. Prime cuts of tender bone-in mutton slow-simmered in mustard oil, bruised Kashmiri fennel (saunf), dry ginger (sonth), and the ruby-red extract of mountain cockscomb flowers (mawal).",
           tags: ["Authentic Wazwan", "Chef's Signature", "Gluten-Free"],
           ingredients: "Prime mountain mutton, mawal flower extract, Kashmiri saunf, sonth, praan shallot paste, mustard oil",
@@ -510,7 +513,7 @@ export const restaurantData = {
           spiceLevel: 3,
           isChefSpecial: false,
           category: "indo-chinese",
-          image: "https://images.unsplash.com/photo-1527477378393-271d49e63e26?auto=format&fit=crop&w=700&q=80",
+          image: drumsOfHeavenImg,
           description: "Crisp chicken lollipops tossed in a fiery house-fermented garlic-Szechuan pepper reduction with scallions.",
           tags: ["Spicy", "Crisp Starter", "Fiery"],
           ingredients: "Chicken wingettes, fermented Szechuan chili paste, minced garlic, spring onions",
@@ -608,7 +611,7 @@ export const restaurantData = {
           spiceLevel: 0,
           isChefSpecial: false,
           category: "artisanal-sizzlers",
-          image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281228?auto=format&fit=crop&w=700&q=80",
+          image: penneAlfredoImg,
           description: "Durum wheat penne tossed in a velvety cream sauce made from aged parmesan, sautéed wild mushrooms, and a delicate touch of white truffle oil. Served with toasted herb baguette.",
           tags: ["Pure Veg", "Truffle Infused", "Italian Classic"],
           ingredients: "Italian durum penne, Parmigiano-Reggiano, heavy cream, button & porcini mushrooms, truffle essence",
