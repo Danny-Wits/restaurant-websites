@@ -1,0 +1,796 @@
+{
+  "restaurant": {
+    "name": "Aroma Multi Cuisine Restaurant",
+    "slug": "aroma-channi-himmat",
+    "city": "Jammu",
+    "locality": "Channi Himmat",
+    "state": "Jammu & Kashmir",
+    "pincode": "180015",
+    "tagline": "The Grand Symphony of Saffron, Smoke & Celebration",
+    "subTagline": "Jammu's premier multi-cuisine sanctuary — weaving heirloom Kashmiri Wazwan, clay-oven tandoor mastery, Indo-Chinese zest, and sizzling continental artistry.",
+    "concept": "Upscale fine-dining destination catering to Jammu's prominent families, executive diners, celebratory banquets, and pilgrims seeking authentic regional delicacies prepared with royal panache.",
+    "rating": "4.8",
+    "reviewCount": "1,840+",
+    "priceRange": "₹₹₹ (₹700 - ₹1,200 for two)",
+    "contact": {
+      "phone": "+91 191 246 8899",
+      "mobile": "+91 94191 78920",
+      "whatsapp": "+91 94191 78920",
+      "email": "contact@aromajammu.com",
+      "reservationsEmail": "reserve@aromajammu.com"
+    },
+    "location": {
+      "address": "Plot 14-A, Commercial Belt, Near Main Marble Market Road, Sector 1",
+      "neighborhood": "Channi Himmat",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180015",
+      "landmarks": "Just off National Highway 44 (Bye-Pass), 3 minutes from Wave Mall & Bahu Plaza",
+      "googleMapsUrl": "https://maps.google.com/?q=Aroma+Multi+Cuisine+Restaurant+Channi+Himmat+Jammu",
+      "coordinates": {
+        "lat": 32.6974,
+        "lng": 74.8872
+      }
+    },
+    "hours": {
+      "lunch": {
+        "open": "12:30 PM",
+        "close": "04:00 PM"
+      },
+      "dinner": {
+        "open": "07:00 PM",
+        "close": "11:30 PM"
+      },
+      "kitchenCloses": "11:00 PM",
+      "days": "Monday – Sunday (Open All 7 Days)"
+    },
+    "amenities": [
+      "Valet Parking Service",
+      "Private Dining Room (PDR) for up to 35 guests",
+      "Strictly Segregated Pure Vegetarian Preparation Station",
+      "Wheelchair Accessible Ramp & Seating",
+      "Live Sizzler & Tandoor Open Counter",
+      "Complimentary High-Speed Wi-Fi",
+      "Curated Candlelight Booths for Celebrations"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Channi Himmat is Jammu's preeminent upscale residential and commercial sector, inhabited by Jammu's political, judicial, business, and medical elite. Located adjacent to the Bye-Pass (NH-44) and the Bahu Plaza commercial district, it experiences massive local footfall and premium destination traffic.",
+    "targetDemographics": [
+      {
+        "segment": "Multi-Generational Dogra & Kashmiri Families",
+        "need": "Comfortable, spacious royal seating with dishes catering to elders (mild Kashmiri Dum Aloo, Nadru Yakhni, soft rotis) and youth (sizzlers, pasta, Indo-Chinese).",
+        "vibeRequirement": "Warm hospitality, dignified acoustic levels, pristine hygiene, prompt family service."
+      },
+      {
+        "segment": "Corporate Executives & Entrepreneurs",
+        "need": "Prompt business lunches, quiet corners for negotiations, premium sizzler and kebab platters, seamless digital billing.",
+        "vibeRequirement": "Sophisticated background music, discreet staff, high-speed connectivity."
+      },
+      {
+        "segment": "High-Value Pilgrims & Tourists",
+        "need": "Vaishno Devi pilgrims and tourists on route to Srinagar desiring authentic Wazwan Rogan Josh and Rista without sacrificing five-star sanitation.",
+        "vibeRequirement": "Warm Kashmiri Mehmaan-Nawaazi, saffron kahwa welcome, transparent culinary integrity."
+      },
+      {
+        "segment": "Couples & Celebration Groups",
+        "need": "Intimate booth seating, smoking mocktails, celebration cakes, and photo-worthy presentation.",
+        "vibeRequirement": "Low-lit amber chandeliers, brass accents, personalized table attention."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "Authentic Kashmiri Wazwan & Pandit Legacy",
+        "description": "Slow-simmered in traditional deghs using hand-beaten mutton, Kishtwar saffron (kesar), dried cockscomb flower (mawal) for natural deep crimson luster, and Himalayan shallot paste (praan)."
+      },
+      {
+        "pillar": "Royal Charcoal Tandoor & Kebabs",
+        "description": "Clay ovens fired by artisanal coal, smoking marinated meats, delicate malai broccoli, and melt-in-mouth Awadhi Galouti kebabs with saffron-scented breads."
+      },
+      {
+        "pillar": "Indo-Chinese Wok Artistry",
+        "description": "High-flame wok toss delivering authentic smoky 'wok hei', crackling chili lotus stem, and zesty dragon chicken."
+      },
+      {
+        "pillar": "Artisanal Cast-Iron Sizzlers",
+        "description": "Dramatic tabletop sizzling platters with herb-butter rice, caramelized onions, seasonal greens, and homemade demiglace sauces."
+      },
+      {
+        "pillar": "Elixirs, Kahwa & Handcrafted Sweets",
+        "description": "Simmered Kashmiri Kahwa with crushed green cardamoms and slivered almonds, alongside chilled saffron kulfis and hot walnut brownies."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Royal Saffron Noir & Burnished Brass",
+    "aestheticPhilosophy": "Evoking the warm luminescence of Himalayan copper samovars and clay tandoor embers against velvet obsidian shadows. Avoids cold clinical minimalism in favor of rich, aristocratic Indian hospitality.",
+    "colorTokens": {
+      "primary": {
+        "hex": "#D4AF37",
+        "name": "Royal Champagne Gold",
+        "description": "Primary accent for headings, luxury borders, icons, and CTAs"
+      },
+      "primaryHover": {
+        "hex": "#E6C35C",
+        "name": "Luminous Amber Gold",
+        "description": "Hover and active interaction states"
+      },
+      "primaryDark": {
+        "hex": "#9B7E1E",
+        "name": "Antique Burnished Bronze",
+        "description": "Pressed states and subtle decorative filigree"
+      },
+      "secondary": {
+        "hex": "#E08E36",
+        "name": "Kishtwar Saffron Ochre",
+        "description": "Warm spice glow used for badges, highlights, and secondary tags"
+      },
+      "background": {
+        "hex": "#0D0B0A",
+        "name": "Spiced Obsidian Noir",
+        "description": "Base app background, deep low-glare charcoal providing cinematic contrast"
+      },
+      "backgroundSecondary": {
+        "hex": "#14110F",
+        "name": "Smoked Espresso",
+        "description": "Alternate section background"
+      },
+      "surface": {
+        "hex": "#1A1714",
+        "name": "Smoked Oak & Velvet Card",
+        "description": "Menu item cards, dialog backgrounds, and elevated surfaces"
+      },
+      "surfaceElevated": {
+        "hex": "#25201B",
+        "name": "Burnished Card Highlight",
+        "description": "Hovered cards, dropdowns, and modal dialogs"
+      },
+      "border": {
+        "hex": "rgba(212, 175, 55, 0.22)",
+        "name": "Gold Filament Border",
+        "description": "Subtle card outlines, dividers, and decorative rings"
+      },
+      "borderHighlight": {
+        "hex": "rgba(212, 175, 55, 0.55)",
+        "name": "Luminous Gold Ring",
+        "description": "Focused states and active tab indicator rings"
+      },
+      "accentVeg": {
+        "hex": "#10B981",
+        "name": "Cardamom Emerald",
+        "description": "Pure Vegetarian culinary badges and green indicators"
+      },
+      "accentNonVeg": {
+        "hex": "#EF4444",
+        "name": "Kashmiri Crimson",
+        "description": "Non-Vegetarian badges and tandoor spicy alerts"
+      },
+      "accentChef": {
+        "hex": "#F59E0B",
+        "name": "Chef's Signature Amber Star",
+        "description": "House specialty star ratings and signature dish ribbons"
+      },
+      "text": {
+        "primary": "#F8F6F0",
+        "secondary": "#C8C0B5",
+        "muted": "#8E867B",
+        "contrast": "#000000"
+      }
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "'Cormorant Garamond', 'Playfair Display', Georgia, serif",
+        "weights": ["500", "600", "700"],
+        "lineHeight": "1.15",
+        "letterSpacing": "0.02em",
+        "sampleUse": "Hero headers, section crowns, dish titles"
+      },
+      "body": {
+        "fontFamily": "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif",
+        "weights": ["400", "500", "600", "700"],
+        "lineHeight": "1.6",
+        "letterSpacing": "0.01em",
+        "sampleUse": "Menu descriptions, ingredients, prices, buttons, form controls"
+      },
+      "accentScript": {
+        "fontFamily": "'Playfair Display', Georgia, serif",
+        "fontStyle": "italic",
+        "sampleUse": "Chef's notes, origin quotations, category eyebrows"
+      }
+    }
+  },
+  "storytellingAndCopy": {
+    "hero": {
+      "eyebrow": "FINE DINING • CHANNI HIMMAT, JAMMU",
+      "headline": "Where Aromatic Heritage Meets Modern Gastronomy",
+      "subheadline": "Experience Jammu's grandest table — from the slow-simmered brass deghs of Kashmir to royal clay-oven tandoor feasts and theatrical international sizzlers.",
+      "ctaPrimary": "Reserve a Table",
+      "ctaSecondary": "Explore Gastronomy",
+      "quickStats": [
+        { "number": "40+", "label": "Artisanal Dishes" },
+        { "number": "100%", "label": "Charcoal Tandoor" },
+        { "number": "Wazwan", "label": "Master Ustads" },
+        { "number": "4.8 ★", "label": "Google Reviews" }
+      ]
+    },
+    "ourStory": {
+      "eyebrow": "THE AROMA STORY",
+      "title": "A Legacy of Warmth in the City of Temples",
+      "lead": "At Aroma, we believe dining is not merely sustenance — it is a communion of fire, heirloom botanicals, and Jammu's legendary Mehmaan-Nawaazi.",
+      "narrative": [
+        "Situated in the prestigious heart of Channi Himmat, Aroma was conceived to bring the true aristocratic culinary heritage of Jammu and Kashmir to life. Our culinary journey pays homage to the time-honored slow-cooking methods of royal Mughal kitchens and authentic Kashmiri Wazwan guilds.",
+        "We never compromise on provenance: our saffron travels straight from the terraced meadows of Kishtwar, our dried cockscomb (mawal) is harvested by hand in the Kashmir Valley to yield that majestic ruby glow in our Rogan Josh, and our tandoors are fueled exclusively by natural charcoal for that unmistakable rustic fragrance.",
+        "Whether hosting grand celebratory family gatherings in our plush banquet suites or indulging in quiet candlelight dinner moments, every guest at Aroma is greeted with the venerable warmth that Jammu has cherished for centuries."
+      ],
+      "quote": "A dish without genuine aroma is a story half-told. We slow-cook every degh until the spices whisper perfection.",
+      "quoteAuthor": "Executive Chef Ghulam Mohiuddin"
+    },
+    "reservationCopy": {
+      "eyebrow": "BESPOKE DINING",
+      "title": "Reserve Your Evening at Aroma",
+      "description": "Secure your table for intimate candlelight dinners, celebratory family banquets, or corporate luncheons. For parties larger than 12 guests or Private Dining Room (PDR) bookings, please contact our guest relation manager directly.",
+      "perks": [
+        "Instant confirmation with table preference",
+        "Dedicated vegetarian kitchen & dining section upon request",
+        "Special celebratory dessert presentation on birthdays & anniversaries",
+        "Complimentary VIP valet parking at main portico"
+      ]
+    },
+    "footer": {
+      "about": "Aroma Multi Cuisine Restaurant is Channi Himmat's landmark culinary sanctuary, celebrating the authentic convergence of Kashmiri, North Indian, Indo-Chinese, and Continental culinary excellence.",
+      "copyright": "© 2026 Aroma Multi Cuisine Restaurant. All rights reserved. Crafted for Jammu's finest epicures."
+    }
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "tandoor-starters",
+        "name": "The Royal Tandoor & Starters",
+        "icon": "Flame",
+        "shortDesc": "Clay-oven embers, hand-pounded saffron marinades & melt-in-mouth kebabs",
+        "items": [
+          {
+            "id": "tnd-01",
+            "name": "Galouti Kebab with Ulte Tawe Ka Paratha",
+            "diet": "non-veg",
+            "price": 540,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "tandoor-starters",
+            "description": "Finely minced prime mutton infused with 32 fragrant potli spices and raw papaya, smoked on charcoal and served on a saffron-brushed baby paratha that melts on the tongue.",
+            "tags": ["Chef's Signature", "Melt-In-Mouth", "Awadhi Heritage"]
+          },
+          {
+            "id": "tnd-02",
+            "name": "Peshawari Murgh Tikka",
+            "diet": "non-veg",
+            "price": 460,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "tandoor-starters",
+            "description": "Tender boneless chicken morsels steeped overnight in hung curd, charred garlic, yellow chili powder, and Kishtwar saffron, fire-roasted to succulent char in our clay degh.",
+            "tags": ["Tandoor Favorite", "High Protein"]
+          },
+          {
+            "id": "tnd-03",
+            "name": "Bhatti Da Mutton Seekh Kebab",
+            "diet": "non-veg",
+            "price": 520,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "tandoor-starters",
+            "description": "Hand-ground young lamb blended with fresh mint, coriander root, crushed coriander seeds, and brown onion paste, skewered over glowing tamarind-wood coals.",
+            "tags": ["Smoky", "Traditional"]
+          },
+          {
+            "id": "tnd-04",
+            "name": "Amritsari Crispy Ajwaini Fish",
+            "diet": "non-veg",
+            "price": 580,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "tandoor-starters",
+            "description": "Delicate river sole fillets marinated in roasted carom seeds (ajwain), crushed ginger-garlic, Kashmiri degi mirch, and light gram flour batter, fried to an irresistible golden crisp.",
+            "tags": ["Crisp", "River Sole"]
+          },
+          {
+            "id": "tnd-05",
+            "name": "Dahi Ke Shammi Kebab",
+            "diet": "veg",
+            "price": 380,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "tandoor-starters",
+            "description": "Silken patties of hung curd folded with finely chopped green chilies, toasted pistachios, and fresh mint, griddled with pure desi ghee for a crisp shell and creamy center.",
+            "tags": ["Pure Veg", "Chef's Signature", "Silken Texture"]
+          },
+          {
+            "id": "tnd-06",
+            "name": "Tandoori Malai Broccoli",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "tandoor-starters",
+            "description": "Fresh mountain broccoli florets steeped in Philadelphia cream cheese, crushed green cardamom, roasted mace, and cheddar cream, lightly blistered in the tandoor.",
+            "tags": ["Pure Veg", "Mild & Rich", "Gourmet"]
+          },
+          {
+            "id": "tnd-07",
+            "name": "Paneer Angara Tikka",
+            "diet": "veg",
+            "price": 420,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "tandoor-starters",
+            "description": "Blocks of artisanal cottage cheese marinated in mustard oil infused with smoked red chili paste, roasted cumin, and dried fenugreek leaves, charred with bell peppers.",
+            "tags": ["Pure Veg", "Spicy Charcoal"]
+          },
+          {
+            "id": "tnd-08",
+            "name": "Bharwan Tandoori Khumb (Stuffed Mushrooms)",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "tandoor-starters",
+            "description": "Plump button mushrooms stuffed with spiced cottage cheese, minced stems, and bell peppers, coated in an ajwain-curd marinade and clay-oven roasted.",
+            "tags": ["Pure Veg", "Juicy"]
+          },
+          {
+            "id": "tnd-09",
+            "name": "Aroma Grand Royal Kebab Platter",
+            "diet": "non-veg",
+            "price": 990,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "tandoor-starters",
+            "description": "The emperor's feast: 2 Peshawari Murgh Tikka, 2 Bhatti Mutton Seekh, 2 Galouti Kebabs, and 2 Amritsari Fish Fries, served on a smoking sizzler plate with mint chutney and pickled onions.",
+            "tags": ["Grand Sharing", "Chef's Signature", "Serves 3-4"]
+          }
+        ]
+      },
+      {
+        "id": "kashmiri-curries",
+        "name": "Kashmiri Wazwan & Heritage Curries",
+        "icon": "Soup",
+        "shortDesc": "Heirloom slow-simmered brass degh curries, Kishtwar saffron & Pandit recipes",
+        "items": [
+          {
+            "id": "wzw-01",
+            "name": "Kashmiri Mutton Rogan Josh",
+            "diet": "non-veg",
+            "price": 640,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "The jewel of Kashmiri dining. Prime cuts of tender bone-in mutton slow-simmered in mustard oil, bruised Kashmiri fennel (saunf), dry ginger (sonth), and the ruby-red extract of mountain cockscomb flowers (mawal).",
+            "tags": ["Authentic Wazwan", "Chef's Signature", "Gluten-Free"]
+          },
+          {
+            "id": "wzw-02",
+            "name": "Mutton Rista",
+            "diet": "non-veg",
+            "price": 660,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "Hand-beaten mutton meatballs prepared by traditional Kashmiri ustads on a stone mortar, simmered in a shimmering, fiery saffron-infused red cardamom gravy.",
+            "tags": ["Master Wazwan Craft", "Artisanal Preparation"]
+          },
+          {
+            "id": "wzw-03",
+            "name": "Kashmiri Gushtaba",
+            "diet": "non-veg",
+            "price": 680,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "Known as the dish of kings. Silky hand-pounded mutton sphere poached in an aromatic, velvety yogurt and mutton stock emulsion perfumed with green cardamom and dry mint.",
+            "tags": ["The King of Wazwan", "Velvety Yakhni"]
+          },
+          {
+            "id": "wzw-04",
+            "name": "Murgh Lababdar",
+            "diet": "non-veg",
+            "price": 520,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "kashmiri-curries",
+            "description": "Clay-oven charred tandoori chicken tikka simmered in a luscious tomato, cashew nut, and caramelized onion gravy finished with hand-crumbled cottage cheese and kasuri methi.",
+            "tags": ["Rich & Creamy", "Crowd Favorite"]
+          },
+          {
+            "id": "wzw-05",
+            "name": "Murgh Methi Malai",
+            "diet": "non-veg",
+            "price": 540,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "kashmiri-curries",
+            "description": "Succulent chicken morsels cooked gently in a white cashew-poppy seed gravy fragrant with fresh mountain fenugreek leaves and green cardamom cream.",
+            "tags": ["Silky White Gravy", "Aromatic"]
+          },
+          {
+            "id": "wzw-06",
+            "name": "Authentic Kashmiri Dum Aloo",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "Baby potatoes pricked and deep-fried in cold-pressed mustard oil, then slow-dum cooked in a thick gravy of beaten curd, crushed Kashmiri red chilies, asafoetida (hing), and dry ginger.",
+            "tags": ["Pure Veg", "Kashmiri Pandit Classic", "Chef's Signature"]
+          },
+          {
+            "id": "wzw-07",
+            "name": "Nadru Yakhni (Lotus Stem Gravy)",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "Tender Jammu & Kashmir lotus stem rounds simmered delicately in a velvety spiced yogurt gravy tempered with dried mint, crushed cloves, and fennel powder.",
+            "tags": ["Pure Veg", "Regional Specialty", "Subtle & Fragrant"]
+          },
+          {
+            "id": "wzw-08",
+            "name": "Paneer Butter Masala 'Aroma Special'",
+            "diet": "veg",
+            "price": 430,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "kashmiri-curries",
+            "description": "Soft malai paneer cubes simmered in our signature velvet makhani gravy enriched with fresh churned butter, honey, and roasted kasuri methi.",
+            "tags": ["Pure Veg", "Classic Indulgence"]
+          },
+          {
+            "id": "wzw-09",
+            "name": "Dal Makhani 'Slow-Cooked Bukhara Style'",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "kashmiri-curries",
+            "description": "Whole black urad lentils and kidney beans simmered overnight on dying tandoor coals for 16 hours with plum tomatoes, white butter, and aromatic cream.",
+            "tags": ["Pure Veg", "16-Hour Simmer", "Chef's Signature"]
+          },
+          {
+            "id": "wzw-10",
+            "name": "Pindi Chana with Dogra Anardana",
+            "diet": "veg",
+            "price": 360,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "kashmiri-curries",
+            "description": "Authentic chickpeas slow-simmered with black tea leaves and wild Jammu pomegranate seed (anardana) powder, topped with ginger juliennes and slitted green chilies.",
+            "tags": ["Pure Veg", "Dogra Regional Heritage", "Tangy & Robust"]
+          }
+        ]
+      },
+      {
+        "id": "indo-chinese",
+        "name": "Indo-Chinese Wok & Street Aromas",
+        "icon": "Utensils",
+        "shortDesc": "High-flame wok tossed favorites, fiery Szechuan crunch & golden dumplings",
+        "items": [
+          {
+            "id": "chn-01",
+            "name": "Crispy Honey Chili Lotus Stem",
+            "diet": "veg",
+            "price": 410,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "indo-chinese",
+            "description": "Thinly sliced Kashmiri lotus stem wok-glazed in amber wild honey, toasted sesame seeds, fresh red chilies, and scallions. Irresistibly crisp.",
+            "tags": ["Pure Veg", "Chef's Signature", "Crispy Delicacy"]
+          },
+          {
+            "id": "chn-02",
+            "name": "Chili Paneer Dry Tossed with Scallions",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "indo-chinese",
+            "description": "Cubes of batter-crisped cottage cheese wok-tossed with tri-color bell peppers, roasted garlic, cracked black pepper, and dark soy glaze.",
+            "tags": ["Pure Veg", "Crispy Wok"]
+          },
+          {
+            "id": "chn-03",
+            "name": "Kung Pao Chicken with Roasted Peanuts",
+            "diet": "non-veg",
+            "price": 480,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "indo-chinese",
+            "description": "Juicy diced chicken stir-fried with scorched dried whole red chilies, crunchy roasted peanuts, and spring onions in a sweet-savory ginger-soy glaze.",
+            "tags": ["Chef's Signature", "Crunchy & Spicy"]
+          },
+          {
+            "id": "chn-04",
+            "name": "Drums of Heaven (Szechuan Chili Glaze)",
+            "diet": "non-veg",
+            "price": 470,
+            "spiceLevel": 3,
+            "isChefSpecial": false,
+            "category": "indo-chinese",
+            "description": "Crisp chicken lollipops tossed in a fiery house-fermented garlic-Szechuan pepper reduction with scallions.",
+            "tags": ["Spicy", "Crisp Starter"]
+          },
+          {
+            "id": "chn-05",
+            "name": "Smoked Burnt Garlic Hakka Noodles",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "indo-chinese",
+            "description": "Thin wheat noodles flash-tossed in high flame with golden burnt garlic, julienned seasonal vegetables, and light soy sauce.",
+            "tags": ["Pure Veg", "Smoky Wok Hei"]
+          },
+          {
+            "id": "chn-06",
+            "name": "Golden Corn & Water Chestnut Dimsums",
+            "diet": "veg",
+            "price": 380,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "indo-chinese",
+            "description": "Translucent steamed dumplings stuffed with crunchy water chestnuts, sweet corn, and bird's eye chili, served with fiery chili dip.",
+            "tags": ["Pure Veg", "Steamed", "Light"]
+          }
+        ]
+      },
+      {
+        "id": "artisanal-sizzlers",
+        "name": "Artisanal Sizzlers & Continental",
+        "icon": "Sparkles",
+        "shortDesc": "Theatrical cast-iron sizzling platters, herb demiglace & handcrafted pastas",
+        "items": [
+          {
+            "id": "szl-01",
+            "name": "Aroma Signature Cottage Cheese Sizzler",
+            "diet": "veg",
+            "price": 540,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "artisanal-sizzlers",
+            "description": "Grilled marinated cottage cheese steak perched on a bed of butter-tossed herb rice, accompanied by charred seasonal vegetables, crispy french fries, and piping hot pepper-mushroom demiglace.",
+            "tags": ["Pure Veg", "Chef's Signature", "Theatrical Dining"]
+          },
+          {
+            "id": "szl-02",
+            "name": "Char-Grilled Herb Chicken Sizzler",
+            "diet": "non-veg",
+            "price": 620,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "artisanal-sizzlers",
+            "description": "Succulent grilled chicken breast infused with rosemary and thyme butter, served on smoking cast iron with buttered pilaf, grilled tomato, and roasted garlic brown jus.",
+            "tags": ["Chef's Signature", "High Protein", "Continental"]
+          },
+          {
+            "id": "szl-03",
+            "name": "Aroma Tandoori Mixed Grill Sizzler",
+            "diet": "non-veg",
+            "price": 720,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "artisanal-sizzlers",
+            "description": "The best of both worlds: sizzler plate loaded with chicken tikka, mutton seekh kebab, and grilled river fish, flambéed tableside with aromatic butter.",
+            "tags": ["Flambéed Tableside", "Grand Feast"]
+          },
+          {
+            "id": "szl-04",
+            "name": "Penne Alfredo with Truffle Essence & Mushrooms",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "artisanal-sizzlers",
+            "description": "Durum wheat penne tossed in a velvety cream sauce made from aged parmesan, sautéed wild mushrooms, and a delicate touch of white truffle oil. Served with toasted herb baguette.",
+            "tags": ["Pure Veg", "Truffle Infused"]
+          }
+        ]
+      },
+      {
+        "id": "biryani-breads",
+        "name": "Dum Biryanis & Tandoori Breads",
+        "icon": "UtensilsCrossed",
+        "shortDesc": "Aromatic sealed handi biryanis with rose water & saffron-glazed artisanal breads",
+        "items": [
+          {
+            "id": "bir-01",
+            "name": "Kashmiri Gosht Dum Biryani",
+            "diet": "non-veg",
+            "price": 620,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "biryani-breads",
+            "description": "Aged long-grain basmati rice layered with succulent baby lamb marinated in Kishtwar saffron, mace, kewra water, and caramelized onions, sealed with dough in a clay handi and slow-steamed.",
+            "tags": ["Chef's Signature", "Slow Clay Handi Dum", "Served with Burani Raita"]
+          },
+          {
+            "id": "bir-02",
+            "name": "Royal Murgh Awadhi Biryani",
+            "diet": "non-veg",
+            "price": 520,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "biryani-breads",
+            "description": "Fragrant basmati cooked with tender chicken pieces, saffron milk, green cardamom, and fresh mint, accompanied by tempered pomegranate curd.",
+            "tags": ["Classic Royal", "Aromatic"]
+          },
+          {
+            "id": "bir-03",
+            "name": "Kashmiri Shahi Meetha Pulao",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "biryani-breads",
+            "description": "Fragrant basmati rice gently sweetened and enriched with golden raisins, whole almonds, walnuts, fried coconut shavings, and pure saffron strings.",
+            "tags": ["Pure Veg", "Kashmiri Ceremonial", "Chef's Signature"]
+          },
+          {
+            "id": "bir-04",
+            "name": "Subz Handi Dum Biryani",
+            "diet": "veg",
+            "price": 410,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "biryani-breads",
+            "description": "Seasonal garden vegetables, baby potatoes, and paneer cubes marinated in yogurt and whole spices, layered with saffron rice and slow-cooked in a sealed clay pot.",
+            "tags": ["Pure Veg", "Rich & Wholesome"]
+          },
+          {
+            "id": "brd-01",
+            "name": "Amritsari Chur Chur Naan with Spiced Butter",
+            "diet": "veg",
+            "price": 120,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "biryani-breads",
+            "description": "Flaky layered tandoori bread stuffed with spiced paneer and potato mash, crushed by hand and drenched with country butter.",
+            "tags": ["Pure Veg", "Crispy & Flaky"]
+          },
+          {
+            "id": "brd-02",
+            "name": "Traditional Kashmiri Sheermal",
+            "diet": "veg",
+            "price": 140,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "biryani-breads",
+            "description": "Saffron-flavored traditional flatbread prepared with milk, pure ghee, and a gentle hint of cardamom, baked in a low-fire clay tandoor.",
+            "tags": ["Pure Veg", "Traditional Wazwan Pairing"]
+          },
+          {
+            "id": "brd-03",
+            "name": "Roasted Garlic Butter Naan",
+            "diet": "veg",
+            "price": 95,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "biryani-breads",
+            "description": "Leavened refined flour bread studded with finely chopped roasted garlic and fresh coriander, brushed with salted butter.",
+            "tags": ["Pure Veg", "Crisp & Pillowy"]
+          },
+          {
+            "id": "brd-04",
+            "name": "Pudina Laccha Paratha",
+            "diet": "veg",
+            "price": 85,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "biryani-breads",
+            "description": "Multi-layered whole wheat bread dusted with dried mountain mint flakes and griddled with desi ghee in the tandoor.",
+            "tags": ["Pure Veg", "Whole Wheat"]
+          }
+        ]
+      },
+      {
+        "id": "desserts-coolers",
+        "name": "Desserts, Artisanal Mocktails & Kahwa",
+        "icon": "Coffee",
+        "shortDesc": "Simmered Kashmiri Kahwa, royal kesar phirni & smoky signature elixirs",
+        "items": [
+          {
+            "id": "dst-01",
+            "name": "Shahi Kesari Phirni in Clay Kasora",
+            "diet": "veg",
+            "price": 220,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts-coolers",
+            "description": "Silken ground rice pudding slow-simmered with reduced full-cream milk, crushed green cardamom, and Kishtwar saffron, set in traditional unglazed clay kasoras and crowned with edible silver vark and pistachio slivers.",
+            "tags": ["Pure Veg", "Chef's Signature", "Chilled Clay Pot"]
+          },
+          {
+            "id": "dst-02",
+            "name": "Royal Matka Kulfi with Falooda",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts-coolers",
+            "description": "Dense, caramelized artisanal milk kulfi infused with saffron and roasted almonds, served alongside rose syrup, basil seeds, and chilled vermicelli falooda.",
+            "tags": ["Pure Veg", "Traditional Indulgence"]
+          },
+          {
+            "id": "dst-03",
+            "name": "Sizzling Walnut Brownie with Belgian Gelato",
+            "diet": "veg",
+            "price": 290,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "desserts-coolers",
+            "description": "Warm, fudge-rich dark chocolate walnut brownie served on a hissing cast iron platter, topped with handcrafted Madagascar vanilla gelato and drenched tableside in molten Belgian dark chocolate.",
+            "tags": ["Pure Veg", "Continental Sizzler Dessert"]
+          },
+          {
+            "id": "dst-04",
+            "name": "Authentic Kashmiri Kehwa with Saffron & Almonds",
+            "diet": "veg",
+            "price": 160,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts-coolers",
+            "description": "Simmered in an ornate brass samovar: delicate green tea leaves brewed with crushed green cardamom, cinnamon bark, pure Kishtwar saffron strings, and crunchy almond slivers.",
+            "tags": ["Pure Veg", "Kashmiri Welcome", "Soul Warming"]
+          },
+          {
+            "id": "drk-01",
+            "name": "Aroma Smoked Saffron Spiced Sour",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts-coolers",
+            "description": "Signature mocktail: freshly pressed Valencia orange, saffron honey reduction, fresh lime, and ginger bitters, captured under an applewood smoke dome and unveiled tableside.",
+            "tags": ["Pure Veg", "Chef's Signature Mocktail", "Tableside Smoke Show"]
+          },
+          {
+            "id": "drk-02",
+            "name": "Jamun Kala Khatta Fizzy Mist",
+            "diet": "veg",
+            "price": 210,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "desserts-coolers",
+            "description": "Wild jamun pulp shaken with black rock salt, roasted cumin syrup, fresh mint, and sparkling tonic, rimmed with Kashmiri chili dust.",
+            "tags": ["Pure Veg", "Tangy Refresher"]
+          },
+          {
+            "id": "drk-03",
+            "name": "Channi Himmat Sunset Cooler",
+            "diet": "veg",
+            "price": 220,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "desserts-coolers",
+            "description": "Layered passionfruit puree, ruby pomegranate juice, muddled mint sprigs, and lime soda over crushed ice.",
+            "tags": ["Pure Veg", "Tropical Breeze"]
+          }
+        ]
+      }
+    ]
+  },
+  "techStackRecommendation": {
+    "recommendedTier": "Tier 2: React + Vite + Tailwind CSS",
+    "evaluation": {
+      "tier1Analysis": {
+        "tier": "Tier 1: Vanilla HTML/CSS/JavaScript",
+        "pros": "Zero build dependencies, single-file or lightweight static deployment, instant browser rendering.",
+        "cons": "Managing multi-dimensional state (filtering by 6 categories, pure-veg vs non-veg toggles, chef's special filters, search queries, dynamic price sorting, interactive reservation modals, and floating order trays) quickly leads to brittle DOM manipulation, messy event listeners, and code bloat. Maintenance for restaurant staff becomes cumbersome."
+      },
+      "tier2Analysis": {
+        "tier": "Tier 2: React + Vite + Tailwind CSS + Lucide Icons",
+        "pros": "1. Lightning-fast client-side reactive state: Instant zero-latency dish filtering by category, dietary preference (Veg / Non-Veg / Chef's Special), and live text search across 40+ dishes. 2. Componentized Architecture: Isolates the Menu Card, Dietary Badge, Reservation Modal, Story Carousel, and Mobile Floating Action Bar into clean, maintainable units. 3. Polished Micro-Interactions: Effortless animations for the smoke-glow aesthetic, sticky category header scroll-spy, and table reservation validation. 4. Superior Mobile Performance: Vite compiles down to an ultra-optimized static bundle with sub-second First Contentful Paint (<0.8s) and 98+ Lighthouse mobile performance scores.",
+        "cons": "Requires a brief build step (Vite build) during deployment, which is trivial with modern tooling."
+      }
+    },
+    "verdict": "Adopt Tier 2 (React + Vite + Tailwind CSS). The user experience required for a luxury multi-cuisine restaurant in an upscale market like Channi Himmat demands seamless interactive filtering, zero-lag menu search, modal dish inspections, and a fluid reservation booking flow that elevates brand prestige above a static PDF-style menu."
+  }
+}

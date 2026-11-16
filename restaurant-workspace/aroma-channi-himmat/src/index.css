@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-hover: #E6C35C;
+  --color-gold-dark: #9B7E1E;
+  --color-saffron: #E08E36;
+  --color-saffron-light: #F4A754;
+  --color-obsidian: #0D0B0A;
+  --color-espresso: #14110F;
+  --color-surface: #1A1714;
+  --color-surface-elevated: #25201B;
+  --color-border-gold: rgba(212, 175, 55, 0.22);
+  --color-border-gold-high: rgba(212, 175, 55, 0.55);
+  --color-emerald-veg: #10B981;
+  --color-crimson-nonveg: #EF4444;
+  --color-amber-chef: #F59E0B;
+  --color-text-cream: #F8F6F0;
+  --color-text-secondary: #C8C0B5;
+  --color-text-muted: #8E867B;
+
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0B0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #25201B;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Subtle glow animations */
+@keyframes flame-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 12px rgba(224, 142, 54, 0.45));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.7));
+    transform: scale(1.02);
+  }
+}
+
+.animate-flame {
+  animation: flame-pulse 3.5s ease-in-out infinite;
+}
+
+@keyframes gold-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #D4AF37 0%, #FFF3D1 50%, #D4AF37 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gold-shimmer 6s linear infinite;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #D4AF37 0%, #E08E36 100%);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px -3px rgba(212, 175, 55, 0.18);
+}
+
+.gold-border-glow:hover {
+  box-shadow: 0 0 25px -1px rgba(212, 175, 55, 0.35);
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(26, 23, 20, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.glass-nav {
+  background: rgba(13, 11, 10, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+/* Hide horizontal scrollbar for clean tab pill scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

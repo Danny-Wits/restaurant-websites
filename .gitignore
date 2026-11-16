@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic / Environment
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+node_modules/
+restaurant-workspace/*/node_modules/
+
+# Production build outputs
+dist/
+dist-ssr/
+restaurant-workspace/*/dist/
+
+# OS / Editor
+.DS_Store
+*.local
+.vscode/
+.idea/

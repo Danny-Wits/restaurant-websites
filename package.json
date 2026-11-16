@@ -1,0 +1,21 @@
+{
+  "name": "restaurant-websites-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Centralized multi-restaurant landing page and digital menu deployment hub",
+  "scripts": {
+    "build": "node scripts/build-all.mjs",
+    "build:all": "node scripts/build-all.mjs"
+  },
+  "keywords": [
+    "restaurant",
+    "digital-menu",
+    "multi-agent",
+    "vite",
+    "react",
+    "vercel"
+  ],
+  "author": "Danny Wits",
+  "license": "MIT"
+}
