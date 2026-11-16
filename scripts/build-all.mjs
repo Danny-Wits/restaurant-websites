@@ -56,13 +56,19 @@ for (const slug of restaurantDirs) {
   if (fs.existsSync(specPath)) {
     try {
       const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
-      meta.name = spec.restaurantName || meta.name;
-      meta.location = spec.location?.city ? `${spec.location.address || ''}, ${spec.location.city}` : (spec.location || '');
-      meta.cuisine = spec.marketContext?.culinaryPillars?.[0] || 'Multi Cuisine';
-      meta.description = spec.microCopy?.heroHeadline || spec.marketContext?.targetAudience || '';
-      meta.accentColor = spec.visualIdentity?.colorPalette?.primary?.hex || '#D4AF37';
-      if (Array.isArray(spec.menuCategories)) {
-        meta.itemCount = spec.menuCategories.reduce((acc, cat) => acc + (cat.items?.length || 0), 0);
+      meta.name = spec.restaurant?.name || spec.restaurantName || meta.name;
+      const loc = spec.restaurant?.location || spec.location;
+      meta.location = loc?.city ? `${loc.address ? loc.address.split(',')[0] + ', ' : ''}${loc.city}` : (typeof loc === 'string' ? loc : '');
+      const pillars = spec.marketAnalysis?.culinaryPillars || spec.marketContext?.culinaryPillars;
+      meta.cuisine = (pillars && pillars[0]?.pillar) || pillars?.[0] || 'Artisanal Cafe & Lounge';
+      meta.description = spec.storytellingAndCopy?.hero?.subheadline || spec.restaurant?.subTagline || spec.microCopy?.heroHeadline || spec.marketContext?.targetAudience || '';
+      meta.accentColor = spec.visualIdentity?.colorTokens?.primary?.hex || spec.visualIdentity?.colorPalette?.primary?.hex || '#F59E0B';
+      const categories = spec.menuEngineering?.categories || spec.menuCategories;
+      if (Array.isArray(categories)) {
+        meta.itemCount = categories.reduce((acc, cat) => acc + (cat.items?.length || 0), 0);
+      }
+      if (slug === 'raasta-jammu') {
+        meta.heroImage = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80';
       }
     } catch (e) {
       console.warn(`⚠️ Warning: Failed to parse brand-spec.json for ${slug}:`, e.message);

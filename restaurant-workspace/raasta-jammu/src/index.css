@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-raasta-dark: #0F1110;
+  --color-raasta-forest: #161917;
+  --color-raasta-surface: #1E2220;
+  --color-raasta-elevated: #282D2A;
+  
+  --color-raasta-amber: #F59E0B;
+  --color-raasta-honey: #FBBF24;
+  --color-raasta-green: #10B981;
+  --color-raasta-coral: #F43F5E;
+  
+  --color-border-amber: rgba(245, 158, 11, 0.18);
+  --color-border-amber-glow: rgba(245, 158, 11, 0.5);
+  --color-border-green-glow: rgba(16, 185, 129, 0.4);
+  --color-border-coral-glow: rgba(244, 63, 94, 0.4);
+  
+  --color-veg: #10B981;
+  --color-nonveg: #EF4444;
+  
+  --color-text-primary: #F4F4F5;
+  --color-text-secondary: #D4D4D8;
+  --color-text-muted: #A1A1AA;
+  
+  --font-display: 'Syne', 'Outfit', sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* Custom Bohemian Timber Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F1110;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2220;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F59E0B;
+}
+
+/* Hide horizontal scrollbar for clean tab pill scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Neon glows and animations */
+@keyframes neon-amber-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.25), 0 0 6px -1px rgba(245, 158, 11, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px 2px rgba(245, 158, 11, 0.45), 0 0 12px 1px rgba(245, 158, 11, 0.5);
+  }
+}
+
+.neon-amber-glow {
+  animation: neon-amber-pulse 3s infinite ease-in-out;
+}
+
+@keyframes equalizer-bounce {
+  0%, 100% { height: 6px; }
+  50% { height: 18px; }
+}
+
+.equalizer-bar-1 { animation: equalizer-bounce 0.8s ease-in-out infinite; }
+.equalizer-bar-2 { animation: equalizer-bounce 0.8s ease-in-out infinite 0.2s; }
+.equalizer-bar-3 { animation: equalizer-bounce 0.8s ease-in-out infinite 0.4s; }
+.equalizer-bar-4 { animation: equalizer-bounce 0.8s ease-in-out infinite 0.1s; }
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(30, 34, 32, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.16);
+}
+
+.glass-nav {
+  background: rgba(15, 17, 16, 0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.18);
+}

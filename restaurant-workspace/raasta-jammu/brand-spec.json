@@ -1,0 +1,927 @@
+{
+  "restaurant": {
+    "name": "Raasta Jammu",
+    "slug": "raasta-jammu",
+    "city": "Jammu",
+    "locality": "Panama Chowk / University Strip / Gujarbasti",
+    "state": "Jammu & Kashmir",
+    "pincode": "180006",
+    "tagline": "Where Good Vibes, Great Beats & Epic Flavors Converge",
+    "subTagline": "Jammu's premier bohemian cafe, rhythm lounge & urban eatery — sunlit artisanal brews & study nooks by day, live acoustics & sizzling global flavors by night.",
+    "concept": "A high-energy, soul-infused bohemian urban restro-cafe & rhythm lounge catering to Jammu University scholars, creative nomads, corporate youth, and music aficionados with vibrant communal dining and electric nightlife.",
+    "rating": "4.9",
+    "reviewCount": "2,140+",
+    "priceRange": "₹₹ (₹450 - ₹850 for two)",
+    "contact": {
+      "phone": "+91 191 247 9090",
+      "mobile": "+91 94191 88230",
+      "whatsapp": "+91 94191 88230",
+      "email": "hello@raastajammu.com",
+      "reservationsEmail": "events@raastajammu.com",
+      "instagram": "@raastajammu"
+    },
+    "location": {
+      "address": "Panama Chowk, Opposite University Road / Gujarbasti Junction, Near University of Jammu Gate 2",
+      "neighborhood": "Panama Chowk / University Strip",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180006",
+      "landmarks": "Directly accessible from Panama Chowk round-about, 2 minutes from University of Jammu Main Campus, 4 minutes from Jammu Tawi Railway Station & Bahu Plaza Commercial Hub",
+      "googleMapsUrl": "https://maps.google.com/?q=Raasta+Jammu+Panama+Chowk+Gujarbasti+Jammu",
+      "coordinates": {
+        "lat": 32.7128,
+        "lng": 74.8694
+      }
+    },
+    "hours": {
+      "daily": {
+        "open": "11:00 AM",
+        "close": "11:30 PM"
+      },
+      "cafeVibe": "11:00 AM – 05:00 PM (Acoustic chill, pour-overs, cold brews & co-working mode)",
+      "loungeVibe": "05:00 PM – 11:30 PM (Live music gigs, craft mocktails, neon vibes & social dining)",
+      "kitchenCloses": "11:00 PM",
+      "days": "Monday – Sunday (Open All 7 Days)"
+    },
+    "amenities": [
+      "Live Acoustic & Indie Music Sessions (Thursdays – Sundays)",
+      "Campus Discount: Flat 15% Off with Valid Student ID",
+      "High-Speed Mesh Wi-Fi & Workstation Plug Points",
+      "Sunlit Bohemian Outdoor Patio Seating with Greenery",
+      "Private Mezzanine Lounge & Birthday Celebration Zone",
+      "Board Games, Vinyl Record Listening Corner & Book Nook",
+      "Dedicated Pure Vegetarian Preparation Counter",
+      "Dedicated Parking with Valet & Bike Bay"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Panama Chowk stands at the geographic and cultural crossroads of Jammu city, linking the historic Old City with the bustling southern growth corridor. Flanked directly by the vast University of Jammu campus (with 15,000+ undergraduate, postgraduate, and doctoral students and faculty) and the Gujarbasti residential/transit arterial, it also enjoys seamless 3-minute access to Jammu Tawi Railway Station and the Bahu Plaza corporate headquarters. This location commands extraordinary student footfall, commuter convenience, and evening leisure traffic looking for an alternative to stuffy conventional banquet halls.",
+    "targetDemographics": [
+      {
+        "segment": "University of Jammu Students & Research Scholars",
+        "need": "Affordable yet high-aesthetic hangout spots, craveable comfort food (smash burgers, loaded fries, boba coolers), communal sharing platters, reliable Wi-Fi, and generous student perks.",
+        "vibeRequirement": "Energetic, welcoming, Instagrammable neon decor, relaxed study sessions by afternoon and vibrant music hangouts by evening."
+      },
+      {
+        "segment": "Bahu Plaza & Rail Head Corporate Youth",
+        "need": "Post-work decompress dinners, craft coffee meetings, quick gourmet lunches (soul bowls, artisanal sourdough pizzas), and vibrant team celebration dinners.",
+        "vibeRequirement": "Chic lounge ambiance, brisk digital table service, premium mocktail mixers, and cozy booth seating."
+      },
+      {
+        "segment": "Creative Nomads, Freelancers & Indie Musicians",
+        "need": "Inspiring daylight workspace with specialty cold brews, ambient indie playlists, power outlets at every booth, and a platform for live acoustic gigs and open-mic poetry.",
+        "vibeRequirement": "Bohemian warmth, distressed wooden finishes, lush indoor foliage, and curated vinyl soundscapes."
+      },
+      {
+        "segment": "Weekend Socialites & Gen-Z Foodies",
+        "need": "Late-night dynamic dining, dramatic tableside sizzlers, molten skillet cookies, and high-energy music vibes for birthdays, reunions, and dates.",
+        "vibeRequirement": "Atmospheric warm-timber lighting, amber chandeliers, neon signature photo walls, and buzz-worthy gastronomic presentation."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "All-Day Artisanal Third-Wave Sips & Botanical Coolers",
+        "description": "Slow-dripped nitro cold brews, creamy Spanish lattes, wild berry botanical infusions, and extravagant freakshakes crafted for cafe culture lovers."
+      },
+      {
+        "pillar": "Loaded Global Street Bites & High-Octane Tapas",
+        "description": "Crispy truffle hand-cut fries, Caribbean jerk skewers blistered over cast iron, four-cheese pull-apart breads, and loaded nachos bathed in smoky queso."
+      },
+      {
+        "pillar": "48-Hour Cold-Fermented Sourdough Artisanal Pizzas",
+        "description": "Hand-stretched sourdough bases baked at blisteringly high heat, topped with imported San Marzano tomato reduction, fiore di latte, and fiery Kashmiri-spiced tikkas."
+      },
+      {
+        "pillar": "Gourmet Smash Burgers, Sliders & Fluffy Lotus Baos",
+        "description": "Buttery toasted brioche buns, double-smashed patties with crisp caramelized lacy edges, melted sharp cheddar, and pillowy steamed Asian baos."
+      },
+      {
+        "pillar": "Soul Bowls, Wok-Tossed Street Mains & Sizzlers",
+        "description": "Velvety penne alla vodka with burrata crowns, smokey sizzlers with garlic herb rice, and rich slow-simmered butter chicken bowls for ultimate comfort."
+      },
+      {
+        "pillar": "Decadent Warm Skillets & Nostalgic Desserts",
+        "description": "Freshly fried cinnamon churro bites with spiced Mexican chocolate dip, cast-iron skillet cookies with Madagascar vanilla bean gelato, and mason jar banoffee pies."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Bohemian Rhythm & Urban Neon Velvet",
+    "aestheticPhilosophy": "Raasta Jammu blends organic bohemian warmth — natural distressed teak timber, woven jute pendants, living monstera greenery, and raw textured plaster — with an electrifying urban rhythm lounge aesthetic. By day, sunlight washes over cozy cafe booths and co-working banquettes; as twilight falls over Panama Chowk, the mood transitions seamlessly with sunburst amber lighting, neon reggae glow borders, and deep charcoal velvet shadows that accentuate the social pulse of the university strip.",
+    "colorTokens": {
+      "baseDark": {
+        "hex": "#0F1110",
+        "name": "Deep Espresso Charcoal",
+        "description": "Main application background, offering deep, cinematic contrast and anti-glare reading"
+      },
+      "baseDarkAlt": {
+        "hex": "#161917",
+        "name": "Dark Forest Velvet",
+        "description": "Secondary section backdrop providing organic depth"
+      },
+      "surface": {
+        "hex": "#1E2220",
+        "name": "Smoked Timber",
+        "description": "Menu item cards, elevated modals, and sidebar container surfaces"
+      },
+      "surfaceElevated": {
+        "hex": "#282D2A",
+        "name": "Elevated Charcoal Timber",
+        "description": "Hover states, popover surfaces, and selected interactive cards"
+      },
+      "primary": {
+        "hex": "#F59E0B",
+        "name": "Sunburst Amber / Marigold",
+        "description": "Primary brand accent, energetic glow, category badges, and high-visibility CTAs"
+      },
+      "primaryHover": {
+        "hex": "#FBBF24",
+        "name": "Warm Honey Gold",
+        "description": "Hover and active interactive highlights"
+      },
+      "secondaryGreen": {
+        "hex": "#10B981",
+        "name": "Electric Reggae Green",
+        "description": "Bohemian vitality, vegetarian highlights, and fresh garden tags"
+      },
+      "secondaryCoral": {
+        "hex": "#F43F5E",
+        "name": "Sunset Coral",
+        "description": "Youthful spark, music gig alerts, live event ribbons, and spicy cues"
+      },
+      "border": {
+        "hex": "rgba(245, 158, 11, 0.18)",
+        "name": "Amber Filament Border",
+        "description": "Subtle border line around cards and dividers"
+      },
+      "borderHighlight": {
+        "hex": "rgba(245, 158, 11, 0.50)",
+        "name": "Neon Amber Halo",
+        "description": "Active filter buttons, focused input fields, and featured item borders"
+      },
+      "borderNeonGreen": {
+        "hex": "rgba(16, 185, 129, 0.40)",
+        "name": "Neon Emerald Halo",
+        "description": "Eco and veg highlight borders"
+      },
+      "accentVeg": {
+        "hex": "#10B981",
+        "name": "Fresh Herb Emerald",
+        "description": "Pure Vegetarian culinary badges and green dot indicators"
+      },
+      "accentNonVeg": {
+        "hex": "#EF4444",
+        "name": "Fiery Crimson",
+        "description": "Non-Vegetarian culinary badges and red dot indicators"
+      },
+      "accentFavorite": {
+        "hex": "#F59E0B",
+        "name": "Crowd Favorite Flame",
+        "description": "Bestseller and student crowd favorite badge glow"
+      },
+      "accentChef": {
+        "hex": "#FBBF24",
+        "name": "Chef's Signature Star",
+        "description": "Master culinary creation emblems"
+      },
+      "text": {
+        "primary": "#F4F4F5",
+        "secondary": "#D4D4D8",
+        "muted": "#A1A1AA",
+        "contrast": "#0F1110"
+      }
+    },
+    "typography": {
+      "display": {
+        "fontFamily": "'Syne', 'Outfit', sans-serif",
+        "weights": ["600", "700", "800"],
+        "lineHeight": "1.15",
+        "letterSpacing": "-0.01em",
+        "sampleUse": "Hero titles, brand signature, section crowns, dish titles"
+      },
+      "subheading": {
+        "fontFamily": "'Outfit', 'Plus Jakarta Sans', sans-serif",
+        "weights": ["500", "600", "700"],
+        "lineHeight": "1.3",
+        "letterSpacing": "0.01em",
+        "sampleUse": "Category section titles, card names, modal headings"
+      },
+      "body": {
+        "fontFamily": "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif",
+        "weights": ["400", "500", "600", "700"],
+        "lineHeight": "1.6",
+        "letterSpacing": "0.01em",
+        "sampleUse": "Menu gastronomic descriptions, dietary tags, ingredient listings, button labels"
+      },
+      "mono": {
+        "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+        "weights": ["500", "600"],
+        "sampleUse": "INR Prices, campus discount codes, hours, nutritional data"
+      }
+    }
+  },
+  "storytellingAndCopy": {
+    "hero": {
+      "eyebrow": "PANAMA CHOWK • UNIVERSITY STRIP • JAMMU",
+      "headline": "Where Good Vibes, Great Beats & Epic Flavors Converge",
+      "subheadline": "Jammu's vibrant bohemian cafe, rhythm lounge & urban bistro. Sunlit cold brews and acoustic study corners by day; sizzling global platters, craft mocktails, and live acoustic beats by night.",
+      "ctaPrimary": "Explore Menu & Order",
+      "ctaSecondary": "Book a Table / Gig",
+      "studentBanner": "🎓 Jammu University Perk: Flash your Student ID for a flat 15% off food & cold brews!",
+      "quickStats": [
+        { "number": "38+", "label": "Artisanal Dishes & Sips" },
+        { "number": "48 Hrs", "label": "Cold-Fermented Sourdough" },
+        { "number": "100%", "label": "House-Crafted Sauces" },
+        { "number": "4.9 ★", "label": "Google Reviews (2.1k+)" }
+      ]
+    },
+    "ourStory": {
+      "eyebrow": "THE RAASTA SOUL",
+      "title": "Born at the Crossroads of Music, Youth & Gastronomy",
+      "lead": "Right outside the historic gates of University of Jammu, where Panama Chowk hums with the city's pulse, Raasta was built to be more than a cafe — it is a sanctuary for Jammu's creative spirit.",
+      "narrative": [
+        "We noticed something missing in Jammu's dining landscape: students, young professionals from Bahu Plaza, and artists had to choose between formal banquet-style family restaurants or uninspired fast-food franchises. There was no communal living room where you could sip a velvety single-origin cold brew while preparing your thesis, share a bubbling 48-hour sourdough pizza with your crew, and groove to a live acoustic indie guitar set as night settles.",
+        "That is why Raasta came alive. We handpicked weathered timber, lush foliage, vintage concert posters, and warm amber illumination to craft a bohemian lounge that feels instantly like home. Our kitchen honors honest, unapologetic cooking: 48-hour cold-fermented doughs for featherlight pizza crusts, slow-caramelized smash burgers, Caribbean jerk marinades rubbed onto tender chicken and paneer skewers, and decadent skillet cookies pulled straight from the oven.",
+        "Whether you're finding your corner booth for a productive afternoon study sprint, gathering twenty friends for an unforgettable birthday blowout on the mezzanine, or letting acoustic rhythms soothe your week, Raasta is the path where stories happen."
+      ],
+      "quote": "Raasta isn't merely a destination; it's the rhythm in your step, the warmth of laughter over sizzling platters, and the soundtrack of our campus years.",
+      "quoteAuthor": "The Raasta Founders & Culinary Crew"
+    },
+    "campusCulture": {
+      "title": "The University of Jammu Connection",
+      "description": "Located just 2 minutes from Gate 2 of Jammu University, Raasta is proud to be the official hangout, debate hall, and celebration hub for students and faculty alike.",
+      "perks": [
+        {
+          "title": "Campus ID Flat 15% Off",
+          "desc": "Valid on all food, cold brews, and mocktails from 11:00 AM to 06:00 PM on weekdays."
+        },
+        {
+          "title": "High-Speed Study Hub",
+          "desc": "Lightning-fast Wi-Fi, abundant charging outlets at every booth, and mellow lo-fi playlists."
+        },
+        {
+          "title": "Society & College Fest Afterparties",
+          "desc": "Dedicated mezzanine space equipped with sound system and custom group combo menus."
+        },
+        {
+          "title": "Open Mic & Showcase Platform",
+          "desc": "Regular spotlight stage for campus musicians, poets, and stand-up comedians."
+        }
+      ]
+    },
+    "liveMusicAndEvents": {
+      "eyebrow": "RHYTHM & SOUND",
+      "title": "Jammu's Premier Indie Music Sanctuary",
+      "description": "Every week, Raasta transforms from a relaxed day cafe into an intimate acoustic music den, spotlighting the finest local singer-songwriters, Sufi fusion artists, and jazz-indie duos.",
+      "schedule": [
+        { "day": "Thursday", "event": "Acoustic Unplugged Sessions", "time": "07:30 PM - 10:30 PM" },
+        { "day": "Friday", "event": "Sufi & Bollywood Fusion Night", "time": "08:00 PM - 11:00 PM" },
+        { "day": "Saturday", "event": "Indie Rhythm & Groove Live", "time": "08:00 PM - 11:30 PM" },
+        { "day": "Sunday", "event": "Sundowner Vinyl Chill & Open Mic", "time": "05:00 PM - 09:00 PM" }
+      ]
+    },
+    "reservationCopy": {
+      "eyebrow": "JOIN THE RHYTHM",
+      "title": "Book Your Table or Celebrate With Us",
+      "description": "Reserve a cozy booth for date night, a large sunlit group table on the outdoor patio, or private mezzanine seating for birthdays, farewells, and society gatherings. Walk-ins are always welcomed, but reservations are recommended during live gig nights.",
+      "perks": [
+        "Guaranteed priority seating during live acoustic sessions",
+        "Complimentary birthday sizzler cookie sparkler celebration",
+        "Custom student party packages available on request",
+        "Instant WhatsApp & SMS confirmation within 15 minutes"
+      ]
+    },
+    "footer": {
+      "about": "Raasta Jammu is Panama Chowk's vibrant bohemian cafe, music lounge & culinary sanctuary. Serving artisan cold brews, 48-hr fermented sourdough pizzas, loaded smash burgers, and soulful global comfort bowls to the University of Jammu community and beyond.",
+      "address": "Panama Chowk, Opposite University Road / Gujarbasti, Near University of Jammu Gate 2, Jammu (J&K) 180006",
+      "copyright": "© 2026 Raasta Jammu. All rights reserved. Good Vibes, Great Beats & Epic Flavors."
+    }
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "all-day-sips",
+        "name": "All-Day Sips & Cold Brews",
+        "icon": "Coffee",
+        "shortDesc": "Specialty iced coffees, slow nitro brews, loaded freakshakes & botanical craft coolers",
+        "items": [
+          {
+            "id": "sip-01",
+            "name": "Raasta Signature Nitro Cold Brew",
+            "diet": "veg",
+            "price": 210,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "all-day-sips",
+            "description": "18-hour cold steeped single-origin Chikmagalur Arabica beans charged with pure nitrogen, yielding a cascading Guinness-like velvety crema, zero bitterness, and deep dark chocolate undertones.",
+            "tags": ["Chef's Signature", "Single Origin", "Zero Sugar Option", "Cold Brew"],
+            "calories": "15 kcal",
+            "prepTime": "3 mins"
+          },
+          {
+            "id": "sip-02",
+            "name": "Iced Spanish Cortado Latte",
+            "diet": "veg",
+            "price": 230,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "all-day-sips",
+            "description": "Double ristretto shot pulled over cold whole milk and sweet condensed milk swirl, poured over crystal ice spheres and dusted with Ceylon cinnamon bark.",
+            "tags": ["Crowd Favorite", "Creamy & Sweet", "Student Bestseller"],
+            "calories": "190 kcal",
+            "prepTime": "4 mins"
+          },
+          {
+            "id": "sip-03",
+            "name": "Hazelnut Mocha Crunch Frappe",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "all-day-sips",
+            "description": "Blended dark espresso, roasted Piedmont hazelnut ganache, belgian cocoa, whipped fresh cream, crowned with crushed waffle cone and toasted hazelnuts.",
+            "tags": ["Decadent", "Blended Coffee", "Dessert In A Glass"],
+            "calories": "340 kcal",
+            "prepTime": "5 mins"
+          },
+          {
+            "id": "sip-04",
+            "name": "Lotus Biscoff Overload Freakshake",
+            "diet": "veg",
+            "price": 290,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "all-day-sips",
+            "description": "Thick caramelized speculoos milkshake layered with molten Biscoff butter, whipped cream mountain, whole Biscoff biscuits, and salted caramel drizzle in a frosted mason jar.",
+            "tags": ["Chef's Special", "Freakshake", "Instagram Famous"],
+            "calories": "480 kcal",
+            "prepTime": "6 mins"
+          },
+          {
+            "id": "sip-05",
+            "name": "Wild Berry & Hibiscus Botanical Spritzer",
+            "diet": "veg",
+            "price": 210,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "all-day-sips",
+            "description": "Cold-brewed organic Egyptian hibiscus petals, muddled raspberries, blackberries, fresh mint leaves, and sparkling tonic water with a touch of agave nectar.",
+            "tags": ["Botanical", "Antioxidant Rich", "Refreshing & Tart"],
+            "calories": "85 kcal",
+            "prepTime": "3 mins"
+          },
+          {
+            "id": "sip-06",
+            "name": "Cucumber Basil & Kaffir Lime Refresher",
+            "diet": "veg",
+            "price": 190,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "all-day-sips",
+            "description": "Hand-crushed crisp cucumbers, fragrant Italian basil leaves, bruised kaffir lime leaf, pressed lemon juice, and chilled soda over hand-carved ice.",
+            "tags": ["Zero Alcohol", "Ultra Fresh", "Hydrating"],
+            "calories": "60 kcal",
+            "prepTime": "3 mins"
+          },
+          {
+            "id": "sip-07",
+            "name": "Blue Curacao & Spiced Jamun Sparkler",
+            "diet": "veg",
+            "price": 220,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "all-day-sips",
+            "description": "Wild jamun fruit pulp shaken with citrus curacao, black rock salt, roasted cumin syrup, lime juice, and bubbling ginger ale, rimmed with Kashmiri chili dust.",
+            "tags": ["Chef's Signature Mocktail", "Desi Twist", "Sweet & Tangy"],
+            "calories": "110 kcal",
+            "prepTime": "4 mins"
+          }
+        ]
+      },
+      {
+        "id": "loaded-bites",
+        "name": "Loaded Bites & Tapas",
+        "icon": "UtensilsCrossed",
+        "shortDesc": "Crispy parmesan fries, Caribbean jerk skewers, pull-apart cheesy brioche & loaded nachos",
+        "items": [
+          {
+            "id": "bit-01",
+            "name": "Truffle & Smoked Parmesan Hand-Cut Fries",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "loaded-bites",
+            "description": "Double-fried hand-cut golden russet potatoes tossed with aromatic white truffle oil, 24-month aged parmesan shavings, rosemary sea salt, served with homemade roasted garlic aioli.",
+            "tags": ["Crowd Favorite", "Student Essential", "Truffle Infused"],
+            "calories": "380 kcal",
+            "prepTime": "8 mins"
+          },
+          {
+            "id": "bit-02",
+            "name": "Caribbean Jerk Spiced Paneer Skewers",
+            "diet": "veg",
+            "price": 310,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "loaded-bites",
+            "description": "Thick cubes of fresh malai paneer steeped in a fiery Jamaican jerk paste of allspice berries, scotch bonnet chilies, thyme, and dark molasses, seared over cast iron with grilled bell peppers.",
+            "tags": ["Chef's Signature", "Smoky & Spiced", "Gluten-Free"],
+            "calories": "420 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "bit-03",
+            "name": "Caribbean Jerk Grilled Chicken Skewers",
+            "diet": "non-veg",
+            "price": 350,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "loaded-bites",
+            "description": "Boneless tender chicken thighs marinated for 24 hours in authentic Kingston jerk spices, brown sugar, and lime zest, char-grilled to smoky perfection, served with pineapple salsa.",
+            "tags": ["Chef's Signature", "High Protein", "Bestseller"],
+            "calories": "460 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "bit-04",
+            "name": "4-Cheese Pull-Apart Garlic Brioche",
+            "diet": "veg",
+            "price": 280,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "loaded-bites",
+            "description": "Artisanal crusty brioche loaf diamond-scored and stuffed with molten mozzarella, sharp yellow cheddar, gouda, and cream cheese, drenched in garlic herb butter and fresh oregano.",
+            "tags": ["Crowd Favorite", "Cheese Pull", "Sharing Special"],
+            "calories": "520 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "bit-05",
+            "name": "Ultimate Nachos Grande with Guac & Queso",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "loaded-bites",
+            "description": "Crisp stone-ground corn tortilla chips piled high with warm jalapeño queso blanco, refried pinto beans, chunky guacamole, pico de gallo, sour cream, and sliced jalapeños.",
+            "tags": ["Crowd Favorite", "Loaded Sharing Plate", "Party Must-Have"],
+            "calories": "560 kcal",
+            "prepTime": "7 mins"
+          },
+          {
+            "id": "bit-06",
+            "name": "Korean Gochujang Crispy Cauliflower Bites",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "loaded-bites",
+            "description": "Crunchy tempura-battered cauliflower florets glazed in sweet & fiery fermented gochujang sauce, sprinkled with toasted sesame seeds and fresh scallions.",
+            "tags": ["Vegan Friendly", "Crunchy & Spicy", "K-Trend"],
+            "calories": "310 kcal",
+            "prepTime": "8 mins"
+          },
+          {
+            "id": "bit-07",
+            "name": "Dynamite Sriracha Prawn Poppers",
+            "diet": "non-veg",
+            "price": 420,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "loaded-bites",
+            "description": "Panko-crusted juicy king prawns fried to golden crispness, tossed in our signature creamy honey-sriracha dynamite sauce, served over shredded red cabbage slaw.",
+            "tags": ["Chef's Special", "Seafood Delight", "Crispy Prawns"],
+            "calories": "410 kcal",
+            "prepTime": "9 mins"
+          }
+        ]
+      },
+      {
+        "id": "artisanal-pizzas",
+        "name": "Hand-Stretched Artisanal Pizzas",
+        "icon": "Pizza",
+        "shortDesc": "48-hour cold-fermented sourdough crusts, San Marzano sauce & blistered high-heat perfection",
+        "items": [
+          {
+            "id": "piz-01",
+            "name": "The Classic Margherita Con Bufala",
+            "diet": "veg",
+            "price": 360,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "artisanal-pizzas",
+            "description": "Hand-crushed San Marzano plum tomatoes, torn fresh buffalo mozzarella, aromatic sweet Italian basil, and a generous drizzle of cold-pressed extra virgin olive oil on blistered leopard-spotted sourdough crust.",
+            "tags": ["Italian Classic", "Vegetarian", "Sourdough Crust"],
+            "calories": "680 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "piz-02",
+            "name": "Wild Truffle Mushroom Bianca",
+            "diet": "veg",
+            "price": 430,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "artisanal-pizzas",
+            "description": "Garlic-infused mascarpone white sauce base, roasted Himalayan shiitake, cremini and button mushrooms, smoked provolone, thyme leaves, and a fragrant white truffle drizzle.",
+            "tags": ["Chef's Signature", "Gourmet White Pizza", "Earthy Truffle"],
+            "calories": "740 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "piz-03",
+            "name": "Fiery Tandoori Chicken Tikka Pizza",
+            "diet": "non-veg",
+            "price": 460,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "artisanal-pizzas",
+            "description": "Charcoal-smoked boneless chicken tikka basted in Kashmiri red spices, spicy makhani sauce swirl, roasted green capsicum, charred red onions, and melted fresh mozzarella on hand-stretched sourdough.",
+            "tags": ["Chef's Signature", "Jammu Favorite", "Fusion Masterpiece"],
+            "calories": "820 kcal",
+            "prepTime": "14 mins"
+          },
+          {
+            "id": "piz-04",
+            "name": "Garden Pesto & Sundried Tomato Sourdough",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "artisanal-pizzas",
+            "description": "Housemade basil-walnut pesto base, sweet sundried cherry tomatoes, kalamata olives, marinated artichoke hearts, mozzarella fior di latte, and toasted pine nuts.",
+            "tags": ["Fresh & Herbaceous", "Pure Veg", "Artisan"],
+            "calories": "710 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "piz-05",
+            "name": "Smoky BBQ Pulled Chicken & Jalapeño Pizza",
+            "diet": "non-veg",
+            "price": 480,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "artisanal-pizzas",
+            "description": "Slow-smoked shredded chicken tossed in hickory bourbon BBQ glaze, pickled jalapeño coins, smoked gouda, mozzarella, caramelized red onions, and fresh cilantro leaves.",
+            "tags": ["Crowd Favorite", "Smoky & Sweet", "Hearty"],
+            "calories": "850 kcal",
+            "prepTime": "13 mins"
+          },
+          {
+            "id": "piz-06",
+            "name": "Four-Cheese Hot Honey Crisp Pizza",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "artisanal-pizzas",
+            "description": "Quattro formaggi harmony of mozzarella, gorgonzola blue cheese, aged parmesan, and smoked scamorza, finished tableside with house-infused chili hot honey drizzle.",
+            "tags": ["Chef's Special", "Sweet & Spicy", "Cheese Lovers"],
+            "calories": "790 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "piz-07",
+            "name": "Pepperoni & Spiced Lamb Chorizo Flatbread",
+            "diet": "non-veg",
+            "price": 520,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "artisanal-pizzas",
+            "description": "Crisp sourdough flatbread loaded with imported cured pepperoni slices, spiced minced lamb sausage crumble, rich tomato sugo, hot pepper flakes, and golden melted mozzarella.",
+            "tags": ["Meat Feast", "Signature Flatbread", "Bold Flavors"],
+            "calories": "890 kcal",
+            "prepTime": "14 mins"
+          }
+        ]
+      },
+      {
+        "id": "burgers-sliders-baos",
+        "name": "Smash Burgers, Sliders & Baos",
+        "icon": "Sandwich",
+        "shortDesc": "Lacy-edged smash patties, buttermilk fried chicken, pulled jackfruit & fluffy steamed lotus baos",
+        "items": [
+          {
+            "id": "brg-01",
+            "name": "The Raasta Double Smash Cheeseburger",
+            "diet": "non-veg",
+            "price": 380,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "burgers-sliders-baos",
+            "description": "Two 100g prime minced tender chicken patties smashed paper-thin on blazing cast iron for ultra-crispy caramelized lacy edges, layered with double melted English cheddar, house secret Raasta sauce, and sweet dill pickles inside a toasted butter brioche bun.",
+            "tags": ["Chef's Signature", "Double Patty", "Legendary Smash"],
+            "calories": "690 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "brg-02",
+            "name": "Crispy Buttermilk Herb Chicken Burger",
+            "diet": "non-veg",
+            "price": 360,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "burgers-sliders-baos",
+            "description": "Whole chicken thigh brined for 12 hours in buttermilk and garden herbs, dredged in seasoned cornmeal crust, fried to golden crunch, topped with creamy cabbage slaw, honey mustard, and house pickles in golden brioche.",
+            "tags": ["Crowd Favorite", "Super Crunchy", "Student Bestseller"],
+            "calories": "640 kcal",
+            "prepTime": "11 mins"
+          },
+          {
+            "id": "brg-03",
+            "name": "Slow-Braised Pulled Jackfruit Sliders (Trio)",
+            "diet": "veg",
+            "price": 310,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "burgers-sliders-baos",
+            "description": "Tender young raw jackfruit braised in hickory BBQ spices until melt-in-mouth shreddable, topped with tangy apple cider slaw and chipotle mayo in trio of warm slider buns.",
+            "tags": ["Chef's Special", "Plant-Based Hero", "Trio Sliders"],
+            "calories": "480 kcal",
+            "prepTime": "9 mins"
+          },
+          {
+            "id": "brg-04",
+            "name": "Spiced Cottage Cheese & Guacamole Smash Burger",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "burgers-sliders-baos",
+            "description": "Herb-crusted grilled malai paneer slab seasoned with peri-peri rub, topped with smashed hass avocado guacamole, crisp iceberg lettuce, beefsteak tomato, and smoked jalapeño cream.",
+            "tags": ["Pure Veg", "Rich & Creamy", "Guacamole Loaded"],
+            "calories": "580 kcal",
+            "prepTime": "9 mins"
+          },
+          {
+            "id": "brg-05",
+            "name": "Korean Fried Chicken Steamed Bao (Trio)",
+            "diet": "non-veg",
+            "price": 370,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "burgers-sliders-baos",
+            "description": "Three pillowy cloud-soft steamed lotus leaf bao buns stuffed with twice-fried chicken bites coated in sticky sweet-spicy gochujang glaze, pickled cucumber ribbons, and crushed peanuts.",
+            "tags": ["Chef's Signature", "Pillowy Baos", "Asian Street"],
+            "calories": "510 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "brg-06",
+            "name": "Crispy Teriyaki Tofu & Pickled Shiitake Bao (Trio)",
+            "diet": "veg",
+            "price": 330,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "burgers-sliders-baos",
+            "description": "Panko-fried organic silken tofu glazed in house dark teriyaki reduction, warm pickled shiitake mushrooms, spring onion curls, and spicy sriracha vegan mayo inside warm steamed baos.",
+            "tags": ["Vegan Friendly", "Soft & Crispy", "Umami Bomb"],
+            "calories": "440 kcal",
+            "prepTime": "9 mins"
+          }
+        ]
+      },
+      {
+        "id": "soul-bowls-pasta-sizzlers",
+        "name": "Soul Bowls, Pasta & Sizzlers",
+        "icon": "Flame",
+        "shortDesc": "Penne alla vodka, sizzling peri-peri iron platters, butter chicken rice bowls & street noodles",
+        "items": [
+          {
+            "id": "sou-01",
+            "name": "Penne Alla Vodka with Burrata Crown",
+            "diet": "veg",
+            "price": 410,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Artisanal bronze-cut penne tossed in a velvety pink tomato-cream reduction deglazed with botanical extract, fresh garlic, chili flakes, topped with a whole torn fresh burrata ball and basil oil.",
+            "tags": ["Chef's Signature", "Italian Indulgence", "Burrata Crown"],
+            "calories": "620 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "sou-02",
+            "name": "Smoked Garlic & Creamy Truffle Fettuccine",
+            "diet": "veg",
+            "price": 430,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Silken handmade fettuccine ribbons smothered in roasted garlic and aged parmesan cream sauce, sauteed button mushrooms, cracked black peppercorn, and white truffle oil essence.",
+            "tags": ["Pure Veg", "Rich & Luxurious", "Truffle Pasta"],
+            "calories": "670 kcal",
+            "prepTime": "12 mins"
+          },
+          {
+            "id": "sou-03",
+            "name": "Spicy Peri-Peri Cottage Cheese Sizzler",
+            "diet": "veg",
+            "price": 460,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Hissing cast-iron platter presenting char-grilled peri-peri spiced paneer steaks over herb-buttered basmati pilaf, accompanied by sauteed seasonal greens, golden french fries, and bubbling smoked tomato pepper gravy.",
+            "tags": ["Chef's Signature", "Table Sizzler", "Complete Meal"],
+            "calories": "780 kcal",
+            "prepTime": "15 mins"
+          },
+          {
+            "id": "sou-04",
+            "name": "Jamaican Jerk Sizzling Chicken Platter",
+            "diet": "non-veg",
+            "price": 520,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "A theatrical sizzling cast-iron skillet featuring boneless grilled jerk-rubbed chicken breast, garlic-parsley rice, butter-glazed baby carrots & broccoli, crispy onion rings, and smoking brown pepper mushroom demiglace.",
+            "tags": ["Chef's Signature", "High Protein", "Crowd Magnet"],
+            "calories": "820 kcal",
+            "prepTime": "16 mins"
+          },
+          {
+            "id": "sou-05",
+            "name": "The Legendary Butter Chicken Rice Bowl",
+            "diet": "non-veg",
+            "price": 420,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Tender tandoor-roasted chicken tikka simmered in our rich 12-hour makhani gravy infused with white butter, fenugreek leaves (kasuri methi), and honey, served over fragrant saffron jeera rice with pickled shallots.",
+            "tags": ["Crowd Favorite", "North Indian Soul Food", "Hearty Bowl"],
+            "calories": "750 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "sou-06",
+            "name": "Bangkok Wok-Tossed Chili Garlic Street Noodles (Veg)",
+            "diet": "veg",
+            "price": 310,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Wok-scorched wheat noodles tossed over screaming flame with burnt garlic cloves, bird's eye chilies, shredded pak choi, bell peppers, baby corn, and dark mushroom soy sauce for that unmistakable wok hei aroma.",
+            "tags": ["Crowd Favorite", "Wok Hei", "Late Night Comfort"],
+            "calories": "460 kcal",
+            "prepTime": "8 mins"
+          },
+          {
+            "id": "sou-07",
+            "name": "Bangkok Wok-Tossed Chili Garlic Street Noodles (Chicken)",
+            "diet": "non-veg",
+            "price": 370,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "High-flame wok tossed noodles loaded with marinated shredded chicken, scrambled egg ribbons, crunchy vegetables, burnt garlic, and spicy Thai chili garlic drizzle.",
+            "tags": ["High Protein", "Wok Hei", "Student Favorite"],
+            "calories": "560 kcal",
+            "prepTime": "9 mins"
+          },
+          {
+            "id": "sou-08",
+            "name": "Chimichurri Grilled Sole Fish Sizzler",
+            "diet": "non-veg",
+            "price": 590,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "soul-bowls-pasta-sizzlers",
+            "description": "Fresh river sole fillet marinated in tangy Argentinean chimichurri herbs and garlic, pan-seared to a golden crust, served on a smoking iron sizzler with lemon herb butter rice, roasted cherry tomatoes, and grilled zucchini.",
+            "tags": ["Chef's Special", "Seafood Masterpiece", "Omega-3 Rich"],
+            "calories": "590 kcal",
+            "prepTime": "16 mins"
+          }
+        ]
+      },
+      {
+        "id": "decadent-desserts",
+        "name": "Decadent Desserts",
+        "icon": "IceCream",
+        "shortDesc": "Warm skillet cookies, golden cinnamon churros, layered banoffee jars & molten cakes",
+        "items": [
+          {
+            "id": "des-01",
+            "name": "Golden Cinnamon Churro Bites with Spiced Mexican Chocolate",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "decadent-desserts",
+            "description": "Eight freshly fried, crisp fluted Spanish churro bites dusted in aromatic cinnamon sugar, accompanied by a warm dip pot of dark Belgian chocolate ganache infused with a whisper of chili and sea salt.",
+            "tags": ["Crowd Favorite", "Crisp & Warm", "Perfect Sharing"],
+            "calories": "410 kcal",
+            "prepTime": "7 mins"
+          },
+          {
+            "id": "des-02",
+            "name": "Banoffee Pie in a Mason Jar",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "decadent-desserts",
+            "description": "Deconstructed English classic layered in chilled glass: buttery digestive biscuit crumb, slow-simmered rich dulce de leche dulce, sliced ripe bananas, whipped Madagascar vanilla cream, and dark chocolate shavings.",
+            "tags": ["Chef's Signature", "Classic Comfort", "Instagram Favorite"],
+            "calories": "460 kcal",
+            "prepTime": "4 mins"
+          },
+          {
+            "id": "des-03",
+            "name": "Cast-Iron Skillet Warm Choc-Chip Cookie with Vanilla Bean Gelato",
+            "diet": "veg",
+            "price": 290,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "decadent-desserts",
+            "description": "Baked to order in an individual 5-inch cast iron skillet: gooey molten Belgian dark and milk chocolate chip cookie dough, topped immediately with a generous scoop of artisanal vanilla bean gelato and warm fudge drizzle.",
+            "tags": ["Chef's Signature", "Baked To Order", "Warm & Cold Bliss"],
+            "calories": "580 kcal",
+            "prepTime": "10 mins"
+          },
+          {
+            "id": "des-04",
+            "name": "Nutella & Toasted Hazelnut Sourdough Brioche",
+            "diet": "veg",
+            "price": 270,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "decadent-desserts",
+            "description": "Thick-cut golden brioche griddled with pure butter, smothered in warm molten Nutella spread, crowned with crushed roasted hazelnuts and sliced fresh strawberries.",
+            "tags": ["Pure Veg", "Nutella Overload", "Sweet Tooth"],
+            "calories": "520 kcal",
+            "prepTime": "6 mins"
+          },
+          {
+            "id": "des-05",
+            "name": "Dark Chocolate Molten Lava Dome with Raspberry Coulis",
+            "diet": "veg",
+            "price": 310,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "decadent-desserts",
+            "description": "Individual 70% single-origin dark chocolate cake with an oozing liquid chocolate center, dusted with gold shimmer, paired with tart house raspberry coulis and clotted cream.",
+            "tags": ["Chef's Special", "Molten Lava", "Luxurious Finish"],
+            "calories": "540 kcal",
+            "prepTime": "10 mins"
+          }
+        ]
+      }
+    ]
+  },
+  "techStackRecommendation": {
+    "recommendedTier": "Tier 2: React + Vite + Tailwind CSS",
+    "evaluation": {
+      "tier1Analysis": {
+        "tier": "Tier 1: Vanilla HTML/CSS/JavaScript",
+        "pros": "Zero build dependencies, single static HTML file deployment, minimal upfront configuration.",
+        "cons": "Severely limits the dynamic experience required for a high-energy urban cafe and lounge. Hand-rolling multi-category tab switching, dietary filters (Veg, Non-Veg, Chef's Special, Crowd Favorite, Under ₹300 Student filter), live instantaneous keyword search across 38+ menu items, reactive shopping bag / reservation modal state, and animated student ID toggle leads to bloated DOM manipulation scripts, race conditions, and poor mobile touch responsiveness."
+      },
+      "tier2Analysis": {
+        "tier": "Tier 2: React + Vite + Tailwind CSS + Lucide Icons + Framer Motion",
+        "pros": "1. Reactive Client-Side State: Instant zero-latency dish filtering by category, dietary toggle (🟢 Veg / 🔴 Non-Veg), badge filters (🔥 Crowd Favorite, ⭐ Chef's Special), and student budget selector (<₹300). 2. High-Converting Interactive Workflows: Floating mobile tray for quick order aggregation, live table reservation modal with instant time-slot validation, and interactive music gig schedule accordion. 3. Modern Design System Implementation: Tailwind CSS utility architecture allows pixel-perfect implementation of the Bohemian Timber & Neon Velvet color tokens (`#0F1110`, `#1E2220`, `#F59E0B`, `#10B981`, `#F43F5E`) with glowing neon borders and dark-mode optimization. 4. Blazing Speed & Mobile Optimization: Vite tree-shaking compiles down to a sub-90KB gzipped bundle delivering <0.7s First Contentful Paint and 99/100 Lighthouse performance on mobile 4G networks."
+      }
+    },
+    "verdict": "Adopt Tier 2 (React + Vite + Tailwind CSS). Raasta Jammu's target demographic — tech-savvy University of Jammu students, young Bahu Plaza professionals, and music event-goers — expects a fluid, app-like, ultra-responsive digital interface with seamless filtering, lightning search, and one-tap reservation capabilities."
+  }
+}
