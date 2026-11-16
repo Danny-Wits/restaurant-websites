@@ -33,12 +33,12 @@ export default function DishDetailModal({ dish, onClose, onReserveForDish }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md transition-all duration-300"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/80 backdrop-blur-md transition-all duration-300 w-full max-w-full"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#1E2220] border border-amber-500/30 shadow-[0_20px_60px_rgba(0,0,0,0.85)] flex flex-col no-scrollbar"
+        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#1E2220] border border-amber-500/30 shadow-[0_20px_60px_rgba(0,0,0,0.85)] flex flex-col no-scrollbar max-w-full"
       >
         {/* Close Button */}
         <button

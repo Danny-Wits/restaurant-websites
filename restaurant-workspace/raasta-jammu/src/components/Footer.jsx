@@ -21,8 +21,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#0A0C0B] border-t border-amber-500/20 pt-16 pb-24 md:pb-16 text-zinc-400">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative bg-[#0A0C0B] border-t border-amber-500/20 pt-16 pb-24 md:pb-16 text-zinc-400 w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full max-w-full">
         
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">

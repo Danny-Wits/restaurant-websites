@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ki &amp; Kia's Cafe &amp; Kitchen | Talab Tillo, Canal Road, Jammu</title>
+  <meta name="description" content="A serene modern sanctuary in Jammu for artisanal third-wave coffee, 48-hr cold fermented sourdough pizzas, handcrafted pastas, and wholesome family dining along Canal Road." />
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230C0E0D' stroke='%23CCA478' stroke-width='2'/%3E%3Ctext x='50' y='58' font-family='serif' font-size='32' fill='%23CCA478' text-anchor='middle'%3EK%26K%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Ambient Backdrop Glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Minimal Sticky Header -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-logo" aria-label="Ki & Kia's Home">
+        <span class="brand-mark">KI &amp; KIA'S</span>
+        <span class="brand-sub">CAFE &amp; KITCHEN • JAMMU</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#story" class="nav-link">Our Story</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#location" class="nav-link">Location &amp; Hours</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+911912554488" class="phone-link desktop-only" aria-label="Call Restaurant">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>0191 255 4488</span>
+        </a>
+        <button class="btn btn-outline" id="openReserveBtnNav">Reserve Table</button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-inner">
+        <nav class="mobile-nav-links">
+          <a href="#hero" class="mobile-nav-link">Home</a>
+          <a href="#story" class="mobile-nav-link">Our Story</a>
+          <a href="#highlights" class="mobile-nav-link">Craft &amp; Pillars</a>
+          <a href="#menu" class="mobile-nav-link">Artisanal Menu</a>
+          <a href="#location" class="mobile-nav-link">Location &amp; Hours</a>
+        </nav>
+        <div class="mobile-drawer-cta">
+          <button class="btn btn-primary w-full" id="openReserveBtnMobile">Reserve Table</button>
+          <a href="tel:+911912554488" class="btn btn-outline w-full mt-2">Call +91 191 255 4488</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            <span>TALAB TILLO • CANAL ROAD, JAMMU</span>
+          </div>
+
+          <h1 class="hero-title">A Sanctuary for Slow Sips &amp; Family Gatherings</h1>
+
+          <p class="hero-description">
+            Step into Jammu's quietest retreat along Canal Road — where third-wave espresso craft, 48-hour cold-fermented sourdough pizzas, and wholesome Mediterranean flavors meet warm, timeless Dogra hospitality.
+          </p>
+
+          <!-- Live Status Indicator -->
+          <div class="hero-status-pill" id="liveStatusContainer">
+            <span class="status-pulse-dot" id="liveStatusDot"></span>
+            <span class="status-text" id="liveStatusText">Checking live Jammu hours...</span>
+            <span class="status-badge-time">10:30 AM – 11:00 PM</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              <span>Explore Gastronomy</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <button class="btn btn-ghost" id="heroReserveBtn">
+              <span>Reserve a Table</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </button>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">4.8 ★</span>
+              <span class="stat-label">Google Rating (1,120+ reviews)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">48-Hr</span>
+              <span class="stat-label">Cold Fermented Sourdough</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Artisan Single-Origin Arabica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85" alt="Ki and Kia's Cafe Interior Ambiance" class="hero-img" loading="eager" />
+            <div class="image-overlay-card">
+              <span class="card-tag">Canal Road Sanctuary</span>
+              <p class="card-caption">Sunlit glasshouse seating by day, candlelit calm by night.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Row -->
+    <section class="highlights-section" id="highlights">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">QUIET LUXURY &amp; CRAFT</span>
+          <h2 class="section-title">The Three Pillars of Ki &amp; Kia's</h2>
+          <p class="section-subtitle">A mindful dining approach designed for peaceful conversations and pure flavors.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-top">
+              <span class="highlight-num">01</span>
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              </div>
+            </div>
+            <h3 class="highlight-title">Artisanal Coffee Laboratory</h3>
+            <p class="highlight-desc">Directly traded single-estate Arabica beans from Chikmagalur estates. Hand-pulled cortados infused with Kishtwar saffron and 16-hour hibiscus cold brews.</p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-top">
+              <span class="highlight-num">02</span>
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"></circle><path d="M8 12s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+              </div>
+            </div>
+            <h3 class="highlight-title">48-Hour Stone-Baked Sourdough</h3>
+            <p class="highlight-desc">Patient cold fermentation yields an airy, fragrant blistered crust. Crafted with natural levain, Italian San Marzano tomatoes, and artisanal fior di latte.</p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-top">
+              <span class="highlight-num">03</span>
+              <div class="highlight-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+            </div>
+            <h3 class="highlight-title">Multi-Generational Haven</h3>
+            <p class="highlight-desc">Acoustic-softened lounges, lush glasshouse garden patio, dedicated valet, and separate vegetarian prep station to welcome Jammu families with dignity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+      <div class="container story-inner">
+        <div class="story-image-col">
+          <div class="story-image-wrap">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Warm Dining Room Atmosphere" loading="lazy" class="story-img" />
+            <div class="story-stat-card">
+              <span class="stat-big">Talab Tillo</span>
+              <span class="stat-small">Canal Road’s Premier Contemporary Table</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-content-col">
+          <span class="section-eyebrow">OUR HERITAGE &amp; INTENTION</span>
+          <h2 class="section-title">Where Mindful Dining Meets Dogra Hospitality</h2>
+          <p class="story-lead">
+            Founded on Canal Road with a simple conviction: the greatest meals are unhurried, honest, and shared in comforting surroundings.
+          </p>
+          <div class="story-body">
+            <p>
+              In a world hurried by screens and haste, Ki &amp; Kia's was imagined as a calm harbor. Framed by leafy views of the canal walkway, our kitchen bridges contemporary European culinary craft with Jammu's legendary warmth.
+            </p>
+            <p>
+              We celebrate clean provenance: our saffron travels straight from Kishtwar's high valleys, our herbs are harvested fresh every sunrise, and our chefs hand-roll pasta ribbons from durum wheat flour daily.
+            </p>
+          </div>
+
+          <div class="story-signature">
+            <div class="signature-quote">
+              "We built Ki &amp; Kia's to give our city a place where morning coffee feels like poetry and evening dinners feel like coming home."
+            </div>
+            <div class="signature-author">— The Founders, Ki &amp; Kia's Jammu</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-eyebrow">CURATED GASTRONOMY</span>
+          <h2 class="section-title">The Seasonal Kitchen &amp; Cafe Menu</h2>
+          <p class="section-subtitle">28 hand-crafted dishes and artisanal brews prepared with organic ingredients and zero shortcuts.</p>
+        </div>
+
+        <!-- Sticky Menu Filter & Controls -->
+        <div class="menu-controls-wrapper" id="menuControls">
+          <!-- Search & Dietary Bar -->
+          <div class="menu-toolbar">
+            <div class="search-input-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="menuSearchInput" placeholder="Search dishes, ingredients, saffron, sourdough, pasta..." aria-label="Search menu items" />
+              <button class="search-clear-btn" id="searchClearBtn" aria-label="Clear search" style="display: none;">×</button>
+            </div>
+
+            <div class="dietary-filter-group" role="group" aria-label="Dietary preferences">
+              <button class="filter-pill active" data-diet="all">All Items</button>
+              <button class="filter-pill" data-diet="veg">
+                <span class="diet-dot veg-dot"></span> Vegetarian
+              </button>
+              <button class="filter-pill" data-diet="non-veg">
+                <span class="diet-dot non-veg-dot"></span> Non-Veg
+              </button>
+              <button class="filter-pill" data-diet="special">
+                <span class="diet-star">★</span> Chef's Choice
+              </button>
+            </div>
+          </div>
+
+          <!-- Sticky Category Nav Tabs -->
+          <nav class="category-tabs-nav" id="categoryTabsNav" aria-label="Menu categories">
+            <button class="cat-tab active" data-category="all">All Categories</button>
+            <button class="cat-tab" data-category="coffee-beverages">Coffee &amp; Elixirs</button>
+            <button class="cat-tab" data-category="all-day-breakfast">Brunch &amp; Brioche</button>
+            <button class="cat-tab" data-category="small-plates">Small Plates</button>
+            <button class="cat-tab" data-category="sourdough-pizzas">Artisan Pizzas</button>
+            <button class="cat-tab" data-category="pastas-and-bowls">Pastas &amp; Bowls</button>
+            <button class="cat-tab" data-category="desserts">Patisserie &amp; Bakes</button>
+          </nav>
+        </div>
+
+        <!-- Menu Active Filter Info Bar -->
+        <div class="menu-meta-bar">
+          <span id="menuCountText" class="menu-count-text">Showing 28 items</span>
+          <span class="menu-price-note">All prices are in Indian Rupees (₹) • Taxes as applicable</span>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuItemsGrid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <!-- Empty Results Message -->
+        <div class="empty-menu-state" id="emptyMenuState" style="display: none;">
+          <div class="empty-icon">🍃</div>
+          <h3>No matching culinary items found</h3>
+          <p>Try searching for different ingredients like "saffron", "truffle", "pizzas", or reset filters.</p>
+          <button class="btn btn-outline mt-4" id="resetFiltersBtn">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Hours Section -->
+    <section class="location-section" id="location">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-card">
+            <span class="section-eyebrow">VISIT KI &amp; KIA'S</span>
+            <h2 class="location-title">Talab Tillo / Canal Road Sanctuary</h2>
+            
+            <div class="location-detail-list">
+              <div class="location-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <h4 class="detail-label">Address &amp; Landmark</h4>
+                  <p class="detail-val">Opposite Canal View Walkway, Main Talab Tillo Road, Near Anand Nagar, Jammu, J&amp;K 180002</p>
+                  <span class="detail-sub">2 mins from Canal Head Bridge • Easy reach from Jewel Chowk &amp; Bhagwati Nagar</span>
+                </div>
+              </div>
+
+              <div class="location-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <h4 class="detail-label">Operating Hours</h4>
+                  <p class="detail-val">Monday – Sunday: <strong>10:30 AM – 11:00 PM</strong></p>
+                  <span class="detail-sub">Weekend Brunch: 10:30 AM – 03:00 PM • Kitchen Closes 10:30 PM Daily</span>
+                </div>
+              </div>
+
+              <div class="location-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <h4 class="detail-label">Direct Reservations &amp; WhatsApp</h4>
+                  <p class="detail-val"><a href="tel:+911912554488" class="link-gold">+91 191 255 4488</a> / <a href="https://wa.me/919419188234" target="_blank" rel="noopener" class="link-gold">+91 94191 88234</a></p>
+                  <span class="detail-sub">Direct assistance for family banquets, celebrations &amp; high tea tables</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-action-btns">
+              <a href="https://maps.google.com/?q=Ki+and+Kias+Talab+Tillo+Canal+Road+Jammu" target="_blank" rel="noopener" class="btn btn-primary">
+                <span>Open Google Maps</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              </a>
+              <button class="btn btn-outline" id="locationReserveBtn">Reserve a Table</button>
+            </div>
+          </div>
+
+          <div class="amenities-card">
+            <h3 class="amenities-title">Comfort &amp; Amenities</h3>
+            <ul class="amenities-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated Valet &amp; On-Site Family Parking</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Separate Pure Vegetarian Cooking &amp; Prep Station</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Air-Conditioned Glasshouse Garden Patio</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Wheelchair Ramp &amp; Generous Walkways</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High-Speed Fiber Wi-Fi &amp; Laptop Friendly Sockets</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Curated Kids High Chairs &amp; Gentle Flavors</span>
+              </li>
+            </ul>
+
+            <div class="jammu-quote-box">
+              <p>"Canal Road has long waited for a place that respects both modern culinary craft and quiet family conversations. Ki &amp; Kia's is that rare gem."</p>
+              <span>— Jammu Food &amp; Heritage Digest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col brand-col">
+        <span class="brand-mark">KI &amp; KIA'S</span>
+        <span class="brand-sub">TALAB TILLO • CANAL ROAD, JAMMU</span>
+        <p class="footer-desc">A serene cafe and kitchen crafted for slow mornings, artisanal pizzas, and cherished family evenings in the City of Temples.</p>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul>
+          <li><a href="#hero">Sanctuary Home</a></li>
+          <li><a href="#story">Our Philosophy</a></li>
+          <li><a href="#menu">Artisanal Menu</a></li>
+          <li><a href="#location">Hours &amp; Landmarks</a></li>
+          <li><a href="#location">Private Celebrations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contacts-col">
+        <h4 class="footer-heading">Direct Contact</h4>
+        <p>Main Talab Tillo Road, Canal Road, Jammu - 180002</p>
+        <p>Phone: <a href="tel:+911912554488">+91 191 255 4488</a></p>
+        <p>Mobile: <a href="tel:+919419188234">+91 94191 88234</a></p>
+        <p>Email: hello@kiandkias.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Ki &amp; Kia's Cafe &amp; Kitchen. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <span>Jammu Culinary Collective</span>
+          <span>•</span>
+          <a href="/dist/index.html" class="hub-link">Back to Restaurant Hub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Action Bar (<= 768px) -->
+  <aside class="mobile-action-bar" aria-label="Quick Mobile Actions">
+    <a href="tel:+911912554488" class="mobile-act-btn" aria-label="Call Ki & Kia's">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="#menu" class="mobile-act-btn" aria-label="Jump to Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+      <span>Menu</span>
+    </a>
+    <a href="https://maps.google.com/?q=Ki+and+Kias+Talab+Tillo+Canal+Road+Jammu" target="_blank" rel="noopener" class="mobile-act-btn" aria-label="Open Google Maps">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+      <span>Directions</span>
+    </a>
+    <button class="mobile-act-btn primary-action" id="mobileReserveBarBtn" aria-label="Book Table">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+      <span>Book Table</span>
+    </button>
+  </aside>
+
+  <!-- Modal 1: Dish / Beverage Quick Details Modal -->
+  <div class="modal-backdrop" id="dishModal" aria-hidden="true" role="dialog" aria-labelledby="modalDishTitle">
+    <div class="modal-dialog dish-modal-dialog">
+      <button class="modal-close-btn" id="closeDishModalBtn" aria-label="Close details">×</button>
+      <div class="dish-modal-content">
+        <div class="dish-modal-image-col">
+          <img src="" alt="" id="modalDishImage" class="modal-img" />
+          <div class="modal-image-badges" id="modalImageBadges"></div>
+        </div>
+        <div class="dish-modal-info-col">
+          <div class="modal-cat-tag" id="modalDishCategory">Category</div>
+          <h2 class="modal-title" id="modalDishTitle">Dish Name</h2>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalDishPrice">₹000</span>
+            <span class="modal-diet-badge" id="modalDishDiet"></span>
+          </div>
+          <p class="modal-desc" id="modalDishDescription">Description</p>
+          
+          <div class="modal-specs-grid">
+            <div class="spec-cell">
+              <span class="spec-label">Allergens</span>
+              <span class="spec-val" id="modalDishAllergens">—</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-label">Prep Time</span>
+              <span class="spec-val" id="modalDishPrep">—</span>
+            </div>
+            <div class="spec-cell">
+              <span class="spec-label">Nutritional Est.</span>
+              <span class="spec-val" id="modalDishCalories">—</span>
+            </div>
+          </div>
+
+          <div class="modal-tags-row" id="modalDishTags"></div>
+
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modalReserveWithDishBtn">Reserve Table for this Dish</button>
+            <button class="btn btn-ghost" id="modalShareDishBtn">Share Dish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Table Reservation Modal with Instant Confirmation Preview -->
+  <div class="modal-backdrop" id="reserveModal" aria-hidden="true" role="dialog" aria-labelledby="reserveModalTitle">
+    <div class="modal-dialog reserve-modal-dialog">
+      <button class="modal-close-btn" id="closeReserveModalBtn" aria-label="Close reservation modal">×</button>
+      
+      <div id="reserveFormView">
+        <div class="modal-header">
+          <span class="section-eyebrow">TALAB TILLO • CANAL ROAD</span>
+          <h2 class="modal-title" id="reserveModalTitle">Table Reservation</h2>
+          <p class="modal-subtitle">Instant reservation hold with zero booking fee. Confirmation generated immediately.</p>
+        </div>
+
+        <form id="reservationForm" class="reserve-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName">Full Name *</label>
+              <input type="text" id="resName" required placeholder="e.g. Vikram Sharma" />
+            </div>
+            <div class="form-group">
+              <label for="resPhone">Phone Number *</label>
+              <input type="tel" id="resPhone" required placeholder="e.g. +91 94191 XXXXX" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests">Number of Guests *</label>
+              <select id="resGuests" required>
+                <option value="1 Guest">1 Guest (Solo / Remote Work)</option>
+                <option value="2 Guests" selected>2 Guests (Intimate Dining)</option>
+                <option value="3-4 Guests">3 – 4 Guests (Family Table)</option>
+                <option value="5-6 Guests">5 – 6 Guests (Family Table)</option>
+                <option value="7-10 Guests">7 – 10 Guests (Large Group)</option>
+                <option value="10+ Guests">10+ Guests (Celebration Banquet)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resDate">Preferred Date *</label>
+              <input type="date" id="resDate" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resTime">Preferred Time Slot *</label>
+              <select id="resTime" required>
+                <option value="11:00 AM">11:00 AM (Morning Coffee &amp; Brunch)</option>
+                <option value="12:30 PM">12:30 PM (Lunch Gathering)</option>
+                <option value="02:00 PM">02:00 PM (Afternoon Lounge)</option>
+                <option value="04:30 PM">04:30 PM (High Tea &amp; Slices)</option>
+                <option value="06:30 PM">06:30 PM (Early Evening Dinner)</option>
+                <option value="08:00 PM" selected>08:00 PM (Prime Dinner)</option>
+                <option value="09:30 PM">09:30 PM (Late Sips &amp; Pizzas)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="resArea">Seating Atmosphere *</label>
+              <select id="resArea" required>
+                <option value="Glasshouse Garden Patio">Glasshouse Garden Patio (Sunlit &amp; Leafy)</option>
+                <option value="Cozy Indoor Lounge" selected>Cozy Indoor Lounge (Quiet &amp; Air-Conditioned)</option>
+                <option value="Private Family Alcove">Private Family Alcove (Spacious &amp; Discreet)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resSpecial">Special Occasion or Dietary Notes (Optional)</label>
+            <input type="text" id="resSpecial" placeholder="e.g. Birthday celebration, High chair needed, Jain friendly prep" />
+          </div>
+
+          <div class="reserve-form-submit">
+            <button type="submit" class="btn btn-primary w-full">
+              <span>Generate Reservation Confirmation</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </button>
+            <p class="reserve-guarantee">✨ Instant digital pass. We will hold your table for 15 minutes past scheduled time.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Instant Confirmation Pass View -->
+      <div id="reserveConfirmationView" class="confirmation-view" style="display: none;">
+        <div class="confirm-badge">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CCA478" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <span class="confirm-eyebrow">TABLE RESERVATION CONFIRMED</span>
+        <h2 class="confirm-title">We Look Forward to Welcoming You</h2>
+        <p class="confirm-subtitle">Your table at Ki &amp; Kia's Canal Road has been reserved.</p>
+
+        <!-- Pass Card -->
+        <div class="digital-pass-card">
+          <div class="pass-header">
+            <div>
+              <span class="pass-brand">KI &amp; KIA'S</span>
+              <span class="pass-location">TALAB TILLO / CANAL ROAD</span>
+            </div>
+            <div class="pass-code" id="passCode">KK-8921</div>
+          </div>
+
+          <div class="pass-body">
+            <div class="pass-row">
+              <div class="pass-field">
+                <span class="pass-lbl">Guest Name</span>
+                <span class="pass-val" id="passGuestName">Vikram Sharma</span>
+              </div>
+              <div class="pass-field">
+                <span class="pass-lbl">Party Size</span>
+                <span class="pass-val" id="passPartySize">2 Guests</span>
+              </div>
+            </div>
+
+            <div class="pass-row">
+              <div class="pass-field">
+                <span class="pass-lbl">Date &amp; Time</span>
+                <span class="pass-val" id="passDateTime">Today • 8:00 PM</span>
+              </div>
+              <div class="pass-field">
+                <span class="pass-lbl">Seating Zone</span>
+                <span class="pass-val" id="passSeating">Cozy Indoor Lounge</span>
+              </div>
+            </div>
+
+            <div class="pass-notes" id="passNotesRow">
+              <span class="pass-lbl">Special Notes</span>
+              <span class="pass-val" id="passNotes">None</span>
+            </div>
+          </div>
+
+          <div class="pass-footer">
+            <span>Show this digital card upon arrival • Valet assistance on Canal Road</span>
+          </div>
+        </div>
+
+        <div class="confirmation-actions">
+          <a href="#" id="passWhatsAppBtn" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>Forward to WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </a>
+          <button class="btn btn-outline" id="resetReserveFormBtn">Book Another Table</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

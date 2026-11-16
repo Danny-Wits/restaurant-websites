@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Open Cafe &amp; Dining | Rooftop Sky Terrace &bull; Bahu Plaza, Jammu</title>
+  <meta name="description" content="Jammu's premier al fresco rooftop restaurant atop Bahu Plaza. Panoramic Tawi River & Bahu Fort skyline views, wood-fired pizzas, robata charcoal grill, and sunset mixology." />
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient celestial glow -->
+  <div class="ambient-sky-glow" aria-hidden="true"></div>
+
+  <!-- Sticky Top Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-monogram">
+        <span class="monogram-emblem">O</span>
+        <div class="brand-text">
+          <span class="brand-title">Open Cafe &amp; Dining</span>
+          <span class="brand-subtitle">Rooftop &bull; Bahu Plaza Jammu</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#story" class="nav-link">The Horizon</a>
+        <a href="#highlights" class="nav-link">Rooftop Pillars</a>
+        <a href="#menu" class="nav-link">Sky Menu</a>
+        <a href="#location" class="nav-link">Rooftop &amp; Hours</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-indicator" id="liveStatusBadge" title="Live status on Bahu Plaza rooftop">
+          <span class="status-dot"></span>
+          <span class="status-label">Open Now</span>
+        </div>
+        <button class="btn btn-outline" id="openReserveBtn" onclick="openReservationModal()">
+          <span>Reserve Rooftop</span>
+        </button>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile drawer -->
+    <div class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="#story" onclick="closeMobileNav()">The Horizon</a>
+      <a href="#highlights" onclick="closeMobileNav()">Rooftop Pillars</a>
+      <a href="#menu" onclick="closeMobileNav()">Sky Menu</a>
+      <a href="#location" onclick="closeMobileNav()">Rooftop &amp; Hours</a>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-primary w-full" onclick="closeMobileNav(); openReservationModal();">
+          Book Rooftop Table
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-pin">✨</span>
+          <span>Level 5 Rooftop &bull; Bahu Plaza &bull; Jammu</span>
+          <span class="eyebrow-divider">•</span>
+          <span>Panoramic Tawi &amp; Fort Views</span>
+        </div>
+        <h1 class="hero-title">Panoramic Skylines, Starlit Pergolas &amp; Culinary Alchemy</h1>
+        <p class="hero-subtext">
+          Al fresco terrace dining overlooking the winding River Tawi and illuminated Bahu Fort. Savor wood-fired Neapolitan pizzas, robata charcoal tapas, and sunset mixology under Jammu's evening sky.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>Explore Rooftop Menu</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+          </a>
+          <button class="btn btn-secondary" onclick="openReservationModal('Skyline Bahu Fort Edge Table')">
+            <span>Book Skyline Table</span>
+          </button>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-val">270°</span>
+            <span class="metric-lbl">Panoramic Skyline View</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-val">450°C</span>
+            <span class="metric-lbl">Wood-Fired Hearth Oven</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-val">04:30 PM</span>
+            <span class="metric-lbl">Golden Sunset Aperitivo</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-val">4.8 ★</span>
+            <span class="metric-lbl">1,450+ Diners Rated</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Row -->
+    <section class="highlights-section" id="highlights">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">The Elevated Experience</span>
+          <h2 class="section-title">The Four Pillars of Sky Dining</h2>
+          <p class="section-lead">A refined convergence of architectural openness, panoramic mountain vistas, and modern woodfire gastronomy.</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="card-icon-wrap">
+              <span class="card-num">01</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+            </div>
+            <h3>Bahu Fort &amp; River Panorama</h3>
+            <p>Unobstructed sightlines stretching across the River Tawi basin to the 3,000-year-old Bahu Fort glowing in golden floodlights as darkness sets over Jammu.</p>
+            <span class="card-footer-pill">Skyline Vistas</span>
+          </div>
+
+          <div class="highlight-card">
+            <div class="card-icon-wrap">
+              <span class="card-num">02</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+            </div>
+            <h3>Wood-Fired Neapolitan Oven</h3>
+            <p>Hand-built stone oven blazing with seasoned wood at 450°C. 48-hour fermented artisanal dough yielding blistered leopard-spotted crusts with creamy Italian burrata.</p>
+            <span class="card-footer-pill">Stone Hearth</span>
+          </div>
+
+          <div class="highlight-card">
+            <div class="card-icon-wrap">
+              <span class="card-num">03</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            </div>
+            <h3>Al Fresco Starlit Pergola</h3>
+            <p>Climate-responsive rooftop architecture with automated mist cooling during balmy summer evenings and roaring brass fire pits during crisp Himalayan winters.</p>
+            <span class="card-footer-pill">All-Season Terrace</span>
+          </div>
+
+          <div class="highlight-card">
+            <div class="card-icon-wrap">
+              <span class="card-num">04</span>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m19 3-4 8H9L5 3h14zM12 11v8m-4 2h8"/></svg>
+            </div>
+            <h3>Sunset Botanical Mixology</h3>
+            <p>Zero-proof crafted aperitifs, cold-pressed Jammu pomegranate shrubs, smoked mountain rosemary tonics, and color-shifting butterfly pea elixirs.</p>
+            <span class="card-footer-pill">Crafted Aperitivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="story-section" id="story">
+      <div class="section-container">
+        <div class="story-grid">
+          <div class="story-content">
+            <span class="section-tag">The Rooftop Sanctuary</span>
+            <h2 class="section-title">Where Historic Jammu Meets Celestial Dining</h2>
+            <p class="story-lead">
+              High above the commercial energy of Bahu Plaza, the air cools, the skyline widens, and time decelerates.
+            </p>
+            <p class="story-body">
+              Open Cafe &amp; Dining was designed to honor Jammu’s geography. To our east lies the legendary Bahu Fort, bathed in amber radiance each night; below us whispers the historic River Tawi; and on clear twilight hours, the silhouette of the Trikuta mountains watches over the horizon.
+            </p>
+            <p class="story-body">
+              Our culinary philosophy centers on fire, smoke, and freshness. Communal tapas for the center of the table, blistering Neapolitan pies right from the hearth, delicate Pan-Asian dim sums, and tender slow-braised Kashmiri shank — all accompanied by crafted zero-proof mixology.
+            </p>
+            <div class="story-badges">
+              <span class="badge-item">✓ 270° Panoramic Skyline</span>
+              <span class="badge-item">✓ Dedicated Pure Veg Station</span>
+              <span class="badge-item">✓ Valet &amp; High-Speed Elevator</span>
+              <span class="badge-item">✓ Sunset Acoustic Soundscapes</span>
+            </div>
+          </div>
+          <div class="story-visual">
+            <div class="story-card-inner">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Open Cafe and Dining Bahu Plaza rooftop terrace at dusk" class="story-img" loading="lazy" />
+              <div class="story-overlay-tag">
+                <span class="tag-title">Sky Terrace at Dusk</span>
+                <span class="tag-sub">Bahu Plaza &bull; Level 5 &bull; Jammu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">The Digital Menu</span>
+          <h2 class="section-title">Rooftop Tapas, Hearth &amp; Sky Mains</h2>
+          <p class="section-lead">Explore our curated selection of wood-fired pizzas, charcoal tapas, Asian specialties, and twilight aperitifs.</p>
+        </div>
+
+        <!-- Search & Dietary Bar -->
+        <div class="menu-controls">
+          <div class="search-wrap">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="menuSearchInput" placeholder="Search pizza, burrata, dim sum, mutton shank, spritz..." aria-label="Search menu items" oninput="handleMenuSearch(this.value)" />
+            <button class="search-clear-btn" id="searchClearBtn" onclick="clearSearch()" aria-label="Clear search">&times;</button>
+          </div>
+
+          <div class="dietary-filter-bar">
+            <button class="diet-btn active" data-filter="all" onclick="setDietaryFilter('all')">All Offerings</button>
+            <button class="diet-btn" data-filter="veg" onclick="setDietaryFilter('veg')">🌱 Pure Veg</button>
+            <button class="diet-btn" data-filter="nonveg" onclick="setDietaryFilter('nonveg')">🍗 Non-Veg Specialties</button>
+            <button class="diet-btn" data-filter="signature" onclick="setDietaryFilter('signature')">★ Chef's Stars</button>
+            <button class="diet-btn" data-filter="woodfire" onclick="setDietaryFilter('woodfire')">🔥 Woodfire &amp; Grill</button>
+          </div>
+        </div>
+
+        <!-- Sticky Category Tabs -->
+        <nav class="category-tabs-nav" id="categoryTabsNav" aria-label="Menu categories">
+          <button class="cat-tab active" data-cat="all" onclick="selectCategory('all')">
+            <span>All Offerings</span>
+            <span class="cat-count" id="count-all">28</span>
+          </button>
+          <button class="cat-tab" data-cat="small-plates" onclick="selectCategory('small-plates')">
+            <span>Small Plates &amp; Tapas</span>
+            <span class="cat-count" id="count-small-plates">6</span>
+          </button>
+          <button class="cat-tab" data-cat="woodfired-pizzas" onclick="selectCategory('woodfired-pizzas')">
+            <span>Woodfired Pizzas</span>
+            <span class="cat-count" id="count-woodfired-pizzas">5</span>
+          </button>
+          <button class="cat-tab" data-cat="pan-asian-robata" onclick="selectCategory('pan-asian-robata')">
+            <span>Pan-Asian &amp; Robata</span>
+            <span class="cat-count" id="count-pan-asian-robata">5</span>
+          </button>
+          <button class="cat-tab" data-cat="rooftop-mains" onclick="selectCategory('rooftop-mains')">
+            <span>Al Fresco Mains</span>
+            <span class="cat-count" id="count-rooftop-mains">5</span>
+          </button>
+          <button class="cat-tab" data-cat="sky-desserts" onclick="selectCategory('sky-desserts')">
+            <span>Sky Desserts</span>
+            <span class="cat-count" id="count-sky-desserts">3</span>
+          </button>
+          <button class="cat-tab" data-cat="crafted-mixology" onclick="selectCategory('crafted-mixology')">
+            <span>Sunset Mixology</span>
+            <span class="cat-count" id="count-crafted-mixology">4</span>
+          </button>
+        </nav>
+
+        <!-- Active Category Header -->
+        <div class="category-header-banner" id="categoryHeaderBanner">
+          <h3 id="currentCategoryTitle">All Artisanal Offerings</h3>
+          <p id="currentCategoryTagline">Crafted for twilight dining under the stars at Bahu Plaza.</p>
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Dynamic cards rendered by app.js -->
+        </div>
+
+        <!-- Empty state -->
+        <div class="empty-state hidden" id="emptyState">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>
+          <h3>No culinary match found</h3>
+          <p>Try searching for pizza, shank, dim sum, spritz, or clearing active filters.</p>
+          <button class="btn btn-outline btn-sm" onclick="resetAllFilters()">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Operating Hours Section -->
+    <section class="location-section" id="location">
+      <div class="section-container">
+        <div class="location-grid">
+          <div class="location-info">
+            <span class="section-tag">Rooftop Landmark in Jammu</span>
+            <h2 class="section-title">Ascend to Bahu Plaza Rooftop</h2>
+            <p class="location-desc">
+              Located atop Level 5 at Bahu Plaza, our venue features dedicated express elevator access, complimentary valet parking at the commercial concourse, and panoramic terrace seating with Bahu Fort views.
+            </p>
+
+            <div class="info-block-list">
+              <div class="info-block">
+                <div class="info-icon">📍</div>
+                <div>
+                  <strong>Address</strong>
+                  <p>Level 5 Rooftop, Commercial Complex, Near North Block, Bahu Plaza, Jammu (J&amp;K) — 180012</p>
+                  <span class="landmark-note">Overlooking Bahu Fort &bull; 2 min from Jammu Tawi Railway Station</span>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">🌅</div>
+                <div>
+                  <strong>Operating Hours</strong>
+                  <p><strong>Sunset Aperitivo:</strong> 04:30 PM – 07:00 PM</p>
+                  <p><strong>Dinner &amp; Sky Lounge:</strong> 07:00 PM – 11:30 PM</p>
+                  <p><strong>Last Kitchen Order:</strong> 11:00 PM (Open 7 Days a Week)</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">📞</div>
+                <div>
+                  <strong>Direct Concierge &amp; Bookings</strong>
+                  <p>Rooftop Line: <a href="tel:+911912479922">+91 191 247 9922</a></p>
+                  <p>WhatsApp Concierge: <a href="https://wa.me/919419177309" target="_blank" rel="noopener">+91 94191 77309</a></p>
+                  <p>Email: <a href="mailto:skydining@opencafejammu.com">skydining@opencafejammu.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Open+Cafe+Dining+Bahu+Plaza+Jammu" target="_blank" rel="noopener" class="btn btn-outline">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Directions on Google Maps</span>
+              </a>
+              <button class="btn btn-primary" onclick="openReservationModal('Skyline Edge Table')">
+                <span>Book Skyline Seating</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Stylized Map / Architectural Visual -->
+          <div class="location-visual-card">
+            <div class="map-card-header">
+              <span class="map-badge">Skyline Observation</span>
+              <span class="map-status">Express Elevator &bull; Level 5</span>
+            </div>
+            <div class="map-frame-wrapper">
+              <div class="map-placeholder-aesthetic">
+                <div class="map-pin-pulse">
+                  <span class="pulse-ring"></span>
+                  <span class="pin-symbol">O</span>
+                </div>
+                <div class="map-details-card">
+                  <h4>Open Cafe &amp; Dining</h4>
+                  <p>Level 5 Rooftop &bull; Bahu Plaza &bull; Jammu</p>
+                  <span class="map-sub">Unrivaled Fort &amp; River Tawi Sightlines</span>
+                </div>
+              </div>
+            </div>
+            <div class="location-features-row">
+              <span>🌌 Starlit Pergola</span>
+              <span>🔥 Winter Fire Pits</span>
+              <span>💨 Summer Mist Cooling</span>
+              <span>🚗 Valet Parking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dish Details Modal -->
+  <div class="modal-backdrop" id="dishModal" onclick="closeDishModal(event)" role="dialog" aria-modal="true" aria-labelledby="dishModalTitle">
+    <div class="dish-modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeDishModal()" aria-label="Close dialog">&times;</button>
+      <div class="dish-modal-grid">
+        <div class="dish-modal-img-wrap">
+          <img id="dishModalImg" src="" alt="Culinary item preview" />
+          <div class="modal-img-badges" id="dishModalBadges"></div>
+        </div>
+        <div class="dish-modal-info">
+          <div class="modal-category-eyebrow" id="dishModalCategory">Rooftop Specialty</div>
+          <h2 class="modal-item-title" id="dishModalTitle">Item Title</h2>
+          <div class="modal-price-wrap">
+            <span class="modal-price" id="dishModalPrice">₹000</span>
+            <span class="modal-vat-note">Inclusive of all local taxes</span>
+          </div>
+          
+          <p class="modal-item-desc" id="dishModalDesc"></p>
+
+          <div class="modal-section-block">
+            <span class="block-label">Artisanal Composition &amp; Ingredients</span>
+            <div class="ingredients-tags" id="dishModalIngredients"></div>
+          </div>
+
+          <div class="modal-pairing-card" id="dishModalPairingCard">
+            <span class="pairing-icon">🍸</span>
+            <div>
+              <span class="pairing-label">Recommended Sunset Pairing</span>
+              <p class="pairing-text" id="dishModalPairing"></p>
+            </div>
+          </div>
+
+          <div class="modal-actions-row">
+            <button class="btn btn-primary flex-1" id="dishModalOrderBtn" onclick="handleDishInquiry()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Inquire / Reserve via WhatsApp</span>
+            </button>
+            <button class="btn btn-outline" onclick="closeDishModal(); openReservationModal('Dish Inquiry: ' + currentModalDish.name);">
+              <span>Book Table</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation / Rooftop Table Booking Modal -->
+  <div class="modal-backdrop" id="reserveModal" onclick="closeReservationModal(event)" role="dialog" aria-modal="true" aria-labelledby="reserveModalTitle">
+    <div class="reserve-modal-card" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" onclick="closeReservationModal()" aria-label="Close booking dialog">&times;</button>
+      
+      <!-- Form state -->
+      <div id="reservationFormState">
+        <div class="reserve-header">
+          <span class="reserve-eyebrow">Rooftop Seating &amp; Sunset Lounge</span>
+          <h3 id="reserveModalTitle">Reserve Your Rooftop Table</h3>
+          <p class="reserve-subtitle">Experience panoramic skyline dining overlooking River Tawi &amp; Bahu Fort.</p>
+        </div>
+
+        <form id="reservationForm" onsubmit="handleReservationSubmit(event)">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="resName">Full Name *</label>
+              <input type="text" id="resName" required placeholder="e.g. Ananya Rajput" />
+            </div>
+            <div class="form-group flex-1">
+              <label for="resPhone">Phone Number (+91) *</label>
+              <input type="tel" id="resPhone" required placeholder="e.g. 94191 77309" pattern="[0-9]{10}" title="10-digit mobile number" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="resSeating">Terrace Seating Zone *</label>
+              <select id="resSeating">
+                <option value="Skyline Bahu Fort Edge (Front Row)" selected>Skyline Bahu Fort Edge (Front Row)</option>
+                <option value="Starlit Pergola Under the Constellations">Starlit Pergola Under the Constellations</option>
+                <option value="Al Fresco Fire Pit Booth (Cozy)">Al Fresco Fire Pit Booth (Cozy)</option>
+                <option value="Indoor Architectural Sky Lounge">Indoor Architectural Sky Lounge</option>
+              </select>
+            </div>
+            <div class="form-group flex-1">
+              <label for="resGuests">Number of Guests *</label>
+              <select id="resGuests">
+                <option value="2 Guests (Intimate / Date)" selected>2 Guests (Intimate / Date)</option>
+                <option value="3 Guests">3 Guests</option>
+                <option value="4 Guests (Terrace Table)">4 Guests (Terrace Table)</option>
+                <option value="5-8 Guests (Celebration Table)">5-8 Guests (Celebration Table)</option>
+                <option value="9-16 Guests (Private Pergola)">9-16 Guests (Private Pergola)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="resDate">Preferred Date *</label>
+              <input type="date" id="resDate" required />
+            </div>
+            <div class="form-group flex-1">
+              <label for="resTime">Time Slot *</label>
+              <select id="resTime" required>
+                <option value="05:00 PM (Golden Hour Sunset)">05:00 PM (Golden Hour Sunset)</option>
+                <option value="06:30 PM (Twilight Fort Lights)">06:30 PM (Twilight Fort Lights)</option>
+                <option value="08:00 PM (Prime Starlit Dinner)" selected>08:00 PM (Prime Starlit Dinner)</option>
+                <option value="09:30 PM (Late Night Sky Dining)">09:30 PM (Late Night Sky Dining)</option>
+                <option value="10:15 PM (Postres & Mixology)">10:15 PM (Postres &amp; Mixology)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="resNotes">Occasion &amp; Special Requests</label>
+            <input type="text" id="resNotes" placeholder="e.g. Wedding Anniversary, Birthday, Proposal, Candlelight requested..." />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full submit-btn">
+            <span>Confirm Rooftop Reservation</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Confirmation Preview State -->
+      <div id="reservationConfirmationState" class="hidden">
+        <div class="confirmation-ticket">
+          <div class="ticket-header">
+            <div class="ticket-status-badge">✓ Confirmed &bull; Skyline Guaranteed</div>
+            <span class="ticket-ref" id="ticketRefCode">#OPN-7731</span>
+          </div>
+          
+          <h3 class="ticket-guest-name" id="ticketGuestName">Guest Name</h3>
+          <p class="ticket-sub">Your rooftop table at Open Cafe &amp; Dining, Bahu Plaza is confirmed.</p>
+
+          <div class="ticket-details-grid">
+            <div class="ticket-detail-item">
+              <span class="detail-label">Seating Zone</span>
+              <span class="detail-val" id="ticketSeating">Skyline Bahu Fort Edge</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label">Date</span>
+              <span class="detail-val" id="ticketDate">Today</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label">Time Slot</span>
+              <span class="detail-val" id="ticketTime">08:00 PM</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label">Party Size</span>
+              <span class="detail-val" id="ticketGuests">2 Guests</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label">Vantage</span>
+              <span class="detail-val">River Tawi &amp; Fort</span>
+            </div>
+            <div class="ticket-detail-item">
+              <span class="detail-label">Venue</span>
+              <span class="detail-val">Level 5 Rooftop</span>
+            </div>
+          </div>
+
+          <div class="ticket-actions">
+            <a id="ticketWhatsAppBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary w-full">
+              <span>Send Confirmation to WhatsApp</span>
+            </a>
+            <button class="btn btn-outline w-full" onclick="resetReservationForm()">
+              <span>Make Another Reservation</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-monogram">
+            <span class="monogram-emblem">O</span>
+            <div class="brand-text">
+              <span class="brand-title">Open Cafe &amp; Dining</span>
+              <span class="brand-subtitle">Level 5 Rooftop &bull; Bahu Plaza &bull; Jammu</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Al fresco sky dining lounge overlooking the Tawi river valley and historic Bahu Fort. Artisanal wood-fired Neapolitan pizzas, robata grills, and sunset mixology.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <span class="footer-heading">Culinary Offerings</span>
+          <a href="#menu" onclick="selectCategory('small-plates')">Artisanal Tapas</a>
+          <a href="#menu" onclick="selectCategory('woodfired-pizzas')">Woodfired Pizzas</a>
+          <a href="#menu" onclick="selectCategory('pan-asian-robata')">Pan-Asian &amp; Robata</a>
+          <a href="#menu" onclick="selectCategory('rooftop-mains')">Al Fresco Mains</a>
+          <a href="#menu" onclick="selectCategory('crafted-mixology')">Sunset Mixology</a>
+        </div>
+
+        <div class="footer-links-col">
+          <span class="footer-heading">Location &amp; Access</span>
+          <p class="footer-info-text">Level 5, Commercial Complex, Bahu Plaza, Jammu, J&amp;K 180012</p>
+          <p class="footer-info-text">Express Elevator &bull; Complimentary Valet Parking</p>
+          <p class="footer-info-text">Concierge: +91 191 247 9922</p>
+          <p class="footer-info-text">WhatsApp: +91 94191 77309</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Open Cafe &amp; Dining Jammu. All rights reserved.</p>
+        <p class="footer-meta">Autonomous Tier 1 Minimalist Architecture &bull; Zero External Dependencies</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Bottom Mobile Action Bar (<= 768px) -->
+  <nav class="mobile-action-bar" aria-label="Quick mobile contact actions">
+    <a href="tel:+911912479922" class="mobile-action-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="#menu" class="mobile-action-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="https://maps.google.com/?q=Open+Cafe+Dining+Bahu+Plaza+Jammu" target="_blank" rel="noopener" class="mobile-action-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Directions</span>
+    </a>
+    <button class="mobile-action-btn mobile-reserve-btn" onclick="openReservationModal('Mobile Quick Book')">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Reserve</span>
+    </button>
+  </nav>
+
+  <!-- Lightweight App Script -->
+  <script src="app.js"></script>
+</body>
+</html>

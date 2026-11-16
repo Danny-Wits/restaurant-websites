@@ -17,31 +17,32 @@ export default function MusicGigsRoster({ onSelectGig }) {
   const gigs = restaurantData.liveGigs;
 
   return (
-    <section id="gigs" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#0F1110]">
+    <section id="gigs" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#0F1110] w-full max-w-full overflow-hidden">
       {/* Ambient Soundwave Glows */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-96 h-96 bg-rose-500/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-72 sm:w-96 h-72 sm:h-96 bg-rose-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 w-full max-w-full">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/15 border border-rose-500/35 text-rose-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <Radio className="w-4 h-4 animate-pulse text-rose-400" />
-            <span>Weekly Sonic Curations &bull; Stage Front</span>
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-rose-500/15 border border-rose-500/35 text-rose-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
+            <Radio className="w-4 h-4 animate-pulse text-rose-400 shrink-0" />
+            <span className="truncate sm:hidden">Weekly Sonic Curations</span>
+            <span className="hidden sm:inline">Weekly Sonic Curations &bull; Stage Front</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-4xl md:text-5xl text-zinc-100 tracking-tight mb-4">
+          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-4xl md:text-5xl text-zinc-100 tracking-tight mb-4 break-words">
             Jammu's Premier{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-amber-400 to-amber-300">
               Live Rhythm Sanctuary
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+          <p className="text-xs sm:text-base text-zinc-400 leading-relaxed">
             Every Thursday through Sunday, Raasta transforms from a sunlit cafe into an intimate acoustic den and high-energy music lounge. Reserve early for stage-front seating.
           </p>
         </div>
 
         {/* Day Selector Tabs */}
-        <div className="flex items-center justify-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar mb-10 pb-2">
+        <div className="flex items-center justify-start sm:justify-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar mb-8 sm:mb-10 pb-2 w-full max-w-full">
           {gigs.map((gig) => {
             const isSelected = activeDay === gig.id;
             return (

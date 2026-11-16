@@ -36,12 +36,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F1110] text-[#F4F4F5] font-sans selection:bg-amber-500 selection:text-zinc-950">
+    <div className="min-h-screen bg-[#0F1110] text-[#F4F4F5] font-sans selection:bg-amber-500 selection:text-zinc-950 w-full max-w-full overflow-x-hidden relative">
       {/* Top Fixed Navbar */}
       <Navbar onOpenReserve={handleOpenReserve} />
 
       {/* Main Content */}
-      <main>
+      <main className="w-full max-w-full overflow-x-hidden">
         {/* Hero Section with Dynamic Day Cafe / Night Lounge vibe */}
         <Hero onOpenReserve={handleOpenReserve} />
 

@@ -67,7 +67,9 @@ for (const slug of restaurantDirs) {
       if (Array.isArray(categories)) {
         meta.itemCount = categories.reduce((acc, cat) => acc + (cat.items?.length || 0), 0);
       }
-      if (slug === 'raasta-jammu') {
+      if (spec.visualIdentity?.heroImage || spec.restaurant?.heroImage) {
+        meta.heroImage = spec.visualIdentity?.heroImage || spec.restaurant?.heroImage;
+      } else if (slug === 'raasta-jammu') {
         meta.heroImage = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80';
       }
     } catch (e) {
@@ -151,7 +153,7 @@ function generatePortalHtml(outDir, items) {
             <span>View Live Site</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
           </a>
-          <button class="btn-qr" onclick="openQrModal('./${item.slug}/', '${item.name}')" title="Scan QR Code for Mobile">
+          <button class="btn-qr" onclick="openQrModal('./${item.slug}/', '${item.name.replace(/'/g, "\\'")}')" title="Scan QR Code for Mobile">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
             <span>QR</span>
           </button>

@@ -1,0 +1,651 @@
+{
+  "restaurant": {
+    "name": "Ki & Kia's Cafe & Kitchen",
+    "slug": "ki-and-kias",
+    "city": "Jammu",
+    "locality": "Talab Tillo / Canal Road",
+    "state": "Jammu & Kashmir",
+    "pincode": "180002",
+    "tagline": "A Serene Sanctuary for Slow Sips & Cherished Family Feasts",
+    "subTagline": "Nestled along the verdant avenues of Canal Road, Ki & Kia's harmonizes third-wave espresso artistry, stone-baked sourdough pizzas, vibrant nourish bowls, and timeless family comfort in a calm, modern minimalist oasis.",
+    "concept": "Warm upscale family cafe & artisan kitchen pairing quiet luxury aesthetics with approachable, comforting modern gastronomy. Designed for multi-generational Dogra gatherings, weekend family brunches, quiet remote work corners, and intimate evening dining.",
+    "rating": "4.8",
+    "reviewCount": "1,120+",
+    "priceRange": "₹₹ (₹600 - ₹1,100 for two)",
+    "heroImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=85",
+    "contact": {
+      "phone": "+91 191 255 4488",
+      "mobile": "+91 94191 88234",
+      "whatsapp": "+91 94191 88234",
+      "email": "hello@kiandkias.com",
+      "reservationsEmail": "tables@kiandkias.com"
+    },
+    "location": {
+      "address": "Opposite Canal View Walkway, Main Talab Tillo Road, Near Anand Nagar",
+      "neighborhood": "Talab Tillo / Canal Road",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180002",
+      "landmarks": "2 minutes from Canal Head Bridge, easy access from Jewel Chowk & Bhagwati Nagar",
+      "googleMapsUrl": "https://maps.google.com/?q=Ki+and+Kias+Talab+Tillo+Canal+Road+Jammu",
+      "coordinates": {
+        "lat": 32.7231,
+        "lng": 74.8425
+      }
+    },
+    "hours": {
+      "openTime": "10:30",
+      "closeTime": "23:00",
+      "formatted": "10:30 AM – 11:00 PM",
+      "days": "Monday – Sunday (Open Daily)",
+      "kitchenCloses": "10:30 PM",
+      "weekendBrunch": "10:30 AM – 03:00 PM (Sat & Sun)"
+    },
+    "amenities": [
+      "Lush Glasshouse & Courtyard Seating",
+      "Dedicated On-Site Valet & Family Parking",
+      "Child-Friendly High Chairs & Curated Kids Bites",
+      "High-Speed Fiber Wi-Fi & Laptop Friendly Alcoves",
+      "Strict Hygiene & Segregated Vegetarian Prep Station",
+      "Wheelchair Accessible Ramp & Spacious Aisles",
+      "Artisanal In-House Bakery & Sourdough Fermentation"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Talab Tillo and Canal Road constitute one of Jammu's historically lush and densely connected residential corridors. Ki & Kia's fills the pressing void for a refined, modern dining destination where families can escape city bustle without driving across highway toll belts.",
+    "targetDemographics": [
+      {
+        "segment": "Multi-Generational Jammu Families",
+        "need": "Spacious, comfortable seating with acoustic balance, generous shareable plates, and soothing ambience.",
+        "vibeRequirement": "Understated warmth, prompt intuitive service, and spotless presentation."
+      },
+      {
+        "segment": "Young Professionals & Remote Creatives",
+        "need": "Specialty pour-overs, cold brews, wholesome protein bowls, and peaceful ambient acoustics.",
+        "vibeRequirement": "Natural lighting, matte earthy textures, stable Wi-Fi, and power outlets."
+      },
+      {
+        "segment": "Evening Diners & Couples",
+        "need": "Dim candlelight, gourmet stone-baked pizzas, artisanal pastas, and signature mocktail infusions.",
+        "vibeRequirement": "Quiet luxury, soft jazz, and private booth corners."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "Third-Wave Coffee & Tea Laboratory",
+        "description": "Ethically sourced single-origin Arabica beans roasted to medium perfection, accompanied by saffron-infused cortados and chilled botanical tonics."
+      },
+      {
+        "pillar": "48-Hour Cold Fermented Sourdough & Pizzas",
+        "description": "Hand-stretched Neapolitan crusts baked in stone deck ovens at 450°C for airy blistered cornicione."
+      },
+      {
+        "pillar": "Wholesome Farm Kitchen & Mediterranean Comfort",
+        "description": "Fresh crisp produce, creamy burrata, herb-infused skewers, and nourishing garden bowls celebrating clean, balanced eating."
+      },
+      {
+        "pillar": "Artisanal Scratch Pastas & Homestyle Mains",
+        "description": "Handmade fettuccine, slow-simmered bolognese, and pan-seared fresh catches prepared to order."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Matte Charcoal Noir & Cashmere Amber",
+    "aestheticPhilosophy": "Quiet luxury meets organic warmth. Low-glare matte charcoal surfaces, hairline bone borders, warm hazelnut accents, and airy negative space evoking a tranquil sanctuary.",
+    "heroImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=85",
+    "colorTokens": {
+      "primary": {
+        "hex": "#CCA478",
+        "name": "Toasted Cashmere Ochre",
+        "description": "Primary warm highlight for CTAs, accents, and focal tags"
+      },
+      "primaryHover": {
+        "hex": "#DFC09E",
+        "name": "Soft Hazelnut Cream",
+        "description": "Hover interaction state"
+      },
+      "background": {
+        "hex": "#0C0E0D",
+        "name": "Earthy Charcoal Noir",
+        "description": "Base dark background"
+      },
+      "backgroundSecondary": {
+        "hex": "#121614",
+        "name": "Deep Moss Slate",
+        "description": "Section alternating backdrop"
+      },
+      "surface": {
+        "hex": "#181D1A",
+        "name": "Velvet Slate Card",
+        "description": "Cards and interactive container backgrounds"
+      },
+      "surfaceHover": {
+        "hex": "#202622",
+        "name": "Elevated Card Slate",
+        "description": "Card hover state"
+      },
+      "border": {
+        "hex": "rgba(255, 255, 255, 0.08)",
+        "name": "Hairline Frost",
+        "description": "Subtle borders and separators"
+      },
+      "textPrimary": {
+        "hex": "#F4F0EB",
+        "name": "Warm Linen White",
+        "description": "High contrast body and title text"
+      },
+      "textMuted": {
+        "hex": "#9E988F",
+        "name": "Pebble Gray",
+        "description": "Secondary copy and captions"
+      }
+    },
+    "typography": {
+      "display": "'Playfair Display', Georgia, serif",
+      "body": "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+    }
+  },
+  "storytellingAndCopy": {
+    "hero": {
+      "eyebrow": "TALAB TILLO • CANAL ROAD, JAMMU",
+      "headline": "A Sanctuary for Slow Sips & Family Gatherings",
+      "subheadline": "Step into Jammu's quietest retreat — where third-wave espresso craft, 48-hour stone-baked pizzas, and heartwarming Mediterranean flavors meet genuine Dogra hospitality.",
+      "ctaPrimary": "Reserve a Table",
+      "ctaSecondary": "Explore Menu",
+      "statusBadge": "Open Daily 10:30 AM – 11:00 PM"
+    },
+    "ourStory": {
+      "eyebrow": "THE KI & KIA'S ESSENCE",
+      "title": "Where Mindful Dining Meets Family Warmth",
+      "lead": "Founded on Canal Road with a simple philosophy: great food should be unhurried, honest, and shared among people you love.",
+      "narrative": [
+        "In a fast-moving world, Ki & Kia's was designed as an oasis of calm. Framed by leafy views and subtle natural light, our space welcomes everyone — from young parents sharing weekend pancakes with their toddlers, to grandparents savoring fragrant saffron cortados, to friends catching up over sizzling stone-baked sourdough pizzas.",
+        "We believe quality starts at the roots: our coffee beans are directly traded from certified Karnataka estates, our herbs are clipped fresh daily, and our pizza dough undergoes a patient 48-hour cold fermentation to yield an ultra-light, easily digestible crust.",
+        "Every corner of our Talab Tillo haven is curated to let you breathe easy, speak softly, and savor deeply."
+      ]
+    },
+    "highlights": [
+      {
+        "number": "01",
+        "title": "Third-Wave Coffee Craft",
+        "description": "Single-origin pour-overs, smooth cold brews, and house saffron cortados extracted with surgical precision."
+      },
+      {
+        "number": "02",
+        "title": "48-Hour Cold Fermented Dough",
+        "description": "Stone-baked sourdough pizzas and brioche bakes crafted with unbleached flour and cold maturation."
+      },
+      {
+        "number": "03",
+        "title": "Generous Family Sanctuary",
+        "description": "Spacious acoustic-treated seating, sunlit glasshouse patio, and dedicated private booths."
+      }
+    ]
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "coffee-beverages",
+        "name": "Artisanal Coffee & Elixirs",
+        "shortDesc": "Single-origin espresso, saffron infusions & botanical iced tonics",
+        "items": [
+          {
+            "id": "kk-c01",
+            "name": "Kashmiri Saffron & Cardamom Cortado",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "coffee-beverages",
+            "description": "Double ristretto of Chikmagalur Arabica velvety microfoam infused with pure Kishtwar saffron strands and green cardamom essence.",
+            "tags": ["House Signature", "Single Origin"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4-6 mins",
+            "calories": "110 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-c02",
+            "name": "Wild Berry Hibiscus Cold Brew",
+            "diet": "vegan",
+            "price": 270,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "coffee-beverages",
+            "description": "16-hour slow steep cold brew layered with natural Egyptian hibiscus tea, crushed mountain berries, and sparkling citrus tonic.",
+            "tags": ["Zero Dairy", "Refreshing", "Antioxidant Rich"],
+            "allergens": "None",
+            "prepTime": "3 mins",
+            "calories": "45 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-c03",
+            "name": "Salted Caramel Shakerato",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "coffee-beverages",
+            "description": "Double espresso vigorously shaken over ice with Himalayan pink salt, house caramel reduction, and silky cream froth.",
+            "tags": ["Chilled", "Sweet & Savory"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4 mins",
+            "calories": "170 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-c04",
+            "name": "Roasted Hazelnut Velvet Latte",
+            "diet": "veg",
+            "price": 250,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "coffee-beverages",
+            "description": "Freshly pulled espresso with slow-roasted hazelnut praline syrup and steam-stretched whole milk (oat milk optional).",
+            "tags": ["Comfort Classic", "Nutty Note"],
+            "allergens": "Contains Dairy & Tree Nuts",
+            "prepTime": "4 mins",
+            "calories": "180 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-c05",
+            "name": "Pour-Over V60 Single Estate Arabica",
+            "diet": "vegan",
+            "price": 280,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "coffee-beverages",
+            "description": "Handcrafted pour-over highlighting delicate floral notes of wild jasmine, stone fruit, and bright citrus acidity.",
+            "tags": ["Specialty Pour", "Black Coffee", "Direct Trade"],
+            "allergens": "None",
+            "prepTime": "6 mins",
+            "calories": "5 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "all-day-breakfast",
+        "name": "All-Day Brunch & Brioche",
+        "shortDesc": "Golden sourdough tartines, farm-fresh eggs & golden brioche bakes",
+        "items": [
+          {
+            "id": "kk-b01",
+            "name": "Truffle Scrambled Eggs on Sourdough",
+            "diet": "non-veg",
+            "price": 380,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "all-day-breakfast",
+            "description": "Slow-cooked pasture-raised eggs folded with cultured butter, white truffle oil, and chives atop thick-cut toasted house sourdough.",
+            "tags": ["Chef's Recommendation", "Protein Rich"],
+            "allergens": "Contains Dairy, Eggs, Gluten",
+            "prepTime": "10 mins",
+            "calories": "390 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-b02",
+            "name": "Brioche French Toast with Wild Berries",
+            "diet": "veg",
+            "price": 360,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "all-day-breakfast",
+            "description": "Golden custard-soaked brioche loaf griddled to crisp perfection, crowned with organic Jammu mountain honey, blueberry compote, and mascarpone cream.",
+            "tags": ["Family Favorite", "Sweet Brunch"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "12 mins",
+            "calories": "440 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-b03",
+            "name": "Smoked Salmon & Avocado Tartine",
+            "diet": "non-veg",
+            "price": 490,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "all-day-breakfast",
+            "description": "Hass avocado mash, Norwegian smoked salmon ribbons, pickled shallots, capers, and micro-arugula on country grain sourdough.",
+            "tags": ["Omega-3", "Gourmet"],
+            "allergens": "Contains Fish, Gluten",
+            "prepTime": "8 mins",
+            "calories": "360 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-b04",
+            "name": "Shakshuka Skillet with Goat Feta",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "all-day-breakfast",
+            "description": "Baked eggs nestled in a simmered sauce of roasted plum tomatoes, bell peppers, garlic, and cumin, sprinkled with creamy feta and warm za'atar flatbread.",
+            "tags": ["Cast Iron", "Mediterranean"],
+            "allergens": "Contains Dairy, Eggs, Gluten",
+            "prepTime": "14 mins",
+            "calories": "380 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "small-plates",
+        "name": "Small Plates & Shareables",
+        "shortDesc": "Charred appetisers, artisan boards & handcrafted fries",
+        "items": [
+          {
+            "id": "kk-s01",
+            "name": "Burrata Caprese with Canal Road Fig Glaze",
+            "diet": "veg",
+            "price": 480,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "small-plates",
+            "description": "Creamy 150g artisanal burrata ball paired with heirloom cherry tomatoes, basil pesto drizzle, roasted pine nuts, and aged balsamic reduction with fresh fig compote.",
+            "tags": ["Chef's Signature", "Fresh Daily"],
+            "allergens": "Contains Dairy, Tree Nuts",
+            "prepTime": "6 mins",
+            "calories": "410 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1592417817098-8f3d6eb22509?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-s02",
+            "name": "Parmesan Truffle Hand-Cut Fries",
+            "diet": "veg",
+            "price": 290,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "small-plates",
+            "description": "Twice-cooked russet potato batons tossed in white truffle oil, sea salt flakes, and aged Grana Padano, accompanied by roasted garlic aioli.",
+            "tags": ["Crowd Favorite", "Crispy"],
+            "allergens": "Contains Dairy",
+            "prepTime": "8 mins",
+            "calories": "320 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-s03",
+            "name": "Chermoula Charred Cottage Cheese Skewers",
+            "diet": "veg",
+            "price": 390,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "small-plates",
+            "description": "Fresh malai paneer cubes marinated in Moroccan cilantro chermoula herbs, slow-grilled over charcoal embers with bell peppers and pickled sumac onions.",
+            "tags": ["Charcoal Grilled", "Vegetarian Protein"],
+            "allergens": "Contains Dairy",
+            "prepTime": "12 mins",
+            "calories": "350 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-s04",
+            "name": "Buttermilk Fried Chicken Tenders",
+            "diet": "non-veg",
+            "price": 420,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "category": "small-plates",
+            "description": "Tender chicken fillets soaked in spiced cultured buttermilk, crusted in seasoned panko crumbs, and served with house smoked honey mustard dip.",
+            "tags": ["Crispy", "Shareable"],
+            "allergens": "Contains Gluten, Dairy",
+            "prepTime": "10 mins",
+            "calories": "460 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-s05",
+            "name": "Mezze Board with Olive Tapenade & Warm Pita",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "small-plates",
+            "description": "Smooth silk hummus with toasted pine nuts, smoked baba ganoush, kalamata olive tapenade, marinated feta cubes, and wood-fired pita bread.",
+            "tags": ["Mediterranean", "Generous Platter"],
+            "allergens": "Contains Sesame, Dairy, Gluten",
+            "prepTime": "8 mins",
+            "calories": "480 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "sourdough-pizzas",
+        "name": "Stone-Baked Artisan Pizzas",
+        "shortDesc": "48-hour cold fermented sourdough stretched by hand & baked at 450°C",
+        "items": [
+          {
+            "id": "kk-p01",
+            "name": "Margherita Verace D.O.P",
+            "diet": "veg",
+            "price": 460,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "sourdough-pizzas",
+            "description": "San Marzano plum tomato sugo, fresh fior di latte mozzarella, sweet Genovese basil leaves, and cold-pressed extra virgin olive oil drizzle.",
+            "tags": ["Classic Neapolitan", "Stone Baked"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "12 mins",
+            "calories": "680 kcal (Whole)",
+            "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-p02",
+            "name": "Wild Forest Mushroom & Truffle Pizza",
+            "diet": "veg",
+            "price": 540,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "sourdough-pizzas",
+            "description": "Garlic-herb confit base, sautéed porcini and shiitake mushrooms, smoked scamorza cheese, and a fragrant finish of white truffle oil.",
+            "tags": ["Chef's Masterpiece", "Rich & Earthy"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "14 mins",
+            "calories": "720 kcal (Whole)",
+            "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-p03",
+            "name": "Pollo Picante Smoked Chicken & Jalapeño",
+            "diet": "non-veg",
+            "price": 560,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "category": "sourdough-pizzas",
+            "description": "Smoked shredded chicken breast, pickled jalapeño coins, charred red onions, aged mozzarella, and spicy hot honey drizzle.",
+            "tags": ["Spicy", "Meat Lovers"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "14 mins",
+            "calories": "790 kcal (Whole)",
+            "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-p04",
+            "name": "Quattro Formaggi with Walnut Honey",
+            "diet": "veg",
+            "price": 550,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "sourdough-pizzas",
+            "description": "Harmonious blend of four artisanal cheeses: Fior di latte, Gorgonzola Dolce, Fontina, and 24-month Parmigiano, finished with Jammu walnut honey.",
+            "tags": ["Four Cheeses", "Decadent"],
+            "allergens": "Contains Dairy, Gluten, Tree Nuts",
+            "prepTime": "12 mins",
+            "calories": "810 kcal (Whole)",
+            "imageUrl": "https://images.unsplash.com/photo-1573821663912-569905455b1c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-p05",
+            "name": "Burrata & Spiced Pepperoni Flatbread",
+            "diet": "non-veg",
+            "price": 620,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "sourdough-pizzas",
+            "description": "Crispy sourdough crust topped with artisanal pepperoni cups, torn fresh burrata placed post-bake, chili flakes, and hot blossom honey.",
+            "tags": ["Premium Cut", "Customer Obsession"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "14 mins",
+            "calories": "840 kcal (Whole)",
+            "imageUrl": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "pastas-and-bowls",
+        "name": "Handmade Pastas & Nourish Bowls",
+        "shortDesc": "Fresh rolled pasta, slow-simmered sauces & garden vitality bowls",
+        "items": [
+          {
+            "id": "kk-m01",
+            "name": "Wild Mushroom & Truffle Pappardelle",
+            "diet": "veg",
+            "price": 520,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "pastas-and-bowls",
+            "description": "Wide ribbon egg pasta tossed in a velvety sauce of forest mushrooms, thyme butter, white wine reduction, and cracked black pepper.",
+            "tags": ["Handmade Pasta", "Silky Texture"],
+            "allergens": "Contains Gluten, Dairy",
+            "prepTime": "12 mins",
+            "calories": "520 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-m02",
+            "name": "Slow-Simmered Lamb Bolognese Tagliatelle",
+            "diet": "non-veg",
+            "price": 590,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "pastas-and-bowls",
+            "description": "Tender young lamb hand-minced and simmered for 5 hours with mirepoix, San Marzano tomatoes, and herbs, served over handmade tagliatelle.",
+            "tags": ["6-Hour Ragu", "Rich & Hearty"],
+            "allergens": "Contains Gluten, Dairy",
+            "prepTime": "14 mins",
+            "calories": "610 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-m03",
+            "name": "Burrata & Pine Nut Pesto Spaghetti",
+            "diet": "veg",
+            "price": 490,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "pastas-and-bowls",
+            "description": "Al dente bronze-cut spaghetti tossed in vibrant Genovese basil and roasted pine nut pesto, topped with half burrata and slow-roasted cherry tomatoes.",
+            "tags": ["Fresh & Fragrant", "Summer Classic"],
+            "allergens": "Contains Gluten, Dairy, Tree Nuts",
+            "prepTime": "10 mins",
+            "calories": "480 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-m04",
+            "name": "Mediterranean Grilled Halloumi & Quinoa Bowl",
+            "diet": "veg",
+            "price": 440,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "pastas-and-bowls",
+            "description": "Charred halloumi cheese slabs, organic tricolor quinoa, roasted sweet potatoes, avocado slices, cucumber ribbons, and tahini pomegranate drizzle.",
+            "tags": ["Superfood", "High Fiber"],
+            "allergens": "Contains Dairy, Sesame",
+            "prepTime": "10 mins",
+            "calories": "420 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-m05",
+            "name": "Pan-Seared Lemon Herb Salmon Bowl",
+            "diet": "non-veg",
+            "price": 690,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "pastas-and-bowls",
+            "description": "Crisp-skin Norwegian salmon fillet over garlic herb jasmine rice, grilled asparagus, edamame, and Meyer lemon caper emulsion.",
+            "tags": ["Premium Seafood", "Omega Rich"],
+            "allergens": "Contains Fish, Dairy",
+            "prepTime": "15 mins",
+            "calories": "530 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "desserts",
+        "name": "Artisanal Desserts & Bakes",
+        "shortDesc": "Scratch patisserie, warm molten cakes & regional saffron confections",
+        "items": [
+          {
+            "id": "kk-d01",
+            "name": "Basque Burnt Cheesecake with Sour Cherry",
+            "diet": "veg",
+            "price": 340,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts",
+            "description": "Caramelized deeply on the outside with an ultra-creamy, custard-soft center, accompanied by tart Morello cherry compote.",
+            "tags": ["Chef's Signature", "Bestseller"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Instant",
+            "calories": "380 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-d02",
+            "name": "Belgian Chocolate Fondant with Vanilla Gelato",
+            "diet": "veg",
+            "price": 360,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "desserts",
+            "description": "Baked 70% Callebaut dark chocolate cake with an oozing warm molten heart, paired with artisanal Madagascar vanilla bean gelato.",
+            "tags": ["Warm & Decadent", "Pure Chocolate"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "12 mins",
+            "calories": "460 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-d03",
+            "name": "Saffron Pistachio Tres Leches Cake",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "desserts",
+            "description": "Airy sponge cake steeped overnight in Kishtwar saffron-infused three milks, crowned with whipped chantilly and crushed Iranian pistachios.",
+            "tags": ["Jammu Heritage", "Melt-In-Mouth"],
+            "allergens": "Contains Dairy, Gluten, Tree Nuts",
+            "prepTime": "Instant",
+            "calories": "340 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kk-d04",
+            "name": "Artisanal Affogato al Caffe",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "desserts",
+            "description": "A velvety scoop of Madagascar vanilla gelato drowned in a freshly pulled double shot of piping hot Arabica espresso.",
+            "tags": ["Italian Classic", "Coffee Dessert"],
+            "allergens": "Contains Dairy",
+            "prepTime": "3 mins",
+            "calories": "160 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1594998893017-36147cbcae05?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}

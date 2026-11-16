@@ -1,0 +1,532 @@
+{
+  "restaurant": {
+    "name": "Pirates of Grill",
+    "slug": "pirates-of-grill",
+    "city": "Jammu",
+    "locality": "Wave Mall, Narwal Bye-Pass Road",
+    "state": "Jammu & Kashmir",
+    "pincode": "180006",
+    "tagline": "The Grand Charcoal Grill & Unlimited Royal Feast",
+    "subTagline": "Jammu's premier tableside live barbecue destination — where sizzling skewers meet an unlimited 65-item royal buffet spread on the 3rd floor of Wave Mall.",
+    "concept": "A theatrical live-grill dining experience featuring embedded charcoal pits on every table, continuous sizzling skewers served by grill masters, an extensive Awadhi, Mughlai & Continental buffet, live Asian counters, and a decadent artisan dessert studio.",
+    "rating": "4.8",
+    "reviewCount": "3,480+",
+    "priceRange": "₹849 - ₹1,149 per person (Unlimited Buffet)",
+    "contact": {
+      "phone": "+91 191 249 0555",
+      "mobile": "+91 91030 55100",
+      "whatsapp": "+91 91030 55100",
+      "email": "jammu@piratesofgrill.com",
+      "reservationsEmail": "reserve.jammu@piratesofgrill.com",
+      "instagram": "@piratesofgrill_jammu"
+    },
+    "location": {
+      "address": "Wave Mall (Level 3), Narwal Bye-Pass Road, Channi Rama / Narwal",
+      "neighborhood": "Wave Mall & Narwal Commercial Corridor",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180006",
+      "landmarks": "Level 3 Wave Mall Jammu, next to Wave Cinemas, direct expressway access via Narwal Bye-Pass Road, 4 minutes from Channi Himmat & 5 minutes from Jammu Tawi Railway Station",
+      "googleMapsUrl": "https://maps.google.com/?q=Pirates+of+Grill+Wave+Mall+Jammu",
+      "coordinates": {
+        "lat": 32.7042,
+        "lng": 74.8876
+      }
+    },
+    "hours": {
+      "lunch": "12:00 PM – 04:00 PM",
+      "dinner": "06:30 PM – 11:30 PM",
+      "days": "Monday – Sunday (Open All 7 Days)",
+      "lastSeatingLunch": "03:15 PM",
+      "lastSeatingDinner": "10:45 PM"
+    },
+    "buffetPricing": {
+      "weekdayLunch": {
+        "veg": 849,
+        "nonVeg": 949,
+        "days": "Monday to Friday"
+      },
+      "weekdayDinner": {
+        "veg": 949,
+        "nonVeg": 1049,
+        "days": "Monday to Friday"
+      },
+      "weekendBuffet": {
+        "veg": 1049,
+        "nonVeg": 1149,
+        "days": "Saturday & Sunday (Lunch & Dinner)"
+      },
+      "kidsBuffet": {
+        "price": 499,
+        "age": "5 to 9 Years"
+      }
+    },
+    "amenities": [
+      "In-Table Embedded Live Charcoal Grills with Adjustable Skewer Racks",
+      "Over 65 Unlimited Items (14 Starters + 24 Mains + 12 Salads & Chaat + 15 Desserts)",
+      "Dedicated Pure Veg Preparation Grills & Utensils",
+      "Ample Multi-Level Wave Mall Covered Parking with Valet Facility",
+      "Private Banquet Dining Room for Large Family Gatherings & Corporate Parties (Up to 120 Guests)",
+      "Live Teppanyaki Stir-Fry & Delhi Street Chaat Counter",
+      "Stone Cold Ice Cream Parlor & Heritage Kesar Kulfi Trolley",
+      "High-Speed Mall Wi-Fi & Accessible Wheelchair Access via Mall Elevators"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Occupying prime third-floor real estate inside Wave Mall on the high-traffic Narwal Bye-Pass corridor, Pirates of Grill serves as the apex celebration venue for greater Jammu. Drawing affluent families from Channi Himmat, Sainik Colony, Greater Kailash, and Gandhi Nagar, as well as transit professionals navigating NH-44, the venue bridges the gap between high-energy theatrical dining and sophisticated hospitality.",
+    "culinaryPillars": [
+      {
+        "pillar": "On-Table Live Charcoal Barbecue",
+        "description": "Custom tableside charcoal braziers delivering freshly roasted skewers infused with slow smoke and bespoke marinades."
+      },
+      {
+        "pillar": "Royal Awadhi & Mughlai Dum Handi",
+        "description": "Slow-simmered handi gravies, rich dal makhani cooked for 18 hours, and fragrant Awadhi mutton and chicken dum biryanis."
+      },
+      {
+        "pillar": "Interactive Live Street & Wok Counters",
+        "description": "Instant toss hakka noodles, steamed dim sums, piping hot Lucknowi chaat, and crispy corn tossed on request."
+      },
+      {
+        "pillar": "Grand Cold Stone & Artisan Dessert Studio",
+        "description": "Hand-rolled kulfi sticks, sizzling brownies with Belgian chocolate drizzle, and stone-cold sundae mixes."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "heroImage": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85",
+    "theme": "Matte Ember Charcoal & Brushed Champagne Bronze",
+    "colorTokens": {
+      "primary": {
+        "hex": "#D4A373",
+        "name": "Ember Bronze Champagne"
+      },
+      "background": {
+        "hex": "#0C0E12",
+        "name": "Matte Obsidian Dark"
+      },
+      "surface": {
+        "hex": "#14171F",
+        "name": "Smoked Charcoal"
+      },
+      "border": {
+        "hex": "rgba(255, 255, 255, 0.08)",
+        "name": "Hairline White Border"
+      }
+    }
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "live-grill",
+        "name": "Live Charcoal Skewers",
+        "shortDesc": "Continuous sizzling skewers roasted at your table over glowing coals",
+        "items": [
+          {
+            "id": "pog-01",
+            "name": "Afghani Malai Paneer Tikka",
+            "diet": "veg",
+            "price": 425,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "live-grill",
+            "description": "Velvety cottage cheese marinated in hung curd, green cardamom, roasted cashews, and crushed white pepper, blistered over table charcoal.",
+            "tags": ["Buffet Highlight", "Melt-In-Mouth", "Mild & Creamy"],
+            "calories": "340 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-02",
+            "name": "Angaari Murgh Tikka",
+            "diet": "non-veg",
+            "price": 485,
+            "spiceLevel": 3,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "live-grill",
+            "description": "Tender chicken morsels drenched in mustard oil, roasted Kashmiri deggi mirch, smoked cloves, and ginger reduction, charred to perfection.",
+            "tags": ["Bestseller", "Smoky & Spicy", "Live Skewer"],
+            "calories": "390 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-03",
+            "name": "Dakhni Malai Seekh Kebab",
+            "diet": "non-veg",
+            "price": 525,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "live-grill",
+            "description": "Finely minced young mutton infused with brown onions, mint, royal mace, and cheddar marrow, basted with clarified butter over hot embers.",
+            "tags": ["Chef's Signature", "Rich Mughlai", "Tender"],
+            "calories": "440 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-04",
+            "name": "Coastal Mustard Fish Tikka",
+            "diet": "non-veg",
+            "price": 545,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "live-grill",
+            "description": "Delicate river sole fillets marinated in crushed Kasundi mustard, yellow chili paste, and lemon glaze, quick-seared over coals.",
+            "tags": ["Seafood Delight", "Tangy Zing", "High Protein"],
+            "calories": "310 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-05",
+            "name": "Peshawari Tandoori Broccoli & Soya Chaap",
+            "diet": "veg",
+            "price": 395,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "live-grill",
+            "description": "Tender broccoli florets and soy protein chops coated in toasted besan, roasted cumin, and cream cheese marinade.",
+            "tags": ["Vegetarian Classic", "Protein Rich", "Charred Herb"],
+            "calories": "280 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-06",
+            "name": "Cinnamon & Honey Glazed Pineapple",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "live-grill",
+            "description": "Sweet Queen pineapples basted with wildflower honey, roasted Ceylon cinnamon, and sea salt crystals, caramelized tableside.",
+            "tags": ["Signature Palate Cleanser", "Caramelized", "Gluten-Free"],
+            "calories": "160 kcal",
+            "prepTime": "Live on Table",
+            "image": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "mughlai-mains",
+        "name": "Royal Mughlai & Handi Curries",
+        "shortDesc": "Slow-simmered rich Indian curries prepared in artisanal brass handis",
+        "items": [
+          {
+            "id": "pog-07",
+            "name": "Dal Makhani Pirates 18-Hour Slow Cook",
+            "diet": "veg",
+            "price": 385,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "mughlai-mains",
+            "description": "Black lentils stewed overnight over dying charcoal, finished with churned white butter, organic cream, and sun-dried kasuri methi.",
+            "tags": ["Heritage Recipe", "Iconic Dal", "Creamy Comfort"],
+            "calories": "390 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-08",
+            "name": "Purani Dilli Butter Chicken",
+            "diet": "non-veg",
+            "price": 545,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "mughlai-mains",
+            "description": "Clay-oven smoked tandoori chicken simmered in a velvet reduction of vine-ripened tomatoes, cashew butter, honey, and aromatic spices.",
+            "tags": ["All-Time Favorite", "Classic Butter Chicken", "Mughlai Royalty"],
+            "calories": "520 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-09",
+            "name": "Kashmiri Mutton Rogan Josh",
+            "diet": "non-veg",
+            "price": 625,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "mughlai-mains",
+            "description": "Tender Jammu mutton chunks slow braised in natural ratan jot root, Kashmiri shallots (pran), dried ginger (soonth), and whole aromatic spices.",
+            "tags": ["Jammu Heritage", "Authentic Rogan Josh", "Slow-Braised"],
+            "calories": "560 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-10",
+            "name": "Paneer Lababdar Shahjahani",
+            "diet": "veg",
+            "price": 435,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "mughlai-mains",
+            "description": "Fresh cottage cheese dice simmered with grated paneer in an onion-tomato gravy scented with royal shahi jeera and coriander seeds.",
+            "tags": ["Rich Gravy", "Cottage Cheese Feast", "Vegetarian Must"],
+            "calories": "410 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-11",
+            "name": "Subz Korma Nizami",
+            "diet": "veg",
+            "price": 375,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "mughlai-mains",
+            "description": "Seasonal garden vegetables, water chestnuts, and baby corn bathed in a fragrant almond and saffron essence gravy.",
+            "tags": ["Mild Saffron Gravy", "Nutritious", "Awadhi Elegance"],
+            "calories": "290 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-12",
+            "name": "Amritsari Kulcha & Garlic Naan Basket",
+            "diet": "veg",
+            "price": 160,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "mughlai-mains",
+            "description": "Tandoor-baked flaky breads stuffed with spiced potatoes or coated with roasted garlic, fresh coriander, and melted butter.",
+            "tags": ["Clay Oven Baked", "Crispy & Flaky", "Fresh from Tandoor"],
+            "calories": "260 kcal",
+            "prepTime": "Served Fresh",
+            "image": "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "biryani-pulao",
+        "name": "Royal Dum Biryani & Rice",
+        "shortDesc": "Sealed pot long-grain basmati cooked with saffron, brown onions, and bone-broth aroma",
+        "items": [
+          {
+            "id": "pog-13",
+            "name": "Awadhi Murgh Dum Biryani",
+            "diet": "non-veg",
+            "price": 540,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "biryani-pulao",
+            "description": "Fragrant Daawat basmati rice slow-cooked in sealed clay handis with spiced bone-in chicken, rose water, and strands of saffron.",
+            "tags": ["Buffet Crown Jewel", "Fragrant Saffron", "Served with Mirchi Ka Salan"],
+            "calories": "590 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-14",
+            "name": "Nawabi Subz Dum Biryani",
+            "diet": "veg",
+            "price": 420,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "biryani-pulao",
+            "description": "Aged basmati layered with seasonal florets, marinated paneer cubes, mint leaves, and golden fried onions under a dough seal.",
+            "tags": ["Vegetarian Delight", "Aromatics", "Served with Burani Raita"],
+            "calories": "440 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-15",
+            "name": "Jeera Pulao with Kashmiri Saffron",
+            "diet": "veg",
+            "price": 280,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "biryani-pulao",
+            "description": "Fluffy aged basmati rice tempered with roasted Shahjeera, ghee, and local saffron strands.",
+            "tags": ["Aromatic Rice", "Light & Fluffy", "Gluten-Free"],
+            "calories": "310 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "live-counters",
+        "name": "Live Asian Wok & Street Chaat",
+        "shortDesc": "Interactive street-style counters made fresh to order before your eyes",
+        "items": [
+          {
+            "id": "pog-16",
+            "name": "Crispy Salt & Pepper American Corn",
+            "diet": "veg",
+            "price": 295,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "live-counters",
+            "description": "Crisp-fried sweet corn kernels tossed with chopped bell peppers, spring scallions, cracked pepper, and garlic butter.",
+            "tags": ["Addictive Starter", "Crunchy & Savory", "Kid Friendly"],
+            "calories": "260 kcal",
+            "prepTime": "3 mins",
+            "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-17",
+            "name": "Wok-Tossed Hakka Chilli Garlic Noodles",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 2,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "live-counters",
+            "description": "Fresh artisanal noodles tossed in high flame with shredded cabbage, crunchy carrots, garlic chili paste, and light soy.",
+            "tags": ["Live Teppanyaki", "Smoky Wok Hei", "Hot & Savory"],
+            "calories": "380 kcal",
+            "prepTime": "4 mins",
+            "image": "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-18",
+            "name": "Steamed Crystal Dim Sums (Veg / Chicken)",
+            "diet": "non-veg",
+            "price": 360,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "live-counters",
+            "description": "Translucent bamboo-steamed dumplings stuffed with water chestnuts or seasoned minced chicken, served with fiery Sichuan dip.",
+            "tags": ["Live Steamer", "Low Calorie", "Authentic Asian"],
+            "calories": "210 kcal",
+            "prepTime": "5 mins",
+            "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-19",
+            "name": "Chandni Chowk Dahi Puri & Papdi Chaat",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "live-counters",
+            "description": "Crisp flour wafers filled with spiced potatoes, sweetened mountain curd, tangy saunth chutney, and mint dressing.",
+            "tags": ["Street Food Icon", "Sweet & Tangy", "Live Assembly"],
+            "calories": "280 kcal",
+            "prepTime": "Instant",
+            "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-20",
+            "name": "Smoked Chicken Tikka Pizza Slice",
+            "diet": "non-veg",
+            "price": 340,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "live-counters",
+            "description": "Stone-baked thin-crust pizza topped with tandoori chicken shreds, melted mozzarella, bell peppers, and fresh herbs.",
+            "tags": ["Kids Special", "Cheesy", "Live Oven"],
+            "calories": "330 kcal",
+            "prepTime": "Fresh from Oven",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "dessert-parlor",
+        "name": "Artisanal Desserts & Kulfi",
+        "shortDesc": "Unlimited dessert studio featuring hot sizzling brownies, ice creams, and royal sweets",
+        "items": [
+          {
+            "id": "pog-21",
+            "name": "Sizzling Dark Brownie with Vanilla Pod Gelato",
+            "diet": "veg",
+            "price": 280,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "dessert-parlor",
+            "description": "Gooey Belgian chocolate fudge brownie served on a smoking hot iron skillet, crowned with rich Madagascar vanilla bean gelato and hot molten fudge.",
+            "tags": ["All-Time Champion", "Decadent Chocolate", "Warm & Cold"],
+            "calories": "480 kcal",
+            "prepTime": "3 mins",
+            "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-22",
+            "name": "Royal Shahi Kesar Pista Kulfi",
+            "diet": "veg",
+            "price": 190,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "dessert-parlor",
+            "description": "Slow-reduced whole milk kulfi enriched with authentic Pampore saffron threads, crushed green pistachios, and scented falooda noodles.",
+            "tags": ["Heritage Sweet", "Kashmir Saffron", "Unlimited"],
+            "calories": "240 kcal",
+            "prepTime": "Trolley Fresh",
+            "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-23",
+            "name": "Hot Shahi Gulab Jamun with Rabri",
+            "diet": "veg",
+            "price": 210,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "dessert-parlor",
+            "description": "Mawa dumplings fried in pure desi ghee, soaked in green cardamom syrup and paired with chilled reduced malai rabri.",
+            "tags": ["Traditional Indulgence", "Desi Ghee", "Melt in Mouth"],
+            "calories": "360 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-24",
+            "name": "Stone-Cold Mix Ice Cream Sundae",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "dessert-parlor",
+            "description": "Custom ice cream churned on a frozen granite slab with oreo crumbs, roasted almonds, sprinkles, and butterscotch ribbons.",
+            "tags": ["Custom Creation", "Kids Delight", "Unlimited Flavors"],
+            "calories": "310 kcal",
+            "prepTime": "Live Mix",
+            "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pog-25",
+            "name": "Moong Dal Halwa Desi Ghee",
+            "diet": "veg",
+            "price": 230,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "dessert-parlor",
+            "description": "Golden roasted yellow lentils slow-cooked with pure cow's ghee, slivered cashews, and golden raisins.",
+            "tags": ["Winter Favorite", "Pure Ghee", "Rich & Hearty"],
+            "calories": "410 kcal",
+            "prepTime": "Buffet Ready",
+            "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}

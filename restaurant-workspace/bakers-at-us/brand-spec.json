@@ -1,0 +1,593 @@
+{
+  "restaurant": {
+    "name": "Bakers @ Us",
+    "slug": "bakers-at-us",
+    "city": "Jammu",
+    "locality": "Sector 1, Channi Himmat",
+    "state": "Jammu & Kashmir",
+    "pincode": "180015",
+    "tagline": "The Quiet Art of French Flour, Ferment & Fire",
+    "subTagline": "Jammu's premier French boulangerie and haute pâtisserie atelier — crafting 36-hour cold-fermented wild sourdoughs, 81-layer AOP butter viennoiserie, and bespoke celebration gateaux.",
+    "concept": "Refined artisanal bakery and morning-to-evening tasting salon, catering to Jammu's discerning epicures, executive breakfasts, weekend connoisseurs, and celebratory milestone cake orders.",
+    "rating": "4.9",
+    "reviewCount": "1,120+",
+    "priceRange": "₹₹ (₹350 - ₹750 per person)",
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=85",
+    "contact": {
+      "phone": "+91 191 246 7188",
+      "mobile": "+91 94191 88204",
+      "whatsapp": "+91 94191 88204",
+      "email": "bonjour@bakersatus.com",
+      "ordersEmail": "cakes@bakersatus.com"
+    },
+    "location": {
+      "address": "Lane 4, Near Sector 1 Central Park, Channi Himmat",
+      "neighborhood": "Channi Himmat",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180015",
+      "landmarks": "2 minutes from Channi Himmat Marble Market and Wave Mall Jammu Bypass",
+      "googleMapsUrl": "https://maps.google.com/?q=Bakers+At+Us+Sector+1+Channi+Himmat+Jammu",
+      "coordinates": {
+        "lat": 32.6981,
+        "lng": 74.8863
+      }
+    },
+    "hours": {
+      "morningSalon": {
+        "open": "08:00 AM",
+        "close": "12:00 PM"
+      },
+      "patisserieAndBakes": {
+        "open": "08:00 AM",
+        "close": "10:30 PM"
+      },
+      "freshBakeTimes": "First Batch: 08:15 AM | Afternoon Crust: 03:30 PM",
+      "days": "Monday – Sunday (Open All 7 Days)"
+    },
+    "amenities": [
+      "Bespoke Cake Consultation Atelier",
+      "Artisanal Coffee & Tea Tasting Salon",
+      "Curated Sourdough Bread Subscription Box",
+      "Valet Parking & Curbside Pick-up",
+      "Air-conditioned French Glasshouse Seating",
+      "High-Speed Wi-Fi for Morning Remote Work"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Sector 1 in Channi Himmat represents the most affluent residential enclave in Jammu. Discerning residents previously had no true French sourdough and haute patisserie atelier locally, frequently travelling to Delhi or Chandigarh for genuine laminated viennoiserie.",
+    "targetDemographics": [
+      {
+        "segment": "Channi Himmat & Gandhi Nagar Affluent Families",
+        "needs": "Pure ingredients, real French butter, eggless luxury cake options, high-end celebration centerpiece cakes."
+      },
+      {
+        "segment": "Modern Professionals & Young Connoisseurs",
+        "needs": "Single-origin pour-overs, artisanal avocado sourdough tartines, quiet laptop-friendly morning salon atmosphere."
+      },
+      {
+        "segment": "Luxury Wedding & Milestone Event Organizers",
+        "needs": "Custom tier gateaux with edible 24k gold leaf, macaron towers, and bespoke tasting appointments."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "Authentic French Fermentation",
+        "detail": "36-hour slow cold fermentation with wild natural starters, producing deep complex sour notes and crisp caramelized crusts."
+      },
+      {
+        "pillar": "AOP Butter Viennoiserie",
+        "detail": "Strictly imported French AOP butter folded into 81 whisper-thin layers for the quintessential honeycomb interior."
+      },
+      {
+        "pillar": "Himalayan & French Harmonization",
+        "detail": "Infusing Pampore Kashmiri saffron, wild Kishtwar walnuts, and French Valrhona chocolate into contemporary pastries."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Matte Obsidian & Warm Linen Brioche",
+    "aestheticPhilosophy": "Quiet Luxury French Boulangerie. Generous whitespace, hairline borders, matte dark obsidian tones, warm buttery amber accents, and editorial typography.",
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=85",
+    "colorTokens": {
+      "primary": { "hex": "#D4A373", "name": "Brioche Crust Gold" },
+      "secondary": { "hex": "#E2B17A", "name": "Champagne Butter" },
+      "background": { "hex": "#0C0B0A", "name": "Matte Obsidian" },
+      "cardBg": { "hex": "#141210", "name": "Espresso Basalt" },
+      "surface": { "hex": "#1B1816", "name": "Warm Charcoal Surface" },
+      "border": { "hex": "rgba(255, 255, 255, 0.08)", "name": "Hairline Frost" },
+      "text": { "hex": "#F7F5F0", "name": "French Linen" },
+      "textMuted": { "hex": "#9E958C", "name": "Warm Pumice" }
+    },
+    "typography": {
+      "display": "'Playfair Display', serif",
+      "body": "'Plus Jakarta Sans', system-ui, sans-serif"
+    }
+  },
+  "storytellingAndCopy": {
+    "brandStory": "Born from a love for the timeless boulangeries of Paris and the pristine air of Jammu, Bakers @ Us is an homage to honest craftsmanship. We reject commercial improvers and artificial preservatives. Every loaf begins with four humble elements — heritage flour, pure mountain water, mineral salt, and our living wild levain. Shaped by hand and baked in small batches on stone hearths.",
+    "hero": {
+      "eyebrow": "Artisanal French Boulangerie & Pâtisserie • Channi Himmat",
+      "headline": "Flour, Ferment & Fire in Quiet Perfection",
+      "subheadline": "36-hour wild levain sourdoughs, 81-layer AOP French butter croissants, and couture celebration cakes crafted daily in Sector 1, Jammu."
+    },
+    "highlights": [
+      {
+        "title": "36-Hour Wild Sourdough",
+        "description": "Slow stone-hearth fermentation yielding a deep blistered crust and custard-like open crumb.",
+        "icon": "bread"
+      },
+      {
+        "title": "81-Layer Viennoiserie",
+        "description": "Hand-laminated with Normandy AOP butter for an ethereal, shatteringly crisp honeycomb bite.",
+        "icon": "croissant"
+      },
+      {
+        "title": "Haute Patisserie",
+        "description": "Precision entremets layered with Valrhona single-origin cocoa, Tahitian vanilla, and Kashmiri saffron.",
+        "icon": "cake"
+      },
+      {
+        "title": "Custom Celebration Cakes",
+        "description": "Bespoke tiered centerpieces for Jammu's most memorable milestone weddings and private soirees.",
+        "icon": "sparkle"
+      }
+    ]
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "viennoiserie",
+        "name": "Viennoiserie & Morning Bakes",
+        "tagline": "Hand-laminated with French AOP butter every morning at 5:00 AM",
+        "items": [
+          {
+            "id": "croissant-pure-beurre",
+            "name": "Traditional French Butter Croissant",
+            "price": 195,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": true,
+            "description": "81 gossamer layers of French AOP butter laminate. Crisp golden honeycomb exterior with an airy, pillowy core.",
+            "ingredients": ["French T55 Flour", "Charentes-Poitou AOP Butter", "Milk", "Sea Salt", "Brown Sugar"],
+            "pairingSuggestion": "Pairs sublimely with our Cortado Reserve or Double Ristretto",
+            "tags": ["Chef Signature", "Best Seller", "Fresh Daily"],
+            "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pain-au-chocolat",
+            "name": "Valrhona Pain au Chocolat",
+            "price": 240,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Double batons of 64% Valrhona dark chocolate enveloped within golden butter laminate pastry.",
+            "ingredients": ["AOP Butter Pastry", "Valrhona 64% Dark Batons", "Fleur de Sel"],
+            "pairingSuggestion": "Ideal with Iced Saffron Latte or Hot Spiced Mocha",
+            "tags": ["Parisian Classic", "Rich Chocolate"],
+            "image": "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "pistachio-escargot",
+            "name": "Bronte Pistachio & Cardamom Escargot",
+            "price": 290,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": true,
+            "description": "Spiral puff filled with Sicilian Bronte pistachio frangipane cream and freshly crushed green cardamom pods.",
+            "ingredients": ["Bronte Pistachio Puree", "Green Cardamom", "AOP Butter Laminate", "Raw Sugar Glaze"],
+            "pairingSuggestion": "Exquisite alongside Kashmiri Kahwa French Press",
+            "tags": ["Chef Signature", "Artisanal"],
+            "image": "https://images.unsplash.com/photo-1621236378699-8597fee6a1ce?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "almond-croissant",
+            "name": "Almond & Orange Blossom Twice-Baked Croissant",
+            "price": 275,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Twice-baked croissant soaked in orange blossom reduction, loaded with rich almond frangipane and toasted almond slivers.",
+            "ingredients": ["Kishtwar Sweet Almonds", "Orange Blossom Water", "Frangipane", "Flaked Almonds"],
+            "pairingSuggestion": "Pairs with Flat White or Ceylon Earl Grey",
+            "tags": ["Twice Baked", "Customer Favorite"],
+            "image": "https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kouign-amann",
+            "name": "Breton Salted Caramel Kouign-Amann",
+            "price": 260,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "A Breton specialty of caramelized layered pastry, brittle crunch outside with tender butter pockets and Guérande sea salt.",
+            "ingredients": ["AOP Butter", "Breton Sea Salt", "Caramelized Raw Cane Sugar"],
+            "pairingSuggestion": "Pairs with Single-Origin Pour Over",
+            "tags": ["Crisp Caramel", "French Heritage"],
+            "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "cruffin-berry-vanilla",
+            "name": "Wild Berry & Tahitian Vanilla Cruffin",
+            "price": 285,
+            "category": "viennoiserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Flaky hybrid cruffin piped with house-made wild blackberry-raspberry coulis and mascarpone Tahitian vanilla bean cream.",
+            "ingredients": ["Wild Himalayan Berries", "Tahitian Vanilla Bean", "Whipped Mascarpone", "Pastry Sugar"],
+            "pairingSuggestion": "Pairs with Iced Peach Cold Brew",
+            "tags": ["Indulgent", "Weekend Special"],
+            "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "sourdough",
+        "name": "Artisanal Sourdough & Hearth Breads",
+        "tagline": "Naturally leavened with our 7-year heirloom wild levain, stone-baked",
+        "items": [
+          {
+            "id": "country-sourdough",
+            "name": "36-Hour Country Levain Boule",
+            "price": 280,
+            "category": "sourdough",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Our signature hearth loaf. Stoneground whole wheat and unbleached grain, long cold-proofed for blistered dark crust and deep umami sour notes.",
+            "ingredients": ["Heritage Wheat", "Rye Flour", "Natural Wild Levain", "Mineral Spring Water", "Kala Namak Salt"],
+            "pairingSuggestion": "Serve warm with cultured herb butter or aged cheddar",
+            "tags": ["Chef Signature", "Vegan", "100% Wild Ferment"],
+            "image": "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "walnut-cranberry-batard",
+            "name": "Roasted Walnut & Ruby Cranberry Batard",
+            "price": 340,
+            "category": "sourdough",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Fragrant sourdough loaf studded with toasted wild Kishtwar walnuts and tart ruby cranberries.",
+            "ingredients": ["Wild Levain", "Toasted Walnuts", "Dried Cranberries", "Organic Flour"],
+            "pairingSuggestion": "Exceptional paired with goat cheese or morning butter",
+            "tags": ["Vegan", "Nutty & Tart"],
+            "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "rosemary-olive-focaccia",
+            "name": "Kalamata Olive & Mountain Rosemary Focaccia",
+            "price": 260,
+            "category": "sourdough",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Dimpled olive oil focaccia baked with pitted Kalamata olives, fresh mountain rosemary, garlic confit, and flaky sea salt.",
+            "ingredients": ["Cold Pressed Extra Virgin Olive Oil", "Kalamata Olives", "Fresh Rosemary", "Garlic Confit"],
+            "pairingSuggestion": "Delicious with balsamic olive oil dip or tomato soup",
+            "tags": ["Vegan", "Golden Crust"],
+            "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "brioche-pain-de-mie",
+            "name": "Golden Butter Brioche Loaf (Pain de Mie)",
+            "price": 310,
+            "category": "sourdough",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Featherlight French brioche loaf enriched with farm eggs and Normandy butter. Impossibly soft crumb with golden bronze crust.",
+            "ingredients": ["AOP Butter", "Cage-Free Eggs", "Full Cream Milk", "Wheat Flour"],
+            "pairingSuggestion": "The gold standard for French Toast or tea sandwich slices",
+            "tags": ["Ultra Soft", "Enriched Classic"],
+            "image": "https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "multiseed-rye-boule",
+            "name": "Seven-Seed Dark Rye Sourdough",
+            "price": 320,
+            "category": "sourdough",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Earthy dark rye sourdough packed with roasted flax, pumpkin seeds, black sesame, sunflower seeds, and cracked wheat.",
+            "ingredients": ["Dark Rye Flour", "Roasted Flax", "Pumpkin Seeds", "Sunflower Seeds", "Black Sesame"],
+            "pairingSuggestion": "Pairs with smoked salmon, avocado, or labneh",
+            "tags": ["Vegan", "High Fiber", "Nutrient Dense"],
+            "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "patisserie",
+        "name": "Haute Pâtisserie & Entremets",
+        "tagline": "Individual French gateaux crafted with precision and single-origin chocolates",
+        "items": [
+          {
+            "id": "opera-classic",
+            "name": "Classic French Opera Gateau",
+            "price": 380,
+            "category": "patisserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": true,
+            "description": "Six precise layers of almond Joconde sponge steeped in espresso liqueur syrup, Valrhona dark ganache, and silky French coffee buttercream.",
+            "ingredients": ["Almond Joconde", "Espresso Reduction", "Valrhona Ganache", "Coffee Mousseline", "Mirror Glaze"],
+            "pairingSuggestion": "Pairs with Double Espresso or Highland Single Malt",
+            "tags": ["Chef Signature", "Parisian Benchmark"],
+            "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "saffron-pistachio-tartlet",
+            "name": "Pampore Saffron & Pistachio Tartlet",
+            "price": 395,
+            "category": "patisserie",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Eggless butter sable tart shell filled with Kashmiri saffron diplomate cream, roasted pistachio crunch layer, and edible silver foil.",
+            "ingredients": ["Kashmiri Pampore Saffron", "Iranian Pistachio Paste", "Vanilla Cream", "Butter Sable"],
+            "pairingSuggestion": "Pairs with Kashmiri Kahwa French Press",
+            "tags": ["Chef Signature", "Eggless", "Regional Pride"],
+            "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "valrhona-raspberry-dome",
+            "name": "Valrhona 70% Dark Guanaja & Raspberry Dome",
+            "price": 420,
+            "category": "patisserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Silky dark chocolate mousse made with 70% Guanaja Valrhona cacao, encasing a tart liquid raspberry center over hazelnut dacquoise.",
+            "ingredients": ["Valrhona 70% Guanaja", "Raspberry Coulis", "Hazelnut Dacquoise", "Cocoa Velvet Spray"],
+            "pairingSuggestion": "Pairs with Iced Saffron Cold Brew",
+            "tags": ["Gluten-Free Base", "Decadent"],
+            "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "mille-feuille-vanille",
+            "name": "Tahitian Vanilla Mille-Feuille",
+            "price": 360,
+            "category": "patisserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Three layers of caramelized inverse puff pastry piped with velvety Tahitian vanilla bean mousseline cream and delicate dusted icing.",
+            "ingredients": ["Inverse Puff Pastry", "Tahitian Vanilla Beans", "Mousseline Cream", "Caramelized Sugar"],
+            "pairingSuggestion": "Pairs with Café au Lait",
+            "tags": ["Shatteringly Crisp", "French Icon"],
+            "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "paris-brest-praline",
+            "name": "Piedmont Hazelnut Paris-Brest",
+            "price": 385,
+            "category": "patisserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Crown of crisp choux pastry filled with house-made caramelized hazelnut praline mousseline and toasted whole hazelnuts.",
+            "ingredients": ["Piedmont Hazelnut Praline", "Choux Pastry", "Toasted Hazelnuts", "Praline Crunch"],
+            "pairingSuggestion": "Pairs with Cortado or Cappuccino",
+            "tags": ["Nutty & Crisp", "Classic Pastry"],
+            "image": "https://images.unsplash.com/photo-1621236378699-8597fee6a1ce?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "lemon-meringue-tart",
+            "name": "Torched Meyer Lemon & Yuzu Tart",
+            "price": 340,
+            "category": "patisserie",
+            "veg": true,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Zesty citrus curd made with Meyer lemons and Japanese yuzu, sitting in a crisp buttery crust and capped with torched Italian meringue peaks.",
+            "ingredients": ["Meyer Lemon Juice", "Yuzu Extract", "Butter Sable", "Italian Meringue"],
+            "pairingSuggestion": "Pairs with Iced Citrus Americano",
+            "tags": ["Zesty & Bright", "Torched Meringue"],
+            "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "cakes",
+        "name": "Custom Celebration Cakes & Gateaux",
+        "tagline": "Handcrafted celebration masterpieces — order 24 hours in advance or grab daily fresh whole gateaux",
+        "items": [
+          {
+            "id": "belgian-dark-truffle-cake",
+            "name": "Belgian Dark Truffle Reserve Gateau",
+            "price": 1450,
+            "category": "cakes",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Pure luxury chocolate cake. Moist cocoa sponge layered with 64% Belgian dark chocolate silk ganache, finished with edible 24k gold leaf and cocoa dust (500g).",
+            "ingredients": ["Belgian 64% Dark Chocolate", "Dutch Processed Cocoa", "Dark Ganache", "24K Gold Leaf"],
+            "pairingSuggestion": "Accompanied with artisanal vanilla bean gelato",
+            "tags": ["Chef Signature", "100% Eggless", "Bestseller"],
+            "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "biscoff-salted-caramel",
+            "name": "Lotus Biscoff & Fleur de Sel Caramel Gateau",
+            "price": 1550,
+            "category": "cakes",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Spiced speculoos biscuit crust, light caramel sponge, whipped Biscoff buttercream, and dripping sea salt butter caramel (500g).",
+            "ingredients": ["Lotus Biscoff Spread", "Speculoos Crumb", "Fleur de Sel Caramel", "Eggless Caramel Sponge"],
+            "pairingSuggestion": "Pairs with Cold Brew or Iced Latte",
+            "tags": ["Chef Signature", "Eggless", "Trend Favorite"],
+            "image": "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kashmiri-kahwa-cake",
+            "name": "Kashmiri Kahwa & Rose Petal Chiffon Cake",
+            "price": 1650,
+            "category": "cakes",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "An ode to Jammu & Kashmir. Delicate chiffon cake infused with green tea kahwa broth, crushed green cardamom, roasted almond slivers, and fragrant rose petal glaze (500g).",
+            "ingredients": ["Kahwa Infusion", "Organic Dried Rose Petals", "Cardamom", "Kishtwar Almonds"],
+            "pairingSuggestion": "Pairs with Kashmiri Saffron Tea",
+            "tags": ["Chef Signature", "Regional Heritage", "Eggless"],
+            "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "red-velvet-mascarpone",
+            "name": "Red Velvet & Tahitian Mascarpone Crown",
+            "price": 1400,
+            "category": "cakes",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Deep crimson cocoa velvet sponge enveloped with whipped Italian mascarpone and cream cheese frosting, topped with fresh red berries (500g).",
+            "ingredients": ["Italian Mascarpone", "Cream Cheese", "Cocoa Velvet Sponge", "Fresh Berries"],
+            "pairingSuggestion": "Pairs with Sparkling Rosé Mocktail",
+            "tags": ["Eggless", "Celebration Classic"],
+            "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "savory-cafe",
+        "name": "Savory Tartines & Cafe Fare",
+        "tagline": "Gourmet open toasts on fresh stone-hearth sourdough and flaky brioche",
+        "items": [
+          {
+            "id": "avocado-burrata-tartine",
+            "name": "Avocado & Burrata Sourdough Tartine",
+            "price": 440,
+            "category": "savory-cafe",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Toasted slice of our 36-hr country sourdough, hass avocado smash, fresh artisanal burrata, heirloom cherry tomatoes, aged Modena balsamic glaze, and micro arugula.",
+            "ingredients": ["Country Sourdough", "Hass Avocado", "Fresh Burrata", "Aged Balsamic", "Microgreens"],
+            "pairingSuggestion": "Pairs with Lavender Honey Latte",
+            "tags": ["Chef Signature", "Vegetarian", "Healthy Luxury"],
+            "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "smoked-chicken-croissant",
+            "name": "Oak-Smoked Chicken & Dijon Flaky Croissant",
+            "price": 410,
+            "category": "savory-cafe",
+            "veg": false,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Our butter croissant sliced and stuffed with tender oak-smoked pulled chicken breast, whole-grain Dijon mustard emulsion, baby gherkins, and melted Emmental.",
+            "ingredients": ["Smoked Chicken", "French Croissant", "Dijon Mustard", "Emmental Cheese", "Gherkins"],
+            "pairingSuggestion": "Pairs with Cortado Reserve",
+            "tags": ["Savory Bestseller", "Non-Veg"],
+            "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "wild-mushroom-brioche",
+            "name": "Wild Forest Mushroom & Truffle Brioche Toast",
+            "price": 390,
+            "category": "savory-cafe",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Thick-cut golden brioche toast loaded with pan-seared button, cremini, and shiitake mushrooms, garlic herb butter, white truffle oil, and shaved parmesan.",
+            "ingredients": ["Golden Brioche", "Truffle Oil", "Shiitake Mushrooms", "Cremini", "Aged Parmesan"],
+            "pairingSuggestion": "Pairs with Iced Saffron Cold Brew",
+            "tags": ["Chef Signature", "Vegetarian", "Truffle Aroma"],
+            "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "quiche-lorraine-pastry",
+            "name": "Classic French Quiche Lorraine",
+            "price": 360,
+            "category": "savory-cafe",
+            "veg": false,
+            "egg": true,
+            "chefSignature": false,
+            "description": "Deep-dish savory French tart with rich egg custard, smoked turkey rashers, caramelized leeks, and aged Gruyère cheese in a flaky butter crust.",
+            "ingredients": ["Shortcrust Pastry", "Smoked Turkey", "Gruyère Cheese", "Heavy Cream", "Nutmeg"],
+            "pairingSuggestion": "Pairs with Americano or French Press",
+            "tags": ["French Classic", "Non-Veg"],
+            "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "coffee-beverages",
+        "name": "Specialty Coffee & Botanical Infusions",
+        "tagline": "Single-origin Arabica from Chikmagalur & heritage mountain botanicals",
+        "items": [
+          {
+            "id": "iced-saffron-latte",
+            "name": "Iced Pampore Saffron Latte",
+            "price": 290,
+            "category": "coffee-beverages",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Double espresso shot combined with our 24-hour saffron syrup made from handpicked Pampore saffron, chilled oat milk, and golden cardamom dust.",
+            "ingredients": ["Pampore Saffron", "Espresso", "Oat Milk", "Cardamom Dust"],
+            "pairingSuggestion": "Pairs with Traditional French Butter Croissant",
+            "tags": ["Chef Signature", "Signature Drink", "Chilled"],
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kashmiri-kahwa-press",
+            "name": "Artisanal Kashmiri Kahwa (French Press)",
+            "price": 240,
+            "category": "coffee-beverages",
+            "veg": true,
+            "egg": false,
+            "chefSignature": true,
+            "description": "Hand-plucked whole-leaf green tea steeped tableside with saffron strands, crushed cinnamon, green cardamom, and slivered almonds.",
+            "ingredients": ["Kashmiri Green Tea", "Saffron Strands", "Cinnamon", "Cardamom", "Almonds"],
+            "pairingSuggestion": "Pairs with Pistachio & Cardamom Escargot",
+            "tags": ["Regional Pride", "Hot Infusion"],
+            "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "cortado-reserve",
+            "name": "Cortado Reserve",
+            "price": 220,
+            "category": "coffee-beverages",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Equal parts rich double ristretto extraction cut with velvety steamed whole milk in a 130ml Gibraltar glass.",
+            "ingredients": ["Double Ristretto", "Microfoam Milk"],
+            "pairingSuggestion": "Pairs with Valrhona Pain au Chocolat",
+            "tags": ["Barista Favorite", "Strong"],
+            "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "lavender-honey-latte",
+            "name": "French Lavender & Forest Honey Latte",
+            "price": 260,
+            "category": "coffee-beverages",
+            "veg": true,
+            "egg": false,
+            "chefSignature": false,
+            "description": "Aromatic French lavender steeped with wild raw forest honey, pulled espresso, and textured silk foam.",
+            "ingredients": ["Organic Lavender", "Raw Honey", "Espresso", "Textured Milk"],
+            "pairingSuggestion": "Pairs with Avocado & Burrata Tartine",
+            "tags": ["Floral", "Calming"],
+            "image": "https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  },
+  "techStackRecommendation": {
+    "tier": "Tier 1: Vanilla HTML5, CSS3, Vanilla JS",
+    "rationale": "Zero runtime overhead, sub-second First Contentful Paint, highly robust offline caching potential, optimized for 85%+ mobile scannability."
+  }
+}

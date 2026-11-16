@@ -136,12 +136,12 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md transition-all duration-300"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md transition-all duration-300 w-full max-w-full"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl bg-[#1E2220] border border-amber-500/35 shadow-[0_25px_70px_rgba(0,0,0,0.9)] flex flex-col no-scrollbar"
+        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl bg-[#1E2220] border border-amber-500/35 shadow-[0_25px_70px_rgba(0,0,0,0.9)] flex flex-col no-scrollbar max-w-full"
       >
         {/* Close Button */}
         <button

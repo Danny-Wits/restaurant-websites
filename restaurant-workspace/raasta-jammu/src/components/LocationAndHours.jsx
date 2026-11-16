@@ -32,22 +32,23 @@ export default function LocationAndHours() {
   };
 
   return (
-    <section id="location" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#0F1110]">
-      <div className="max-w-7xl mx-auto">
+    <section id="location" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#0F1110] w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto w-full max-w-full">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <MapPin className="w-4 h-4 text-amber-400" />
-            <span>Panama Chowk Destination &bull; Gate 2 Strip</span>
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
+            <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
+            <span className="truncate sm:hidden">Panama Chowk Destination</span>
+            <span className="hidden sm:inline">Panama Chowk Destination &bull; Gate 2 Strip</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-5xl text-zinc-100 tracking-tight mb-4">
+          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-5xl text-zinc-100 tracking-tight mb-4 break-words">
             Find the{' '}
             <span className="text-amber-400 drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
               Rhythm &bull; Visit Us
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+          <p className="text-xs sm:text-base text-zinc-400 leading-relaxed">
             Conveniently situated at the central cultural transit crossroads linking Jammu University, Gujarbasti, Bahu Plaza, and Jammu Tawi.
           </p>
         </div>

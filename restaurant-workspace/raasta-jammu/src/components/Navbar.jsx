@@ -48,16 +48,18 @@ export default function Navbar({ onOpenReserve }) {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 w-full max-w-full ${
           isScrolled
-            ? 'glass-nav shadow-[0_10px_30px_rgba(0,0,0,0.6)] py-3 border-b border-amber-500/20'
-            : 'bg-gradient-to-b from-[#0F1110]/95 via-[#0F1110]/70 to-transparent py-4'
+            ? 'glass-nav shadow-[0_10px_30px_rgba(0,0,0,0.6)] py-2.5 sm:py-3 border-b border-amber-500/20'
+            : 'bg-gradient-to-b from-[#0F1110]/95 via-[#0F1110]/70 to-transparent py-3 sm:py-4'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 w-full max-w-full">
+          <div className="flex items-center justify-between gap-2 w-full min-w-0">
             {/* Logo */}
-            <Logo />
+            <div className="min-w-0 shrink">
+              <Logo />
+            </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
@@ -78,11 +80,11 @@ export default function Navbar({ onOpenReserve }) {
             </nav>
 
             {/* Right Desktop Actions */}
-            <div className="hidden md:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-3 shrink-0">
               {/* Campus Perk Pill */}
               <a
                 href="#campus"
-                className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold hover:bg-emerald-500/20 transition-all shadow-[0_0_12px_-2px_rgba(16,185,129,0.3)]"
+                className="hidden xl:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold hover:bg-emerald-500/20 transition-all shadow-[0_0_12px_-2px_rgba(16,185,129,0.3)] shrink-0"
               >
                 <GraduationCap className="w-3.5 h-3.5 text-emerald-400" />
                 <span>15% JU Student Perk</span>
@@ -91,7 +93,7 @@ export default function Navbar({ onOpenReserve }) {
               {/* Direct Call Link */}
               <a
                 href={`tel:${restaurantData.restaurant.contact.phone.replace(/\s+/g, '')}`}
-                className="p-2.5 rounded-xl bg-white/[0.04] border border-zinc-800 text-zinc-300 hover:text-amber-400 hover:border-amber-500/40 hover:bg-white/[0.08] transition-all"
+                className="p-2.5 rounded-xl bg-white/[0.04] border border-zinc-800 text-zinc-300 hover:text-amber-400 hover:border-amber-500/40 hover:bg-white/[0.08] transition-all shrink-0"
                 title="Call Panama Chowk Desk"
               >
                 <Phone className="w-4 h-4" />
@@ -100,25 +102,25 @@ export default function Navbar({ onOpenReserve }) {
               {/* Reserve CTA */}
               <button
                 onClick={onOpenReserve}
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-zinc-950 font-semibold text-sm shadow-[0_0_20px_-3px_rgba(245,158,11,0.5)] hover:shadow-[0_0_28px_2px_rgba(245,158,11,0.7)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-zinc-950 font-semibold text-sm shadow-[0_0_20px_-3px_rgba(245,158,11,0.5)] hover:shadow-[0_0_28px_2px_rgba(245,158,11,0.7)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 cursor-pointer shrink-0"
               >
                 <Calendar className="w-4 h-4 text-zinc-950" />
                 <span>Reserve Table / Gig</span>
               </button>
             </div>
 
-            {/* Mobile Hamburger Button */}
-            <div className="flex md:hidden items-center gap-2">
+            {/* Mobile Actions */}
+            <div className="flex md:hidden items-center gap-1.5 sm:gap-2 shrink-0">
               <button
                 onClick={onOpenReserve}
-                className="px-3 py-1.5 rounded-lg bg-amber-500 text-zinc-950 font-bold text-xs shadow-md"
+                className="hidden min-[400px]:inline-flex px-2.5 sm:px-3 py-1.5 rounded-lg bg-amber-500 text-zinc-950 font-bold text-xs shadow-md shrink-0 cursor-pointer"
               >
                 Reserve
               </button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle navigation menu"
-                className="p-2.5 rounded-xl bg-white/[0.05] border border-amber-500/20 text-zinc-300 hover:text-amber-400 transition-colors"
+                className="p-2 sm:p-2.5 rounded-xl bg-white/[0.05] border border-amber-500/20 text-zinc-300 hover:text-amber-400 transition-colors shrink-0 cursor-pointer"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <MenuIcon className="w-5 h-5" />}
               </button>
@@ -141,7 +143,7 @@ export default function Navbar({ onOpenReserve }) {
 
         {/* Slide-over panel */}
         <div
-          className={`absolute top-0 right-0 bottom-0 w-5/6 max-w-sm bg-[#161917] border-l border-amber-500/20 shadow-2xl p-6 flex flex-col justify-between transition-transform duration-300 overflow-y-auto ${
+          className={`absolute top-0 right-0 bottom-0 w-5/6 max-w-sm bg-[#161917] border-l border-amber-500/20 shadow-2xl p-5 sm:p-6 flex flex-col justify-between transition-transform duration-300 overflow-y-auto max-w-full ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >

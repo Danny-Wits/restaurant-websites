@@ -1,0 +1,671 @@
+{
+  "restaurant": {
+    "name": "Brewberrys Cafe Jammu",
+    "slug": "brewberrys-jammu",
+    "city": "Jammu",
+    "locality": "Gandhi Nagar",
+    "state": "Jammu & Kashmir",
+    "pincode": "180004",
+    "tagline": "Specialty Brews, Monster Shakes & Youth Conversations",
+    "subTagline": "Jammu's quintessential youth coffee haven on Apsara Road — pour-overs, thick freak shakes, crispy sourdough melts, and late evening cafe banter.",
+    "concept": "Contemporary minimalist specialty coffee bar and vibrant hangout for Jammu's college youth, creative professionals, and coffee purists.",
+    "rating": "4.8",
+    "reviewCount": "1,420+",
+    "priceRange": "₹₹ (₹300 - ₹600 for two)",
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80",
+    "contact": {
+      "phone": "+91 191 243 5522",
+      "mobile": "+91 94192 11488",
+      "whatsapp": "+91 94192 11488",
+      "email": "brewberrys.jammu@gmail.com",
+      "instagram": "@brewberrys_jammu"
+    },
+    "location": {
+      "address": "Opposite Apsara Multiplex, Near Gole Market, Apsara Road",
+      "neighborhood": "Gandhi Nagar",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180004",
+      "landmarks": "Directly opposite Apsara Road shopping promenade, 200m from Gole Market & Dudhadhari Temple turn",
+      "googleMapsUrl": "https://maps.google.com/?q=Brewberrys+Gandhi+Nagar+Jammu",
+      "coordinates": {
+        "lat": 32.7061,
+        "lng": 74.8698
+      }
+    },
+    "hours": {
+      "open": "10:00 AM",
+      "close": "11:00 PM",
+      "openHour24": 10,
+      "closeHour24": 23,
+      "days": "Monday – Sunday (Open All 7 Days)",
+      "happyHours": "4:00 PM – 6:30 PM (20% Off Cold Brews & Shakes)"
+    },
+    "amenities": [
+      "Ultra High-Speed Gigabit Wi-Fi for Study & Work",
+      "Acoustic Indie & Lofi Soundscapes",
+      "Dedicated Laptop Friendly Power Plugs at Every Table",
+      "Curated Board Games Library (Catan, Scrabble, Chess)",
+      "Air-Conditioned Indoor Lounge & Sidewalk Terrace",
+      "Pet-Friendly Outdoor Seating",
+      "Special Birthday & Farewell Celebration Booths"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Apsara Road in Gandhi Nagar is the undisputed youth and fashion epicentre of Jammu. Flanked by high schools, colleges, coaching institutes, and Bahu Plaza commercial complex, it sees massive student and young professional footfall seeking stylish spaces to unwind.",
+    "targetDemographics": [
+      {
+        "segment": "Jammu University & College Students",
+        "need": "Affordable yet photogenic monster shakes, loaded peri-peri fries, and chilled study spots with strong Wi-Fi.",
+        "vibeRequirement": "Casual, zero-judgement lounge, low-stress ordering, energetic yet non-deafening music."
+      },
+      {
+        "segment": "Young Professionals & Remote Freelancers",
+        "need": "Single-origin pour-overs, cold brew tonics, quiet daytime seating with power outlets, quick paninis.",
+        "vibeRequirement": "Clean minimalist aesthetic, fast Wi-Fi, professional hospitality."
+      },
+      {
+        "segment": "Weekend Friends & Birthday Celebrations",
+        "need": "Crowd-pleasing freak shakes, shareable nachos, pizzas, celebratory cake plates with candle sparklers.",
+        "vibeRequirement": "Vibrant, Instagrammable lighting, comfortable booth seating."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "Artisanal Specialty Coffee Craft",
+        "description": "100% Arabica beans sourced from Chikmagalur estates, freshly ground per order for espresso, cold drip, aeropress, and velvety flat whites."
+      },
+      {
+        "pillar": "Over-The-Top Freak Shakes",
+        "description": "Indulgent glass jars crowned with whole brownies, toasted waffles, Nutella drizzles, and caramel popcorn."
+      },
+      {
+        "pillar": "Crispy Sourdough Melts & Paninis",
+        "description": "Stone-pressed sourdough sandwiches stuffed with bocconcini, smoked chicken, chipotle paneer, and garlic herb butter."
+      },
+      {
+        "pillar": "Loaded Youth Cafe Fare",
+        "description": "Crispy peri-peri crinkle fries, layered nachos with salsa roja, hand-tossed thin crust pizzas, and hearty pasta bowls."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Minimalist Obsidian Crema & Hairline Amber",
+    "aestheticPhilosophy": "Nordic-Japanese inspired minimalist cafe aesthetic. Matte obsidian charcoal surfaces, razor-sharp hairline borders, generous negative space, and warm crema-amber accents echoing roasted espresso tones.",
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80",
+    "colorTokens": {
+      "primary": {
+        "hex": "#E59546",
+        "name": "Roast Crema Amber",
+        "description": "Primary brand accent, used for interactive badges, highlights, and buttons"
+      },
+      "primaryHover": {
+        "hex": "#F5A65B",
+        "name": "Luminous Caramel",
+        "description": "Hover state accent"
+      },
+      "background": {
+        "hex": "#0B0C0E",
+        "name": "Obsidian Noir",
+        "description": "Deep matte low-light background"
+      },
+      "surface": {
+        "hex": "#131519",
+        "name": "Matte Espresso Slate",
+        "description": "Card backgrounds, elevated panels"
+      },
+      "surfaceHover": {
+        "hex": "#1A1E24",
+        "name": "Highlighted Slate",
+        "description": "Card hover states"
+      },
+      "border": {
+        "hex": "rgba(255, 255, 255, 0.08)",
+        "name": "Hairline White 08",
+        "description": "Refined minimal borders"
+      },
+      "accentVeg": {
+        "hex": "#10B981",
+        "name": "Pure Veg Emerald"
+      },
+      "accentNonVeg": {
+        "hex": "#EF4444",
+        "name": "Gourmet Crimson"
+      }
+    },
+    "typography": {
+      "headings": "Plus Jakarta Sans, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    }
+  },
+  "storytellingAndCopy": {
+    "hero": {
+      "badge": "Gandhi Nagar's Specialty Coffee House",
+      "headline": "Specialty Brews & Youth Conversations in Gandhi Nagar",
+      "subheadline": "Crafted single-origin Arabica, skyscraper freak shakes, and toasted sourdough paninis on Apsara Road. Designed for slow sips, fast Wi-Fi, and late evening cafe memories."
+    },
+    "highlights": [
+      {
+        "title": "Single-Origin Arabica",
+        "description": "Estate-grade beans extracted with precision, from silky flat whites to 18-hour cold brew tonics."
+      },
+      {
+        "title": "Iconic Freak Shakes",
+        "description": "Towering signature milkshakes layered with fudge brownies, Belgian chocolate, and crushed Biscoff."
+      },
+      {
+        "title": "Stone-Pressed Melts",
+        "description": "Golden grilled sourdough paninis, loaded cheesy nachos, and hand-tossed thin crust pizzas."
+      }
+    ]
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "specialty-coffee",
+        "name": "Specialty Coffee",
+        "tagline": "Single Origin 100% Arabica Beans",
+        "items": [
+          {
+            "id": "bb-c01",
+            "name": "Signature Irish Cold Coffee",
+            "price": 199,
+            "category": "specialty-coffee",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Double espresso shot shaken with Irish cream extract, rich chilled dairy, and vanilla bean froth.",
+            "ingredients": "Chikmagalur Arabica Double Shot, Non-alcoholic Irish Cream, Condensed Milk, Whole Milk, Cocoa Dust",
+            "calories": "210 kcal",
+            "tags": ["Chilled", "Sweet & Rich", "Cafe Icon"],
+            "pairing": "Pairs perfectly with Truffle Cheese Fries or Nutella Croissant",
+            "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-c02",
+            "name": "Roasted Hazelnut Frappe",
+            "price": 229,
+            "category": "specialty-coffee",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Slow-roasted Piedmont hazelnut puree blended with ice-cold espresso and topped with whipped mascarpone.",
+            "ingredients": "Espresso Blend, Roasted Hazelnut Paste, Cream, Whipped Topping, Crushed Roasted Hazelnuts",
+            "calories": "285 kcal",
+            "tags": ["Nutty", "Whipped Cream", "Bestseller"],
+            "pairing": "Best savored with Classic Cheesy Garlic Bread",
+            "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-c03",
+            "name": "Himalayan Pour-Over (V60)",
+            "price": 189,
+            "category": "specialty-coffee",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Hand-poured single origin filter brew highlighting notes of wild berries, raw cane sugar, and citrus zest.",
+            "ingredients": "Light-Medium Roast Single Origin Arabica, Mineral Spring Water (200ml)",
+            "calories": "5 kcal",
+            "tags": ["Black Coffee", "Pour-Over", "Artisan"],
+            "pairing": "Excellent with Grilled Smoked Chicken Panini",
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-c04",
+            "name": "Spanish Cortado Latte",
+            "price": 169,
+            "category": "specialty-coffee",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Equal parts intense ristretto espresso and warm silky microfoam milk for a balanced, bold morning kick.",
+            "ingredients": "Double Ristretto, Steamed Whole Milk, Microfoam",
+            "calories": "95 kcal",
+            "tags": ["Hot", "Bold", "Low Acidity"],
+            "pairing": "Try with Cinnamon Sugar Waffle Pop",
+            "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-c05",
+            "name": "Classic 18-Hour Cold Brew Tonic",
+            "price": 209,
+            "category": "specialty-coffee",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Steeped cold for 18 hours in Jammu spring water, served over crystal clear ice with effervescent tonic and lime wheel.",
+            "ingredients": "18-Hour Arabica Cold Brew, Artisanal Indian Tonic Water, Rosemary Sprig, Dehydrated Lime",
+            "calories": "45 kcal",
+            "tags": ["Refreshing", "Fizzy", "Zero Dairy"],
+            "pairing": "Complements Peri-Peri Crispy Paneer Burger",
+            "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "monster-shakes",
+        "name": "Monster & Freak Shakes",
+        "tagline": "Jammu's Original Skyscraper Freak Shakes",
+        "items": [
+          {
+            "id": "bb-s01",
+            "name": "The Nutella Volcano Freak Shake",
+            "price": 319,
+            "category": "monster-shakes",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Thick Nutella milkshake rimmed with chocolate chips, crowned with a warm walnut brownie, chocolate wafer stick, and chocolate syringe.",
+            "ingredients": "Pure Nutella, Chocolate Gelato, Whole Milk, Fresh Fudge Brownie, Wafer Roll, Chocolate Sauce",
+            "calories": "520 kcal",
+            "tags": ["Signature", "Overloaded", "Decadent"],
+            "pairing": "Must-have celebration shake for birthdays and reunions",
+            "image": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-s02",
+            "name": "Lotus Biscoff Crunch Shake",
+            "price": 329,
+            "category": "monster-shakes",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Caramelized Lotus Biscoff butter blended with vanilla bean cream, topped with crushed speculoos biscuits and salted caramel drizzle.",
+            "ingredients": "Lotus Biscoff Spread, Speculoos Biscuits, Vanilla Custard Cream, Sea Salt Caramel",
+            "calories": "490 kcal",
+            "tags": ["Caramel", "Biscoff", "Crowd Favorite"],
+            "pairing": "Pairs with Crispy Mexican Loaded Nachos",
+            "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-s03",
+            "name": "Belgian Dark Truffle Shake",
+            "price": 289,
+            "category": "monster-shakes",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Intense 70% dark Belgian cocoa melted into frozen cream, finished with bittersweet shaved chocolate curl rosettes.",
+            "ingredients": "70% Dark Callebaut Cocoa, Dark Ganache, Heavy Cream, Shaved Chocolate Flakes",
+            "calories": "410 kcal",
+            "tags": ["Rich Dark", "Low Sweetness", "Chocoholic"],
+            "pairing": "Goes well with Smoked Chicken Smashed Burger",
+            "image": "https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-s04",
+            "name": "Kashmir Strawberry Velvet Shake",
+            "price": 279,
+            "category": "monster-shakes",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Fresh hill strawberry compote swirled with sweet cream, white chocolate drizzle, and strawberry pop crunch.",
+            "ingredients": "Hill Strawberry Compote, White Chocolate Sauce, Whole Cream, Whipped Swirl",
+            "calories": "380 kcal",
+            "tags": ["Fruity", "Creamy", "Pastel"],
+            "pairing": "Pair with Four Cheese Garlic Pull-Apart Bread",
+            "image": "https://images.unsplash.com/photo-1553787499-6f9133860278?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "refreshers-mojitos",
+        "name": "Refreshers & Mojitos",
+        "tagline": "Crushed Ice Botanicals & Sparkling Zest",
+        "items": [
+          {
+            "id": "bb-r01",
+            "name": "Apsara Kaffir Lime & Mint Mojito",
+            "price": 179,
+            "category": "refreshers-mojitos",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Muddled garden mint, kaffir lime zest, raw demerara sugar, sparkling club soda, and crushed glacier ice.",
+            "ingredients": "Fresh Spearmint, Kaffir Lime Leaves, Demerara Sugar, Sparkling Soda, Crushed Ice",
+            "calories": "85 kcal",
+            "tags": ["Zero Alcohol", "Zesty", "Hydrating"],
+            "pairing": "Light accompaniment to Truffle Fries",
+            "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-r02",
+            "name": "Jammu Wild Peach Iced Tea",
+            "price": 169,
+            "category": "refreshers-mojitos",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Slow-brewed Assam black tea infused with natural peach nectar, citrus bitters, and fresh peach slices.",
+            "ingredients": "Assam Orthodox Black Tea, Natural Peach Puree, Fresh Mint, Lemon Slices",
+            "calories": "95 kcal",
+            "tags": ["Iced Tea", "Fruity", "Summer Hit"],
+            "pairing": "Crisp pairing for Peri-Peri Chicken Pizza",
+            "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-r03",
+            "name": "Blue Curacao Citrus Fizz",
+            "price": 189,
+            "category": "refreshers-mojitos",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Vibrant Caribbean blue citrus cordial charged with Sprite, lemon tang, and sparkling water.",
+            "ingredients": "Blue Curacao Syrup (Non-Alcoholic), Sprite, Lemon Juice, Mint Leaves, Black Salt",
+            "calories": "110 kcal",
+            "tags": ["Photogenic", "Sweet & Tangy"],
+            "pairing": "Great with Spicy Farmhouse Pizza",
+            "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-r04",
+            "name": "Passion Fruit & Basil Cooler",
+            "price": 199,
+            "category": "refreshers-mojitos",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Tropical passion fruit pulp shaken with fragrant sweet basil seeds, ginger hint, and chilled apple juice.",
+            "ingredients": "Passion Fruit Pulp, Sweet Basil Seeds (Sabja), Clarified Apple Juice, Ginger Essence",
+            "calories": "90 kcal",
+            "tags": ["Exotic", "Cooling", "Detox"],
+            "pairing": "Pairs with Pesto Mozzarella Panini",
+            "image": "https://images.unsplash.com/photo-1546171753-97d7676e4602?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "burgers-melts",
+        "name": "Artisanal Burgers & Melts",
+        "tagline": "Toasted Brioche & Stone-Pressed Sourdough",
+        "items": [
+          {
+            "id": "bb-b01",
+            "name": "Peri-Peri Crispy Paneer Burger",
+            "price": 249,
+            "category": "burgers-melts",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Golden panko-crusted cottage cheese patty tossed in fiery peri-peri spices, layered with crunchy purple slaw, gherkins, and garlic aioli in toasted brioche.",
+            "ingredients": "Fresh Malai Paneer, Panko Crust, In-House Peri Peri Spice, Red Cabbage Slaw, Garlic Mayo, Butter Brioche",
+            "calories": "460 kcal",
+            "tags": ["Crispy", "Spicy", "Youth Bestseller"],
+            "pairing": "Enjoy with Irish Cold Coffee",
+            "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b02",
+            "name": "Smoked Chicken Smashed Burger",
+            "price": 279,
+            "category": "burgers-melts",
+            "veg": false,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Double grilled minced chicken patties smashed on the griddle with cheddar cheese melt, caramelized balsamic onions, and smoky BBQ relish.",
+            "ingredients": "Smoked Minced Chicken, English Cheddar, Caramelized Onions, Smoke Mayo, Brioche Bun",
+            "calories": "510 kcal",
+            "tags": ["Smoky", "Double Patty", "Juicy"],
+            "pairing": "Pairs with Belgian Dark Truffle Shake",
+            "image": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b03",
+            "name": "Pesto Sundried Tomato Panini",
+            "price": 239,
+            "category": "burgers-melts",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Fresh walnut basil pesto, buffalo mozzarella, sundried tomatoes, and balsamic reduction pressed crisp inside Italian focaccia.",
+            "ingredients": "Fresh Basil Pesto, Buffalo Mozzarella, Sundried Tomatoes, Olive Oil Focaccia, Aged Balsamic",
+            "calories": "390 kcal",
+            "tags": ["Italian", "Crisp Pressed", "Vegetarian"],
+            "pairing": "Wonderful with Himalayan Pour-Over",
+            "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b04",
+            "name": "Barbecue Pulled Chicken Melt",
+            "price": 269,
+            "category": "burgers-melts",
+            "veg": false,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Slow-braised pulled chicken tossed in hickory BBQ sauce, pressed between seeded sourdough with double melted Monterey Jack cheese.",
+            "ingredients": "Pulled Herb Chicken, Hickory Smoke BBQ, Monterey Jack, Pickled Jalapeños, Artisan Sourdough",
+            "calories": "440 kcal",
+            "tags": ["Cheesy", "Hickory Smoke", "Comfort"],
+            "pairing": "Great with Wild Peach Iced Tea",
+            "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "pizzas",
+        "name": "Stone-Baked Pizzas",
+        "tagline": "Thin-Crust Wood Style Pizzas (10-Inch)",
+        "items": [
+          {
+            "id": "bb-p01",
+            "name": "Gandhi Nagar Special Farmhouse Pizza",
+            "price": 329,
+            "category": "pizzas",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "San Marzano marinara, 100% mozzarella, sweet corn, bell peppers, button mushrooms, black olives, and fresh red onions on thin crisp crust.",
+            "ingredients": "Italian Plum Tomato Sauce, Fior Di Latte Mozzarella, Corn, Capsicum, Mushrooms, Olives, Oregano",
+            "calories": "580 kcal (Whole)",
+            "tags": ["10-Inch", "Thin Crust", "Classic"],
+            "pairing": "Ideal for sharing with 2 iced lattes",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-p02",
+            "name": "Fiery Peri-Peri Pollo Pizza",
+            "price": 369,
+            "category": "pizzas",
+            "veg": false,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Char-grilled peri-peri chicken chunks, spicy jalapeños, smoked paprika, roasted garlic, and stringy mozzarella.",
+            "ingredients": "Spicy Peri Marinated Chicken, Jalapeños, Crushed Red Chilis, Mozzarella, Fresh Basil",
+            "calories": "640 kcal (Whole)",
+            "tags": ["Spicy", "Wood Style", "Hot"],
+            "pairing": "Cools down with Kaffir Lime Mojito",
+            "image": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-p03",
+            "name": "Quattro Formaggi (Four Cheese) Pizza",
+            "price": 349,
+            "category": "pizzas",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "A decadent molten blend of mozzarella, English cheddar, creamy gouda, and ricotta dollops with rosemary garlic honey drizzle.",
+            "ingredients": "Mozzarella, Cheddar, Gouda, Whipped Ricotta, Rosemary Hot Honey",
+            "calories": "660 kcal (Whole)",
+            "tags": ["Four Cheeses", "Gourmet", "Indulgent"],
+            "pairing": "Pairs with Spanish Cortado Latte",
+            "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-p04",
+            "name": "Chipotle Paneer Tikka Pizza",
+            "price": 339,
+            "category": "pizzas",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Tandoori-spiced paneer cubes, roasted bell peppers, crunchy red onions, and smoky Mexican chipotle cream drizzle.",
+            "ingredients": "Tandoori Paneer, Chipotle Crema, Red Capsicum, Onion, Mozzarella Cheese",
+            "calories": "610 kcal (Whole)",
+            "tags": ["Fusion", "Smoky", "Youth Favorite"],
+            "pairing": "Pairs with Roasted Hazelnut Frappe",
+            "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "pasta-bowls",
+        "name": "Handcrafted Pastas",
+        "tagline": "Al Dente Penne & Fusilli Bowls",
+        "items": [
+          {
+            "id": "bb-ps01",
+            "name": "Truffled Mushroom Alfredo Penne",
+            "price": 289,
+            "category": "pasta-bowls",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Slow-simmered rich parmesan cream sauce, sautéed button mushrooms, white truffle oil mist, and fresh cracked black pepper.",
+            "ingredients": "Durum Wheat Penne, Fresh Dairy Cream, Aged Parmesan, Sautéed Mushrooms, White Truffle Oil",
+            "calories": "470 kcal",
+            "tags": ["Creamy", "Truffle", "Comfort"],
+            "pairing": "Comes served with 2 slices of garlic baguette",
+            "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-ps02",
+            "name": "Spicy Arrabbiata Grilled Chicken Fusilli",
+            "price": 319,
+            "category": "pasta-bowls",
+            "veg": false,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Zesty garlic-chili San Marzano tomato ragu tossed with spirals of fusilli pasta, tender grilled chicken breast, and kalamata olives.",
+            "ingredients": "Italian Tomatoes, Fresh Garlic, Birds Eye Chili, Olive Oil, Herb-Grilled Chicken, Kalamata Olives",
+            "calories": "420 kcal",
+            "tags": ["Tangy & Spicy", "High Protein", "Italian"],
+            "pairing": "Pairs with Blue Curacao Citrus Fizz",
+            "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-ps03",
+            "name": "Sun-Kissed Pink Sauce Penne",
+            "price": 299,
+            "category": "pasta-bowls",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "The golden union of fiery arrabbiata and velvety alfredo cream sauce, tossed with broccoli florets, baby corn, and mozzarella stretch.",
+            "ingredients": "Mama Rosa Pink Sauce, Penne Rigate, Steamed Broccoli, Sweet Corn, Mozzarella Melt",
+            "calories": "450 kcal",
+            "tags": ["Creamy & Tangy", "Cheesy", "Popular"],
+            "pairing": "Served with warm toasted garlic bread",
+            "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-ps04",
+            "name": "Smoked Basil Pesto Chicken Penne",
+            "price": 329,
+            "category": "pasta-bowls",
+            "veg": false,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Aromatic Genovese basil pesto emulsion with roasted pine nuts, tender chicken strips, cherry tomatoes, and grated parmesan shavings.",
+            "ingredients": "Genovese Basil Pesto, Extra Virgin Olive Oil, Shredded Roast Chicken, Blistered Cherry Tomatoes, Parmesan",
+            "calories": "460 kcal",
+            "tags": ["Aromatic", "Pesto", "Chef's Cut"],
+            "pairing": "Pairs with Cold Brew Tonic",
+            "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "small-bites",
+        "name": "Small Bites & Nachos",
+        "tagline": "Shareable Cafe Starters & Loaded Platters",
+        "items": [
+          {
+            "id": "bb-b05",
+            "name": "Overloaded Mexican Salsa Nachos",
+            "price": 229,
+            "category": "small-bites",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": false,
+            "description": "Crispy corn tortilla triangles layered with warm liquid cheddar cheese, freshly diced pico de gallo salsa, sliced jalapeños, and sour cream.",
+            "ingredients": "Corn Tortilla Chips, Liquid Cheddar Sauce, Tomato Salsa Roja, Jalapeño Rings, Sour Cream",
+            "calories": "380 kcal",
+            "tags": ["Crunchy", "Shareable", "Party Hit"],
+            "pairing": "Perfect for table-side gaming and sharing",
+            "image": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b06",
+            "name": "Cheesy Truffle Crinkle Fries",
+            "price": 199,
+            "category": "small-bites",
+            "veg": true,
+            "bestseller": true,
+            "chefSpecial": true,
+            "description": "Crispy golden crinkle cut potato fries tossed in aromatic truffle salt, drizzled with warm molten cheese and fresh chopped parsley.",
+            "ingredients": "Crinkle Cut Potatoes, Aromatic Truffle Essence, Melted Cheese Sauce, Paprika Dust, Parsley",
+            "calories": "340 kcal",
+            "tags": ["Crispy", "Cheesy", "Must Try"],
+            "pairing": "Best companion with any brewberrys burger",
+            "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b07",
+            "name": "Four Cheese Garlic Stuffed Bread",
+            "price": 219,
+            "category": "small-bites",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": false,
+            "description": "Freshly baked artisan baguette scored and packed with roasted garlic compound butter, parsley, and gooey mozzarella pull.",
+            "ingredients": "Artisan French Loaf, Roasted Confit Garlic, Fresh Herbs Butter, Stretched Mozzarella",
+            "calories": "360 kcal",
+            "tags": ["Garlic Butter", "Cheese Pull", "Warm"],
+            "pairing": "Dips effortlessly into pasta sauces",
+            "image": "https://images.unsplash.com/photo-1619860860774-1e2e17343432?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "bb-b08",
+            "name": "Crisp Belgian Nutella Waffle Pop",
+            "price": 189,
+            "category": "small-bites",
+            "veg": true,
+            "bestseller": false,
+            "chefSpecial": true,
+            "description": "Freshly iron-pressed waffle pop on a wooden stick, drowned in warm Nutella, toasted almond flakes, and rainbow sprinkles.",
+            "ingredients": "Belgian Waffle Batter, Pure Nutella, Roasted Flaked Almonds, Dark Chocolate Drizzle",
+            "calories": "310 kcal",
+            "tags": ["Sweet Bite", "Waffle Pop", "Dessert"],
+            "pairing": "End your coffee session on a sweet note",
+            "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "author": "Aarav Sharma",
+      "badge": "Jammu University Student",
+      "rating": 5,
+      "text": "Brewberrys on Apsara Road is our gang's permanent hangout spot. The Nutella Volcano Freak Shake is totally unmatched in Jammu, and the high-speed Wi-Fi makes it super easy to complete assignments while sipping an Irish Cold Coffee!"
+    },
+    {
+      "author": "Mehak Jamwal",
+      "badge": "Freelance Designer, Gandhi Nagar",
+      "rating": 5,
+      "text": "Easily the best specialty coffee aesthetic in town. No loud chaotic music, super sleek minimalist dark decor, and their V60 pour-over coffee actually has the floral notes they promise. Highly recommend the peri-peri burger!"
+    },
+    {
+      "author": "Rohit Verma",
+      "badge": "Bahu Plaza Corporate Diner",
+      "rating": 5,
+      "text": "Great spot for casual meetings and quick bites. The Truffle Cheese Fries and Pesto Panini are top tier. Their staff is polite, fast, and the Apsara Road location is super convenient."
+    }
+  ]
+}

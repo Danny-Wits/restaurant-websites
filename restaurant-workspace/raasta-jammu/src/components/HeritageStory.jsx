@@ -3,11 +3,11 @@ import { Sparkles, Music, Disc, Heart, Quote, ArrowRight } from 'lucide-react';
 
 export default function HeritageStory({ onOpenReserve }) {
   return (
-    <section id="vibe" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#161917]/90 border-t border-amber-500/15 overflow-hidden">
+    <section id="vibe" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#161917]/90 border-t border-amber-500/15 overflow-hidden w-full max-w-full">
       {/* Ambient background blur */}
       <div className="absolute top-1/2 -right-32 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 w-full max-w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Visual Vignette & Vinyl Vibe */}

@@ -8,9 +8,9 @@ export default function MobileActionBar({ onOpenReserve }) {
   return (
     <aside
       aria-label="Mobile quick actions"
-      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0F1110]/95 backdrop-blur-lg border-t border-amber-500/25 px-3 py-2 shadow-[0_-10px_25px_rgba(0,0,0,0.8)]"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0F1110]/95 backdrop-blur-lg border-t border-amber-500/25 px-3 py-2 shadow-[0_-10px_25px_rgba(0,0,0,0.8)] w-full max-w-full"
     >
-      <div className="grid grid-cols-4 gap-1.5 max-w-md mx-auto">
+      <div className="grid grid-cols-4 gap-1.5 max-w-md mx-auto w-full">
         {/* Call Button */}
         <a
           href={`tel:${phone}`}

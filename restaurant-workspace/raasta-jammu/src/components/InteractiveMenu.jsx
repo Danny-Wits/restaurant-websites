@@ -92,28 +92,29 @@ export default function InteractiveMenu({ onSelectDish }) {
   }, [allDishes, activeCategory, selectedFilter, searchQuery]);
 
   return (
-    <section id="menu" className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#161917]/70">
-      <div className="max-w-7xl mx-auto">
+    <section id="menu" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#161917]/70 w-full max-w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto w-full max-w-full">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-4 h-4 text-amber-400" />
-            <span>40 Artisanal Creations &bull; Panama Chowk Kitchen</span>
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
+            <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
+            <span className="truncate sm:hidden">40 Artisanal Creations</span>
+            <span className="hidden sm:inline">40 Artisanal Creations &bull; Panama Chowk Kitchen</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-5xl text-zinc-100 tracking-tight mb-4">
+          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-5xl text-zinc-100 tracking-tight mb-4 break-words">
             The Digital{' '}
             <span className="text-amber-400 drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
               Culinary Menu
             </span>
           </h2>
-          <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+          <p className="text-xs sm:text-base text-zinc-400 leading-relaxed">
             From 18-hour slow nitro extractions and 48-hour fermented sourdough crusts to double-smashed brioche burgers and hissing cast-iron platters.
           </p>
         </div>
 
         {/* Search & Quick Filter Controls */}
-        <div className="max-w-3xl mx-auto mb-8">
+        <div className="max-w-3xl mx-auto mb-8 w-full max-w-full">
           <div className="relative mb-4">
             <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" />
             <input
@@ -135,14 +136,14 @@ export default function InteractiveMenu({ onSelectDish }) {
           </div>
 
           {/* Dietary & Badge Filter Tabs */}
-          <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-1">
+          <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar pb-1 w-full max-w-full">
             {filterTabs.map((tab) => {
               const isSelected = selectedFilter === tab.id;
               return (
                 <button
                   key={tab.id}
                   onClick={() => setSelectedFilter(tab.id)}
-                  className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 cursor-pointer flex items-center gap-1.5 ${
+                  className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 cursor-pointer flex items-center gap-1.5 shrink-0 ${
                     isSelected
                       ? 'bg-amber-500 text-zinc-950 shadow-[0_0_15px_rgba(245,158,11,0.4)] scale-102'
                       : 'bg-[#1E2220] text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:border-zinc-700'
@@ -158,8 +159,8 @@ export default function InteractiveMenu({ onSelectDish }) {
 
         {/* Sticky Category Bar (Only visible when not actively searching) */}
         {!searchQuery && (
-          <div className="sticky top-16 z-30 py-3 mb-8 bg-[#0F1110]/95 backdrop-blur-md border-y border-amber-500/20 shadow-md">
-            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar max-w-5xl mx-auto px-2">
+          <div className="sticky top-14 sm:top-16 z-30 py-3 mb-8 bg-[#0F1110]/95 backdrop-blur-md border-y border-amber-500/20 shadow-md w-full max-w-full overflow-hidden">
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar max-w-5xl mx-auto px-3 sm:px-2 w-full">
               {categories.map((cat) => {
                 const isCatActive = activeCategory === cat.id;
                 const Icon = categoryIcons[cat.id] || Sparkles;
@@ -201,7 +202,7 @@ export default function InteractiveMenu({ onSelectDish }) {
 
         {/* Dishes Grid */}
         {filteredDishes.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 w-full max-w-full">
             {filteredDishes.map((dish) => {
               const isVeg = dish.diet === 'veg';
 

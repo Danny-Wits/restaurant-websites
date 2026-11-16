@@ -1,0 +1,656 @@
+{
+  "restaurant": {
+    "name": "Starbucks Coffee — Wave Mall Jammu",
+    "slug": "starbucks-jammu",
+    "city": "Jammu",
+    "locality": "Wave Mall, Channi / Narwal",
+    "state": "Jammu & Kashmir",
+    "pincode": "180015",
+    "tagline": "The Reserve Sanctuary at Wave Mall, Jammu",
+    "subTagline": "Where iconic Siren heritage meets quiet Himalayan serenity. Savor handcrafted espresso mastery, nitro cold brews, and artisanal bakery bites in Jammu's architectural coffee haven.",
+    "concept": "World-class third-wave coffee sanctuary and meeting haven on the Ground Floor of Wave Mall Jammu. Designed for executive catchups, leisurely shopping interludes, remote creatives, and highway travelers seeking authentic 100% Arabica excellence.",
+    "rating": "4.9",
+    "reviewCount": "2,460+",
+    "priceRange": "₹₹₹ (₹550 - ₹950 for two)",
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=85",
+    "contact": {
+      "phone": "+91 191 249 0122",
+      "mobile": "+91 94191 33401",
+      "whatsapp": "+91 94191 33401",
+      "email": "wavemall.jammu@starbucks.in",
+      "reservationsEmail": "concierge.jammu@starbucks.in"
+    },
+    "location": {
+      "address": "Ground Floor, Central Atrium, Wave Mall, National Highway 44 (Bypass Road), Narwal / Channi Himmat",
+      "neighborhood": "Channi Himmat / Narwal",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180015",
+      "landmarks": "Main Atrium Entrance, Wave Mall • 2 minutes from Narwal Chowk & 3 minutes from Bahu Plaza",
+      "googleMapsUrl": "https://maps.google.com/?q=Starbucks+Wave+Mall+Jammu",
+      "coordinates": {
+        "lat": 32.6991,
+        "lng": 74.8864
+      }
+    },
+    "hours": {
+      "openTime": "08:30",
+      "closeTime": "23:30",
+      "formatted": "08:30 AM – 11:30 PM",
+      "days": "Monday – Sunday (Open All 7 Days)",
+      "driveThruPickup": "Available via Mall Valet & Curbside Counter",
+      "baristaLastCall": "11:15 PM Daily"
+    },
+    "amenities": [
+      "Mall Multi-Level Valet & Dedicated Parking",
+      "Starbucks Reserve Nitro Cold Brew Tap System",
+      "Ultra-Fast Complimentary Wi-Fi & Workstation Power Sockets",
+      "Strict Plant-Based Oat, Almond & Soy Milk Customizations",
+      "Wheelchair Accessible Ground Floor Ramp & Atrium Patio",
+      "Fresh Artisanal Bakery Warmer Counter",
+      "Starbucks Rewards™ Digital Card Integration"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Wave Mall is Jammu's preeminent modern lifestyle, shopping, and entertainment destination located right along the NH-44 bypass between Channi Himmat and Narwal. Starbucks serves as the prestigious social anchor for Jammu's corporate leaders, university scholars, affluent families, and pilgrims traveling between Delhi, Katra, and Srinagar.",
+    "targetDemographics": [
+      {
+        "segment": "Urban Professionals & Entrepreneurs",
+        "need": "Pristine acoustic focus, reliable high-speed Wi-Fi, premium nitro brews, and sophisticated ambiance for meetings.",
+        "vibeRequirement": "Understated luxury, warm walnut wood, deep siren forest hues, and polite barista craft."
+      },
+      {
+        "segment": "College Students & Digital Creatives",
+        "need": "Iced Shaken Espressos, Frappuccino® treats, cozy study corners, and accessible power outlets.",
+        "vibeRequirement": "Vibrant yet relaxed atmosphere with modern ambient music."
+      },
+      {
+        "segment": "High-End Shoppers & Highway Travelers",
+        "need": "Quick artisanal takeaway sandwiches, comforting hot lattes, and clean five-star sanitation.",
+        "vibeRequirement": "Effortless mobile order pickup and warm hospitality."
+      }
+    ],
+    "culinaryPillars": [
+      {
+        "pillar": "100% Ethically Sourced Fairtrade Arabica",
+        "description": "Starbucks Blonde Roast to Dark Espresso Roast beans sourced through Coffee and Farmer Equity (C.A.F.E.) practices."
+      },
+      {
+        "pillar": "Custom Handcrafted Beverage Architecture",
+        "description": "Tailored cup sizing (Short, Tall, Grande, Venti), custom milk frothing (Oat, Almond, Soy, Lactose-Free), and calibrated syrup pumps."
+      },
+      {
+        "pillar": "Jammu Exclusive Himalayan Infusions",
+        "description": "Celebrating regional heritage with Saffron Kahwa Nitro Cold Brews and spiced green tea infusions alongside global classics."
+      },
+      {
+        "pillar": "Artisanal European Bakery & Fresh Savory Bakes",
+        "description": "Flaky French butter croissants, sourdough toasties, and rich Dutch truffle gateaux baked fresh every morning."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "designTheme": "Signature Siren Forest Green & Obsidian Slate",
+    "aestheticPhilosophy": "Quiet luxury coffee architecture. Matte deep obsidian stone, signature deep Siren forest green, warm ivory typography, pale brass hairline accents, and generous spatial breathing room.",
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=85",
+    "colorTokens": {
+      "primary": {
+        "hex": "#006241",
+        "name": "Starbucks Siren Forest Green",
+        "description": "Iconic core green for heritage brand accents"
+      },
+      "primaryLuminous": {
+        "hex": "#00754A",
+        "name": "Siren Emerald Glow",
+        "description": "Interactive hover and live pulse state"
+      },
+      "accentBrass": {
+        "hex": "#CBA258",
+        "name": "Reserve Pale Brass",
+        "description": "Subtle luxury badge and hairline detail"
+      },
+      "background": {
+        "hex": "#090B0A",
+        "name": "Obsidian Noir",
+        "description": "Base app background"
+      },
+      "backgroundSecondary": {
+        "hex": "#0F1412",
+        "name": "Velvet Siren Charcoal",
+        "description": "Alternate section background"
+      },
+      "surface": {
+        "hex": "#141A17",
+        "name": "Deep Pine Slate",
+        "description": "Card backgrounds"
+      },
+      "surfaceHover": {
+        "hex": "#1B2420",
+        "name": "Elevated Pine Slate",
+        "description": "Card hover state"
+      },
+      "border": {
+        "hex": "rgba(255, 255, 255, 0.08)",
+        "name": "Hairline Obsidian Frost",
+        "description": "Subtle borders"
+      },
+      "textPrimary": {
+        "hex": "#F4F1EA",
+        "name": "Bone Ivory",
+        "description": "High readability body and title text"
+      },
+      "textMuted": {
+        "hex": "#A3ABA6",
+        "name": "Sage Silver",
+        "description": "Subtitles and metadata"
+      }
+    },
+    "typography": {
+      "display": "'Playfair Display', Georgia, serif",
+      "body": "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+    }
+  },
+  "storytellingAndCopy": {
+    "hero": {
+      "eyebrow": "GROUND FLOOR • WAVE MALL, JAMMU",
+      "headline": "Crafted with Passion. Poured with Purpose.",
+      "subheadline": "Experience Jammu's flagship coffee sanctuary — from velvety blonde roast lattes and regional saffron nitro cold brews to flaky French butter croissants and cozy walnut alcoves.",
+      "ctaPrimary": "Explore Menu",
+      "ctaSecondary": "Hold Table / Order Ahead",
+      "statusBadge": "Open Daily 08:30 AM – 11:30 PM"
+    },
+    "ourStory": {
+      "eyebrow": "THE WAVE MALL SANCTUARY",
+      "title": "A Third Place in the City of Temples",
+      "lead": "Between work and home, there is a third place where humanity connects over handcrafted coffee.",
+      "narrative": [
+        "Situated on the Ground Floor Central Atrium of Wave Mall Jammu, our store was crafted as a contemporary architectural sanctuary. Warm timber finishes, deep Siren green accents, and stone surfaces invite guests to step out of the daily rush and recharge.",
+        "Every espresso shot is calibrated by certified Starbucks Baristas using 100% fair-trade Arabica beans roasted to unlock layered caramel, cacao, and citrus nuances. Alongside global icons like the Caramel Macchiato and Java Chip Frappuccino, our Jammu store proudly curates regional twists like the Kashmiri Saffron Kahwa Nitro Brew.",
+        "Whether stopping by for your morning commute flat white, hosting a business strategy session, or unwinding after cinema hours, our baristas greet you with that signature Starbucks warmth."
+      ]
+    },
+    "highlights": [
+      {
+        "number": "01",
+        "title": "Master Barista Craft",
+        "description": "Trained baristas hand-pulling precision shots with 100% Fairtrade Arabica and silky microfoam."
+      },
+      {
+        "number": "02",
+        "title": "Nitro Cold Brew on Tap",
+        "description": "Slow-steeped for 20 hours and infused with food-grade nitrogen for a creamy, cascading stout-like head."
+      },
+      {
+        "number": "03",
+        "title": "Wave Mall Central Atrium",
+        "description": "Spacious seating, glass atrium views, valet parking, and high-speed Wi-Fi workstations."
+      }
+    ]
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "espresso-reserve",
+        "name": "Master Espresso & Cold Brews",
+        "shortDesc": "Handcrafted espresso, blonde roast lattes & nitrogen-infused brews",
+        "items": [
+          {
+            "id": "sb-e01",
+            "name": "Jammu Saffron Kahwa Nitro Cold Brew",
+            "diet": "vegan",
+            "price": 395,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "espresso-reserve",
+            "description": "Signature Jammu Reserve edition. 20-hour cold steep Arabica micro-infused with Kishtwar saffron, green cardamom, and nitrogen cascade for a naturally sweet, creamy head.",
+            "tags": ["Jammu Exclusive", "Nitro Tap", "Zero Dairy"],
+            "allergens": "None",
+            "prepTime": "2 mins",
+            "calories": "25 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-e02",
+            "name": "Starbucks Blonde Roast Vanilla Latte",
+            "diet": "veg",
+            "price": 345,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "espresso-reserve",
+            "description": "Extra-smooth Blonde Espresso roast with sweet Madagascar vanilla syrup and expertly steam-stretched milk for a delightfully mellow, balanced cup.",
+            "tags": ["Blonde Roast", "Silky Sweet"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4 mins",
+            "calories": "210 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-e03",
+            "name": "Iced Caramel Macchiato",
+            "diet": "veg",
+            "price": 375,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "espresso-reserve",
+            "description": "Freshly steamed vanilla milk poured over ice, marked with rich full-bodied espresso shots, and finished with buttery Starbucks caramel drizzle crosshatch.",
+            "tags": ["World Icon", "Customer Favorite"],
+            "allergens": "Contains Dairy",
+            "prepTime": "3 mins",
+            "calories": "250 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-e04",
+            "name": "Iced Brown Sugar Shaken Espresso",
+            "diet": "vegan",
+            "price": 385,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "espresso-reserve",
+            "description": "Starbucks Blonde Espresso vigorously shaken with brown sugar and cinnamon powder over ice, crowned with a smooth splash of oat milk.",
+            "tags": ["Plant Based", "Shaken Espresso", "Oat Milk"],
+            "allergens": "Contains Oats",
+            "prepTime": "4 mins",
+            "calories": "120 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-e05",
+            "name": "Artisanal Reserve Cortado",
+            "diet": "veg",
+            "price": 295,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "espresso-reserve",
+            "description": "Two bold ristretto shots cut with an equal volume of warm velvety steamed milk in a 130ml glass to highlight roast nuances without dilution.",
+            "tags": ["Pure Espresso", "Intense"],
+            "allergens": "Contains Dairy",
+            "prepTime": "3 mins",
+            "calories": "85 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-e06",
+            "name": "Classic Caffe Americano (Signature Roast)",
+            "diet": "vegan",
+            "price": 265,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "espresso-reserve",
+            "description": "Espresso shots topped with hot filtered water creating a light layer of crema, unlocking subtle nuances of dark cocoa and toasted nuts.",
+            "tags": ["Classic Roast", "Zero Sugar"],
+            "allergens": "None",
+            "prepTime": "2 mins",
+            "calories": "15 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "frappuccino-blended",
+        "name": "Frappuccino® Blended Magic",
+        "shortDesc": "Ice-blended coffee, decadent chocolates & whip-topped sensations",
+        "items": [
+          {
+            "id": "sb-f01",
+            "name": "Signature Java Chip Frappuccino®",
+            "diet": "veg",
+            "price": 415,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "frappuccino-blended",
+            "description": "Rich mocha sauce and Frappuccino® chips blended with roast coffee and milk, crowned with fluffy whipped cream and mocha drizzle.",
+            "tags": ["Starbucks Legend", "Decadent Crunch"],
+            "allergens": "Contains Dairy, Soy",
+            "prepTime": "4 mins",
+            "calories": "440 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-f02",
+            "name": "Caramel Ribbon Crunch Frappuccino®",
+            "diet": "veg",
+            "price": 435,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "frappuccino-blended",
+            "description": "Buttery dark caramel sauce blended with coffee and milk, layered over dark caramel drizzle and finished with whipped cream, caramel glaze, and crunchy caramel sugar gems.",
+            "tags": ["Sweet & Crunchy", "Bestseller"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4 mins",
+            "calories": "470 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-f03",
+            "name": "Matcha Green Tea Creme Frappuccino®",
+            "diet": "veg",
+            "price": 425,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "frappuccino-blended",
+            "description": "Fine-milled shade-grown Japanese matcha tea blended with sweetened milk and ice, topped with sweet whipped cream.",
+            "tags": ["Green Tea", "Smooth Creme"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4 mins",
+            "calories": "380 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-f04",
+            "name": "Double Chocolaty Chip Creme Frappuccino®",
+            "diet": "veg",
+            "price": 415,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "frappuccino-blended",
+            "description": "Coffee-free chocolate indulgence. Rich mocha sauce, chocolate chips, milk and ice blended and crowned with chocolate drizzle.",
+            "tags": ["Coffee Free", "Kids & Youth Favorite"],
+            "allergens": "Contains Dairy, Soy",
+            "prepTime": "4 mins",
+            "calories": "410 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-f05",
+            "name": "Dark Caramel Espresso Frappuccino®",
+            "diet": "veg",
+            "price": 445,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "frappuccino-blended",
+            "description": "Bold shot of Italian dark espresso roast blended directly with smoky dark caramel syrup, milk, and crushed ice.",
+            "tags": ["Double Coffee", "Deep Caramel"],
+            "allergens": "Contains Dairy",
+            "prepTime": "4 mins",
+            "calories": "350 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1579888944880-d98341245702?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "teavana-refreshers",
+        "name": "Teavana™ Teas & Refreshers",
+        "shortDesc": "Himalayan herbal blends, fruit refreshers & vibrant iced teas",
+        "items": [
+          {
+            "id": "sb-t01",
+            "name": "Kashmiri Green Kahwa Reserve Blend",
+            "diet": "vegan",
+            "price": 285,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "teavana-refreshers",
+            "description": "Slow-brewed Himalayan whole leaf green tea infused with Kishtwar saffron threads, green cardamom pods, cinnamon bark, and slivered almonds.",
+            "tags": ["Jammu Heritage", "Heart Warming", "Zero Dairy"],
+            "allergens": "Contains Tree Nuts (Almonds)",
+            "prepTime": "5 mins",
+            "calories": "35 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-t02",
+            "name": "Strawberry Açaí Lemonade Starbucks Refresher®",
+            "diet": "vegan",
+            "price": 355,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "teavana-refreshers",
+            "description": "Sweet strawberry flavors accented by passion fruit and açaí notes, caffeinated with green coffee extract and shaken with ice and real strawberry slices.",
+            "tags": ["Thirst Quencher", "Real Fruit", "Naturally Energizing"],
+            "allergens": "None",
+            "prepTime": "2 mins",
+            "calories": "140 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-t03",
+            "name": "Teavana™ Passion Tango Iced Tea Lemonade",
+            "diet": "vegan",
+            "price": 295,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "teavana-refreshers",
+            "description": "A crisp blend of hibiscus, lemongrass, and apple shaken vigorously with tart lemonade and ice for a bright ruby glow.",
+            "tags": ["Caffeine Free", "Crisp Citrus"],
+            "allergens": "None",
+            "prepTime": "2 mins",
+            "calories": "90 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-t04",
+            "name": "Classic Matcha Green Tea Latte",
+            "diet": "veg",
+            "price": 365,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "teavana-refreshers",
+            "description": "Smooth, creamy sweetened Japanese matcha green tea lightly whisked with steamed whole milk (or oat milk) for vibrant herbal comfort.",
+            "tags": ["Antioxidant Rich", "Zen Comfort"],
+            "allergens": "Contains Dairy",
+            "prepTime": "3 mins",
+            "calories": "240 kcal (Grande)",
+            "imageUrl": "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-t05",
+            "name": "Emperor's Clouds & Mist Green Tea",
+            "diet": "vegan",
+            "price": 255,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "teavana-refreshers",
+            "description": "Harvested high in the mist-shrouded Huangshan mountains. A gently sweet, lightly toasted green tea with delicate smoky floral undertones.",
+            "tags": ["Whole Leaf", "Calm & Pure"],
+            "allergens": "None",
+            "prepTime": "4 mins",
+            "calories": "0 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "bakery-croissants",
+        "name": "Artisanal Bakeries & Croissants",
+        "shortDesc": "Flaky French butter croissants, danishes & oven-warm muffins",
+        "items": [
+          {
+            "id": "sb-b01",
+            "name": "Authentic French Butter Croissant",
+            "diet": "veg",
+            "price": 245,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "bakery-croissants",
+            "description": "Classic 16-layer French pastry laminated with pure Normandy butter, baked golden brown with crisp outer flakiness and a soft honeycomb center.",
+            "tags": ["Warm & Flaky", "Coffee Companion"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Warm on order",
+            "calories": "260 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-b02",
+            "name": "Triple Dark Chocolate Chip Muffin",
+            "diet": "veg",
+            "price": 275,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "bakery-croissants",
+            "description": "Decadent Dutch cocoa muffin studded with chunks of 70% dark Belgian chocolate and a warm molten truffle core inside.",
+            "tags": ["Rich Cocoa", "Chocoholic"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Warm on order",
+            "calories": "420 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-b03",
+            "name": "Toasted Almond Frangipane Croissant",
+            "diet": "veg",
+            "price": 295,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "bakery-croissants",
+            "description": "Twice-baked buttery croissant filled with luscious almond frangipane cream, crowned with toasted sliced almonds and powdered sugar snow.",
+            "tags": ["Nutty & Sweet", "French Bakery"],
+            "allergens": "Contains Dairy, Gluten, Tree Nuts",
+            "prepTime": "Warm on order",
+            "calories": "380 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-b04",
+            "name": "Wild Blueberry Cream Cheese Danish",
+            "diet": "veg",
+            "price": 285,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "bakery-croissants",
+            "description": "Flaky puff pastry filled with velvety sweet cream cheese and tart mountain blueberry compote, finished with vanilla sugar glaze.",
+            "tags": ["Fruity & Creamy", "Crisp Layers"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Warm on order",
+            "calories": "310 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "sandwiches-savory",
+        "name": "Gourmet Sandwiches & Savories",
+        "shortDesc": "Pressed paninis, artisan brioche toasties & savory rolls",
+        "items": [
+          {
+            "id": "sb-s01",
+            "name": "Smoked Chicken & English Cheddar Brioche",
+            "diet": "non-veg",
+            "price": 385,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "category": "sandwiches-savory",
+            "description": "Hickory-smoked pulled chicken breast, aged English cheddar cheese, caramelized onions, and whole grain mustard mayo in a toasted butter brioche bun.",
+            "tags": ["Hearty Lunch", "Smoked Chicken"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Toasted 5 mins",
+            "calories": "480 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-s02",
+            "name": "Roasted Pesto Mozzarella Panini",
+            "diet": "veg",
+            "price": 345,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "sandwiches-savory",
+            "description": "Fresh fior di latte mozzarella, sun-ripened tomatoes, sweet basil pesto, and baby spinach grilled hot inside rustic ciabatta bread.",
+            "tags": ["Melty Cheese", "Italian Panini"],
+            "allergens": "Contains Dairy, Gluten, Tree Nuts",
+            "prepTime": "Toasted 5 mins",
+            "calories": "420 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-s03",
+            "name": "Saffron Paneer Tikka Sourdough Wrap",
+            "diet": "veg",
+            "price": 355,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "category": "sandwiches-savory",
+            "description": "Clay-oven roasted malai paneer cubes marinated in saffron tikka masala, wrapped in thin sourdough flatbread with mint chutney and pickled onions.",
+            "tags": ["Jammu Fusion", "Spicy Warm"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Toasted 5 mins",
+            "calories": "410 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-s04",
+            "name": "Three Cheese & Truffle Sourdough Toastie",
+            "diet": "veg",
+            "price": 365,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "sandwiches-savory",
+            "description": "Artisanal sharp white cheddar, fontina, and mozzarella layered inside crusty sourdough with garlic herb butter and subtle black truffle glaze.",
+            "tags": ["Gooey Cheese", "Truffle Aroma"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Toasted 6 mins",
+            "calories": "460 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "patisserie-desserts",
+        "name": "Master Confectionery & Cakes",
+        "shortDesc": "New York cheesecakes, Dutch truffles & dessert slices",
+        "items": [
+          {
+            "id": "sb-d01",
+            "name": "Signature New York Style Cheesecake",
+            "diet": "veg",
+            "price": 365,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "patisserie-desserts",
+            "description": "Dense, ultra-rich Philadelphia cream cheese cake over a buttery graham cracker crust with a light hint of lemon zest.",
+            "tags": ["Starbucks Legend", "Silky Smooth"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Instant",
+            "calories": "460 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-d02",
+            "name": "Dutch Dark Truffle Gateau",
+            "diet": "veg",
+            "price": 375,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "category": "patisserie-desserts",
+            "description": "Moist chocolate sponge layered with bittersweet 70% dark chocolate ganache, crowned with cocoa dust and chocolate curls.",
+            "tags": ["Pure Chocolate", "Decadent"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Instant",
+            "calories": "490 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-d03",
+            "name": "Red Velvet & White Chocolate Cake Slice",
+            "diet": "veg",
+            "price": 355,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "patisserie-desserts",
+            "description": "Velvety crimson sponge cake layered with tangy vanilla bean cream cheese frosting and white Belgian chocolate shavings.",
+            "tags": ["Velvety", "Photo Worthy"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Instant",
+            "calories": "410 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "sb-d04",
+            "name": "Classic Italian Espresso Tiramisu",
+            "diet": "veg",
+            "price": 385,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "category": "patisserie-desserts",
+            "description": "Savoiardi ladyfingers steeped in Starbucks Italian Roast espresso, layered with airy mascarpone mousse and Valrhona cocoa powder.",
+            "tags": ["Coffee Dessert", "Authentic Recipe"],
+            "allergens": "Contains Dairy, Gluten",
+            "prepTime": "Instant",
+            "calories": "390 kcal",
+            "imageUrl": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}

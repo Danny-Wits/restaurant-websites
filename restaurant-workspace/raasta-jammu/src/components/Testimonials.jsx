@@ -6,16 +6,16 @@ export default function Testimonials() {
   const { testimonials, restaurant } = restaurantData;
 
   return (
-    <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#0F1110]">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#0F1110] w-full max-w-full overflow-hidden">
+      <div className="max-w-6xl mx-auto w-full max-w-full">
         
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
+            <Star className="w-4 h-4 fill-amber-400 text-amber-400 shrink-0" />
             <span>{restaurant.rating} Rating &bull; {restaurant.reviewCount} Reviews</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-4xl text-zinc-100 tracking-tight mb-3">
+          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-4xl text-zinc-100 tracking-tight mb-3 break-words">
             Voices of Panama Chowk
           </h2>
           <p className="text-sm text-zinc-400">

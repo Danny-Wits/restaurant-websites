@@ -1,0 +1,515 @@
+{
+  "restaurant": {
+    "name": "Kaffberry",
+    "slug": "kaffberry",
+    "city": "Jammu",
+    "locality": "Sector 2, Channi Himmat",
+    "state": "Jammu & Kashmir",
+    "pincode": "180015",
+    "tagline": "European Boulangerie, Specialty Coffee & Bistro",
+    "subTagline": "Jammu's sanctuary of quiet luxury — single-origin pour-overs, golden viennoiserie, 48-hour fermented sourdough pizzas, and handmade bronze-die pasta in the heart of Channi Himmat.",
+    "concept": "An upscale, contemporary European cafe and artisan patisserie where third-wave specialty coffees, flaky French pastries, hand-tossed Neapolitan pizzas, and refined bistro plates are celebrated with understated elegance.",
+    "rating": "4.9",
+    "reviewCount": "2,890+",
+    "priceRange": "₹750 - ₹1,400 for two",
+    "contact": {
+      "phone": "+91 191 246 8800",
+      "mobile": "+91 94192 11200",
+      "whatsapp": "+91 94192 11200",
+      "email": "bonjour@kaffberry.com",
+      "reservationsEmail": "tables@kaffberry.com",
+      "instagram": "@kaffberryjammu"
+    },
+    "location": {
+      "address": "Sector 2 (Main Boulevard), Channi Himmat",
+      "neighborhood": "Channi Himmat Residential & Gourmet Enclave",
+      "city": "Jammu",
+      "state": "Jammu & Kashmir",
+      "pincode": "180015",
+      "landmarks": "Sector 2 Main Avenue, 100 meters from Channi Himmat Central Park, 3 minutes from Wave Mall & NH-44 highway bypass",
+      "googleMapsUrl": "https://maps.google.com/?q=Kaffberry+Channi+Himmat+Jammu",
+      "coordinates": {
+        "lat": 32.6985,
+        "lng": 74.8821
+      }
+    },
+    "hours": {
+      "daily": {
+        "open": "09:30 AM",
+        "close": "11:00 PM"
+      },
+      "breakfast": "09:30 AM – 12:30 PM (Viennoiserie, eggs benedict, specialty espresso)",
+      "bistroDining": "12:30 PM – 11:00 PM (Neapolitan pizza, handmade pasta & mains)",
+      "highTea": "04:00 PM – 07:00 PM (Artisan entremets, teas & single-origin pour-overs)",
+      "kitchenCloses": "10:30 PM",
+      "days": "Monday – Sunday (Open All 7 Days)"
+    },
+    "amenities": [
+      "Custom Italian Slayer Espresso Machine & Micro-Lot Pour-Over Bar",
+      "Stone Hearth Wood-Fired Pizza Oven (48-Hour Cold Fermented Dough)",
+      "Temperature-Controlled French Pastry & Macaron Display Case",
+      "Sun-Dappled Al Fresco Garden Veranda with Calming Olive Trees",
+      "Quiet Co-Working Nooks with Dedicated Power Outlets & High-Speed Wi-Fi",
+      "Curated Afternoon High Tea & Dessert Tasting Flights",
+      "Curated Low-Acidity Plant Milks (Oat, Almond, Coconut)",
+      "Dedicated Valet & Quiet Curbside Parking in Sector 2"
+    ]
+  },
+  "marketAnalysis": {
+    "locationContext": "Located in the quiet, upscale residential greenery of Sector 2 Channi Himmat, Kaffberry caters to Jammu's discerning connoisseurs, creative professionals, doctors, civil servants, and well-traveled families. Just minutes away from Narwal bypass and Wave Mall, yet tucked away from traffic noise, it offers a serene, sunlit European retreat that effortlessly transitions into an intimate, dimly lit evening bistro.",
+    "culinaryPillars": [
+      {
+        "pillar": "Third-Wave Micro-Lot Coffee Roasts",
+        "description": "Ethically sourced single-origin Arabica beans roasted to highlight delicate jasmine, bergamot, stone fruit, and dark cocoa tasting notes."
+      },
+      {
+        "pillar": "48-Hour Cold-Fermented Sourdough & Viennoiserie",
+        "description": "Laminated with 84% French butter for featherlight honeycomb croissants, paired with naturally fermented Neapolitan pizza crusts."
+      },
+      {
+        "pillar": "Artisanal Handmade Bronze-Die Pastas",
+        "description": "Fresh durum wheat and egg yolk pastas extruded through bronze dies for silky, sauce-gripping textures."
+      },
+      {
+        "pillar": "Contemporary Haute Patisserie",
+        "description": "Venetian mascarpone tiramisu, caramelized Basque burnt cheesecake, and delicate fruit tartlets."
+      }
+    ]
+  },
+  "visualIdentity": {
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
+    "theme": "Quiet European Luxury & Brushed Brass",
+    "colorTokens": {
+      "primary": {
+        "hex": "#C5A059",
+        "name": "Brushed Warm Brass"
+      },
+      "background": {
+        "hex": "#0A0B0E",
+        "name": "Matte Obsidian Noir"
+      },
+      "surface": {
+        "hex": "#121419",
+        "name": "Refined Graphite"
+      },
+      "border": {
+        "hex": "rgba(255, 255, 255, 0.08)",
+        "name": "Hairline White Border"
+      }
+    }
+  },
+  "menuEngineering": {
+    "categories": [
+      {
+        "id": "coffee-brews",
+        "name": "Specialty Coffee & Elixirs",
+        "shortDesc": "Single-origin pour-overs, velvet flat whites, and botanical refreshers",
+        "items": [
+          {
+            "id": "kb-01",
+            "name": "Artisanal Spanish Iced Latte",
+            "diet": "veg",
+            "price": 260,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "coffee-brews",
+            "description": "Double ristretto of Chikmagalur estate Arabica shaken over condensed organic milk, whole cold milk, and crystal ice.",
+            "tags": ["Signature Sip", "Velvet Sweet", "Chilled Classic"],
+            "calories": "190 kcal",
+            "prepTime": "3 mins",
+            "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-02",
+            "name": "Single-Origin V60 Hand Pour-Over",
+            "diet": "veg",
+            "price": 240,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "coffee-brews",
+            "description": "Light-roasted micro-lot beans extracted precisely at 92°C, featuring clear floral notes of Meyer lemon, jasmine blossom, and peach nectar.",
+            "tags": ["Third-Wave", "Zero Sugar", "Floral & Crisp"],
+            "calories": "5 kcal",
+            "prepTime": "5 mins",
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-03",
+            "name": "Velvet Flat White (Double Ristretto)",
+            "diet": "veg",
+            "price": 220,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "coffee-brews",
+            "description": "Short double ristretto coated in silk micro-foam with intricate latte art, balancing roasted hazelnut and dark chocolate tones.",
+            "tags": ["Espresso Classic", "Creamy Micro-Foam", "Intense"],
+            "calories": "110 kcal",
+            "prepTime": "3 mins",
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-04",
+            "name": "Cascara Cherry & Elderflower Tonic",
+            "diet": "veg",
+            "price": 230,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "coffee-brews",
+            "description": "Brewed sun-dried coffee cherry husks infused with French elderflower liqueur essence, chilled sparkling tonic, and dehydrated citrus wheel.",
+            "tags": ["Botanical", "Antioxidant Rich", "Sparkling"],
+            "calories": "65 kcal",
+            "prepTime": "3 mins",
+            "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-05",
+            "name": "Ceremonial Kyoto Matcha Latte",
+            "diet": "veg",
+            "price": 280,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "coffee-brews",
+            "description": "First-harvest stone-ground Uji matcha whisked with warm oat milk and organic Madagascar vanilla syrup.",
+            "tags": ["Japanese Grade A", "Antioxidant", "Earthy & Smooth"],
+            "calories": "130 kcal",
+            "prepTime": "4 mins",
+            "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "boulangerie",
+        "name": "Artisanal Viennoiserie & Tartines",
+        "shortDesc": "French butter laminated pastries and slow-fermented country sourdough breads",
+        "items": [
+          {
+            "id": "kb-06",
+            "name": "Classic French Butter Croissant",
+            "diet": "veg",
+            "price": 180,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "boulangerie",
+            "description": "Layered with premium 84% Normandy butter, baked fresh every morning to a shatteringly crisp exterior and airy honeycomb core.",
+            "tags": ["Morning Bake", "Normandy Butter", "Honeycomb Crumb"],
+            "calories": "260 kcal",
+            "prepTime": "Fresh from Display",
+            "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-07",
+            "name": "Pain au Chocolat with Double Valrhona Batons",
+            "diet": "veg",
+            "price": 220,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "boulangerie",
+            "description": "Flaky French puff pastry rolled around twin batons of Valrhona 55% dark chocolate, finished with a golden sugar sheen.",
+            "tags": ["French Classic", "Valrhona Chocolate", "Buttery Indulgence"],
+            "calories": "310 kcal",
+            "prepTime": "Fresh from Display",
+            "image": "https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-08",
+            "name": "Avocado Tartine on House Sourdough",
+            "diet": "veg",
+            "price": 380,
+            "spiceLevel": 1,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "boulangerie",
+            "description": "Toasted 48-hour sourdough slice topped with crushed Haas avocado, Danish feta crumbles, toasted pumpkin seeds, cherry tomatoes, and cold-pressed olive oil.",
+            "tags": ["Brunch Favorite", "Healthy Fats", "Vegan Modifiable"],
+            "calories": "320 kcal",
+            "prepTime": "6 mins",
+            "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-09",
+            "name": "Truffle Mushroom & Burrata Brioche Toast",
+            "diet": "veg",
+            "price": 420,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "boulangerie",
+            "description": "Thick toasted brioche toast topped with pan-seared wild cremini and shiitake mushrooms, creamy Pugliese burrata heart, and black truffle oil drizzle.",
+            "tags": ["Gourmet Indulgence", "Truffle Aroma", "Creamy Burrata"],
+            "calories": "410 kcal",
+            "prepTime": "8 mins",
+            "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-10",
+            "name": "Smoked Salmon & Dill Cream Cheese Bagel",
+            "diet": "non-veg",
+            "price": 490,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "boulangerie",
+            "description": "House-boiled toasted seeded bagel with cured Atlantic smoked salmon, whipped caper-dill cream cheese, and pickled red onions.",
+            "tags": ["Seafood Brunch", "High Protein", "Classic New York Delicacy"],
+            "calories": "440 kcal",
+            "prepTime": "6 mins",
+            "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "sourdough-pizza",
+        "name": "Wood-Fired Neapolitan Sourdough",
+        "shortDesc": "Hand-stretched 48-hour fermented dough baked at 450°C with leopard-spotted crusts",
+        "items": [
+          {
+            "id": "kb-11",
+            "name": "Margherita Di Bufala D.O.P.",
+            "diet": "veg",
+            "price": 540,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "sourdough-pizza",
+            "description": "San Marzano D.O.P. tomato reduction, fresh Buffalo Mozzarella from Campania, Genovese sweet basil, and extra virgin olive oil.",
+            "tags": ["Neapolitan Classic", "San Marzano", "Wood-Fired"],
+            "calories": "680 kcal",
+            "prepTime": "8 mins",
+            "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-12",
+            "name": "Tartufo Bianco & Wild Forest Fungi",
+            "diet": "veg",
+            "price": 640,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "sourdough-pizza",
+            "description": "White garlic cream base, roasted porcini and shimeji mushrooms, Fior di Latte mozzarella, aged parmesan shavings, and aromatic white truffle essence.",
+            "tags": ["Chef's Signature", "White Pizza", "Earthy Truffle"],
+            "calories": "720 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-13",
+            "name": "Artisanal Pepperoni & Calabrian Hot Honey",
+            "diet": "non-veg",
+            "price": 690,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "sourdough-pizza",
+            "description": "Crispy cupping pepperoni slices, San Marzano sauce, smoked provolone, and a generous drizzle of house-infused chili blossom honey.",
+            "tags": ["Sweet & Heat", "Crisp Pepperoni Cups", "Crowd Favorite"],
+            "calories": "790 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-14",
+            "name": "Quattro Formaggi con Miele e Noci",
+            "diet": "veg",
+            "price": 620,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "sourdough-pizza",
+            "description": "Four-cheese symphony of Gorgonzola Dolce, Fior di Latte, smoked Scamorza, and Pecorino Romano, finished with toasted walnuts and mountain honey.",
+            "tags": ["Four Italian Cheeses", "Rich & Complex", "Gourmet"],
+            "calories": "760 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-15",
+            "name": "Pollo Affumicato & Sun-Dried Tomato",
+            "diet": "non-veg",
+            "price": 630,
+            "spiceLevel": 1,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "sourdough-pizza",
+            "description": "Herb-roasted smoked chicken breast strips, sweet sun-dried tomatoes, roasted garlic, fresh mozzarella, and a hint of fresh oregano.",
+            "tags": ["Smoked Chicken", "Sun-Dried Tomatoes", "Hearty"],
+            "calories": "740 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "pasta-mains",
+        "name": "Handmade Pasta & European Mains",
+        "shortDesc": "Extruded bronze-die pastas, delicate hand-rolled gnocchi, and refined bistro mains",
+        "items": [
+          {
+            "id": "kb-16",
+            "name": "Hand-Cut Truffle Fettuccine Alfredo",
+            "diet": "veg",
+            "price": 540,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "pasta-mains",
+            "description": "Silky fresh egg fettuccine tossed in a velvet emulsion of 24-month Parmigiano-Reggiano, churned cultured butter, cracked black peppercorns, and summer truffle paste.",
+            "tags": ["Handmade Pasta", "Authentic Alfredo", "No Heavy Cream"],
+            "calories": "580 kcal",
+            "prepTime": "10 mins",
+            "image": "https://images.unsplash.com/photo-1621996346565-e3d5d628169e?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-17",
+            "name": "Pugliese Burrata & Slow Pomodoro Gnocchi",
+            "diet": "veg",
+            "price": 510,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "pasta-mains",
+            "description": "Pillow-soft hand-rolled potato gnocchi seared in slow-simmered San Marzano tomato sauce, topped with an entire creamy burrata sphere and torn basil.",
+            "tags": ["Pillowy Gnocchi", "Fresh Burrata", "Italian Comfort"],
+            "calories": "540 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-18",
+            "name": "Spaghetti Aglio Olio e Peperoncino con Gamberi",
+            "diet": "non-veg",
+            "price": 590,
+            "spiceLevel": 2,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "pasta-mains",
+            "description": "Bronze-die spaghetti sautéed in cold-pressed extra virgin olive oil, toasted garlic chips, spicy bird's eye chilies, and plump pan-seared sea prawns.",
+            "tags": ["Classic Rome Recipe", "Pan-Seared Prawns", "Aromatic Garlic"],
+            "calories": "490 kcal",
+            "prepTime": "9 mins",
+            "image": "https://images.unsplash.com/photo-1621996346565-e3d5d628169e?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-19",
+            "name": "Pan-Seared Norwegian Salmon with Herb Beurre Blanc",
+            "diet": "non-veg",
+            "price": 890,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "pasta-mains",
+            "description": "Crispy skin Atlantic salmon fillet served over velvet parsnip purée, grilled asparagus spears, and a silky white wine tarragon reduction.",
+            "tags": ["Fine Dining", "Omega-3 Rich", "Crisp Skin"],
+            "calories": "520 kcal",
+            "prepTime": "14 mins",
+            "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-20",
+            "name": "French Herb Roasted Chicken Breast & Potato Mash",
+            "diet": "non-veg",
+            "price": 580,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "pasta-mains",
+            "description": "Corn-fed supreme chicken breast basted with fresh thyme butter, served with Robuchon-style whipped potato mash, charred carrots, and rosemary jus.",
+            "tags": ["Bistro Classic", "Succulent Cut", "Robuchon Mash"],
+            "calories": "560 kcal",
+            "prepTime": "12 mins",
+            "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      },
+      {
+        "id": "patisserie",
+        "name": "Haute Patisserie & Desserts",
+        "shortDesc": "Layered French entremets, classic Venetian tiramisu, and molten confections",
+        "items": [
+          {
+            "id": "kb-21",
+            "name": "Classic Venetian Tiramisu al Mascarpone",
+            "diet": "veg",
+            "price": 340,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "patisserie",
+            "description": "Espresso-soaked Savoiardi ladyfingers layered with whipped Italian mascarpone cream and dusted with single-origin Valrhona cocoa powder.",
+            "tags": ["Iconic Dessert", "House Recipe", "Silky Mascarpone"],
+            "calories": "390 kcal",
+            "prepTime": "Fresh from Display",
+            "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-22",
+            "name": "San Sebastián Basque Burnt Cheesecake",
+            "diet": "veg",
+            "price": 360,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": true,
+            "category": "patisserie",
+            "description": "Caramelized, dark-crusted Spanish cheesecake featuring an ultra-creamy, molten custardy center, paired with wild berry compote.",
+            "tags": ["Bestseller", "Molten Center", "Gluten-Free"],
+            "calories": "420 kcal",
+            "prepTime": "Fresh from Display",
+            "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-23",
+            "name": "Warm Belgian Chocolate Lava Fondant",
+            "diet": "veg",
+            "price": 350,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": true,
+            "category": "patisserie",
+            "description": "Baked 70% dark Belgian chocolate cake with a molten flowing heart, served alongside a scoop of organic vanilla bean gelato.",
+            "tags": ["Molten Chocolate", "Warm & Decadent", "Baked to Order"],
+            "calories": "460 kcal",
+            "prepTime": "8 mins",
+            "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-24",
+            "name": "Sicilian Pistachio & Fresh Raspberry Tartlet",
+            "diet": "veg",
+            "price": 380,
+            "spiceLevel": 0,
+            "isChefSpecial": true,
+            "isCrowdFavorite": false,
+            "category": "patisserie",
+            "description": "Crisp sablé pastry crust filled with roasted Bronte pistachio frangipane, smooth diplomat cream, and ripe tart raspberries.",
+            "tags": ["Artisanal Tart", "Bronte Pistachio", "Delicate"],
+            "calories": "340 kcal",
+            "prepTime": "Fresh from Display",
+            "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80"
+          },
+          {
+            "id": "kb-25",
+            "name": "Parisian Macaron Assortment (Box of 4)",
+            "diet": "veg",
+            "price": 320,
+            "spiceLevel": 0,
+            "isChefSpecial": false,
+            "isCrowdFavorite": false,
+            "category": "patisserie",
+            "description": "Almond flour shells with delicate feet, filled with salted butter caramel, dark chocolate ganache, rose lychee, and Tahitian vanilla.",
+            "tags": ["French Macarons", "Gift Worthy", "Naturally Gluten-Free"],
+            "calories": "280 kcal",
+            "prepTime": "Fresh Box",
+            "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+          }
+        ]
+      }
+    ]
+  }
+}
