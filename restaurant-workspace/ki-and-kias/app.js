@@ -592,7 +592,7 @@
             <div class="card-diet-badge" title="${dietLabel}">
               <span class="diet-dot-square ${dietClass}"></span>
             </div>
-            ${item.isChefSpecial ? `<span class="card-special-badge">★ Chef's Choice</span>` : ''}
+            ${item.isChefSpecial ? `<span class="card-special-badge">★ Chef's Special</span>` : ''}
           </div>
           <div class="card-content">
             <div class="card-top-row">
@@ -602,9 +602,9 @@
             <p class="card-desc">${item.description}</p>
             <div class="card-footer">
               <div class="card-tags">
-                ${(item.tags || []).slice(0, 2).map(t => `<span class="tag-badge">${t}</span>`).join('')}
+                ${(item.tags || []).slice(0, 2).map(t => `<span class="tag-badge">#${t}</span>`).join('')}
               </div>
-              <span class="quick-view-prompt">Details &rarr;</span>
+              <span class="quick-view-prompt">Inspect Dish &rarr;</span>
             </div>
           </div>
         </article>

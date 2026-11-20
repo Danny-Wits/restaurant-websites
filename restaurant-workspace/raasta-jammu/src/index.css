@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-raasta-dark: #0F1110;
-  --color-raasta-forest: #161917;
-  --color-raasta-surface: #1E2220;
-  --color-raasta-elevated: #282D2A;
+  --color-raasta-canvas: #FFFDF9;
+  --color-raasta-card: #FFFFFF;
+  --color-raasta-subtle: #FAFAF7;
+  --color-raasta-border: #F3E8E2;
   
-  --color-raasta-amber: #F59E0B;
-  --color-raasta-honey: #FBBF24;
-  --color-raasta-green: #10B981;
-  --color-raasta-coral: #F43F5E;
+  --color-raasta-orange: #EA580C;
+  --color-raasta-tangerine: #F97316;
+  --color-raasta-amber: #EAB308;
+  --color-raasta-honey: #FACC15;
+  --color-raasta-green: #16A34A;
+  --color-raasta-coral: #EF4444;
   
-  --color-border-amber: rgba(245, 158, 11, 0.18);
-  --color-border-amber-glow: rgba(245, 158, 11, 0.5);
-  --color-border-green-glow: rgba(16, 185, 129, 0.4);
-  --color-border-coral-glow: rgba(244, 63, 94, 0.4);
+  --color-border-orange: rgba(234, 88, 12, 0.14);
+  --color-border-orange-glow: rgba(234, 88, 12, 0.4);
+  --color-border-green-glow: rgba(22, 163, 74, 0.35);
   
-  --color-veg: #10B981;
-  --color-nonveg: #EF4444;
+  --color-veg: #16A34A;
+  --color-nonveg: #DC2626;
   
-  --color-text-primary: #F4F4F5;
-  --color-text-secondary: #D4D4D8;
-  --color-text-muted: #A1A1AA;
+  --color-text-primary: #1C1917;
+  --color-text-secondary: #57534E;
+  --color-text-muted: #78716C;
   
   --font-display: 'Syne', 'Outfit', sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
@@ -29,21 +30,21 @@
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
-/* Custom Bohemian Timber Scrollbar */
+/* Custom Warm Cafe Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0F1110;
+  background: #FFFDF9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E2220;
+  background: #FED7AA;
   border-radius: 4px;
-  border: 1px solid rgba(245, 158, 11, 0.2);
+  border: 2px solid #FFFDF9;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F59E0B;
+  background: #F97316;
 }
 
 /* Hide horizontal scrollbar for clean tab pill scrolling */
@@ -55,20 +56,7 @@
   scrollbar-width: none;
 }
 
-/* Neon glows and animations */
-@keyframes neon-amber-pulse {
-  0%, 100% {
-    box-shadow: 0 0 15px -3px rgba(245, 158, 11, 0.25), 0 0 6px -1px rgba(245, 158, 11, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 25px 2px rgba(245, 158, 11, 0.45), 0 0 12px 1px rgba(245, 158, 11, 0.5);
-  }
-}
-
-.neon-amber-glow {
-  animation: neon-amber-pulse 3s infinite ease-in-out;
-}
-
+/* Equalizer bounce animation */
 @keyframes equalizer-bounce {
   0%, 100% { height: 6px; }
   50% { height: 18px; }
@@ -79,19 +67,28 @@
 .equalizer-bar-3 { animation: equalizer-bounce 0.8s ease-in-out infinite 0.4s; }
 .equalizer-bar-4 { animation: equalizer-bounce 0.8s ease-in-out infinite 0.1s; }
 
-/* Glassmorphism utility */
+/* Light Glassmorphism utility */
 .glass-panel {
-  background: rgba(30, 34, 32, 0.85);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(245, 158, 11, 0.16);
+  border: 1px solid rgba(234, 88, 12, 0.12);
+  box-shadow: 0 4px 20px -2px rgba(234, 88, 12, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
 }
 
 .glass-nav {
-  background: rgba(15, 17, 16, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(245, 158, 11, 0.18);
+  border-bottom: 1px solid rgba(234, 88, 12, 0.12);
+}
+
+/* Card warm lift shadow */
+.card-warm-shadow {
+  box-shadow: 0 4px 20px -2px rgba(234, 88, 12, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+.card-warm-shadow:hover {
+  box-shadow: 0 10px 30px -4px rgba(234, 88, 12, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.06);
 }
 
 /* Bulletproof Mobile Overflow Defense */
@@ -104,6 +101,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #FFFDF9;
+  color: #1C1917;
 }
 
 #root {
@@ -111,6 +110,7 @@ body {
   max-width: 100vw;
   width: 100%;
   position: relative;
+  background-color: #FFFDF9;
 }
 
 *,
@@ -118,4 +118,3 @@ body {
 *::after {
   box-sizing: border-box;
 }
-

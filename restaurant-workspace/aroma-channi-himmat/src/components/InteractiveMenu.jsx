@@ -60,52 +60,52 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
     });
   }, [allDishes, selectedCategory, dietFilter, searchQuery]);
 
-  // Subtle Spice Indicator
+  // Spice Level Indicator
   const renderSpiceIndicator = (level) => {
     if (level === 0) return null;
     return (
-      <div className="flex items-center gap-0.5 text-zinc-500" title={`Spice Level: ${level}/3`}>
+      <div className="flex items-center gap-0.5 text-red-500" title={`Spice Intensity: ${level}/3`}>
         {Array.from({ length: level }).map((_, i) => (
-          <Flame key={i} className="w-3 h-3 fill-rose-500/80 text-rose-500/80" />
+          <Flame key={i} className="w-3.5 h-3.5 fill-red-500 text-red-500" />
         ))}
       </div>
     );
   };
 
   return (
-    <section id="menu" className="py-24 bg-[#09090b] border-t border-white/[0.06] relative">
+    <section id="menu" className="py-24 bg-[#FFFDF9] border-t border-orange-100 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <span className="text-xs uppercase tracking-[0.25em] font-light text-[#D4AF37] block mb-2">
+          <span className="text-xs uppercase tracking-[0.25em] font-bold text-orange-600 block mb-2">
             The Gastronomic Repertoire
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-zinc-100 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-stone-900 tracking-tight">
             Artisanal Multi-Cuisine Menu
           </h2>
-          <p className="mt-3 text-sm text-zinc-400 font-light leading-relaxed">
-            Curated from heirloom recipes, clay-oven craftsmanship, and contemporary culinary technique.
+          <p className="mt-3 text-sm sm:text-base text-stone-600 font-normal leading-relaxed">
+            Curated from heirloom Kashmiri Wazwan guilds, royal clay tandoors, and sizzler craftsmanship.
           </p>
         </div>
 
         {/* Search Bar & Dietary Filter Tabs */}
-        <div className="max-w-3xl mx-auto mb-10 space-y-4">
+        <div className="max-w-3xl mx-auto mb-8 space-y-4">
           
           {/* Live Search Input */}
           <div className="relative">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-orange-500" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search dishes, ingredients (e.g. Rogan Josh, Saffron, Galouti, Sizzler, Dimsum)..."
-              className="w-full pl-11 pr-10 py-3 rounded-xl bg-[#121214] border border-white/[0.08] focus:border-[#D4AF37]/50 text-sm text-zinc-200 placeholder-zinc-500 outline-none transition-colors"
+              placeholder="Search dishes, spices, or cuisines (e.g. Rogan Josh, Saffron, Galouti, Sizzler, Dimsum)..."
+              className="w-full pl-12 pr-11 py-3.5 rounded-2xl bg-white border border-orange-200 focus:border-orange-500 focus:ring-4 focus:ring-orange-100 text-sm sm:text-base text-stone-900 placeholder-stone-400 outline-none transition-all shadow-warm-sm"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery("")}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-200"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-1 text-stone-400 hover:text-stone-700 rounded-full hover:bg-orange-50"
                 aria-label="Clear search"
               >
                 <X className="w-4 h-4" />
@@ -113,16 +113,16 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
             )}
           </div>
 
-          {/* Understated Dietary Filter Buttons */}
+          {/* Dietary Filter Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
             
             {/* All */}
             <button
               onClick={() => setDietFilter("all")}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-normal tracking-wide transition-all ${
+              className={`px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all shadow-2xs ${
                 dietFilter === "all"
-                  ? "bg-zinc-100 text-zinc-950 font-medium"
-                  : "bg-transparent text-zinc-400 hover:text-zinc-200 border border-white/[0.08]"
+                  ? "bg-stone-900 text-white shadow-sm"
+                  : "bg-white text-stone-700 hover:bg-orange-50 border border-orange-200/80"
               }`}
             >
               All Offerings ({allDishes.length})
@@ -131,58 +131,58 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
             {/* Pure Veg */}
             <button
               onClick={() => setDietFilter("veg")}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-normal tracking-wide transition-all ${
+              className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all shadow-2xs ${
                 dietFilter === "veg"
-                  ? "bg-emerald-950/70 text-emerald-300 border border-emerald-500/40"
-                  : "bg-transparent text-zinc-400 hover:text-zinc-200 border border-white/[0.08]"
+                  ? "bg-emerald-600 text-white shadow-sm border border-emerald-600"
+                  : "bg-white text-emerald-800 hover:bg-emerald-50 border border-emerald-300"
               }`}
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
-              <span>Vegetarian</span>
+              <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
+              <span>🟢 Pure Veg</span>
             </button>
 
             {/* Non Veg */}
             <button
               onClick={() => setDietFilter("non-veg")}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-normal tracking-wide transition-all ${
+              className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all shadow-2xs ${
                 dietFilter === "non-veg"
-                  ? "bg-rose-950/70 text-rose-300 border border-rose-500/40"
-                  : "bg-transparent text-zinc-400 hover:text-zinc-200 border border-white/[0.08]"
+                  ? "bg-red-600 text-white shadow-sm border border-red-600"
+                  : "bg-white text-red-800 hover:bg-red-50 border border-red-300"
               }`}
             >
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-400 inline-block" />
-              <span>Non-Vegetarian</span>
+              <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
+              <span>🔴 Non-Veg</span>
             </button>
 
             {/* Chef's Signature */}
             <button
               onClick={() => setDietFilter("chef")}
-              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-normal tracking-wide transition-all ${
+              className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all shadow-2xs ${
                 dietFilter === "chef"
-                  ? "bg-amber-950/70 text-amber-300 border border-amber-500/40"
-                  : "bg-transparent text-zinc-400 hover:text-zinc-200 border border-white/[0.08]"
+                  ? "bg-amber-500 text-white shadow-sm border border-amber-500"
+                  : "bg-white text-amber-800 hover:bg-amber-50 border border-amber-300"
               }`}
             >
-              <Star className="w-3 h-3 text-amber-400 fill-current" />
-              <span>Chef's Signature</span>
+              <Star className="w-3.5 h-3.5 fill-current text-amber-500 group-hover:text-amber-600" />
+              <span>⭐ Chef's Signature</span>
             </button>
 
           </div>
         </div>
 
         {/* Sticky Category Bar */}
-        <div className="sticky top-16 md:top-20 z-30 py-2.5 bg-[#09090b]/90 backdrop-blur-md border-y border-white/[0.06] mb-10">
+        <div className="sticky top-16 md:top-20 z-30 py-3 bg-[#FFFDF9]/95 backdrop-blur-md border-y border-orange-100 shadow-warm-sm mb-8">
           <div 
             ref={categoryScrollRef}
-            className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 px-2"
+            className="flex items-center gap-2.5 overflow-x-auto no-scrollbar py-1 px-2"
           >
             {/* All Category Pill */}
             <button
               onClick={() => setSelectedCategory("all")}
-              className={`whitespace-nowrap px-3.5 py-1.5 rounded-lg text-xs tracking-wide transition-all flex-shrink-0 flex items-center gap-2 ${
+              className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all flex-shrink-0 flex items-center gap-2 ${
                 selectedCategory === "all"
-                  ? "bg-white/[0.08] text-zinc-100 border border-white/15 font-medium"
-                  : "text-zinc-400 hover:text-zinc-200 hover:bg-white/[0.02] border border-transparent font-light"
+                  ? "bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-500/25"
+                  : "bg-white text-stone-700 hover:bg-orange-50 border border-orange-200/80 shadow-2xs"
               }`}
             >
               <span>All Categories</span>
@@ -196,13 +196,13 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.id)}
-                  className={`whitespace-nowrap px-3.5 py-1.5 rounded-lg text-xs tracking-wide transition-all flex-shrink-0 flex items-center gap-2 ${
+                  className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all flex-shrink-0 flex items-center gap-2 ${
                     isActive
-                      ? "bg-white/[0.08] text-zinc-100 border border-white/15 font-medium"
-                      : "text-zinc-400 hover:text-zinc-200 hover:bg-white/[0.02] border border-transparent font-light"
+                      ? "bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-500/25"
+                      : "bg-white text-stone-700 hover:bg-orange-50 border border-orange-200/80 shadow-2xs"
                   }`}
                 >
-                  <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-[#D4AF37]' : 'text-zinc-500'}`} />
+                  <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-white' : 'text-orange-600'}`} />
                   <span>{cat.name}</span>
                 </button>
               );
@@ -211,10 +211,10 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
         </div>
 
         {/* Current Filter & Results Count Bar */}
-        <div className="flex items-center justify-between text-xs text-zinc-500 mb-6 px-1">
+        <div className="flex items-center justify-between text-xs sm:text-sm text-stone-600 mb-6 px-1 font-medium">
           <div>
-            Showing <strong className="text-zinc-300 font-medium">{filteredDishes.length}</strong> of {allDishes.length} artisanal dishes
-            {searchQuery && <span> matching "<span className="text-zinc-200">{searchQuery}</span>"</span>}
+            Showing <strong className="text-orange-700 font-bold">{filteredDishes.length}</strong> of {allDishes.length} dishes
+            {searchQuery && <span> matching "<span className="text-stone-900 font-bold">{searchQuery}</span>"</span>}
           </div>
           {(selectedCategory !== "all" || dietFilter !== "all" || searchQuery !== "") && (
             <button
@@ -223,7 +223,7 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                 setDietFilter("all");
                 setSearchQuery("");
               }}
-              className="text-[#D4AF37] hover:underline font-light"
+              className="text-orange-600 hover:text-orange-700 hover:underline font-bold"
             >
               Reset all filters
             </button>
@@ -239,48 +239,49 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                 <div
                   key={dish.id}
                   onClick={() => onSelectDish(dish)}
-                  className="group rounded-xl bg-[#121214] border border-white/[0.06] hover:border-[#D4AF37]/35 overflow-hidden flex flex-col justify-between cursor-pointer transition-all duration-300"
+                  className="group rounded-3xl bg-white border border-orange-100 shadow-warm-sm hover:shadow-warm-lg hover:border-orange-300 overflow-hidden flex flex-col justify-between cursor-pointer transition-all duration-300"
                 >
                   {/* Top Dish Card Header with Photo */}
-                  <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-orange-50">
                     <img
                       src={dish.image}
                       alt={dish.name}
                       loading="lazy"
-                      className="w-full h-full object-cover filter brightness-90 group-hover:scale-[1.03] transition-transform duration-500"
+                      className="w-full h-full object-cover filter contrast-105 group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#121214] via-transparent to-transparent opacity-85" />
 
-                    {/* Diet Indicator Dot in Hairline Pill */}
+                    {/* Veg / Non-Veg Indicator Badge */}
                     <div 
-                      className="absolute top-3 left-3 px-2 py-0.5 rounded-full bg-black/75 border border-white/10 backdrop-blur-sm flex items-center gap-1.5"
+                      className="absolute top-3 left-3 px-2 py-1 rounded-lg bg-white/95 border border-orange-100 shadow-sm backdrop-blur-sm flex items-center gap-1.5"
                       title={isVeg ? 'Vegetarian' : 'Non-Vegetarian'}
                     >
                       <span 
-                        className={`w-1.5 h-1.5 rounded-full ${
-                          isVeg ? 'bg-emerald-400' : 'bg-rose-400'
+                        className={`w-2 h-2 rounded-full ${
+                          isVeg ? 'bg-emerald-600' : 'bg-red-600'
                         }`} 
                       />
-                      <span className="text-[9px] uppercase tracking-wider text-zinc-300 font-mono">
-                        {isVeg ? 'Veg' : 'Non-Veg'}
+                      <span className={`text-[10px] font-bold uppercase tracking-wider ${
+                        isVeg ? 'text-emerald-800' : 'text-red-800'
+                      }`}>
+                        {isVeg ? 'Pure Veg' : 'Non-Veg'}
                       </span>
                     </div>
 
                     {/* Chef Special Star */}
                     {dish.isChefSpecial && (
-                      <span className="absolute top-3 right-3 inline-flex items-center gap-1 text-[9px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-full bg-black/75 text-amber-300 border border-amber-400/30 backdrop-blur-sm">
-                        <Star className="w-2.5 h-2.5 fill-current" />
+                      <span className="absolute top-3 right-3 inline-flex items-center gap-1 text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full bg-amber-100/90 text-amber-900 border border-amber-300 shadow-sm backdrop-blur-sm">
+                        <Star className="w-3 h-3 fill-amber-500 text-amber-500" />
                         Signature
                       </span>
                     )}
 
                     {/* Price Tag */}
-                    <div className="absolute bottom-3 right-3 px-2.5 py-0.5 rounded bg-black/80 text-zinc-100 font-serif text-sm border border-white/10">
+                    <div className="absolute bottom-3 right-3 px-3 py-1 rounded-xl bg-white/95 text-orange-600 font-serif font-bold text-base border border-orange-100 shadow-md">
                       ₹{dish.price}
                     </div>
 
                     {/* Category Label */}
-                    <div className="absolute bottom-3 left-3 text-[9px] font-mono tracking-wider uppercase text-zinc-400 bg-black/75 px-2 py-0.5 rounded border border-white/10">
+                    <div className="absolute bottom-3 left-3 text-[10px] font-bold tracking-wider uppercase text-stone-700 bg-white/95 px-2.5 py-1 rounded-lg border border-orange-100 shadow-sm">
                       {dish.categoryName || dish.category}
                     </div>
                   </div>
@@ -290,14 +291,14 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                     <div>
                       {/* Name & Spice Meter */}
                       <div className="flex items-start justify-between gap-2 mb-1.5">
-                        <h3 className="font-serif text-lg font-medium text-zinc-100 group-hover:text-[#D4AF37] transition-colors leading-snug">
+                        <h3 className="font-serif text-xl font-bold text-stone-900 group-hover:text-orange-600 transition-colors leading-snug">
                           {dish.name}
                         </h3>
                         {renderSpiceIndicator(dish.spiceLevel)}
                       </div>
 
                       {/* Description */}
-                      <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed mb-4 font-light">
+                      <p className="text-xs text-stone-600 line-clamp-2 leading-relaxed mb-4 font-normal">
                         {dish.description}
                       </p>
 
@@ -307,7 +308,7 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                           {dish.tags.slice(0, 3).map((tag, tIdx) => (
                             <span 
                               key={tIdx}
-                              className="text-[9px] font-light px-2 py-0.5 rounded bg-white/[0.02] text-zinc-400 border border-white/[0.06]"
+                              className="text-[10px] font-medium px-2.5 py-0.5 rounded-lg bg-orange-50 text-stone-700 border border-orange-100"
                             >
                               {tag}
                             </span>
@@ -317,12 +318,12 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                     </div>
 
                     {/* Bottom Action Strip */}
-                    <div className="pt-3 border-t border-white/[0.04] flex items-center justify-between text-xs text-zinc-400 group-hover:text-zinc-200 transition-colors">
-                      <span className="flex items-center gap-1 font-light">
-                        <Info className="w-3.5 h-3.5 text-zinc-500" />
-                        <span>Gastronomy Notes</span>
+                    <div className="pt-3 border-t border-orange-100 flex items-center justify-between text-xs text-stone-600 group-hover:text-orange-600 transition-colors">
+                      <span className="flex items-center gap-1.5 font-bold">
+                        <Info className="w-3.5 h-3.5 text-orange-600" />
+                        <span>Gastronomy Notes & Pairing</span>
                       </span>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-zinc-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                      <ArrowUpRight className="w-4 h-4 text-orange-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                     </div>
                   </div>
                 </div>
@@ -331,12 +332,12 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
           </div>
         ) : (
           /* Empty Search State */
-          <div className="p-12 text-center rounded-xl bg-[#121214] border border-white/[0.08] max-w-lg mx-auto">
-            <Utensils className="w-10 h-10 text-zinc-600 mx-auto mb-4" />
-            <h3 className="font-serif text-xl font-light text-zinc-100 mb-2">
+          <div className="p-12 text-center rounded-3xl bg-white border border-orange-200 max-w-lg mx-auto shadow-warm-sm">
+            <Utensils className="w-12 h-12 text-orange-400 mx-auto mb-4" />
+            <h3 className="font-serif text-2xl font-bold text-stone-900 mb-2">
               No Culinary Creations Found
             </h3>
-            <p className="text-xs text-zinc-400 font-light mb-6">
+            <p className="text-xs sm:text-sm text-stone-600 font-normal mb-6">
               We couldn't find any dishes matching your current search or dietary filters.
             </p>
             <button
@@ -345,9 +346,9 @@ export default function InteractiveMenu({ onSelectDish, onOpenReservation }) {
                 setDietFilter("all");
                 setSearchQuery("");
               }}
-              className="px-6 py-2.5 rounded-full text-xs font-medium uppercase tracking-widest text-zinc-950 bg-[#D4AF37] hover:bg-[#E2BD44] transition-colors"
+              className="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest text-white bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 shadow-md transition-all"
             >
-              Show Full Repertoire
+              Show Full Repertoire (44 Dishes)
             </button>
           </div>
         )}

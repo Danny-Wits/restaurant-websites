@@ -77,24 +77,32 @@
     ]
   },
   "visualIdentity": {
-    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85",
-    "theme": "Quiet European Luxury & Brushed Brass",
+    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=85",
+    "theme": "Appetizing Light Theme — Sunlit European Boulangerie & Artisan Bistro",
     "colorTokens": {
       "primary": {
-        "hex": "#C5A059",
-        "name": "Brushed Warm Brass"
+        "hex": "#EA580C",
+        "name": "Flame Orange & Warm Tangerine"
+      },
+      "secondary": {
+        "hex": "#D97706",
+        "name": "Golden Brioche & Honey"
       },
       "background": {
-        "hex": "#0A0B0E",
-        "name": "Matte Obsidian Noir"
+        "hex": "#FFFDF9",
+        "name": "Warm Buttermilk Cream Canvas"
       },
       "surface": {
-        "hex": "#121419",
-        "name": "Refined Graphite"
+        "hex": "#FFFFFF",
+        "name": "Crisp Pure White Porcelain"
       },
       "border": {
-        "hex": "rgba(255, 255, 255, 0.08)",
-        "name": "Hairline White Border"
+        "hex": "#F3E8E2",
+        "name": "Warm Peach & Biscuit Hairline"
+      },
+      "text": {
+        "hex": "#1C1917",
+        "name": "Deep Roasted Espresso"
       }
     }
   },

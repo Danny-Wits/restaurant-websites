@@ -4,23 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Bakers @ Us | French Boulangerie & Haute Pâtisserie • Channi Himmat, Jammu</title>
-  <meta name="description" content="Artisanal French bakery in Sector 1, Channi Himmat, Jammu. 36-hour cold-fermented wild sourdoughs, 81-layer AOP butter viennoiserie, and bespoke celebration gateaux." />
+  <meta name="description" content="Jammu's premier French boulangerie and haute pâtisserie atelier in Sector 1, Channi Himmat. 36-hour cold-fermented wild sourdoughs, 81-layer French AOP butter viennoiserie, and bespoke celebration gateaux." />
   
   <!-- Preconnect & Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Ambient background glow -->
+  <!-- Ambient Sunlit Glow -->
   <div class="ambient-light" aria-hidden="true"></div>
 
-  <!-- Sticky Top Navbar -->
+  <!-- Sticky Top Navbar (Crisp White with Delicate Peach Border) -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="brand-monogram">
+      <a href="#hero" class="brand-monogram" aria-label="Bakers @ Us Home">
         <span class="monogram-emblem">B</span>
         <div class="brand-text">
           <span class="brand-title">Bakers @ Us</span>
@@ -28,91 +28,120 @@
         </div>
       </a>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#story" class="nav-link">Our Craft</a>
         <a href="#highlights" class="nav-link">Signature Pillars</a>
         <a href="#menu" class="nav-link">Artisanal Menu</a>
-        <a href="#location" class="nav-link">Salon & Hours</a>
+        <a href="#location" class="nav-link">Salon &amp; Hours</a>
       </nav>
 
       <div class="nav-actions">
+        <!-- Live status pill -->
         <div class="status-indicator" id="liveStatusBadge" title="Live status in Jammu">
           <span class="status-dot"></span>
           <span class="status-label">Open Now</span>
         </div>
-        <button class="btn btn-outline" id="openReserveBtn" onclick="openReservationModal()">
-          <span>Reserve Salon</span>
+
+        <a href="tel:+911912467188" class="nav-phone-btn" title="Call Bakers @ Us Jammu">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 191 246 7188</span>
+        </a>
+
+        <button class="btn btn-primary btn-sm" onclick="openReservationModal('Salon Tasting Table')">
+          <span>Book Salon Table</span>
         </button>
+
         <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" onclick="toggleMobileNav()">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
     
-    <!-- Mobile dropdown menu -->
+    <!-- Mobile dropdown drawer -->
     <div class="mobile-nav-drawer" id="mobileDrawer">
       <a href="#story" onclick="closeMobileNav()">Our Craft</a>
       <a href="#highlights" onclick="closeMobileNav()">Signature Pillars</a>
       <a href="#menu" onclick="closeMobileNav()">Artisanal Menu</a>
-      <a href="#location" onclick="closeMobileNav()">Salon & Hours</a>
+      <a href="#location" onclick="closeMobileNav()">Salon &amp; Hours</a>
       <div class="mobile-drawer-cta">
-        <button class="btn btn-primary w-full" onclick="closeMobileNav(); openReservationModal();">
-          Reserve Salon Table
+        <button class="btn btn-primary w-full" onclick="closeMobileNav(); openReservationModal('Mobile Table Booking');">
+          Book Salon Table
         </button>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section (Sunlit Parisian Boulangerie Atmosphere) -->
     <section class="hero-section" id="hero">
       <div class="hero-container">
-        <div class="hero-eyebrow">
-          <span class="eyebrow-pin">📍</span>
-          <span>Sector 1, Channi Himmat, Jammu</span>
-          <span class="eyebrow-divider">•</span>
-          <span>Boulangerie & Haute Pâtisserie</span>
-        </div>
-        <h1 class="hero-title">Flour, Ferment & Fire in Quiet Perfection</h1>
-        <p class="hero-subtext">
-          36-hour cold-fermented wild levain sourdoughs, 81-layer French AOP butter croissants, and couture celebration gateaux — crafted in small batches daily in Jammu.
-        </p>
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-pin">📍</span>
+            <span>Sector 1, Channi Himmat, Jammu</span>
+            <span class="eyebrow-divider">•</span>
+            <span>French Boulangerie &amp; Haute Pâtisserie</span>
+          </div>
 
-        <div class="hero-cta-group">
-          <a href="#menu" class="btn btn-primary">
-            <span>Explore Artisanal Menu</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-          </a>
-          <button class="btn btn-secondary" onclick="openReservationModal('Salon Table')">
-            <span>Book Salon Table</span>
-          </button>
+          <h1 class="hero-title">
+            Flour, Ferment &amp; Fire in <span class="title-accent">Quiet Perfection</span>
+          </h1>
+
+          <p class="hero-subtext">
+            36-hour cold-fermented wild levain sourdoughs, 81-layer Normandy AOP butter croissants, and couture celebration gateaux — crafted in small batches daily on stone hearths in Sector 1, Jammu.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-primary">
+              <span>Explore Artisanal Menu</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+            </a>
+            <button class="btn btn-secondary" onclick="openReservationModal('Salon Tasting Table')">
+              <span>Book Salon Table</span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-val">36 Hrs</span>
+              <span class="metric-lbl">Cold Levain Ferment</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">81 Layers</span>
+              <span class="metric-lbl">Normandy AOP Butter</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">08:15 AM</span>
+              <span class="metric-lbl">First Daily Hearth Bake</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">4.9 ★</span>
+              <span class="metric-lbl">1,120+ Jammu Connoisseurs</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-metrics">
-          <div class="metric-card">
-            <span class="metric-val">36 Hrs</span>
-            <span class="metric-lbl">Cold Levain Ferment</span>
+        <!-- Hero Visual Showcase -->
+        <div class="hero-visual-card">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85" alt="Freshly baked golden butter croissants at Bakers at Us Channi Himmat Jammu" />
+          <div class="hero-float-badge">
+            <span class="badge-icon">🥐</span>
+            <div>
+              <div class="badge-label">Morning Hearth Bake</div>
+              <div class="badge-val">Fresh Batch: 08:15 AM</div>
+            </div>
           </div>
-          <div class="metric-divider"></div>
-          <div class="metric-card">
-            <span class="metric-val">81 Layers</span>
-            <span class="metric-lbl">AOP French Butter</span>
-          </div>
-          <div class="metric-divider"></div>
-          <div class="metric-card">
-            <span class="metric-val">08:15 AM</span>
-            <span class="metric-lbl">First Hearth Bake Daily</span>
-          </div>
-          <div class="metric-divider"></div>
-          <div class="metric-card">
-            <span class="metric-val">4.9 ★</span>
-            <span class="metric-lbl">1,120+ Jammu Connoisseurs</span>
+          <div class="hero-visual-overlay">
+            <span class="overlay-pill">AOP Charentes-Poitou Butter</span>
+            <h2 class="overlay-title">Hand-Laminated Golden Viennoiserie</h2>
+            <p class="overlay-sub">Baked fresh every morning in Sector 1, Channi Himmat, Jammu</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Highlights Row -->
+    <!-- Highlights Row (The Four Pillars of Our Craft) -->
     <section class="highlights-section" id="highlights">
       <div class="section-container">
         <div class="section-header">
@@ -122,40 +151,44 @@
         </div>
 
         <div class="highlights-grid">
+          <!-- Pillar 1 -->
           <div class="highlight-card">
             <div class="card-icon-wrap">
               <span class="card-num">01</span>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14.5C4 9.8 7.6 6 12 6s8 3.8 8 8.5V17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/><path d="M8 12c1 0 2 1 2 2m4-2c1 0 2 1 2 2"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.5C4 9.8 7.6 6 12 6s8 3.8 8 8.5V17a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5z"/><path d="M8 12c1 0 2 1 2 2m4-2c1 0 2 1 2 2"/></svg>
             </div>
             <h3>36-Hour Wild Sourdough</h3>
             <p>Cultivated with our 7-year living mother levain, stoneground heritage flour, and mineral spring water. Blistered crackling crust with an airy, custard crumb.</p>
             <span class="card-footer-pill">Stone-Hearth Baked</span>
           </div>
 
+          <!-- Pillar 2 -->
           <div class="highlight-card">
             <div class="card-icon-wrap">
               <span class="card-num">02</span>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <h3>81-Layer Viennoiserie</h3>
             <p>Folded by hand before dawn using imported Charentes-Poitou AOP French butter. Golden honeycomb geometry that shatters with a whisper of salted caramel notes.</p>
-            <span class="card-footer-pill">Normandy Butter</span>
+            <span class="card-footer-pill">Normandy AOP Butter</span>
           </div>
 
+          <!-- Pillar 3 -->
           <div class="highlight-card">
             <div class="card-icon-wrap">
               <span class="card-num">03</span>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12V8H4v4m16 0v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7m16 0H4"/><circle cx="12" cy="5" r="2"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H4v4m16 0v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7m16 0H4"/><circle cx="12" cy="5" r="2"/></svg>
             </div>
             <h3>Haute Pâtisserie</h3>
             <p>Petits gâteaux and entremets composed with 70% Guanaja Valrhona cacao, Tahitian vanilla beans, and Pampore saffron. Pure precision in taste and gloss.</p>
-            <span class="card-footer-pill">Valrhona & Saffron</span>
+            <span class="card-footer-pill">Valrhona &amp; Saffron</span>
           </div>
 
+          <!-- Pillar 4 -->
           <div class="highlight-card">
             <div class="card-icon-wrap">
               <span class="card-num">04</span>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <h3>Couture Celebration Cakes</h3>
             <p>Architectural gateaux and bespoke celebration tiers designed for Jammu’s grandest weddings, milestone birthdays, and exclusive family celebrations.</p>
@@ -171,29 +204,30 @@
         <div class="story-grid">
           <div class="story-content">
             <span class="section-tag">The Philosophy</span>
-            <h2 class="section-title">An Ode to Sourdough, Stone & Time</h2>
+            <h2 class="section-title">An Ode to Sourdough, Stone &amp; Time</h2>
             <p class="story-lead">
               In a world hurried by chemical improvers and industrial shortcuts, we chose the reverent path of the French boulanger.
             </p>
             <p class="story-body">
-              Every loaf begins 36 hours before it reaches our stone hearth in Channi Himmat. Flour from non-GMO heritage wheat fields, pure mountain water, mineral salt, and our living wild levain starter. We fold, shape, and cold-proof each batch with patience. 
+              Every loaf begins 36 hours before it reaches our stone hearth in Channi Himmat. Flour from non-GMO heritage wheat fields, pure mountain water, mineral salt, and our living wild levain starter. We fold, shape, and cold-proof each batch with unhurried patience.
             </p>
             <p class="story-body">
               For our patisserie, we marry classic Parisian techniques with local terroir: Kashmiri saffron from Pampore, wild walnuts from Kishtwar, and hand-selected vanilla pods from Madagascar. Here in Sector 1, we offer Jammu a sanctuary of taste, quiet luxury, and honest gastronomy.
             </p>
             <div class="story-badges">
-              <span class="badge-item">✓ Zero Preservatives</span>
-              <span class="badge-item">✓ 100% French AOP Butter</span>
-              <span class="badge-item">✓ Dedicated Eggless Luxury Range</span>
-              <span class="badge-item">✓ Small-Batch Daily Bakes</span>
+              <span class="badge-item"><span class="check-icon">✓</span> Zero Commercial Improvers</span>
+              <span class="badge-item"><span class="check-icon">✓</span> 100% French AOP Butter</span>
+              <span class="badge-item"><span class="check-icon">✓</span> Dedicated Eggless Luxury Range</span>
+              <span class="badge-item"><span class="check-icon">✓</span> Small-Batch Daily Hearth Bakes</span>
             </div>
           </div>
+
           <div class="story-visual">
             <div class="story-card-inner">
               <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Fresh artisan sourdough bread at Bakers at Us Channi Himmat" class="story-img" loading="lazy" />
               <div class="story-overlay-tag">
                 <span class="tag-title">Stone Hearth Bake</span>
-                <span class="tag-sub">Bakers @ Us • Sector 1 Jammu</span>
+                <span class="tag-sub">Bakers @ Us • Sector 1, Channi Himmat, Jammu</span>
               </div>
             </div>
           </div>
@@ -201,80 +235,83 @@
       </div>
     </section>
 
-    <!-- Interactive Menu Section -->
+    <!-- Interactive Artisanal Menu Section -->
     <section class="menu-section" id="menu">
       <div class="section-container">
         <div class="section-header">
-          <span class="section-tag">Digital Menu Collection</span>
-          <h2 class="section-title">Artisanal Bakes & Salon Menu</h2>
-          <p class="section-lead">Explore our daily fresh bakes, viennoiserie, entremets, celebration gateaux, and specialty coffees.</p>
+          <span class="section-tag">Daily Bakes &amp; Atelier Collection</span>
+          <h2 class="section-title">Artisanal Bakes &amp; Salon Menu</h2>
+          <p class="section-lead">Explore our daily fresh bakes, hand-laminated viennoiserie, hearth sourdoughs, couture celebration cakes, and specialty coffees.</p>
         </div>
 
         <!-- Search & Dietary Bar -->
         <div class="menu-controls">
           <div class="search-wrap">
-            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="text" id="menuSearchInput" placeholder="Search croissant, sourdough, chocolate, saffron..." aria-label="Search menu items" oninput="handleMenuSearch(this.value)" />
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="text" id="menuSearchInput" placeholder="Search croissant, sourdough, chocolate, saffron, tartine..." aria-label="Search menu items" oninput="handleMenuSearch(this.value)" />
             <button class="search-clear-btn" id="searchClearBtn" onclick="clearSearch()" aria-label="Clear search">&times;</button>
           </div>
 
-          <div class="dietary-filter-bar">
-            <button class="diet-btn active" data-filter="all" onclick="setDietaryFilter('all')">All Items</button>
-            <button class="diet-btn" data-filter="veg" onclick="setDietaryFilter('veg')">🌱 Vegetarian</button>
+          <div class="dietary-filter-bar" role="group" aria-label="Dietary filters">
+            <button class="diet-btn active" data-filter="all" onclick="setDietaryFilter('all')">All Offerings</button>
+            <button class="diet-btn" data-filter="veg" onclick="setDietaryFilter('veg')">🌱 Pure Veg</button>
             <button class="diet-btn" data-filter="eggless" onclick="setDietaryFilter('eggless')">🥚 100% Eggless</button>
             <button class="diet-btn" data-filter="signature" onclick="setDietaryFilter('signature')">★ Chef's Stars</button>
-            <button class="diet-btn" data-filter="savory" onclick="setDietaryFilter('savory')">🥪 Savory & Cafe</button>
+            <button class="diet-btn" data-filter="savory" onclick="setDietaryFilter('savory')">🥪 Savory &amp; Cafe</button>
+            <button class="diet-btn" data-filter="nonveg" onclick="setDietaryFilter('nonveg')">🥩 Non-Veg</button>
           </div>
         </div>
 
-        <!-- Sticky Category Tabs -->
-        <nav class="category-tabs-nav" id="categoryTabsNav" aria-label="Menu categories">
-          <button class="cat-tab active" data-cat="all" onclick="selectCategory('all')">
-            <span>All Offerings</span>
-            <span class="cat-count" id="count-all">29</span>
-          </button>
-          <button class="cat-tab" data-cat="viennoiserie" onclick="selectCategory('viennoiserie')">
-            <span>Viennoiserie</span>
-            <span class="cat-count" id="count-viennoiserie">6</span>
-          </button>
-          <button class="cat-tab" data-cat="sourdough" onclick="selectCategory('sourdough')">
-            <span>Wild Sourdough</span>
-            <span class="cat-count" id="count-sourdough">5</span>
-          </button>
-          <button class="cat-tab" data-cat="patisserie" onclick="selectCategory('patisserie')">
-            <span>Haute Pâtisserie</span>
-            <span class="cat-count" id="count-patisserie">6</span>
-          </button>
-          <button class="cat-tab" data-cat="cakes" onclick="selectCategory('cakes')">
-            <span>Celebration Gateaux</span>
-            <span class="cat-count" id="count-cakes">4</span>
-          </button>
-          <button class="cat-tab" data-cat="savory-cafe" onclick="selectCategory('savory-cafe')">
-            <span>Savory Tartines</span>
-            <span class="cat-count" id="count-savory-cafe">4</span>
-          </button>
-          <button class="cat-tab" data-cat="coffee-beverages" onclick="selectCategory('coffee-beverages')">
-            <span>Specialty Coffee</span>
-            <span class="cat-count" id="count-coffee-beverages">4</span>
-          </button>
-        </nav>
+        <!-- Sticky Category Navigation Bar -->
+        <div class="category-tabs-wrapper">
+          <nav class="category-tabs-nav" id="categoryTabsNav" aria-label="Menu categories">
+            <button class="cat-tab active" data-cat="all" onclick="selectCategory('all')">
+              <span>All Offerings</span>
+              <span class="cat-count" id="count-all">29</span>
+            </button>
+            <button class="cat-tab" data-cat="viennoiserie" onclick="selectCategory('viennoiserie')">
+              <span>Viennoiserie</span>
+              <span class="cat-count" id="count-viennoiserie">6</span>
+            </button>
+            <button class="cat-tab" data-cat="sourdough" onclick="selectCategory('sourdough')">
+              <span>Wild Sourdough</span>
+              <span class="cat-count" id="count-sourdough">5</span>
+            </button>
+            <button class="cat-tab" data-cat="patisserie" onclick="selectCategory('patisserie')">
+              <span>Haute Pâtisserie</span>
+              <span class="cat-count" id="count-patisserie">6</span>
+            </button>
+            <button class="cat-tab" data-cat="cakes" onclick="selectCategory('cakes')">
+              <span>Celebration Gateaux</span>
+              <span class="cat-count" id="count-cakes">4</span>
+            </button>
+            <button class="cat-tab" data-cat="savory-cafe" onclick="selectCategory('savory-cafe')">
+              <span>Savory Tartines</span>
+              <span class="cat-count" id="count-savory-cafe">4</span>
+            </button>
+            <button class="cat-tab" data-cat="coffee-beverages" onclick="selectCategory('coffee-beverages')">
+              <span>Specialty Coffee</span>
+              <span class="cat-count" id="count-coffee-beverages">4</span>
+            </button>
+          </nav>
+        </div>
 
-        <!-- Active Category Header -->
+        <!-- Active Category Header Banner -->
         <div class="category-header-banner" id="categoryHeaderBanner">
           <h3 id="currentCategoryTitle">All Artisanal Offerings</h3>
           <p id="currentCategoryTagline">Handcrafted with French flours, fresh mountain water, and AOP butter.</p>
         </div>
 
-        <!-- Menu Cards Grid -->
-        <div class="menu-grid" id="menuGrid">
-          <!-- Dynamic cards rendered by app.js -->
+        <!-- Dynamic Menu Grid -->
+        <div class="menu-grid" id="menuGrid" role="region" aria-live="polite">
+          <!-- Dynamically rendered by app.js -->
         </div>
 
-        <!-- Empty state -->
+        <!-- Empty State -->
         <div class="empty-state hidden" id="emptyState">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M8 11h6"/></svg>
           <h3>No culinary match found</h3>
-          <p>Try searching for sourdough, croissant, cake, or clearing your active filters.</p>
+          <p>Try searching for sourdough, croissant, chocolate, or reset your active filters.</p>
           <button class="btn btn-outline btn-sm" onclick="resetAllFilters()">Reset All Filters</button>
         </div>
       </div>
@@ -286,18 +323,18 @@
         <div class="location-grid">
           <div class="location-info">
             <span class="section-tag">Sanctuary in Jammu</span>
-            <h2 class="section-title">Visit Our Salon & Atelier</h2>
+            <h2 class="section-title">Visit Our Salon &amp; Atelier</h2>
             <p class="location-desc">
-              Situated in the quiet, tree-lined lanes of Sector 1, Channi Himmat, our salon features an intimate French glasshouse dining room, fresh pastry counter, and stone-hearth display.
+              Situated in the quiet, tree-lined lanes of Sector 1, Channi Himmat, our salon features an intimate French glasshouse dining room, fresh morning pastry counter, and stone-hearth display.
             </p>
 
             <div class="info-block-list">
               <div class="info-block">
                 <div class="info-icon">📍</div>
                 <div>
-                  <strong>Address</strong>
+                  <strong>Address &amp; Landmark</strong>
                   <p>Lane 4, Near Sector 1 Central Park, Channi Himmat, Jammu, J&amp;K — 180015</p>
-                  <span class="landmark-note">2 mins from Marble Market &amp; Wave Mall Bypass</span>
+                  <span class="landmark-note">2 mins from Channi Marble Market &amp; Wave Mall Bypass</span>
                 </div>
               </div>
 
@@ -307,7 +344,7 @@
                   <strong>Bake Times &amp; Salon Hours</strong>
                   <p><strong>First Batch Fresh:</strong> 08:15 AM Daily</p>
                   <p><strong>Morning Salon:</strong> 08:00 AM – 12:00 PM</p>
-                  <p><strong>All-Day Patisserie:</strong> 08:00 AM – 10:30 PM (All 7 Days)</p>
+                  <p><strong>All-Day Patisserie:</strong> 08:00 AM – 10:30 PM (Open All 7 Days)</p>
                 </div>
               </div>
 
@@ -323,24 +360,24 @@
             </div>
 
             <div class="location-actions">
-              <a href="https://maps.google.com/?q=Bakers+At+Us+Sector+1+Channi+Himmat+Jammu" target="_blank" rel="noopener" class="btn btn-outline">
+              <a href="https://maps.google.com/?q=Bakers+At+Us+Sector+1+Channi+Himmat+Jammu" target="_blank" rel="noopener" class="btn btn-secondary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
                 <span>Open in Google Maps</span>
               </a>
-              <button class="btn btn-primary" onclick="openReservationModal('Salon Table')">
+              <button class="btn btn-primary" onclick="openReservationModal('Salon Tasting Table')">
                 <span>Book Tasting Table</span>
               </button>
             </div>
           </div>
 
-          <!-- Stylized Map / Architectural Visual -->
+          <!-- Stylized Map Visual Card -->
           <div class="location-visual-card">
             <div class="map-card-header">
               <span class="map-badge">Channi Himmat Landmark</span>
-              <span class="map-status">Valet Parking Available</span>
+              <span class="map-status">✓ Valet Parking Available</span>
             </div>
             <div class="map-frame-wrapper">
-              <div class="map-placeholder-aesthetic">
+              <div>
                 <div class="map-pin-pulse">
                   <span class="pulse-ring"></span>
                   <span class="pin-symbol">B</span>
@@ -348,13 +385,13 @@
                 <div class="map-details-card">
                   <h4>Bakers @ Us</h4>
                   <p>Sector 1, Channi Himmat, Jammu</p>
-                  <span class="map-sub">Near Wave Mall &amp; Bahu Plaza (3 min drive)</span>
+                  <span class="map-sub">3 mins from Bahu Plaza &amp; Wave Mall Jammu</span>
                 </div>
               </div>
             </div>
             <div class="location-features-row">
               <span>☕ Indoor AC Salon</span>
-              <span>🌿 Patio Seating</span>
+              <span>🌿 Sunlit Patio</span>
               <span>🚗 Valet Parking</span>
               <span>⚡ High-Speed Wi-Fi</span>
             </div>
@@ -364,10 +401,10 @@
     </section>
   </main>
 
-  <!-- Dish Details Modal -->
+  <!-- Dish Details / Pastry Inspection Modal -->
   <div class="modal-backdrop" id="dishModal" onclick="closeDishModal(event)" role="dialog" aria-modal="true" aria-labelledby="dishModalTitle">
     <div class="dish-modal-content" onclick="event.stopPropagation()">
-      <button class="modal-close-btn" onclick="closeDishModal()" aria-label="Close dialog">&times;</button>
+      <button class="modal-close-btn" onclick="closeDishModal()" aria-label="Close pastry details">&times;</button>
       <div class="dish-modal-grid">
         <div class="dish-modal-img-wrap">
           <img id="dishModalImg" src="" alt="Culinary item preview" />
@@ -384,7 +421,7 @@
           <p class="modal-item-desc" id="dishModalDesc"></p>
 
           <div class="modal-section-block">
-            <span class="block-label">Key Artisanal Ingredients</span>
+            <span class="block-label">Artisanal Ingredients</span>
             <div class="ingredients-tags" id="dishModalIngredients"></div>
           </div>
 
@@ -399,7 +436,7 @@
           <div class="modal-actions-row">
             <button class="btn btn-primary flex-1" id="dishModalOrderBtn" onclick="handleDishInquiry()">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              <span>Inquire / Order via WhatsApp</span>
+              <span>Order / Inquire via WhatsApp</span>
             </button>
             <button class="btn btn-outline" onclick="closeDishModal(); openReservationModal('Dish Inquiry: ' + currentModalDish.name);">
               <span>Reserve Table</span>
@@ -415,7 +452,7 @@
     <div class="reserve-modal-card" onclick="event.stopPropagation()">
       <button class="modal-close-btn" onclick="closeReservationModal()" aria-label="Close reservation dialog">&times;</button>
       
-      <!-- Form state -->
+      <!-- Booking Form View -->
       <div id="reservationFormState">
         <div class="reserve-header">
           <span class="reserve-eyebrow">Table &amp; Cake Atelier Reservation</span>
@@ -463,11 +500,11 @@
               <label for="resTime">Time Slot *</label>
               <select id="resTime" required>
                 <option value="08:30 AM (Morning Fresh Bake)">08:30 AM (Morning Fresh Bake)</option>
-                <option value="10:30 AM (Breakfast & Coffee)">10:30 AM (Breakfast &amp; Coffee)</option>
+                <option value="10:30 AM (Breakfast &amp; Coffee)">10:30 AM (Breakfast &amp; Coffee)</option>
                 <option value="01:00 PM (Artisan Lunch Tartines)">01:00 PM (Artisan Lunch Tartines)</option>
-                <option value="04:30 PM (Afternoon Tea & Pastry)">04:30 PM (Afternoon Tea &amp; Pastry)</option>
-                <option value="07:00 PM (Evening Salon & Desserts)">07:00 PM (Evening Salon &amp; Desserts)</option>
-                <option value="08:30 PM (Late Dessert & Decaf)">08:30 PM (Late Dessert &amp; Decaf)</option>
+                <option value="04:30 PM (Afternoon Tea &amp; Pastry)">04:30 PM (Afternoon Tea &amp; Pastry)</option>
+                <option value="07:00 PM (Evening Salon &amp; Desserts)">07:00 PM (Evening Salon &amp; Desserts)</option>
+                <option value="08:30 PM (Late Dessert &amp; Decaf)">08:30 PM (Late Dessert &amp; Decaf)</option>
               </select>
             </div>
             <div class="form-group flex-1">
@@ -485,7 +522,7 @@
 
           <div class="form-group">
             <label for="resNotes">Special Requests / Cake Requirements</label>
-            <input type="text" id="resNotes" placeholder="e.g. Celebrating an anniversary, need eggless options, specific sourdough loaves..." />
+            <input type="text" id="resNotes" placeholder="e.g. Celebrating an anniversary, eggless requirement, specific sourdough loaf..." />
           </div>
 
           <button type="submit" class="btn btn-primary w-full submit-btn">
@@ -495,7 +532,7 @@
         </form>
       </div>
 
-      <!-- Confirmation Preview State (Shown after submit) -->
+      <!-- Confirmation Preview State (Light Porcelain Pass) -->
       <div id="reservationConfirmationState" class="hidden">
         <div class="confirmation-ticket">
           <div class="ticket-header">
@@ -504,7 +541,7 @@
           </div>
           
           <h3 class="ticket-guest-name" id="ticketGuestName">Guest Name</h3>
-          <p class="ticket-sub">Your reservation at Bakers @ Us, Channi Himmat is confirmed.</p>
+          <p class="ticket-sub">Your reservation at Bakers @ Us, Sector 1, Channi Himmat is confirmed.</p>
 
           <div class="ticket-details-grid">
             <div class="ticket-detail-item">
@@ -529,7 +566,7 @@
             </div>
             <div class="ticket-detail-item">
               <span class="detail-label">Location</span>
-              <span class="detail-val">Sector 1, Channi Himmat</span>
+              <span class="detail-val">Channi Himmat, Jammu</span>
             </div>
           </div>
 
@@ -537,7 +574,7 @@
             <a id="ticketWhatsAppBtn" href="#" target="_blank" rel="noopener" class="btn btn-primary w-full">
               <span>Send Confirmation to WhatsApp</span>
             </a>
-            <button class="btn btn-outline w-full" onclick="resetReservationForm()">
+            <button class="btn btn-secondary w-full" onclick="resetReservationForm()">
               <span>Make Another Reservation</span>
             </button>
           </div>
@@ -559,7 +596,7 @@
             </div>
           </div>
           <p class="footer-brand-desc">
-            Artisanal French boulangerie and haute pâtisserie atelier. 36-hour cold-fermented wild sourdoughs, 81-layer French butter viennoiserie, and bespoke celebration cakes.
+            Jammu's premier French boulangerie and haute pâtisserie atelier. 36-hour cold-fermented wild sourdoughs, 81-layer French butter viennoiserie, and bespoke celebration cakes.
           </p>
         </div>
 
@@ -576,14 +613,14 @@
           <span class="footer-heading">Jammu Location</span>
           <p class="footer-info-text">Lane 4, Sector 1, Channi Himmat, Jammu (J&amp;K) 180015</p>
           <p class="footer-info-text">2 min from Marble Market &amp; Wave Mall Bypass</p>
-          <p class="footer-info-text">Phone: +91 191 246 7188</p>
-          <p class="footer-info-text">WhatsApp: +91 94191 88204</p>
+          <p class="footer-info-text">Phone: <a href="tel:+911912467188" style="color:var(--flame-orange)">+91 191 246 7188</a></p>
+          <p class="footer-info-text">WhatsApp: <a href="https://wa.me/919419188204" target="_blank" rel="noopener" style="color:var(--flame-orange)">+91 94191 88204</a></p>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; <span id="currentYear">2026</span> Bakers @ Us Jammu. Handcrafted with reverence for French culinary heritage.</p>
-        <p class="footer-meta">Autonomous Tier 1 Minimalist Architecture &bull; Zero External Dependencies</p>
+        <p class="footer-meta">Appetizing Light Theme &bull; Autonomous Minimalist Architecture &bull; Zero External Dependencies</p>
       </div>
     </div>
   </footer>
@@ -591,24 +628,24 @@
   <!-- Fixed Bottom Mobile Action Bar (<= 768px) -->
   <nav class="mobile-action-bar" aria-label="Quick mobile contact actions">
     <a href="tel:+911912467188" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>Call</span>
     </a>
     <a href="#menu" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       <span>Menu</span>
     </a>
     <a href="https://maps.google.com/?q=Bakers+At+Us+Sector+1+Channi+Himmat+Jammu" target="_blank" rel="noopener" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
       <span>Directions</span>
     </a>
-    <button class="mobile-action-btn mobile-reserve-btn" onclick="openReservationModal('Mobile Quick Book')">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <span>Reserve</span>
+    <button class="mobile-action-btn mobile-reserve-btn" onclick="openReservationModal('Mobile Bottom Dock')">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Book Table</span>
     </button>
   </nav>
 
-  <!-- Lightweight App Script -->
+  <!-- Lightweight Vanilla JS Engine -->
   <script src="app.js"></script>
 </body>
 </html>

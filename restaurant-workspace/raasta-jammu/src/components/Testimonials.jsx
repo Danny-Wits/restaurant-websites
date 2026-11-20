@@ -6,19 +6,19 @@ export default function Testimonials() {
   const { testimonials, restaurant } = restaurantData;
 
   return (
-    <section className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#0F1110] w-full max-w-full overflow-hidden">
+    <section className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#FAFAF7] border-t border-orange-100 w-full max-w-full overflow-hidden">
       <div className="max-w-6xl mx-auto w-full max-w-full">
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
-            <Star className="w-4 h-4 fill-amber-400 text-amber-400 shrink-0" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full shadow-xs">
+            <Star className="w-4 h-4 fill-amber-500 text-amber-500 shrink-0" />
             <span>{restaurant.rating} Rating &bull; {restaurant.reviewCount} Reviews</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-4xl text-zinc-100 tracking-tight mb-3 break-words">
+          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-4xl text-stone-900 tracking-tight mb-3 break-words">
             Voices of Panama Chowk
           </h2>
-          <p className="text-sm text-zinc-400">
+          <p className="text-sm text-stone-600">
             What Jammu University scholars, local musicians, and Bahu Plaza executives say about the Raasta rhythm.
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function Testimonials() {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="p-6 rounded-3xl bg-[#161917] border border-amber-500/15 hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between shadow-lg"
+              className="p-6 rounded-3xl bg-white border border-orange-100 shadow-[0_4px_20px_-2px_rgba(234,88,12,0.06),0_2px_6px_-1px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-orange-300 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Rating stars & Quote */}
@@ -38,31 +38,31 @@ export default function Testimonials() {
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-6 h-6 text-zinc-700" />
+                  <Quote className="w-6 h-6 text-orange-200" />
                 </div>
 
                 {/* Review Text */}
-                <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-6 italic">
+                <p className="text-xs sm:text-sm text-stone-700 leading-relaxed mb-6 italic">
                   &ldquo;{item.text}&rdquo;
                 </p>
               </div>
 
               {/* Author Info */}
-              <div className="pt-4 border-t border-zinc-800 flex items-center gap-3">
+              <div className="pt-4 border-t border-orange-100 flex items-center gap-3">
                 <img
                   src={item.avatar}
                   alt={item.name}
-                  className="w-10 h-10 rounded-full object-cover border border-amber-500/30"
+                  className="w-10 h-10 rounded-full object-cover border-2 border-orange-200"
                   loading="lazy"
                 />
                 <div>
-                  <h4 className="font-['Syne'] font-bold text-sm text-zinc-100">
+                  <h4 className="font-['Syne'] font-bold text-sm text-stone-900">
                     {item.name}
                   </h4>
-                  <div className="flex items-center gap-1.5 text-[11px] text-zinc-400">
+                  <div className="flex items-center gap-1.5 text-[11px] text-stone-500">
                     <span>{item.role}</span>
                     <span>&bull;</span>
-                    <span className="text-amber-400 font-semibold">{item.tag}</span>
+                    <span className="text-orange-600 font-bold">{item.tag}</span>
                   </div>
                 </div>
               </div>

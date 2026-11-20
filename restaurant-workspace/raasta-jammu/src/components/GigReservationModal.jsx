@@ -136,17 +136,17 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md transition-all duration-300 w-full max-w-full"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-stone-900/50 backdrop-blur-sm transition-all duration-300 w-full max-w-full"
       onClick={onClose}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl bg-[#1E2220] border border-amber-500/35 shadow-[0_25px_70px_rgba(0,0,0,0.9)] flex flex-col no-scrollbar max-w-full"
+        className="relative w-full max-w-2xl max-h-[92vh] overflow-y-auto rounded-3xl bg-white border border-orange-200 shadow-2xl flex flex-col no-scrollbar max-w-full"
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-5 z-20 p-2 rounded-full bg-zinc-800/80 hover:bg-zinc-800 text-zinc-400 hover:text-white transition-colors cursor-pointer"
+          className="absolute top-5 right-5 z-20 p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 hover:text-stone-900 transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -156,14 +156,14 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
           <div className="p-6 sm:p-8">
             {/* Modal Title */}
             <div className="mb-6">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
-                <Music className="w-3.5 h-3.5 text-amber-400" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-xs font-bold uppercase tracking-wider mb-2 shadow-xs">
+                <Music className="w-3.5 h-3.5 text-orange-600" />
                 <span>Panama Chowk Rhythm Desk</span>
               </div>
-              <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-zinc-100">
+              <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-stone-900">
                 Reserve Your Table or Gig Spot
               </h2>
-              <p className="text-xs sm:text-sm text-zinc-400 mt-1">
+              <p className="text-xs sm:text-sm text-stone-600 mt-1">
                 Instant reservation for acoustic music nights, study nooks, or group birthday bashes.
               </p>
             </div>
@@ -174,7 +174,7 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
               {/* Row 1: Date & Time */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     Reservation Date *
                   </label>
                   <input
@@ -183,18 +183,18 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                     min={new Date().toISOString().split('T')[0]}
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     Time Slot *
                   </label>
                   <select
                     value={formData.timeSlot}
                     onChange={(e) => setFormData({ ...formData, timeSlot: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   >
                     {timeSlots.map((slot) => (
                       <option key={slot} value={slot}>
@@ -207,7 +207,7 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
 
               {/* Row 2: Seating Zone Selection */}
               <div>
-                <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-2">
+                <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-2">
                   Select Seating Atmosphere *
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -219,16 +219,16 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                         onClick={() => setFormData({ ...formData, seatingZone: zone.id })}
                         className={`p-3 rounded-xl border transition-all cursor-pointer flex items-start gap-2.5 ${
                           isSelected
-                            ? 'bg-amber-500/15 border-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.25)]'
-                            : 'bg-[#161917] border-zinc-800 hover:border-zinc-700'
+                            ? 'bg-orange-50 border-2 border-orange-500 shadow-xs'
+                            : 'bg-stone-50/70 border-stone-200 hover:border-orange-300'
                         }`}
                       >
                         <span className="text-xl">{zone.icon}</span>
                         <div>
-                          <div className={`text-xs font-bold ${isSelected ? 'text-amber-400' : 'text-zinc-200'}`}>
+                          <div className={`text-xs font-bold ${isSelected ? 'text-orange-700' : 'text-stone-900'}`}>
                             {zone.name}
                           </div>
-                          <div className="text-[11px] text-zinc-400 mt-0.5">
+                          <div className="text-[11px] text-stone-600 mt-0.5">
                             {zone.desc}
                           </div>
                         </div>
@@ -241,13 +241,13 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
               {/* Row 3: Guests and Occasion */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     Number of Guests *
                   </label>
                   <select
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   >
                     {[1, 2, 3, 4, 5, 6, 8, 10, '12+ (Mezzanine Group)'].map((num) => (
                       <option key={num} value={num}>
@@ -258,13 +258,13 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     Occasion
                   </label>
                   <select
                     value={formData.specialOccasion}
                     onChange={(e) => setFormData({ ...formData, specialOccasion: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   >
                     <option value="Regular Dining / Gig Hangout">Regular Dining / Gig Hangout</option>
                     <option value="Birthday Celebration (Free Sizzler Sparkler!)">Birthday Celebration (Free Sizzler Sparkler!)</option>
@@ -280,34 +280,34 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                 onClick={() => setFormData({ ...formData, isStudent: !formData.isStudent })}
                 className={`p-4 rounded-2xl border transition-all cursor-pointer flex items-center justify-between gap-3 ${
                   formData.isStudent
-                    ? 'bg-emerald-500/15 border-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.25)]'
-                    : 'bg-[#161917] border-zinc-800 hover:border-zinc-700'
+                    ? 'bg-emerald-50 border-2 border-emerald-500 shadow-xs'
+                    : 'bg-stone-50/70 border-stone-200 hover:border-emerald-300'
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className={`p-2 rounded-xl ${formData.isStudent ? 'bg-emerald-500 text-zinc-950' : 'bg-zinc-800 text-zinc-400'}`}>
+                  <div className={`p-2 rounded-xl ${formData.isStudent ? 'bg-emerald-600 text-white' : 'bg-stone-200 text-stone-600'}`}>
                     <GraduationCap className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-zinc-100">
+                    <div className="text-xs font-bold text-stone-900">
                       I am a University of Jammu / College Student
                     </div>
-                    <div className="text-[11px] text-zinc-400">
-                      Apply flat 15% campus perk on food &amp; cold brews (Promo: <span className="font-mono text-emerald-400">RAASTA-JU-15</span>)
+                    <div className="text-[11px] text-stone-600">
+                      Apply flat 15% campus perk on food &amp; cold brews (Promo: <span className="font-mono text-emerald-700 font-bold">RAASTA-JU-15</span>)
                     </div>
                   </div>
                 </div>
                 <div className={`w-5 h-5 rounded-md border flex items-center justify-center ${
-                  formData.isStudent ? 'bg-emerald-500 border-emerald-500 text-zinc-950' : 'border-zinc-600'
+                  formData.isStudent ? 'bg-emerald-600 border-emerald-600 text-white' : 'border-stone-400'
                 }`}>
-                  {formData.isStudent && <CheckCircle2 className="w-4 h-4 fill-emerald-500 text-zinc-950" />}
+                  {formData.isStudent && <CheckCircle2 className="w-4 h-4 text-white" />}
                 </div>
               </div>
 
               {/* Row 4: Personal Details */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     Full Name *
                   </label>
                   <input
@@ -316,12 +316,12 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                     placeholder="e.g. Aryan Sharma"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                  <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                     WhatsApp Phone *
                   </label>
                   <input
@@ -330,14 +330,14 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                     placeholder="+91 94191 XXXXX"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                    className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                   />
                 </div>
               </div>
 
               {/* Row 5: Notes */}
               <div>
-                <label className="block text-xs font-mono font-semibold uppercase text-zinc-400 mb-1.5">
+                <label className="block text-xs font-mono font-bold uppercase text-stone-600 mb-1.5">
                   Special Requests / Dietary Notes
                 </label>
                 <input
@@ -345,7 +345,7 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                   placeholder="e.g. Near power outlet for laptop, stage-facing table, extra spicy sizzler..."
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full px-4 py-2.5 rounded-xl bg-[#161917] border border-zinc-700 focus:border-amber-400 text-zinc-100 text-sm focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:border-orange-500 focus:bg-white text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
                 />
               </div>
 
@@ -353,12 +353,12 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-zinc-950 font-bold text-sm shadow-[0_0_25px_rgba(245,158,11,0.5)] hover:shadow-[0_0_35px_rgba(245,158,11,0.7)] transition-all cursor-pointer"
+                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 via-orange-500 to-amber-500 text-white font-bold text-sm shadow-[0_4px_18px_rgba(234,88,12,0.4)] hover:shadow-[0_6px_25px_rgba(234,88,12,0.55)] transition-all cursor-pointer"
                 >
                   <CalendarIcon className="w-4 h-4" />
                   <span>Confirm Reservation Request</span>
                 </button>
-                <p className="text-center text-[11px] text-zinc-500 mt-2 font-mono">
+                <p className="text-center text-[11px] text-stone-500 mt-2 font-mono">
                   Instant digital reference code &bull; No upfront booking fee required
                 </p>
               </div>
@@ -369,36 +369,36 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
           /* Step 2: Instant Booking Confirmation Preview */
           <div className="p-8 text-center flex flex-col items-center">
             {/* Success Check Icon with Pulse */}
-            <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mb-5 animate-bounce">
+            <div className="w-16 h-16 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-700 flex items-center justify-center mb-5">
               <CheckCircle2 className="w-10 h-10" />
             </div>
 
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-emerald-400 mb-1">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-emerald-700 mb-1">
               Reservation Confirmed &bull; Table Reserved
             </span>
-            <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-zinc-100 mb-3">
+            <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-3xl text-stone-900 mb-3">
               We Can&apos;t Wait to Welcome You!
             </h2>
-            <p className="text-sm text-zinc-400 max-w-md mb-6 leading-relaxed">
+            <p className="text-sm text-stone-600 max-w-md mb-6 leading-relaxed">
               Your table at Raasta Panama Chowk is held under your name. Show this reference at the reception.
             </p>
 
             {/* Booking Pass Card */}
-            <div className="w-full max-w-md rounded-2xl bg-[#161917] border border-amber-500/30 p-5 text-left mb-6 shadow-xl">
-              <div className="flex items-center justify-between pb-3 mb-3 border-b border-zinc-800">
+            <div className="w-full max-w-md rounded-2xl bg-orange-50/60 border border-orange-200 p-5 text-left mb-6 shadow-sm">
+              <div className="flex items-center justify-between pb-3 mb-3 border-b border-orange-200/80">
                 <div>
-                  <span className="text-[10px] uppercase font-mono text-zinc-500 block">
+                  <span className="text-[10px] uppercase font-mono text-stone-500 font-bold block">
                     Booking Reference
                   </span>
-                  <span className="font-mono font-extrabold text-lg text-amber-400">
+                  <span className="font-mono font-extrabold text-lg text-orange-600">
                     {bookingRef}
                   </span>
                 </div>
                 <div className="text-right">
-                  <span className="text-[10px] uppercase font-mono text-zinc-500 block">
+                  <span className="text-[10px] uppercase font-mono text-stone-500 font-bold block">
                     Status
                   </span>
-                  <span className="text-xs font-bold text-emerald-400 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30">
+                  <span className="text-xs font-bold text-emerald-800 px-2.5 py-0.5 rounded-full bg-emerald-100 border border-emerald-200">
                     Confirmed
                   </span>
                 </div>
@@ -406,30 +406,30 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
 
               <div className="grid grid-cols-2 gap-3 text-xs">
                 <div>
-                  <span className="text-zinc-500 block">Guest Name</span>
-                  <span className="font-semibold text-zinc-200">{formData.name}</span>
+                  <span className="text-stone-500 block">Guest Name</span>
+                  <span className="font-bold text-stone-900">{formData.name}</span>
                 </div>
                 <div>
-                  <span className="text-zinc-500 block">Phone</span>
-                  <span className="font-semibold text-zinc-200">{formData.phone}</span>
+                  <span className="text-stone-500 block">Phone</span>
+                  <span className="font-bold text-stone-900">{formData.phone}</span>
                 </div>
                 <div>
-                  <span className="text-zinc-500 block">Date &amp; Slot</span>
-                  <span className="font-semibold text-zinc-200">{formData.date} &bull; {formData.timeSlot.split(' ')[0]}</span>
+                  <span className="text-stone-500 block">Date &amp; Slot</span>
+                  <span className="font-bold text-stone-900">{formData.date} &bull; {formData.timeSlot.split(' ')[0]}</span>
                 </div>
                 <div>
-                  <span className="text-zinc-500 block">Guests &amp; Zone</span>
-                  <span className="font-semibold text-zinc-200">{formData.guests} Pax &bull; {seatingZones.find(z => z.id === formData.seatingZone)?.name}</span>
+                  <span className="text-stone-500 block">Guests &amp; Zone</span>
+                  <span className="font-bold text-stone-900">{formData.guests} Pax &bull; {seatingZones.find(z => z.id === formData.seatingZone)?.name}</span>
                 </div>
               </div>
 
               {formData.isStudent && (
-                <div className="mt-3 pt-3 border-t border-zinc-800 flex items-center justify-between text-xs text-emerald-400">
-                  <span className="flex items-center gap-1 font-semibold">
-                    <GraduationCap className="w-4 h-4" />
+                <div className="mt-3 pt-3 border-t border-orange-200/80 flex items-center justify-between text-xs text-emerald-800">
+                  <span className="flex items-center gap-1 font-bold">
+                    <GraduationCap className="w-4 h-4 text-emerald-600" />
                     Student 15% Perk Attached
                   </span>
-                  <span className="font-mono text-[11px]">Valid with ID</span>
+                  <span className="font-mono text-[11px] font-bold">Valid with ID</span>
                 </div>
               )}
             </div>
@@ -440,7 +440,7 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
                 href={`https://wa.me/919419188230?text=${whatsappText}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-zinc-950 font-bold text-xs shadow-md transition-all"
+                className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs shadow-md transition-all"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>WhatsApp Desk Confirmation</span>
@@ -448,7 +448,7 @@ export default function GigReservationModal({ isOpen, onClose, preselectedGig, p
 
               <button
                 onClick={handleReset}
-                className="w-full sm:w-auto px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 font-semibold text-xs transition-all cursor-pointer"
+                className="w-full sm:w-auto px-5 py-3 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold text-xs transition-all cursor-pointer"
               >
                 Close &bull; Explore Menu
               </button>

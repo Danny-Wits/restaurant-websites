@@ -46,7 +46,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#09090b] text-zinc-100 font-sans antialiased selection:bg-[#D4AF37] selection:text-black">
+    <div className="min-h-screen bg-[#FFFDF9] text-[#1C1917] font-sans antialiased selection:bg-[#EA580C] selection:text-white">
       {/* Top Sticky Glassmorphic Navbar */}
       <Navbar onOpenReservation={handleOpenReservation} />
 

@@ -4,34 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kaffberry | European Boulangerie, Specialty Coffee & Bistro | Channi Himmat, Jammu</title>
-  <meta name="description" content="Jammu's premier European boulangerie, single-origin specialty coffee bar & bistro in Sector 2, Channi Himmat. Artisanal croissants, 48-hour sourdough pizzas & handmade pasta.">
+  <meta name="description" content="Jammu's premier European boulangerie, single-origin specialty coffee bar & artisan bistro in Sector 2, Channi Himmat. 84% Normandy butter croissants, 48-hour sourdough pizzas & bronze-die pasta.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="site-body">
-  <!-- Top Announcement Bar -->
+  <!-- Top Announcement Bar (Sunlit Warmth) -->
   <div class="top-announcement">
     <div class="container announcement-inner">
       <div class="announcement-left">
-        <span class="pulse-dot"></span>
-        <span id="liveStatusText">Checking bistro & bakery hours...</span>
+        <span class="pulse-dot" id="livePulseDot"></span>
+        <span id="liveStatusText">Checking bistro & boulangerie hours...</span>
       </div>
       <div class="announcement-right">
-        <span>📍 Sector 2, Main Boulevard, Channi Himmat, Jammu</span>
-        <a href="tel:+911912468800" class="phone-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +91 191 246 8800
+        <span class="announcement-loc">📍 Sector 2, Main Boulevard, Channi Himmat, Jammu</span>
+        <a href="tel:+911912468800" class="phone-link" aria-label="Call Kaffberry at +91 191 246 8800">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 191 246 8800</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Sticky Minimalist Navigation -->
+  <!-- Sticky Minimalist Porcelain Navbar -->
   <header class="navbar" id="navbar">
     <div class="container navbar-inner">
-      <a href="#" class="brand-logo" aria-label="Kaffberry Channi Himmat Jammu">
+      <a href="#" class="brand-logo" aria-label="Kaffberry Channi Himmat Jammu Home">
         <span class="brand-crest">☕</span>
         <div class="brand-text">
           <span class="brand-name">KAFFBERRY</span>
@@ -39,19 +39,19 @@
         </div>
       </a>
 
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
         <a href="#highlights" class="nav-link">Craft & Origin</a>
         <a href="#menu" class="nav-link">Bistro Menu</a>
         <a href="#patisserie-story" class="nav-link">Boulangerie</a>
         <a href="#location" class="nav-link">Channi Himmat & Hours</a>
-        <a href="tel:+919419211200" class="nav-link nav-phone-mobile">📞 +91 94192 11200</a>
+        <a href="tel:+919419211200" class="nav-link nav-phone-mobile">📞 Direct: +91 94192 11200</a>
       </nav>
 
       <div class="nav-actions">
-        <button class="btn btn-outline" onclick="openReservationModal()">
+        <button class="btn btn-primary" onclick="openReservationModal()" aria-label="Reserve a table">
           <span>Reserve Table</span>
         </button>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
           <span></span>
         </button>
@@ -60,26 +60,26 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Sunlit Hero Section -->
     <section class="hero-section" id="hero">
       <div class="hero-bg-overlay"></div>
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-pill-badge">
-            <span class="coffee-bean">🌿</span>
+            <span class="coffee-bean">🥐</span>
             <span>Artisanal European Patisserie, Roastery & Contemporary Bistro</span>
           </div>
           <h1 class="hero-title">
             The Quiet Elegance of <span class="highlight-brass">European Craft</span> in Jammu
           </h1>
           <p class="hero-subtext">
-            Sip single-origin Arabica pour-overs, savor 84% Normandy butter croissants, and relish 48-hour fermented sourdough pizzas in a serene, sunlit sanctuary in Sector 2, Channi Himmat.
+            Sip single-origin Arabica pour-overs, savor 84% Normandy butter croissants, and relish 48-hour fermented Neapolitan pizzas in a sunlit sanctuary nestled along Sector 2 Boulevard, Channi Himmat.
           </p>
 
           <div class="hero-cta-group">
             <button class="btn btn-primary btn-lg" onclick="openReservationModal()">
               <span>Reserve Bistro Table</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
             <a href="#menu" class="btn btn-ghost btn-lg">
               <span>Explore Artisanal Menu</span>
@@ -89,7 +89,7 @@
           <div class="hero-stats-grid">
             <div class="stat-item">
               <span class="stat-number">48h</span>
-              <span class="stat-label">Cold Fermented Sourdough</span>
+              <span class="stat-label">Cold-Fermented Sourdough</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">100%</span>
@@ -97,7 +97,7 @@
             </div>
             <div class="stat-item">
               <span class="stat-number">4.9★</span>
-              <span class="stat-label">2,890+ Jammu Reviews</span>
+              <span class="stat-label">2,890+ Jammu Connoisseurs</span>
             </div>
             <div class="stat-item">
               <span class="stat-number">Sec 2</span>
@@ -108,13 +108,13 @@
       </div>
     </section>
 
-    <!-- Culinary Highlights Row -->
+    <!-- Four Pillars of Craft (Highlights Row) -->
     <section class="section highlights-section" id="highlights">
       <div class="container">
         <div class="section-header text-center">
           <span class="section-eyebrow">FOUR PILLARS OF CRAFT</span>
           <h2 class="section-title">The European Atelier</h2>
-          <p class="section-subtitle">Dedicated to unhurried fermentation, micro-lot coffee extraction, and Parisian pastry technique.</p>
+          <p class="section-subtitle">Dedicated to unhurried wild-yeast fermentation, third-wave micro-lot extraction, and authentic Parisian patisserie technique.</p>
         </div>
 
         <div class="highlights-grid">
@@ -123,7 +123,7 @@
             <div class="card-icon">🥐</div>
             <h3 class="highlight-card-title">Normandy Viennoiserie</h3>
             <p class="highlight-card-desc">
-              Layered daily at sunrise with authentic 84% Normandy butter. Delicately shattered golden honeycomb crusts revealing soft, airy crumb structures.
+              Laminated daily at dawn with 84% French butter. Shatteringly crisp honeycomb crusts revealing soft, cloudlike golden layers within.
             </p>
           </article>
 
@@ -132,7 +132,7 @@
             <div class="card-icon">☕</div>
             <h3 class="highlight-card-title">Micro-Lot Coffee Roasts</h3>
             <p class="highlight-card-desc">
-              Custom-dialed Slayer espresso extractions and precision V60 pour-overs celebrating delicate floral jasmine, stone fruit, and dark cocoa nuances.
+              Custom-dialed Slayer espresso pulls and precision V60 pour-overs celebrating delicate jasmine, bergamot, stone fruit, and dark cocoa nuances.
             </p>
           </article>
 
@@ -141,7 +141,7 @@
             <div class="card-icon">🍕</div>
             <h3 class="highlight-card-title">48-Hr Sourdough Pizzas</h3>
             <p class="highlight-card-desc">
-              Naturally fermented wild yeast dough hand-stretched and blistered at 450°C. San Marzano D.O.P. tomatoes, fresh buffalo mozzarella, and Calabrian hot honey.
+              Wild-yeast dough hand-stretched and blistered at 450°C. San Marzano D.O.P. tomatoes, fresh buffalo mozzarella, and Calabrian hot honey.
             </p>
           </article>
 
@@ -150,32 +150,32 @@
             <div class="card-icon">🍰</div>
             <h3 class="highlight-card-title">Haute Patisserie</h3>
             <p class="highlight-card-desc">
-              Silky Venetian mascarpone tiramisu, San Sebastián molten Basque burnt cheesecakes, Bronte pistachio tarts, and delicate Parisian macarons.
+              Silky Venetian mascarpone tiramisu, San Sebastián Basque burnt cheesecakes, Bronte pistachio tarts, and delicate Parisian macarons.
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Menu Section -->
+    <!-- Interactive Digital Menu Section -->
     <section class="section menu-section" id="menu">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">THE DIGITAL MENU</span>
-          <h2 class="section-title">Artisanal Selections & Tasting Notes</h2>
-          <p class="section-subtitle">Select any creation to explore origin, tasting profile, calorie estimates, and allergen information.</p>
+          <span class="section-eyebrow">ARTISANAL DINING</span>
+          <h2 class="section-title">The Seasonal Atelier Menu</h2>
+          <p class="section-subtitle">Click any creation to inspect provenance, tasting notes, calorie estimates, and allergen profiles.</p>
         </div>
 
         <!-- Filter & Search Toolbar -->
         <div class="menu-toolbar">
           <div class="search-box">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="search" id="menuSearch" placeholder="Search coffee, croissants, sourdough pizzas, pasta..." autocomplete="off">
-            <button id="clearSearch" class="clear-search-btn" aria-label="Clear search">&times;</button>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="menuSearch" placeholder="Search coffee, croissants, sourdough pizza, pasta..." autocomplete="off" aria-label="Search menu items">
+            <button id="clearSearch" class="clear-search-btn" aria-label="Clear search input">&times;</button>
           </div>
 
-          <div class="diet-toggles">
-            <button class="diet-btn active" data-diet="all">All Items</button>
+          <div class="diet-toggles" role="group" aria-label="Dietary filter options">
+            <button class="diet-btn active" data-diet="all">All Selections</button>
             <button class="diet-btn" data-diet="veg">
               <span class="diet-dot dot-veg"></span> Pure Veg
             </button>
@@ -188,41 +188,42 @@
           </div>
         </div>
 
-        <!-- Sticky Category Tabs -->
-        <nav class="category-tabs-wrapper" id="categoryNav">
+        <!-- Sticky Category Navigation Bar -->
+        <nav class="category-tabs-wrapper" id="categoryNav" aria-label="Menu Categories">
           <div class="category-tabs" id="categoryTabs">
             <button class="category-tab active" data-category="all">
               <span>All Offerings</span>
-              <small class="tab-count" id="count-all">25</small>
+              <span class="tab-count" id="count-all">25</span>
             </button>
             <button class="category-tab" data-category="coffee-brews">
               <span>☕ Specialty Coffee & Elixirs</span>
-              <small class="tab-count" id="count-coffee-brews">5</small>
+              <span class="tab-count" id="count-coffee-brews">5</span>
             </button>
             <button class="category-tab" data-category="boulangerie">
               <span>🥐 Viennoiserie & Tartines</span>
-              <small class="tab-count" id="count-boulangerie">5</small>
+              <span class="tab-count" id="count-boulangerie">5</span>
             </button>
             <button class="category-tab" data-category="sourdough-pizza">
               <span>🍕 Wood-Fired Neapolitan Pizza</span>
-              <small class="tab-count" id="count-sourdough-pizza">5</small>
+              <span class="tab-count" id="count-sourdough-pizza">5</span>
             </button>
             <button class="category-tab" data-category="pasta-mains">
               <span>🍝 Handmade Pasta & Bistro Mains</span>
-              <small class="tab-count" id="count-pasta-mains">5</small>
+              <span class="tab-count" id="count-pasta-mains">5</span>
             </button>
             <button class="category-tab" data-category="patisserie">
               <span>🍰 Haute Patisserie & Desserts</span>
-              <small class="tab-count" id="count-patisserie">5</small>
+              <span class="tab-count" id="count-patisserie">5</span>
             </button>
           </div>
         </nav>
 
-        <!-- Menu Grid Container -->
+        <!-- Menu Cards Grid -->
         <div class="menu-grid" id="menuGrid" aria-live="polite">
-          <!-- Populated by JavaScript -->
+          <!-- Populated by app.js -->
         </div>
 
+        <!-- Empty Filter State -->
         <div class="menu-empty-state" id="menuEmptyState" style="display: none;">
           <div class="empty-icon">☕</div>
           <h3>No matching artisanal items found</h3>
@@ -240,29 +241,29 @@
             <span class="section-eyebrow">THE CRAFT OF TIME</span>
             <h2 class="narrative-title">48-Hour Cold Fermentation & French Normandy Butter</h2>
             <p class="narrative-text">
-              At Kaffberry, we believe luxury cannot be rushed. Our sourdough starters are fed with pristine Himalayan spring water and stone-ground organic flours, then rested for 48 hours at cold cellar temperatures to develop complex lactic aromas and light digestibility.
+              At Kaffberry, true culinary luxury cannot be rushed. Our sourdough starters are nourished with mineral spring water and stone-ground organic flours, then rested for 48 hours at controlled cold cellar temperatures to develop light digestibility and intricate lactic aromas.
             </p>
             <p class="narrative-text">
-              Each morning at 6:00 AM, our bakers hand-laminate French puff pastries with 84% high-fat Normandy butter, ensuring shatteringly crisp outer layers with pillow-soft, cloudlike butter honeycombs within.
+              Every morning at 6:00 AM, our master bakers hand-laminate French puff pastries with 84% Normandy Beurre d'Isigny, ensuring shatteringly crisp outer crusts with delicate, honeycomb air pockets within.
             </p>
 
             <div class="narrative-badges">
               <div class="n-badge">
                 <span class="n-icon">🌾</span>
-                <span>Wild Natural Sourdough Starter</span>
+                <span>Wild Natural Sourdough Starter & Himalayan Spring Water</span>
               </div>
               <div class="n-badge">
                 <span class="n-icon">🧈</span>
-                <span>84% Normandy Beurre d'Isigny</span>
+                <span>84% Normandy Beurre d'Isigny Butter Lamination</span>
               </div>
               <div class="n-badge">
                 <span class="n-icon">🔥</span>
-                <span>Stone Hearth 450°C Baking</span>
+                <span>Stone Hearth 450°C Wood-Fired Blistering</span>
               </div>
             </div>
 
             <div class="narrative-cta">
-              <button class="btn btn-primary" onclick="openReservationModal('Afternoon High Tea')">
+              <button class="btn btn-primary" onclick="openReservationModal('Afternoon High Tea Experience')">
                 <span>Reserve Afternoon High Tea Table</span>
               </button>
             </div>
@@ -270,9 +271,9 @@
 
           <div class="narrative-media">
             <div class="narrative-img-wrap">
-              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Kaffberry Boulangerie Croissant" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Freshly baked artisan croissant at Kaffberry Jammu" loading="lazy">
               <div class="narrative-quote-box">
-                <p>“An unhurried sanctuary in Channi Himmat where coffee and pastry are elevated to an art form.”</p>
+                <p>“An unhurried European sanctuary in Channi Himmat where baking, coffee, and dining are elevated to high art.”</p>
                 <small>— Jammu Gourmet Review</small>
               </div>
             </div>
@@ -296,21 +297,21 @@
               <div class="loc-item">
                 <span class="loc-icon">🌿</span>
                 <div>
-                  <strong>Quiet Residential Oasis</strong>
-                  <p>Nestled along the tree-lined Sector 2 boulevard, 100 meters from Channi Himmat Central Park, away from noisy transit corridors.</p>
+                  <strong>Serene Residential Boulevard</strong>
+                  <p>Nestled along the tree-lined Sector 2 boulevard, 100 meters from Channi Himmat Central Park, insulated from transit noise.</p>
                 </div>
               </div>
               <div class="loc-item">
                 <span class="loc-icon">🚗</span>
                 <div>
-                  <strong>Valet & Curbside Parking</strong>
-                  <p>Dedicated valet hospitality with effortless wide boulevard curbside parking for luxury sedans and SUVs.</p>
+                  <strong>Complimentary Valet & Easy Parking</strong>
+                  <p>Dedicated valet hospitality with effortless wide boulevard curbside parking for all sedans and SUVs.</p>
                 </div>
               </div>
               <div class="loc-item">
                 <span class="loc-icon">☕</span>
                 <div>
-                  <strong>All-Day Bistro & Veranda</strong>
+                  <strong>Sun-Dappled Veranda & Work Nooks</strong>
                   <p>Sun-dappled outdoor patio seating among olive planters and cozy indoor velvet booths with laptop power points.</p>
                 </div>
               </div>
@@ -336,7 +337,7 @@
               <div class="hours-row">
                 <div class="slot-badge">Breakfast & Boulangerie</div>
                 <div class="slot-time">09:30 AM – 12:30 PM</div>
-                <div class="slot-note">Warm viennoiserie, sourdough toasts, single-origin espressos</div>
+                <div class="slot-note">Warm viennoiserie, sourdough toasts, single-origin espresso</div>
               </div>
               <div class="hours-row">
                 <div class="slot-badge">Bistro Dining & Pizza</div>
@@ -351,7 +352,7 @@
             </div>
 
             <div class="hours-policy">
-              <p>💡 <em>Kitchen accepts last food orders at 10:30 PM. Specialty coffees and dessert counter open till close.</em></p>
+              <p>💡 <em>Kitchen accepts last food orders at 10:30 PM. Specialty coffee bar and dessert counter open till close.</em></p>
             </div>
 
             <button class="btn btn-primary btn-block" onclick="openReservationModal()">
@@ -409,7 +410,7 @@
     </div>
   </div>
 
-  <!-- Table Reservation Modal with Instant Live Preview -->
+  <!-- Table Reservation Modal with Instant Live Receipt Preview -->
   <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-hidden="true">
     <div class="modal-container reservation-modal-container">
       <button class="modal-close" onclick="closeReservationModal()" aria-label="Close reservation modal">&times;</button>
@@ -456,16 +457,16 @@
               <div class="form-group">
                 <label for="resGuests">Number of Guests *</label>
                 <div class="stepper-input">
-                  <button type="button" class="stepper-btn" onclick="stepGuests(-1)">-</button>
-                  <input type="number" id="resGuests" min="1" max="16" value="2" readonly>
-                  <button type="button" class="stepper-btn" onclick="stepGuests(1)">+</button>
+                  <button type="button" class="stepper-btn" onclick="stepGuests(-1)" aria-label="Decrease guest count">-</button>
+                  <input type="number" id="resGuests" min="1" max="16" value="2" readonly aria-label="Guest count">
+                  <button type="button" class="stepper-btn" onclick="stepGuests(1)" aria-label="Increase guest count">+</button>
                 </div>
               </div>
               <div class="form-group">
                 <label for="resAreaPref">Ambiance Preference</label>
                 <select id="resAreaPref">
-                  <option value="Indoor Velvet Booth">Indoor Velvet Booth (Quiet & Dim)</option>
                   <option value="Al Fresco Garden Veranda">Al Fresco Garden Veranda (Olive Trees)</option>
+                  <option value="Indoor Velvet Booth" selected>Indoor Velvet Booth (Quiet & Cozy)</option>
                   <option value="Espresso & Roastery Bar">Espresso Bar Nook</option>
                   <option value="Private Mezzanine">Private Mezzanine (High Tea / Group)</option>
                 </select>
@@ -474,12 +475,12 @@
 
             <div class="form-group">
               <label for="resNotes">Occasion or Dietary Notes (Optional)</label>
-              <input type="text" id="resNotes" placeholder="e.g. Anniversary dinner, oat milk preference, quiet corner">
+              <input type="text" id="resNotes" placeholder="e.g. Birthday celebration, oat milk, quiet corner table">
             </div>
 
             <button type="submit" class="btn btn-primary btn-block btn-lg">
               <span>Confirm Table Booking</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
           </form>
         </div>
@@ -522,7 +523,7 @@
                   <span class="slip-label">Booking Fee:</span>
                   <span class="slip-val total-val">₹0 (Complimentary)</span>
                 </div>
-                <p class="slip-tax-note">Table held for 15 minutes past reserved time. Complimentary valet at entrance.</p>
+                <p class="slip-tax-note">Table held for 15 minutes past reserved time. Complimentary valet parking at entrance.</p>
               </div>
             </div>
 
@@ -533,13 +534,13 @@
           </div>
         </div>
 
-        <!-- Confirmation Success Screen -->
+        <!-- Confirmation Success Screen with WhatsApp Confirmation Sync -->
         <div class="confirmation-success-wrap" id="confirmationStep" style="display: none;">
           <div class="success-icon">✨</div>
           <span class="section-eyebrow">TABLE CONFIRMED</span>
           <h2 class="success-title">We Anticipate Your Visit</h2>
           <p class="success-desc">
-            Your table reservation has been recorded at Kaffberry, Sector 2, Channi Himmat. An SMS confirmation ticket has been dispatched.
+            Your table reservation has been recorded at Kaffberry, Sector 2, Channi Himmat. Click below to instantly send your confirmation slip directly to our concierge on WhatsApp!
           </p>
 
           <div class="confirmed-ticket-card">
@@ -548,15 +549,19 @@
           </div>
 
           <div class="success-actions">
-            <button class="btn btn-primary" onclick="closeReservationModal()">Done</button>
+            <a href="#" id="whatsappConfirmBtn" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.004c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413z"/></svg>
+              <span>Confirm on WhatsApp</span>
+            </a>
             <a href="tel:+911912468800" class="btn btn-outline">Call Bistro</a>
+            <button class="btn btn-ghost" onclick="closeReservationModal()">Done</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Minimalist Footer -->
+  <!-- Minimalist Sunlit Footer -->
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-top">
@@ -569,15 +574,15 @@
             </div>
           </div>
           <p class="footer-bio">
-            Jammu's sanctuary of European boulangerie, micro-lot specialty coffees, 48-hour fermented Neapolitan pizzas, and contemporary bistro dining.
+            Jammu's premier sanctuary of French boulangerie, micro-lot specialty coffee, 48-hour fermented Neapolitan sourdough pizzas, and contemporary European dining.
           </p>
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-col-title">Atelier Menu</h4>
+          <h4 class="footer-col-title">Atelier Selections</h4>
           <ul class="footer-links">
-            <li><a href="#menu">Specialty Coffee & Elixirs</a></li>
-            <li><a href="#menu">Normandy Viennoiserie</a></li>
+            <li><a href="#menu">Specialty Coffee & Pour-Overs</a></li>
+            <li><a href="#menu">Normandy Viennoiserie & Tartines</a></li>
             <li><a href="#menu">Wood-Fired Neapolitan Pizza</a></li>
             <li><a href="#menu">Handmade Bronze-Die Pasta</a></li>
             <li><a href="#patisserie-story">48-Hr Fermentation Story</a></li>
@@ -588,34 +593,34 @@
           <h4 class="footer-col-title">Channi Himmat Bistro</h4>
           <p class="footer-contact-item">Plot 18, Sector 2, Main Boulevard, Channi Himmat, Jammu, J&K 180015</p>
           <p class="footer-contact-item">📞 +91 191 246 8800</p>
-          <p class="footer-contact-item">📱 +91 94192 11200</p>
+          <p class="footer-contact-item">📱 WhatsApp: +91 94192 11200</p>
           <p class="footer-contact-item">✉️ bonjour@kaffberry.com</p>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>© 2026 Kaffberry Jammu. All rights reserved.</p>
-        <p class="footer-quiet">Minimalist European Luxury & Zero-Dependency Performance.</p>
+        <p class="footer-quiet">Appetizing Light Theme • Pure Vanilla JS & CSS Architecture.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Fixed Bottom Mobile Action Bar (>=44px touch targets) -->
+  <!-- Fixed Bottom Mobile Action Dock (<768px, >=44px touch targets) -->
   <aside class="mobile-action-bar" aria-label="Mobile quick actions">
     <a href="tel:+911912468800" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>Call</span>
     </a>
     <a href="#menu" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
       <span>Menu</span>
     </a>
     <a href="https://maps.google.com/?q=Kaffberry+Channi+Himmat+Jammu" target="_blank" rel="noopener noreferrer" class="mobile-action-btn">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
       <span>Directions</span>
     </a>
     <button class="mobile-action-btn highlight-btn" onclick="openReservationModal()">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
       <span>Reserve</span>
     </button>
   </aside>

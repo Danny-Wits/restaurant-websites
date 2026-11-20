@@ -86,21 +86,23 @@
     ]
   },
   "visualIdentity": {
-    "designTheme": "Matte Obsidian & Warm Linen Brioche",
-    "aestheticPhilosophy": "Quiet Luxury French Boulangerie. Generous whitespace, hairline borders, matte dark obsidian tones, warm buttery amber accents, and editorial typography.",
-    "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=85",
+    "designTheme": "Appetizing Light Theme — Sunlit Parisian Boulangerie & Haute Pâtisserie",
+    "aestheticPhilosophy": "Sunlit Parisian boulangerie and haute pâtisserie. Warm buttermilk cream canvas, crisp pure white porcelain cards with delicate warm peach hairline borders, golden brioche & flame orange accents, saffron gold badges, fresh herb green dietary markers, and deep roasted espresso typography.",
+    "heroImage": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85",
     "colorTokens": {
-      "primary": { "hex": "#D4A373", "name": "Brioche Crust Gold" },
-      "secondary": { "hex": "#E2B17A", "name": "Champagne Butter" },
-      "background": { "hex": "#0C0B0A", "name": "Matte Obsidian" },
-      "cardBg": { "hex": "#141210", "name": "Espresso Basalt" },
-      "surface": { "hex": "#1B1816", "name": "Warm Charcoal Surface" },
-      "border": { "hex": "rgba(255, 255, 255, 0.08)", "name": "Hairline Frost" },
-      "text": { "hex": "#F7F5F0", "name": "French Linen" },
-      "textMuted": { "hex": "#9E958C", "name": "Warm Pumice" }
+      "primary": { "hex": "#EA580C", "name": "Flame Orange / Golden Brioche" },
+      "secondary": { "hex": "#F59E0B", "name": "Saffron & Butter Gold" },
+      "canvas": { "hex": "#FFFDF9", "name": "Warm Buttermilk Cream" },
+      "cardBg": { "hex": "#FFFFFF", "name": "Crisp Porcelain White" },
+      "surface": { "hex": "#FAF5EE", "name": "Warm Linen Surface" },
+      "border": { "hex": "#F3E8E2", "name": "Peach Hairline Border" },
+      "text": { "hex": "#1C1917", "name": "Deep Roasted Espresso" },
+      "textMuted": { "hex": "#57534E", "name": "Warm Umber" },
+      "green": { "hex": "#16A34A", "name": "Fresh Cardamom / Basil Green" },
+      "red": { "hex": "#DC2626", "name": "Raspberry Glaze Red" }
     },
     "typography": {
-      "display": "'Playfair Display', serif",
+      "display": "'Playfair Display', Georgia, serif",
       "body": "'Plus Jakarta Sans', system-ui, sans-serif"
     }
   },

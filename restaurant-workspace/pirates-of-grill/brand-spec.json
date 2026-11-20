@@ -95,23 +95,39 @@
   },
   "visualIdentity": {
     "heroImage": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85",
-    "theme": "Matte Ember Charcoal & Brushed Champagne Bronze",
+    "theme": "Appetizing Sunlit Barbecue & Warm Cream Canvas",
     "colorTokens": {
-      "primary": {
-        "hex": "#D4A373",
-        "name": "Ember Bronze Champagne"
-      },
-      "background": {
-        "hex": "#0C0E12",
-        "name": "Matte Obsidian Dark"
+      "canvas": {
+        "hex": "#FFFDF9",
+        "name": "Warm Buttermilk Cream"
       },
       "surface": {
-        "hex": "#14171F",
-        "name": "Smoked Charcoal"
+        "hex": "#FFFFFF",
+        "name": "Crisp Pure White"
+      },
+      "primary": {
+        "hex": "#EA580C",
+        "name": "Flame Grill Orange"
+      },
+      "secondary": {
+        "hex": "#EAB308",
+        "name": "Saffron & Honey Gold"
+      },
+      "chili": {
+        "hex": "#DC2626",
+        "name": "Chili Ember Red"
+      },
+      "herb": {
+        "hex": "#16A34A",
+        "name": "Basil Herb Green"
+      },
+      "textPrimary": {
+        "hex": "#1C1917",
+        "name": "Deep Roasted Charcoal"
       },
       "border": {
-        "hex": "rgba(255, 255, 255, 0.08)",
-        "name": "Hairline White Border"
+        "hex": "#F3E8E2",
+        "name": "Hairline Warm Biscuit"
       }
     }
   },

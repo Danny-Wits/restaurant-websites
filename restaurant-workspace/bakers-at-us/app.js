@@ -1,12 +1,12 @@
 /**
  * Bakers @ Us — Artisanal French Boulangerie & Haute Pâtisserie
- * Sector 1, Channi Himmat, Jammu
- * High-performance Vanilla JS Engine (Tier 1, 0-dep)
+ * Sector 1, Channi Himmat, Jammu (J&K)
+ * Appetizing Light Theme High-Performance Vanilla JS Engine (Tier 1, 0-dep)
  */
 
-// Embedded Fallback Menu Data (Ensures instant zero-network rendering)
+// Embedded Complete Menu Data (29 Artisanal Items)
 const BAKERS_MENU_DATA = [
-  // 1. Viennoiserie
+  // 1. Viennoiserie & Morning Bakes (6 Items)
   {
     id: "croissant-pure-beurre",
     name: "Traditional French Butter Croissant",
@@ -92,7 +92,7 @@ const BAKERS_MENU_DATA = [
     image: "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80"
   },
 
-  // 2. Sourdough
+  // 2. Artisanal Sourdough & Hearth Breads (5 Items)
   {
     id: "country-sourdough",
     name: "36-Hour Country Levain Boule",
@@ -164,7 +164,7 @@ const BAKERS_MENU_DATA = [
     image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
   },
 
-  // 3. Patisserie
+  // 3. Haute Pâtisserie & Entremets (6 Items)
   {
     id: "opera-classic",
     name: "Classic French Opera Gateau",
@@ -250,7 +250,7 @@ const BAKERS_MENU_DATA = [
     image: "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=800&q=80"
   },
 
-  // 4. Custom Celebration Cakes
+  // 4. Custom Celebration Cakes & Gateaux (4 Items)
   {
     id: "belgian-dark-truffle-cake",
     name: "Belgian Dark Truffle Reserve Gateau",
@@ -308,7 +308,7 @@ const BAKERS_MENU_DATA = [
     image: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=800&q=80"
   },
 
-  // 5. Savory Tartines & Cafe Fare
+  // 5. Savory Tartines & Cafe Fare (4 Items)
   {
     id: "avocado-burrata-tartine",
     name: "Avocado & Burrata Sourdough Tartine",
@@ -366,7 +366,7 @@ const BAKERS_MENU_DATA = [
     image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80"
   },
 
-  // 6. Coffee & Beverages
+  // 6. Specialty Coffee & Botanical Infusions (4 Items)
   {
     id: "iced-saffron-latte",
     name: "Iced Pampore Saffron Latte",
@@ -425,7 +425,7 @@ const BAKERS_MENU_DATA = [
   }
 ];
 
-// Category metadata
+// Category Metadata
 const CATEGORY_META = {
   all: {
     title: "All Artisanal Offerings",
@@ -457,7 +457,7 @@ const CATEGORY_META = {
   }
 };
 
-// Global state
+// Global App State
 let currentCategory = "all";
 let currentDietFilter = "all";
 let currentSearchTerm = "";
@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMenu();
   setupKeyboardListeners();
 
-  // Update current year
+  // Update current year in footer
   const yearEl = document.getElementById("currentYear");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
@@ -481,7 +481,6 @@ function initLiveHours() {
   if (!badgeEl) return;
 
   const now = new Date();
-  // Compute IST hours
   const utc = now.getTime() + now.getTimezoneOffset() * 60000;
   const istDate = new Date(utc + 3600000 * 5.5);
   const hour = istDate.getHours();
@@ -492,12 +491,15 @@ function initLiveHours() {
   const isOpen = timeNum >= 8.0 && timeNum < 22.5;
 
   if (isOpen) {
+    badgeEl.style.background = "#F0FDF4";
+    badgeEl.style.borderColor = "#BBF7D0";
+    badgeEl.style.color = "#16A34A";
     badgeEl.innerHTML = `<span class="status-dot"></span><span class="status-label">Open Now &bull; Closes 10:30 PM</span>`;
   } else {
-    badgeEl.style.background = "rgba(239, 68, 68, 0.1)";
-    badgeEl.style.borderColor = "rgba(239, 68, 68, 0.3)";
-    badgeEl.style.color = "#f87171";
-    badgeEl.innerHTML = `<span class="status-dot" style="background: #ef4444; box-shadow: 0 0 8px #ef4444;"></span><span class="status-label">Closed &bull; Opens 08:00 AM</span>`;
+    badgeEl.style.background = "#FEF2F2";
+    badgeEl.style.borderColor = "#FECACA";
+    badgeEl.style.color = "#DC2626";
+    badgeEl.innerHTML = `<span class="status-dot" style="background: #DC2626; box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);"></span><span class="status-label">Closed &bull; Opens 08:00 AM</span>`;
   }
 }
 
@@ -508,18 +510,19 @@ function renderMenu() {
   if (!grid) return;
 
   const filtered = BAKERS_MENU_DATA.filter((item) => {
-    // Category check
+    // 1. Category Check
     if (currentCategory !== "all" && item.category !== currentCategory) {
       return false;
     }
 
-    // Dietary filter check
+    // 2. Dietary Filter Check
     if (currentDietFilter === "veg" && !item.veg) return false;
     if (currentDietFilter === "eggless" && item.egg) return false;
     if (currentDietFilter === "signature" && !item.chefSignature) return false;
     if (currentDietFilter === "savory" && item.category !== "savory-cafe") return false;
+    if (currentDietFilter === "nonveg" && item.veg) return false;
 
-    // Search query check
+    // 3. Search Query Check
     if (currentSearchTerm) {
       const q = currentSearchTerm.toLowerCase();
       const inName = item.name.toLowerCase().includes(q);
@@ -541,25 +544,25 @@ function renderMenu() {
   if (emptyState) emptyState.classList.add("hidden");
 
   grid.innerHTML = filtered.map(item => `
-    <article class="menu-card" onclick="openDishModal('${item.id}')" tabindex="0" onkeydown="handleCardKeydown(event, '${item.id}')">
+    <article class="menu-card" onclick="openDishModal('${item.id}')" tabindex="0" onkeydown="handleCardKeydown(event, '${item.id}')" aria-label="${item.name}">
       <div class="menu-card-img-wrap">
         <img src="${item.image}" alt="${item.name}" loading="lazy" />
         <div class="card-top-badges">
-          ${item.chefSignature ? '<span class="card-badge badge-signature">★ Chef Signature</span>' : ''}
+          ${item.chefSignature ? '<span class="card-badge badge-signature">★ Chef Star</span>' : ''}
           ${!item.egg ? '<span class="card-badge badge-eggless">🥚 100% Eggless</span>' : ''}
-          ${item.veg ? '<span class="card-badge badge-veg">🌱 Pure Veg</span>' : ''}
+          ${item.veg ? '<span class="card-badge badge-veg">🌱 Pure Veg</span>' : '<span class="card-badge badge-nonveg">🥩 Non-Veg</span>'}
         </div>
       </div>
       <div class="menu-card-body">
         <div class="card-title-row">
-          <h4 class="card-item-title">${item.name}</h4>
+          <h3 class="card-item-title">${item.name}</h3>
           <span class="card-price">₹${item.price}</span>
         </div>
         <p class="card-desc">${item.description}</p>
         <div class="card-footer-row">
           <span class="card-tag-pill">${item.tags[0] || 'Artisanal'}</span>
           <span class="card-explore-link">
-            <span>Explore Dish</span>
+            <span>Inspect &amp; Order</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </div>
@@ -572,12 +575,12 @@ function renderMenu() {
 function selectCategory(catKey) {
   currentCategory = catKey;
   
-  // Update tabs active state
+  // Update active pill styling
   document.querySelectorAll(".cat-tab").forEach(tab => {
     tab.classList.toggle("active", tab.dataset.cat === catKey);
   });
 
-  // Update header text
+  // Update category header banner text
   const meta = CATEGORY_META[catKey] || CATEGORY_META.all;
   const titleEl = document.getElementById("currentCategoryTitle");
   const tagEl = document.getElementById("currentCategoryTagline");
@@ -626,7 +629,7 @@ function resetAllFilters() {
   clearSearch();
 }
 
-// Dish Details Modal
+// Dish Details / Pastry Inspection Modal
 function openDishModal(dishId) {
   const dish = BAKERS_MENU_DATA.find(d => d.id === dishId);
   if (!dish) return;
@@ -635,7 +638,7 @@ function openDishModal(dishId) {
 
   document.getElementById("dishModalImg").src = dish.image;
   document.getElementById("dishModalImg").alt = dish.name;
-  document.getElementById("dishModalCategory").textContent = CATEGORY_META[dish.category]?.title || "Artisanal Special";
+  document.getElementById("dishModalCategory").textContent = CATEGORY_META[dish.category]?.title || "Artisanal Bakes";
   document.getElementById("dishModalTitle").textContent = dish.name;
   document.getElementById("dishModalPrice").textContent = `₹${dish.price}`;
   document.getElementById("dishModalDesc").textContent = dish.description;
@@ -646,10 +649,10 @@ function openDishModal(dishId) {
   badgesWrap.innerHTML = `
     ${dish.chefSignature ? '<span class="card-badge badge-signature">★ Chef Signature</span>' : ''}
     ${!dish.egg ? '<span class="card-badge badge-eggless">🥚 100% Eggless</span>' : ''}
-    ${dish.veg ? '<span class="card-badge badge-veg">🌱 Vegetarian</span>' : '<span class="card-badge" style="background:#ef4444; color:#fff">Non-Vegetarian</span>'}
+    ${dish.veg ? '<span class="card-badge badge-veg">🌱 Pure Veg</span>' : '<span class="card-badge badge-nonveg">🥩 Non-Veg</span>'}
   `;
 
-  // Ingredients Chips
+  // Ingredients chips
   const ingWrap = document.getElementById("dishModalIngredients");
   ingWrap.innerHTML = dish.ingredients.map(ing => `<span class="ingredient-chip">${ing}</span>`).join("");
 
@@ -670,12 +673,12 @@ function closeDishModal(e) {
 
 function handleDishInquiry() {
   if (!currentModalDish) return;
-  const msg = `Bonjour Bakers @ Us Jammu! I am interested in ordering / inquiring about the "${currentModalDish.name}" (₹${currentModalDish.price}).`;
+  const msg = `Bonjour Bakers @ Us Jammu! I am interested in ordering / reserving the "${currentModalDish.name}" (₹${currentModalDish.price}).`;
   const url = `https://wa.me/919419188204?text=${encodeURIComponent(msg)}`;
   window.open(url, "_blank");
 }
 
-// Reservation Modal Logic
+// Reservation & Cake Consultation Modal Logic
 function openReservationModal(prefExperience) {
   const modal = document.getElementById("reserveModal");
   modal.classList.add("open");
@@ -726,7 +729,7 @@ function handleReservationSubmit(e) {
   const guests = document.getElementById("resGuests").value;
   const notes = document.getElementById("resNotes").value.trim();
 
-  // Generate Reference Code
+  // Generate Reference Pass Code
   const refCode = "#BAK-" + Math.floor(1000 + Math.random() * 9000);
 
   // Populate Confirmation Ticket
@@ -738,12 +741,12 @@ function handleReservationSubmit(e) {
   document.getElementById("ticketGuests").textContent = guests;
   document.getElementById("ticketSeating").textContent = seating;
 
-  // WhatsApp Send Link
+  // WhatsApp Link Generation
   const waMsg = `*Table / Atelier Booking Confirmation - Bakers @ Us Jammu*\n\nReference: ${refCode}\nGuest: ${name}\nPhone: ${phone}\nExperience: ${experience}\nDate: ${date}\nTime: ${time}\nParty: ${guests}\nSeating: ${seating}\nNotes: ${notes || "None"}\n\nVenue: Bakers @ Us, Sector 1, Channi Himmat, Jammu.`;
   const waUrl = `https://wa.me/919419188204?text=${encodeURIComponent(waMsg)}`;
   document.getElementById("ticketWhatsAppBtn").href = waUrl;
 
-  // Switch View
+  // Switch to Ticket View
   document.getElementById("reservationFormState").classList.add("hidden");
   document.getElementById("reservationConfirmationState").classList.remove("hidden");
 }

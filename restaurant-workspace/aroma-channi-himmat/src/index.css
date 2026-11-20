@@ -1,49 +1,71 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #D4AF37;
-  --color-gold-hover: #E2BD44;
-  --color-gold-muted: #C5A880;
-  --color-obsidian: #09090b;
-  --color-surface: #121214;
-  --color-surface-elevated: #18181b;
-  --color-border-subtle: rgba(255, 255, 255, 0.08);
-  --color-border-gold: rgba(212, 175, 55, 0.2);
+  --color-flame: #EA580C;
+  --color-flame-hover: #C2410C;
+  --color-tangerine: #F97316;
+  --color-saffron: #F59E0B;
+  --color-saffron-gold: #EAB308;
+  --color-cream: #FFFDF9;
+  --color-cream-subtle: #FAFAF7;
+  --color-biscuit: #F7F3ED;
+  --color-card-surface: #FFFFFF;
+  --color-slate-espresso: #1C1917;
+  --color-slate-subtle: #292524;
+  --color-umber: #78716C;
+  --color-umber-dark: #57534E;
+  --color-chili: #DC2626;
+  --color-basil: #16A34A;
+  --color-border-warm: #F3E8E2;
+  --color-border-orange: rgba(254, 215, 170, 0.6);
 
   --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
   --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 }
 
-/* Custom Minimalist Dark Scrollbar */
+/* Warm Appetizing Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #FFFDF9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 3px;
+  background: #FED7AA;
+  border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #FB923C;
 }
 
-/* Glassmorphism utility for quiet luxury */
+/* Glassmorphism utility for sunlit appetizing dining */
 .glass-panel {
-  background: rgba(18, 18, 20, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(254, 215, 170, 0.7);
 }
 
 .glass-nav {
-  background: rgba(9, 9, 11, 0.85);
+  background: rgba(255, 253, 249, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(254, 215, 170, 0.6);
+}
+
+/* Warm appetizing diffuse shadows */
+.shadow-warm-sm {
+  box-shadow: 0 2px 8px -1px rgba(234, 88, 12, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+}
+
+.shadow-warm-md {
+  box-shadow: 0 4px 20px -2px rgba(234, 88, 12, 0.07), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 12px 32px -4px rgba(234, 88, 12, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.05);
 }
 
 /* Hide horizontal scrollbar for clean category tabs */

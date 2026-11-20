@@ -4,27 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Brewberrys Cafe Jammu | Specialty Coffee & Youth Bistro | Gandhi Nagar</title>
-  <meta name="description" content="Jammu's premier youth specialty coffee haven on Apsara Road, Gandhi Nagar. Artisanal pour-overs, towering monster freak shakes, crispy sourdough melts & thin pizzas." />
-  <meta name="theme-color" content="#0b0c0e" />
+  <meta name="description" content="Jammu's premier youth specialty coffee haven on Apsara Road, Gandhi Nagar. Artisanal Chikmagalur pour-overs, towering monster freak shakes, crispy sourdough melts & thin crust pizzas." />
+  <meta name="theme-color" content="#FFFDF9" />
 
   <!-- Preconnect & Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <!-- Ambient Lighting Glow -->
+  <!-- Sunlit Ambient Glows (Light Theme) -->
   <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow-left" aria-hidden="true"></div>
 
   <!-- Sticky Site Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand-wrap">
+      <a href="#" class="brand-wrap" aria-label="Brewberrys Cafe Jammu Home">
         <div class="brand-mark">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
             <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
             <line x1="6" y1="1" x2="6" y2="4"></line>
@@ -35,50 +36,55 @@
         <div class="brand-titles">
           <span class="brand-name">
             BREWBERRYS
-            <span class="header-badge">
-              <span class="status-indicator"></span>
-              <span>Gandhi Nagar</span>
-            </span>
+            <span class="header-badge">Gandhi Nagar</span>
           </span>
-          <span class="brand-sub">Specialty Coffee & Youth Bar</span>
+          <span class="brand-sub">Specialty Coffee &amp; Youth Bar</span>
         </div>
-      </div>
+      </a>
 
       <nav class="nav-group" aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#menu" class="nav-link">Digital Menu</a></li>
           <li><a href="#vibe" class="nav-link">The Cafe Vibe</a></li>
-          <li><a href="#reviews" class="nav-link">Reviews</a></li>
-          <li><a href="#location" class="nav-link">Hours & Location</a></li>
+          <li><a href="#reviews" class="nav-link">Community Reviews</a></li>
+          <li><a href="#location" class="nav-link">Hours &amp; Location</a></li>
         </ul>
-        <button class="btn-primary-sm" onclick="openReservationModal()">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-          <span>Reserve Table</span>
-        </button>
+        <div class="header-actions">
+          <a href="tel:+911912435522" class="btn-header-call" aria-label="Call Brewberrys Cafe">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>Call</span>
+          </a>
+          <button class="btn-primary-sm" onclick="openReservationModal()" aria-label="Reserve a Table">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Reserve Table</span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Sunny Cafe Hero Section -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-layout">
           <div class="hero-copy">
             <div class="hero-pill">
               <span class="status-indicator"></span>
-              <span class="live-status-text">Open Now • Closes at 11:00 PM</span>
+              <span class="live-status-text">Open Now • Closes at 11:00 PM (Apsara Road)</span>
             </div>
             <h1 class="hero-title">
-              Specialty Brews & Youth Conversations in <span class="accent-text">Gandhi Nagar.</span>
+              Specialty Brews &amp; Youth Conversations in <span class="accent-text">Gandhi Nagar.</span>
             </h1>
             <p class="hero-subtitle">
-              Crafted single-origin Arabica, skyscraper freak shakes, and toasted sourdough paninis on Apsara Road. Designed for slow sips, fast Wi-Fi, and late evening cafe memories.
+              Crafted single-origin Arabica, skyscraper freak shakes, and toasted sourdough paninis on Apsara Road. Designed for slow sips, fast Wi-Fi, and unforgettable cafe memories.
             </p>
 
             <div class="hero-ctas">
@@ -108,13 +114,15 @@
               </div>
               <div class="stat-item">
                 <span class="stat-val">Apsara Road</span>
-                <span class="stat-lbl">Gandhi Nagar Jammu</span>
+                <span class="stat-lbl">Opposite Multiplex</span>
               </div>
             </div>
           </div>
 
           <div class="hero-visual-card">
-            <img class="hero-img" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80" alt="Brewberrys Cafe Jammu Ambience" />
+            <div class="hero-img-wrap">
+              <img class="hero-img" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80" alt="Brewberrys Cafe Jammu Ambience" />
+            </div>
             <div class="hero-overlay-pill">
               <div class="overlay-info">
                 <span class="overlay-title">Apsara Road Sanctuary</span>
@@ -131,12 +139,12 @@
     </section>
 
     <!-- Highlights Row -->
-    <section class="highlights-section">
+    <section class="highlights-section" aria-label="Cafe Highlights">
       <div class="container">
         <div class="highlights-grid">
           <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="highlight-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
                 <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
                 <line x1="6" y1="1" x2="6" y2="4"></line>
@@ -145,24 +153,24 @@
               </svg>
             </div>
             <h3 class="highlight-title">Single-Origin Arabica</h3>
-            <p class="highlight-desc">Estate-grade beans extracted with precision, from silky flat whites to 18-hour cold brew tonics.</p>
+            <p class="highlight-desc">Estate-grade beans extracted with precision, from velvety flat whites to 18-hour cold brew tonics.</p>
           </div>
 
           <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="highlight-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M8 2h8l2 6H6l2-6z"></path>
                 <path d="M6 8v11a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8"></path>
                 <line x1="12" y1="12" x2="12" y2="17"></line>
               </svg>
             </div>
             <h3 class="highlight-title">Iconic Freak Shakes</h3>
-            <p class="highlight-desc">Towering signature milkshakes layered with fudge brownies, Belgian chocolate, and crushed Biscoff.</p>
+            <p class="highlight-desc">Towering signature milkshakes layered with warm brownies, Lotus Biscoff, and Belgian chocolate.</p>
           </div>
 
           <div class="highlight-card">
-            <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="highlight-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="12" y1="2" x2="12" y2="6"></line>
                 <line x1="12" y1="18" x2="12" y2="22"></line>
@@ -182,7 +190,7 @@
       <div class="container">
         <div class="section-head">
           <span class="section-tag">Interactive Digital Menu</span>
-          <h2 class="section-title">Curated Food & Beverage Roster</h2>
+          <h2 class="section-title">Curated Food &amp; Beverage Roster</h2>
           <p class="section-desc">Handcrafted fresh per order with high-altitude Arabica, artisan cheeses, and house-made sauces.</p>
         </div>
 
@@ -192,7 +200,7 @@
             <div class="filter-categories-scroll" role="tablist" aria-label="Menu Categories">
               <button class="category-tab active" data-category="all" role="tab" aria-selected="true">
                 <span>All Items</span>
-                <span class="tab-count">28</span>
+                <span class="tab-count">29</span>
               </button>
               <button class="category-tab" data-category="specialty-coffee" role="tab" aria-selected="false">
                 <span>Specialty Coffee</span>
@@ -203,11 +211,11 @@
                 <span class="tab-count">4</span>
               </button>
               <button class="category-tab" data-category="refreshers-mojitos" role="tab" aria-selected="false">
-                <span>Refreshers & Mojitos</span>
+                <span>Refreshers &amp; Mojitos</span>
                 <span class="tab-count">4</span>
               </button>
               <button class="category-tab" data-category="burgers-melts" role="tab" aria-selected="false">
-                <span>Burgers & Melts</span>
+                <span>Burgers &amp; Melts</span>
                 <span class="tab-count">4</span>
               </button>
               <button class="category-tab" data-category="pizzas" role="tab" aria-selected="false">
@@ -219,8 +227,8 @@
                 <span class="tab-count">4</span>
               </button>
               <button class="category-tab" data-category="small-bites" role="tab" aria-selected="false">
-                <span>Small Bites & Nachos</span>
-                <span class="tab-count">3</span>
+                <span>Small Bites &amp; Nachos</span>
+                <span class="tab-count">4</span>
               </button>
             </div>
           </div>
@@ -229,16 +237,16 @@
         <!-- Search & Dietary Filters -->
         <div class="menu-controls-row">
           <div class="search-box">
-            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-            <input type="text" id="menuSearchInput" class="search-input" placeholder="Search coffee, monster shakes, pizza, burger..." aria-label="Search menu items" />
+            <input type="text" id="menuSearchInput" class="search-input" placeholder="Search coffee, monster shakes, pizza, burgers..." aria-label="Search menu items" />
             <span class="search-clear" id="searchClearBtn" title="Clear Search">&times;</span>
           </div>
 
           <div class="dietary-toggles" role="group" aria-label="Dietary Filters">
-            <button class="toggle-btn active" data-filter="all">All</button>
+            <button class="toggle-btn active" data-filter="all">All Items</button>
             <button class="toggle-btn" data-filter="veg">
               <span class="dietary-dot veg"></span>
               <span>Pure Veg</span>
@@ -249,14 +257,17 @@
             </button>
             <button class="toggle-btn" data-filter="chef">
               <span class="dietary-dot chef"></span>
-              <span>Chef Signatures</span>
+              <span>★ Chef's Special</span>
             </button>
           </div>
         </div>
 
         <div class="menu-feedback-line">
-          <span id="menuFeedbackCount">Showing 28 of 28 handcrafted dishes & beverages</span>
-          <span style="font-size: 0.8rem; color: var(--accent-amber);">Click any dish for ingredients & pairing notes</span>
+          <span id="menuFeedbackCount" class="feedback-count">Showing 29 of 29 handcrafted dishes &amp; beverages</span>
+          <span class="feedback-tip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Tap any dish for ingredients &amp; pairing notes</span>
+          </span>
         </div>
 
         <!-- Dynamic Menu Cards Grid -->
@@ -272,30 +283,30 @@
         <div class="vibe-layout">
           <div class="vibe-copy">
             <span class="vibe-pill">The Apsara Road Legacy</span>
-            <h2 class="vibe-title">Jammu's Urban Youth Sanctuary & Workspace</h2>
+            <h2 class="vibe-title">Jammu's Sunlit Urban Youth Sanctuary &amp; Workspace</h2>
             <p class="vibe-p">
-              Situated right in the beating pulse of Gandhi Nagar, Brewberrys is built for genuine conversations, laptop work marathons, and after-college catch-ups.
+              Situated right in the bustling heart of Gandhi Nagar, Brewberrys is built for genuine conversations, laptop work sessions, and lively post-college catch-ups.
             </p>
             <p class="vibe-p">
-              We ditched sterile aesthetics for matte dark charcoal surfaces, warm barista glow, and an acoustic soundscape of indie tracks. Whether you need a solitary pour-over desk or a 6-person booth for birthday monster shakes, you're always home here.
+              We ditched dim and sterile spaces for sunlit buttermilk warmth, energetic tangerine accents, and an acoustic Indie soundscape. Whether you need a peaceful morning pour-over corner or a 6-person booth for birthday monster shakes, you're always welcome here.
             </p>
 
             <div class="amenities-list">
-              <span class="amenity-chip">⚡ Gigabit Wi-Fi</span>
-              <span class="amenity-chip">🔌 Desk Power Outlets</span>
-              <span class="amenity-chip">🎲 Board Games Library</span>
+              <span class="amenity-chip">⚡ Gigabit Wi-Fi for Work</span>
+              <span class="amenity-chip">🔌 Desk Power Outlets at Tables</span>
+              <span class="amenity-chip">🎲 Curated Board Games Library</span>
               <span class="amenity-chip">❄️ Air-Conditioned Comfort</span>
-              <span class="amenity-chip">🐾 Sidewalk Terrace</span>
+              <span class="amenity-chip">🐾 Sidewalk Pet-Friendly Terrace</span>
               <span class="amenity-chip">🎂 Birthday Celebration Booth</span>
             </div>
           </div>
 
           <div class="vibe-image-cluster">
             <div class="vibe-thumb">
-              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cafe workspace booth" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cafe workspace booth with natural light" loading="lazy" />
             </div>
             <div class="vibe-thumb">
-              <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" alt="Iced cold coffee glasses" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80" alt="Iced cold coffee glasses on cafe table" loading="lazy" />
             </div>
           </div>
         </div>
@@ -308,7 +319,7 @@
         <div class="section-head">
           <span class="section-tag">Community Word of Mouth</span>
           <h2 class="section-title">Loved by Gandhi Nagar Locals</h2>
-          <p class="section-desc">Over 1,400+ reviews from students, remote creators, and weekend families across Jammu.</p>
+          <p class="section-desc">Over 1,400+ reviews from students, remote creators, and weekend foodies across Jammu.</p>
         </div>
 
         <div class="reviews-grid">
@@ -329,7 +340,7 @@
           <article class="review-card">
             <div class="stars-row">★★★★★</div>
             <p class="review-text">
-              "Easily the best specialty coffee aesthetic in town. No loud chaotic music, super sleek minimalist dark decor, and their V60 pour-over coffee actually has the floral notes they promise. Highly recommend the peri-peri paneer burger!"
+              "Easily the best specialty coffee aesthetic in town. Bright, sunny vibe, pleasant acoustic music, and their V60 pour-over coffee actually has the floral notes they promise. Highly recommend the peri-peri paneer burger!"
             </p>
             <div class="review-author-line">
               <div class="author-avatar">MJ</div>
@@ -343,7 +354,7 @@
           <article class="review-card">
             <div class="stars-row">★★★★★</div>
             <p class="review-text">
-              "Great spot for casual meetings and quick bites. The Truffle Cheese Fries and Pesto Panini are top tier. Their staff is polite, fast, and the Apsara Road location is super convenient with easy parking nearby."
+              "Great spot for casual meetings and quick bites. The Truffle Cheese Fries and Pesto Panini are top tier. Their team is polite, fast, and the Apsara Road location is super convenient with easy parking nearby."
             </p>
             <div class="review-author-line">
               <div class="author-avatar">RV</div>
@@ -363,7 +374,7 @@
         <div class="location-grid">
           <div class="info-card">
             <h3 class="info-card-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
@@ -374,7 +385,7 @@
                 <span>Monday – Sunday</span>
                 <span>10:00 AM – 11:00 PM</span>
               </div>
-              <div class="hours-row">
+              <div class="hours-row happy">
                 <span>Happy Hours (20% Off Shakes)</span>
                 <span>4:00 PM – 6:30 PM</span>
               </div>
@@ -383,15 +394,15 @@
                 <span>10:45 PM</span>
               </div>
             </div>
-            <div class="status-indicator-block" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+            <div class="status-indicator-block" style="display: flex; align-items: center; gap: 0.55rem; font-size: 0.88rem; color: var(--text-charcoal); font-weight: 600;">
               <span class="status-indicator"></span>
-              <span class="live-status-text">Open Now • Closes at 11:00 PM</span>
+              <span class="live-status-text">Open Now • Closes at 11:00 PM (Apsara Road)</span>
             </div>
           </div>
 
           <div class="info-card">
             <h3 class="info-card-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
@@ -403,18 +414,19 @@
               Apsara Road, Gandhi Nagar, Jammu, J&amp;K - 180004
             </div>
             <div class="landmark-badge">
-              <span>📍 Landmarks: 200m from Gole Market &amp; Dudhadhari Temple turn</span>
+              <span>📍 Landmarks: Directly opposite Apsara Multiplex, 200m from Gole Market</span>
             </div>
             <div class="action-buttons-group">
               <a href="https://maps.google.com/?q=Brewberrys+Gandhi+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
                 <span>Google Maps Directions</span>
               </a>
               <a href="tel:+911912435522" class="btn-secondary">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 <span>Call Cafe</span>
               </a>
               <a href="https://wa.me/919419211488?text=Hello%20Brewberrys%20Jammu!%20I%20have%20an%20inquiry%20regarding%20table%20booking" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                 <span>WhatsApp Us</span>
               </a>
             </div>
@@ -428,34 +440,50 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-copy">
-        <p>&copy; 2026 Brewberrys Cafe Jammu. Crafted for Jammu's Coffee Lovers.</p>
-        <p style="font-size: 0.78rem; margin-top: 0.25rem;">Apsara Road, Gandhi Nagar, Jammu • Pure Arabica &bull; Zero Artificial Syrups</p>
+        <p>&copy; 2026 <strong>Brewberrys Cafe Jammu</strong>. Crafted for Jammu's Coffee Lovers.</p>
+        <p style="font-size: 0.8rem; margin-top: 0.25rem;">Apsara Road, Gandhi Nagar, Jammu • 100% Chikmagalur Arabica &bull; Fresh Ingredients</p>
       </div>
       <div class="footer-links">
-        <a href="#menu" class="footer-link">Menu</a>
-        <a href="#vibe" class="footer-link">Our Vibe</a>
-        <a href="#location" class="footer-link">Location</a>
-        <a href="javascript:void(0)" onclick="openReservationModal()" class="footer-link">Bookings</a>
+        <a href="#menu" class="footer-link">Digital Menu</a>
+        <a href="#vibe" class="footer-link">Cafe Vibe</a>
+        <a href="#location" class="footer-link">Location &amp; Hours</a>
+        <a href="javascript:void(0)" onclick="openReservationModal()" class="footer-link">Table Bookings</a>
       </div>
     </div>
   </footer>
 
-  <!-- Fixed Mobile Action Bar -->
+  <!-- Fixed Mobile Action Dock (<768px) -->
   <aside class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
-    <a href="tel:+911912435522" class="bar-action">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <a href="tel:+911912435522" class="bar-action" aria-label="Call cafe">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
       <span>Call</span>
     </a>
-    <a href="#menu" class="bar-action">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+    <a href="#menu" class="bar-action" aria-label="View menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="8" y1="6" x2="21" y2="6"></line>
+        <line x1="8" y1="12" x2="21" y2="12"></line>
+        <line x1="8" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+      </svg>
       <span>Menu</span>
     </a>
-    <a href="https://maps.google.com/?q=Brewberrys+Gandhi+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="bar-action">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+    <a href="https://maps.google.com/?q=Brewberrys+Gandhi+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="bar-action" aria-label="Get directions">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+      </svg>
       <span>Directions</span>
     </a>
-    <button class="bar-action primary-action" onclick="openReservationModal()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+    <button class="bar-action primary-action" onclick="openReservationModal()" aria-label="Reserve a table">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
       <span>Reserve</span>
     </button>
   </aside>
@@ -469,9 +497,9 @@
       </div>
       <div class="dish-modal-body">
         <div class="dish-modal-header">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
             <span id="dishModalDietBadge" class="badge-dietary veg">● VEG</span>
-            <span id="dishModalCategory" style="font-size: 0.78rem; color: var(--text-tertiary); text-transform: uppercase;"></span>
+            <span id="dishModalCategory" style="font-size: 0.78rem; color: var(--text-umber); font-weight: 700; text-transform: uppercase;"></span>
           </div>
           <h3 id="dishModalTitle" class="dish-modal-title"></h3>
           <span id="dishModalPrice" class="dish-modal-price"></span>
@@ -479,13 +507,13 @@
 
         <p id="dishModalDesc" class="dish-modal-desc"></p>
 
-        <div class="detail-section-title">Ingredients &amp; Notes</div>
+        <div class="detail-section-title">Ingredients &amp; Sourcing</div>
         <div id="dishModalIngredients" class="ingredients-box"></div>
 
         <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
           <div style="flex: 1;">
-            <div class="detail-section-title">Calories / Portion</div>
-            <div id="dishModalCalories" style="font-size: 0.88rem; color: #ffffff; font-weight: 600;"></div>
+            <div class="detail-section-title">Calories / Serving</div>
+            <div id="dishModalCalories" class="calories-box"></div>
           </div>
         </div>
 
@@ -496,7 +524,7 @@
 
         <div class="dish-actions">
           <a id="dishModalOrderBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-cta-main" style="flex: 1;">
-            <span>Order / Ask on WhatsApp</span>
+            <span>Inquire / Order on WhatsApp</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
           </a>
           <button class="btn-cta-secondary" onclick="closeDishModal()">Close</button>
@@ -514,7 +542,7 @@
         <form id="reservationForm" class="res-form">
           <div>
             <h3 id="resModalTitle" class="res-title">Reserve a Table / Celebration</h3>
-            <p class="res-subtitle">Book your coffee corner or celebration booth at Apsara Road, Gandhi Nagar.</p>
+            <p class="res-subtitle">Lock your study booth or celebration couch at Apsara Road, Gandhi Nagar.</p>
           </div>
 
           <div class="form-row">
@@ -572,7 +600,7 @@
 
           <div class="form-group">
             <label class="form-label" for="resNotes">Special Requests (Optional)</label>
-            <textarea id="resNotes" class="form-textarea" placeholder="E.g. Cake sparkler, quiet desk near charging socket, high chair..."></textarea>
+            <textarea id="resNotes" class="form-textarea" placeholder="E.g. Cake sparklers, quiet desk near charging socket, high chair..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit-res">
@@ -581,13 +609,13 @@
           </button>
         </form>
 
-        <!-- Interactive Instant Confirmation Preview Card -->
+        <!-- Instant Celebration Pass Card -->
         <div id="resConfirmationCard" class="res-confirmation-card">
           <div class="confirm-icon-wrap">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
           </div>
           <h3 class="res-title" style="margin-bottom: 0.25rem;">Reservation Confirmed!</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">We've locked your table at Apsara Road, Gandhi Nagar.</p>
+          <p style="font-size: 0.88rem; color: var(--text-umber); margin-bottom: 1rem;">We've reserved your table at Apsara Road, Gandhi Nagar.</p>
 
           <div class="confirm-code">
             <span>Booking ID: </span><span id="confirmCodeVal">BB-JAMMU-8492</span>
@@ -611,12 +639,12 @@
               <strong id="confirmPhone"></strong>
             </div>
             <div class="confirm-row">
-              <span>Venue</span>
+              <span>Location</span>
               <strong>Apsara Road, Gandhi Nagar Jammu</strong>
             </div>
           </div>
 
-          <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1.25rem;">A 1-click confirmation note is ready for our host team on WhatsApp.</p>
+          <p style="font-size: 0.82rem; color: var(--text-umber); margin-bottom: 1.25rem;">A 1-click confirmation note is ready for our host team on WhatsApp.</p>
 
           <div style="display: flex; flex-direction: column; gap: 0.75rem;">
             <a id="resWaConfirmBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-cta-main" style="width: 100%;">

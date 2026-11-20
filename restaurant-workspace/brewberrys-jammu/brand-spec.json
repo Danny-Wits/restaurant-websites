@@ -90,47 +90,51 @@
     ]
   },
   "visualIdentity": {
-    "designTheme": "Minimalist Obsidian Crema & Hairline Amber",
-    "aestheticPhilosophy": "Nordic-Japanese inspired minimalist cafe aesthetic. Matte obsidian charcoal surfaces, razor-sharp hairline borders, generous negative space, and warm crema-amber accents echoing roasted espresso tones.",
+    "designTheme": "Appetizing Light Theme — Sunlit Buttermilk & Tangerine Flame",
+    "aestheticPhilosophy": "Vibrant, sunlit, appetizing youth cafe aesthetic. Warm buttermilk cream canvas (#FFFDF9), crisp pure white cards with soft peach borders (#F3E8E2), tangerine flame orange interactive accents (#EA580C), crema gold badges (#D97706), and deep roasted slate typography (#1C1917) for 100% WCAG AAA contrast.",
     "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1400&q=80",
     "colorTokens": {
       "primary": {
-        "hex": "#E59546",
-        "name": "Roast Crema Amber",
-        "description": "Primary brand accent, used for interactive badges, highlights, and buttons"
+        "hex": "#EA580C",
+        "name": "Tangerine Flame Orange",
+        "description": "Primary brand accent, used for interactive badges, highlights, prices, and CTAs"
       },
       "primaryHover": {
-        "hex": "#F5A65B",
-        "name": "Luminous Caramel",
+        "hex": "#C2410C",
+        "name": "Deep Blood Orange",
         "description": "Hover state accent"
       },
       "background": {
-        "hex": "#0B0C0E",
-        "name": "Obsidian Noir",
-        "description": "Deep matte low-light background"
+        "hex": "#FFFDF9",
+        "name": "Warm Buttermilk Cream",
+        "description": "Light, warm appetizing canvas"
       },
       "surface": {
-        "hex": "#131519",
-        "name": "Matte Espresso Slate",
+        "hex": "#FFFFFF",
+        "name": "Crisp Pure White",
         "description": "Card backgrounds, elevated panels"
       },
       "surfaceHover": {
-        "hex": "#1A1E24",
-        "name": "Highlighted Slate",
+        "hex": "#FFF9F4",
+        "name": "Warm Peach White",
         "description": "Card hover states"
       },
       "border": {
-        "hex": "rgba(255, 255, 255, 0.08)",
-        "name": "Hairline White 08",
-        "description": "Refined minimal borders"
+        "hex": "#F3E8E2",
+        "name": "Hairline Peach Biscuit",
+        "description": "Delicate warm borders"
       },
       "accentVeg": {
-        "hex": "#10B981",
-        "name": "Pure Veg Emerald"
+        "hex": "#16A34A",
+        "name": "Fresh Mint Green"
       },
       "accentNonVeg": {
-        "hex": "#EF4444",
-        "name": "Gourmet Crimson"
+        "hex": "#DC2626",
+        "name": "Berry Crimson Red"
+      },
+      "accentGold": {
+        "hex": "#D97706",
+        "name": "Saffron Crema Gold"
       }
     },
     "typography": {

@@ -1,9 +1,10 @@
 /**
  * BREWBERRYS JAMMU — CLIENT APPLICATION LOGIC
- * Zero Dependencies • Fast Vanilla JS • Accessible Micro-Interactions
+ * Appetizing Light Theme • Fast Vanilla JS • Accessible Micro-Interactions
+ * Zero Dependencies • 100% Mobile Ergonomics
  */
 
-// Embedded Menu Data for Instant Offline/Local Rendering
+// Embedded Menu Data for Instant Offline/Local Rendering (29 Curated Items)
 const MENU_DATA = [
   {
     id: "bb-c01",
@@ -218,7 +219,7 @@ const MENU_DATA = [
     name: "Peri-Peri Crispy Paneer Burger",
     price: 249,
     category: "burgers-melts",
-    categoryName: "Artisanal Burgers & Melts",
+    categoryName: "Burgers & Melts",
     veg: true,
     bestseller: true,
     chefSpecial: true,
@@ -234,7 +235,7 @@ const MENU_DATA = [
     name: "Smoked Chicken Smashed Burger",
     price: 279,
     category: "burgers-melts",
-    categoryName: "Artisanal Burgers & Melts",
+    categoryName: "Burgers & Melts",
     veg: false,
     bestseller: true,
     chefSpecial: false,
@@ -250,7 +251,7 @@ const MENU_DATA = [
     name: "Pesto Sundried Tomato Panini",
     price: 239,
     category: "burgers-melts",
-    categoryName: "Artisanal Burgers & Melts",
+    categoryName: "Burgers & Melts",
     veg: true,
     bestseller: false,
     chefSpecial: true,
@@ -266,7 +267,7 @@ const MENU_DATA = [
     name: "Barbecue Pulled Chicken Melt",
     price: 269,
     category: "burgers-melts",
-    categoryName: "Artisanal Burgers & Melts",
+    categoryName: "Burgers & Melts",
     veg: false,
     bestseller: false,
     chefSpecial: false,
@@ -479,7 +480,7 @@ const state = {
   selectedDish: null
 };
 
-// DOM References
+// DOM References & Lifecycle
 document.addEventListener("DOMContentLoaded", () => {
   initLiveHours();
   initCategoryTabs();
@@ -514,9 +515,9 @@ function initLiveHours() {
 
   statusTexts.forEach(txt => {
     if (isOpen) {
-      txt.textContent = "Open Now • Closes at 11:00 PM";
+      txt.textContent = "Open Now • Closes at 11:00 PM (Apsara Road)";
     } else {
-      txt.textContent = "Closed Now • Opens tomorrow at 10:00 AM";
+      txt.textContent = "Closed Now • Opens tomorrow at 10:00 AM (Apsara Road)";
     }
   });
 }
@@ -528,10 +529,17 @@ function initCategoryTabs() {
   const tabs = document.querySelectorAll(".category-tab");
   tabs.forEach(tab => {
     tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
+      tabs.forEach(t => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
       tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
       state.currentCategory = tab.dataset.category;
       renderMenu();
+
+      // Smooth horizontal center scroll for active tab on mobile
+      tab.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
     });
   });
 }
@@ -554,7 +562,7 @@ function initSearch() {
         clearBtn.classList.toggle("visible", state.searchQuery.length > 0);
       }
       renderMenu();
-    }, 180);
+    }, 150);
   });
 
   if (clearBtn) {
@@ -625,7 +633,7 @@ function renderMenu() {
     grid.innerHTML = `
       <div class="empty-menu-state">
         <h3 class="empty-title">No matching cafe items found</h3>
-        <p class="empty-desc">We couldn't find anything matching your filter criteria. Try resetting filters or search terms.</p>
+        <p class="empty-desc">We couldn't find anything matching your filters or search terms. Try resetting or selecting another category.</p>
         <button class="btn-primary-sm" onclick="resetFilters()">Reset All Filters</button>
       </div>
     `;
@@ -633,15 +641,15 @@ function renderMenu() {
   }
 
   grid.innerHTML = filtered.map(item => `
-    <article class="menu-card" onclick="openDishModal('${item.id}')" tabindex="0" role="button" aria-label="View details for ${item.name}">
+    <article class="menu-card" onclick="openDishModal('${item.id}')" onkeydown="if(event.key==='Enter'||event.key===' ')openDishModal('${item.id}')" tabindex="0" role="button" aria-label="View details for ${item.name}">
       <div class="card-thumb-wrap">
         <img class="card-thumb-img" src="${item.image}" alt="${item.name}" loading="lazy" />
         <div class="card-top-badges">
           <span class="badge-dietary ${item.veg ? 'veg' : 'nonveg'}">
             ${item.veg ? '● VEG' : '▲ NON-VEG'}
           </span>
-          <div>
-            ${item.bestseller ? '<span class="badge-bestseller">BESTSELLER</span> ' : ''}
+          <div class="badge-right-group">
+            ${item.bestseller ? '<span class="badge-bestseller">BESTSELLER</span>' : ''}
             ${item.chefSpecial ? '<span class="badge-chef">★ CHEF SIGNATURE</span>' : ''}
           </div>
         </div>
@@ -653,10 +661,10 @@ function renderMenu() {
         </div>
         <p class="item-desc">${item.description}</p>
         <div class="card-footer-line">
-          <span>${item.categoryName}</span>
+          <span class="card-cat-tag">${item.categoryName}</span>
           <span class="btn-view-item">
             <span>Explore Dish</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </div>
       </div>
@@ -677,6 +685,7 @@ function resetFilters() {
 
   document.querySelectorAll(".category-tab").forEach((t, i) => {
     t.classList.toggle("active", i === 0);
+    t.setAttribute("aria-selected", i === 0 ? "true" : "false");
   });
   document.querySelectorAll(".toggle-btn").forEach((b, i) => {
     b.classList.toggle("active", i === 0);
@@ -837,7 +846,7 @@ function initReservationForm() {
     // Toggle view
     form.style.display = "none";
     confirmCard.classList.add("visible");
-    showToast("Booking Request Registered! Check confirmation card.");
+    showToast("Booking Registered! Check your confirmation pass.");
   });
 }
 

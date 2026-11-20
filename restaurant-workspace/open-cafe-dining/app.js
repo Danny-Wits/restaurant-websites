@@ -481,6 +481,7 @@ let currentModalDish = null;
 document.addEventListener("DOMContentLoaded", () => {
   initLiveHours();
   initDateConstraints();
+  updateCategoryCounts();
   renderMenu();
   setupKeyboardListeners();
 
@@ -488,6 +489,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("currentYear");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
+
+// Calculate category counts dynamically
+function updateCategoryCounts() {
+  const allCount = OPEN_CAFE_MENU_DATA.length;
+  const countAllEl = document.getElementById("count-all");
+  if (countAllEl) countAllEl.textContent = allCount;
+
+  const cats = ["small-plates", "woodfired-pizzas", "pan-asian-robata", "rooftop-mains", "sky-desserts", "crafted-mixology"];
+  cats.forEach(cat => {
+    const el = document.getElementById(`count-${cat}`);
+    if (el) {
+      const count = OPEN_CAFE_MENU_DATA.filter(item => item.category === cat).length;
+      el.textContent = count;
+    }
+  });
+}
 
 // Live Operating Hours in Jammu (IST: UTC + 5:30)
 function initLiveHours() {
@@ -505,12 +522,15 @@ function initLiveHours() {
   const isOpen = timeNum >= 16.5 && timeNum < 23.5;
 
   if (isOpen) {
+    badgeEl.style.background = "#DCFCE7";
+    badgeEl.style.borderColor = "#BBF7D0";
+    badgeEl.style.color = "#15803D";
     badgeEl.innerHTML = `<span class="status-dot"></span><span class="status-label">Open Now &bull; Closes 11:30 PM</span>`;
   } else {
-    badgeEl.style.background = "rgba(239, 68, 68, 0.1)";
-    badgeEl.style.borderColor = "rgba(239, 68, 68, 0.3)";
-    badgeEl.style.color = "#f87171";
-    badgeEl.innerHTML = `<span class="status-dot" style="background: #ef4444; box-shadow: 0 0 8px #ef4444;"></span><span class="status-label">Opens 04:30 PM &bull; Sunset Terrace</span>`;
+    badgeEl.style.background = "#FEF3C7";
+    badgeEl.style.borderColor = "#FDE68A";
+    badgeEl.style.color = "#B45309";
+    badgeEl.innerHTML = `<span class="status-dot" style="background: #D97706; box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.25);"></span><span class="status-label">Opens 04:30 PM &bull; Sunset Terrace</span>`;
   }
 }
 

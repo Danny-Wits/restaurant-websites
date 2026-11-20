@@ -90,54 +90,69 @@
     ]
   },
   "visualIdentity": {
-    "designTheme": "Matte Charcoal Noir & Cashmere Amber",
-    "aestheticPhilosophy": "Quiet luxury meets organic warmth. Low-glare matte charcoal surfaces, hairline bone borders, warm hazelnut accents, and airy negative space evoking a tranquil sanctuary.",
-    "heroImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=85",
+    "designTheme": "Appetizing Light Theme — Sunlit Nordic & Mediterranean Family Kitchen",
+    "aestheticPhilosophy": "Warm, sunlit Mediterranean family kitchen aesthetic. Buttermilk cream canvas, crisp white dining cards with delicate peach borders, vivid terracotta orange buttons, and appetizing culinary photography evoking a welcoming family sanctuary.",
+    "heroImage": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=85",
     "colorTokens": {
       "primary": {
-        "hex": "#CCA478",
-        "name": "Toasted Cashmere Ochre",
-        "description": "Primary warm highlight for CTAs, accents, and focal tags"
+        "hex": "#EA580C",
+        "name": "Terracotta Flame Orange",
+        "description": "Primary accent for buttons, active pills, prices, and focus rings"
       },
       "primaryHover": {
-        "hex": "#DFC09E",
-        "name": "Soft Hazelnut Cream",
+        "hex": "#C2410C",
+        "name": "Deep Terracotta",
         "description": "Hover interaction state"
       },
+      "secondaryGold": {
+        "hex": "#EAB308",
+        "name": "Sunlit Citrus Gold",
+        "description": "Badges, star ratings, and chef specials"
+      },
       "background": {
-        "hex": "#0C0E0D",
-        "name": "Earthy Charcoal Noir",
-        "description": "Base dark background"
+        "hex": "#FFFDF9",
+        "name": "Warm Buttermilk Cream",
+        "description": "Base light warm canvas"
       },
       "backgroundSecondary": {
-        "hex": "#121614",
-        "name": "Deep Moss Slate",
+        "hex": "#FAF6F0",
+        "name": "Warm Linen Cream",
         "description": "Section alternating backdrop"
       },
       "surface": {
-        "hex": "#181D1A",
-        "name": "Velvet Slate Card",
-        "description": "Cards and interactive container backgrounds"
+        "hex": "#FFFFFF",
+        "name": "Crisp Pure White Card",
+        "description": "Dining cards and interactive container surfaces"
       },
       "surfaceHover": {
-        "hex": "#202622",
-        "name": "Elevated Card Slate",
-        "description": "Card hover state"
+        "hex": "#FFFFFF",
+        "name": "Elevated Pure White",
+        "description": "Card hover state with warm diffuse shadow"
       },
       "border": {
-        "hex": "rgba(255, 255, 255, 0.08)",
-        "name": "Hairline Frost",
-        "description": "Subtle borders and separators"
+        "hex": "#F3E8E2",
+        "name": "Warm Peach Hairline",
+        "description": "Subtle hairline borders and separators"
       },
       "textPrimary": {
-        "hex": "#F4F0EB",
-        "name": "Warm Linen White",
-        "description": "High contrast body and title text"
+        "hex": "#1C1917",
+        "name": "Deep Roasted Charcoal / Espresso",
+        "description": "High contrast WCAG AAA body and title text"
       },
       "textMuted": {
-        "hex": "#9E988F",
-        "name": "Pebble Gray",
-        "description": "Secondary copy and captions"
+        "hex": "#78716C",
+        "name": "Warm Umber / Mocha",
+        "description": "Secondary copy and ingredient captions"
+      },
+      "dietVeg": {
+        "hex": "#16A34A",
+        "name": "Fresh Basil Green",
+        "description": "Vegetarian indicators and open status"
+      },
+      "dietNonVeg": {
+        "hex": "#DC2626",
+        "name": "Chili Pepper Red",
+        "description": "Non-vegetarian indicators"
       }
     },
     "typography": {

@@ -36,19 +36,19 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F1110] text-[#F4F4F5] font-sans selection:bg-amber-500 selection:text-zinc-950 w-full max-w-full overflow-x-hidden relative">
-      {/* Top Fixed Navbar */}
+    <div className="min-h-screen bg-[#FFFDF9] text-[#1C1917] font-sans selection:bg-orange-500 selection:text-white w-full max-w-full overflow-x-hidden relative">
+      {/* Top Fixed Light Glassmorphic Navbar */}
       <Navbar onOpenReserve={handleOpenReserve} />
 
       {/* Main Content */}
       <main className="w-full max-w-full overflow-x-hidden">
-        {/* Hero Section with Dynamic Day Cafe / Night Lounge vibe */}
+        {/* Hero Section with Vibrant Sunlit Day Cafe / Night Rhythm Switcher */}
         <Hero onOpenReserve={handleOpenReserve} />
 
         {/* University of Jammu Student Perks Banner */}
         <StudentPerkBanner onOpenReserve={handleOpenReserve} />
 
-        {/* Interactive 40-Dish Culinary Menu with Search & Filter Tabs */}
+        {/* Interactive 40-Dish Culinary Menu with Instant Search & Dietary Filter Tabs */}
         <InteractiveMenu onSelectDish={(dish) => setSelectedDish(dish)} />
 
         {/* Live Weekly Music & Gigs Roster */}
@@ -64,7 +64,7 @@ export default function App() {
         <LocationAndHours />
       </main>
 
-      {/* Complete Footer */}
+      {/* Complete Light Aesthetic Footer */}
       <Footer />
 
       {/* Mobile Fixed Thumb Action Bar */}
@@ -79,7 +79,7 @@ export default function App() {
         />
       )}
 
-      {/* Interactive Gig & Table Reservation Modal */}
+      {/* Interactive Gig & Table Reservation Modal with WhatsApp Sync */}
       <GigReservationModal
         isOpen={isReserveModalOpen}
         onClose={() => {

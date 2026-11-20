@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mr Bean Cafe &amp; Restaurant | Cozy Bistro, Waffles &amp; Sizzlers | Shastri Nagar Jammu</title>
-  <meta name="description" content="Jammu's premier intimate bistro sanctuary in Shastri Nagar. Crisp Belgian waffles, smoking cast-iron sizzlers, velvet pastas, and handcrafted coolers." />
-  <meta name="theme-color" content="#0e0d10" />
+  <title>Mr Bean Cafe &amp; Restaurant | Cozy Bistro, Belgian Waffles &amp; Sizzlers | Shastri Nagar Jammu</title>
+  <meta name="description" content="Jammu's favorite sunlit bistro sanctuary in Shastri Nagar. Golden crisp Belgian waffles, smoking cast-iron sizzlers, velvet pink sauce pastas, and handcrafted thick shakes." />
+  <meta name="theme-color" content="#FFFDF9" />
 
   <!-- Preconnect & Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,18 +16,21 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <!-- Ambient Lighting Glow -->
+  <!-- Ambient Warm Glow -->
   <div class="ambient-glow" aria-hidden="true"></div>
 
   <!-- Sticky Site Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand-wrap">
+      <a href="#" class="brand-wrap" aria-label="Mr Bean Cafe &amp; Restaurant Homepage">
         <div class="brand-mark">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-            <path d="M2 17l10 5 10-5"></path>
-            <path d="M2 12l10 5 10-5"></path>
+          <!-- Cheerful Waffle & Bistro Skillet Icon -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+            <path d="M3 9h18"></path>
+            <path d="M3 15h18"></path>
+            <path d="M9 3v18"></path>
+            <path d="M15 3v18"></path>
           </svg>
         </div>
         <div class="brand-titles">
@@ -38,56 +41,67 @@
               <span>Shastri Nagar</span>
             </span>
           </span>
-          <span class="brand-sub">Bistro &amp; Waffle Lounge</span>
+          <span class="brand-sub">Cafe &amp; Bistro Lounge</span>
         </div>
-      </div>
+      </a>
 
       <nav class="nav-group" aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#menu" class="nav-link">Digital Menu</a></li>
-          <li><a href="#vibe" class="nav-link">The Bistro Vibe</a></li>
+          <li><a href="#highlights" class="nav-link">House Specials</a></li>
+          <li><a href="#vibe" class="nav-link">Bistro Vibe</a></li>
           <li><a href="#reviews" class="nav-link">Reviews</a></li>
           <li><a href="#location" class="nav-link">Hours &amp; Location</a></li>
         </ul>
-        <button class="btn-primary-sm" onclick="openReservationModal()">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-          <span>Reserve Table</span>
-        </button>
+
+        <div class="nav-actions">
+          <a href="tel:+911912456677" class="btn-header-call" aria-label="Call restaurant">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>0191-2456677</span>
+          </a>
+
+          <button class="btn-primary-sm" onclick="openReservationModal()" aria-label="Reserve a table">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Reserve Table</span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Sunny Cafe Hero Section -->
     <section class="hero-section">
       <div class="container">
         <div class="hero-layout">
           <div class="hero-copy">
             <div class="hero-pill">
               <span class="status-indicator"></span>
-              <span class="live-status-text">Open Now • Closes at 11:00 PM</span>
+              <span class="live-status-text">Open Now • 11:00 AM – 11:00 PM • Shastri Nagar, Jammu</span>
             </div>
             <h1 class="hero-title">
-              Cozy Bistro Evenings &amp; Gourmet Waffles in <span class="accent-text">Shastri Nagar.</span>
+              Golden Belgian Waffles, Sizzling Platters &amp; Cozy Bistro Memories in <span class="accent-text">Shastri Nagar.</span>
             </h1>
             <p class="hero-subtitle">
-              Freshly iron-pressed Belgian waffles, smoking cast-iron sizzlers, and velvet pasta bowls. Jammu's cozy corner for heartfelt dates, laughter, and comfort cravings.
+              Freshly iron-pressed Belgian waffles smothered in melted chocolate, smoking cast-iron sizzlers, al dente velvet pastas, and ice-cold artisan coolers. Jammu's favorite sunlit bistro sanctuary.
             </p>
 
             <div class="hero-ctas">
               <a href="#menu" class="btn-cta-main">
-                <span>View Digital Menu</span>
+                <span>Explore Digital Menu</span>
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M7 17l9.2-9.2M17 17V7H7"></path>
                 </svg>
               </a>
               <button class="btn-cta-secondary" onclick="openReservationModal()">
-                <span>Book Table / Celebration</span>
+                <span>Book Table / Birthday Bash</span>
               </button>
             </div>
 
@@ -102,7 +116,7 @@
               </div>
               <div class="stat-item">
                 <span class="stat-val">Belgian Irons</span>
-                <span class="stat-lbl">Fresh Waffles</span>
+                <span class="stat-lbl">Fresh Malt Waffles</span>
               </div>
               <div class="stat-item">
                 <span class="stat-val">Shastri Nagar</span>
@@ -112,11 +126,11 @@
           </div>
 
           <div class="hero-visual-card">
-            <img class="hero-img" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80" alt="Mr Bean Cafe Shastri Nagar Ambience" />
+            <img class="hero-img" src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80" alt="Mr Bean Cafe Shastri Nagar Sunlit Dining Ambience" />
             <div class="hero-overlay-pill">
               <div class="overlay-info">
                 <span class="overlay-title">Intimate Shastri Nagar Bistro</span>
-                <span class="overlay-sub">Opposite Dussehra Ground Road</span>
+                <span class="overlay-sub">Opposite Dussehra Ground Road • Jammu</span>
               </div>
               <span class="live-badge">
                 <span class="status-indicator"></span>
@@ -128,42 +142,46 @@
       </div>
     </section>
 
-    <!-- Highlights Row -->
-    <section class="highlights-section">
+    <!-- Highlights Row (Culinary Pillars) -->
+    <section class="highlights-section" id="highlights">
       <div class="container">
         <div class="highlights-grid">
           <div class="highlight-card">
             <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7"></rect>
-                <rect x="14" y="3" width="7" height="7"></rect>
-                <rect x="14" y="14" width="7" height="7"></rect>
-                <rect x="3" y="14" width="7" height="7"></rect>
+              <!-- Waffle Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="3" width="7" height="7" rx="1.5"></rect>
+                <rect x="14" y="14" width="7" height="7" rx="1.5"></rect>
+                <rect x="3" y="14" width="7" height="7" rx="1.5"></rect>
               </svg>
             </div>
             <h3 class="highlight-title">Golden Belgian Waffles</h3>
-            <p class="highlight-desc">Iron-pressed malt batter served piping hot with pure Nutella, Belgian dark ganache, and Madagascar vanilla.</p>
+            <p class="highlight-desc">Iron-pressed malt batter served piping hot with pure Nutella, Callebaut Belgian dark ganache, wild berries, and gourmet vanilla gelato.</p>
           </div>
 
           <div class="highlight-card">
             <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Flame / Sizzler Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2c5 4 5 9 5 13a5 5 0 0 1-10 0c0-4 0-9 5-13z"></path>
               </svg>
             </div>
             <h3 class="highlight-title">Smoking Cast-Iron Sizzlers</h3>
-            <p class="highlight-desc">Red-hot table-side sizzler platters with herb-buttered rice, crispy fries, and rich homemade demiglace.</p>
+            <p class="highlight-desc">Red-hot table-side sizzler platters with herb-buttered rice, crunchy baby corn, crinkle fries, and rich homemade black pepper demiglace.</p>
           </div>
 
           <div class="highlight-card">
             <div class="highlight-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Pasta Bowl Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </div>
             <h3 class="highlight-title">Velvet Pastas &amp; Melts</h3>
-            <p class="highlight-desc">Slow-simmered arrabbiata, truffled alfredo, and mozzarella-stuffed roasted garlic loaves.</p>
+            <p class="highlight-desc">Slow-simmered signature pink sauce penne, creamy parmesan alfredo, toasted focaccia paninis, and mozzarella-stuffed roasted garlic loaves.</p>
           </div>
         </div>
       </div>
@@ -175,7 +193,7 @@
         <div class="section-head">
           <span class="section-tag">Interactive Digital Menu</span>
           <h2 class="section-title">Artisanal Bistro Offerings</h2>
-          <p class="section-desc">Prepared fresh to order in our dedicated continental kitchen with imported cheeses, Belgian chocolates, and garden herbs.</p>
+          <p class="section-desc">Prepared fresh to order in our dedicated continental kitchen with imported cheeses, authentic Belgian chocolates, and garden herbs.</p>
         </div>
 
         <!-- Sticky Category Tabs -->
@@ -230,7 +248,7 @@
           </div>
 
           <div class="dietary-toggles" role="group" aria-label="Dietary Filters">
-            <button class="toggle-btn active" data-filter="all">All</button>
+            <button class="toggle-btn active" data-filter="all">All Dishes</button>
             <button class="toggle-btn" data-filter="veg">
               <span class="dietary-dot veg"></span>
               <span>Pure Veg</span>
@@ -248,17 +266,17 @@
 
         <div class="menu-feedback-line">
           <span id="menuFeedbackCount">Showing 28 of 28 handcrafted bistro items</span>
-          <span style="font-size: 0.8rem; color: var(--accent-gold);">Click any dish for ingredients &amp; pairing notes</span>
+          <span>Click any dish for ingredients &amp; chef's pairings</span>
         </div>
 
         <!-- Dynamic Menu Cards Grid -->
         <div class="menu-grid" id="menuGrid" role="region" aria-live="polite">
-          <!-- Populated by app.js -->
+          <!-- Populated dynamically by app.js -->
         </div>
       </div>
     </section>
 
-    <!-- The Vibe Section -->
+    <!-- The Vibe Section (Bistro Atmosphere) -->
     <section class="vibe-section" id="vibe">
       <div class="container">
         <div class="vibe-layout">
@@ -269,7 +287,7 @@
               Nestled right off the Dussehra Ground belt in Shastri Nagar, Mr Bean Cafe &amp; Restaurant is designed as an intimate culinary sanctuary away from Jammu's busy thoroughfares.
             </p>
             <p class="vibe-p">
-              From candlelit table corners for anniversary dates to festive booths for lively birthday celebrations, our guests cherish the gentle acoustic jazz soundtrack, warm caramel lighting, and the irresistible scent of golden waffles and sizzling iron platters.
+              From candlelit table corners for anniversary dates to festive booths for lively birthday celebrations, our guests cherish the gentle acoustic jazz soundtrack, warm caramel lighting, and the irresistible aroma of golden waffles and sizzling iron platters.
             </p>
 
             <div class="amenities-list">
@@ -284,23 +302,23 @@
 
           <div class="vibe-image-cluster">
             <div class="vibe-thumb">
-              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Sizzling cast-iron platter" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Sizzling cast-iron platter at Mr Bean Cafe Jammu" loading="lazy" />
             </div>
             <div class="vibe-thumb">
-              <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80" alt="Crisp Nutella waffle plate" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=800&q=80" alt="Crisp Nutella waffle plate at Mr Bean Cafe Jammu" loading="lazy" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Reviews Section -->
+    <!-- Customer Reviews Section -->
     <section class="reviews-section" id="reviews">
       <div class="container">
         <div class="section-head">
           <span class="section-tag">Community Word of Mouth</span>
-          <h2 class="section-title">Cherished by Shastri Nagar &amp; Gandhi Nagar</h2>
-          <p class="section-desc">Over 1,280+ ratings from local families, college students, and continental food lovers.</p>
+          <h2 class="section-title">Cherished Across Shastri Nagar &amp; Gandhi Nagar</h2>
+          <p class="section-desc">Over 1,280+ ratings from local families, college groups, and continental food lovers in Jammu.</p>
         </div>
 
         <div class="reviews-grid">
@@ -335,7 +353,7 @@
           <article class="review-card">
             <div class="stars-row">★★★★★</div>
             <p class="review-text">
-              "Best sizzlers and waffles hands down. The cast-iron platter actually stays sizzling for 10 minutes at the table. Very polite staff and no chaos like commercial malls. A true hidden gem."
+              "Best sizzlers and waffles hands down. The cast-iron platter actually stays sizzling for 10 minutes at the table. Very polite staff and no chaos like commercial malls. A true hidden gem in Jammu."
             </p>
             <div class="review-author-line">
               <div class="author-avatar">VJ</div>
@@ -355,7 +373,7 @@
         <div class="location-grid">
           <div class="info-card">
             <h3 class="info-card-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
@@ -363,7 +381,7 @@
             </h3>
             <div class="hours-table">
               <div class="hours-row highlight">
-                <span>Monday – Sunday</span>
+                <span>Monday – Sunday (All 7 Days)</span>
                 <span>11:00 AM – 11:00 PM</span>
               </div>
               <div class="hours-row">
@@ -375,7 +393,7 @@
                 <span>10:30 PM</span>
               </div>
             </div>
-            <div class="status-indicator-block" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--text-secondary);">
+            <div class="status-indicator-block" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
               <span class="status-indicator"></span>
               <span class="live-status-text">Open Now • Closes at 11:00 PM</span>
             </div>
@@ -383,7 +401,7 @@
 
           <div class="info-card">
             <h3 class="info-card-title">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                 <circle cx="12" cy="10" r="3"></circle>
               </svg>
@@ -395,7 +413,7 @@
               Adjacent to Gandhi Nagar, Jammu, J&amp;K - 180004
             </div>
             <div class="landmark-badge">
-              <span>📍 Landmarks: Opposite Dussehra Ground Road, 3 min from Gandhi Nagar Gole Market</span>
+              <span>📍 Opposite Dussehra Ground Road • 3 minutes from Gandhi Nagar Gole Market &amp; Nai Basti link</span>
             </div>
             <div class="action-buttons-group">
               <a href="https://maps.google.com/?q=Mr+Bean+Cafe+Shastri+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="btn-secondary">
@@ -421,10 +439,11 @@
     <div class="container footer-inner">
       <div class="footer-copy">
         <p>&copy; 2026 Mr Bean Cafe &amp; Restaurant Jammu. Handcrafted Continental Comfort &amp; Waffles.</p>
-        <p style="font-size: 0.78rem; margin-top: 0.25rem;">Shastri Nagar, Adjacent to Gandhi Nagar, Jammu • Authentic Belgian Waffles &bull; Cast-Iron Sizzlers</p>
+        <p style="font-size: 0.82rem; margin-top: 0.35rem; color: var(--text-subtle);">Main Road Shastri Nagar, Near Dussehra Ground, Adjacent to Gandhi Nagar, Jammu • Belgian Waffles &bull; Smoking Sizzlers &bull; Velvet Pastas</p>
       </div>
       <div class="footer-links">
         <a href="#menu" class="footer-link">Menu</a>
+        <a href="#highlights" class="footer-link">Specials</a>
         <a href="#vibe" class="footer-link">Bistro Vibe</a>
         <a href="#location" class="footer-link">Location</a>
         <a href="javascript:void(0)" onclick="openReservationModal()" class="footer-link">Reservations</a>
@@ -432,21 +451,21 @@
     </div>
   </footer>
 
-  <!-- Fixed Mobile Action Bar -->
+  <!-- Fixed Mobile Action Dock (<768px) -->
   <aside class="mobile-bottom-bar" aria-label="Mobile Quick Actions">
-    <a href="tel:+911912456677" class="bar-action">
+    <a href="tel:+911912456677" class="bar-action" aria-label="Call bistro">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
       <span>Call</span>
     </a>
-    <a href="#menu" class="bar-action">
+    <a href="#menu" class="bar-action" aria-label="View menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
       <span>Menu</span>
     </a>
-    <a href="https://maps.google.com/?q=Mr+Bean+Cafe+Shastri+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="bar-action">
+    <a href="https://maps.google.com/?q=Mr+Bean+Cafe+Shastri+Nagar+Jammu" target="_blank" rel="noopener noreferrer" class="bar-action" aria-label="Get directions">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
       <span>Directions</span>
     </a>
-    <button class="bar-action primary-action" onclick="openReservationModal()">
+    <button class="bar-action primary-action" onclick="openReservationModal()" aria-label="Book a table">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
       <span>Reserve</span>
     </button>
@@ -461,9 +480,9 @@
       </div>
       <div class="dish-modal-body">
         <div class="dish-modal-header">
-          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
             <span id="dishModalDietBadge" class="badge-dietary veg">● VEG</span>
-            <span id="dishModalCategory" style="font-size: 0.78rem; color: var(--text-tertiary); text-transform: uppercase;"></span>
+            <span id="dishModalCategory" style="font-size: 0.78rem; color: var(--text-subtle); text-transform: uppercase; font-weight: 700;"></span>
           </div>
           <h3 id="dishModalTitle" class="dish-modal-title"></h3>
           <span id="dishModalPrice" class="dish-modal-price"></span>
@@ -471,13 +490,13 @@
 
         <p id="dishModalDesc" class="dish-modal-desc"></p>
 
-        <div class="detail-section-title">Ingredients &amp; Notes</div>
+        <div class="detail-section-title">Fresh Ingredients &amp; Notes</div>
         <div id="dishModalIngredients" class="ingredients-box"></div>
 
         <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
           <div style="flex: 1;">
             <div class="detail-section-title">Calories / Portion</div>
-            <div id="dishModalCalories" style="font-size: 0.88rem; color: #ffffff; font-weight: 600;"></div>
+            <div id="dishModalCalories" style="font-size: 0.92rem; color: var(--text-main); font-weight: 700;"></div>
           </div>
         </div>
 
@@ -497,7 +516,7 @@
     </div>
   </div>
 
-  <!-- Table Reservation Modal -->
+  <!-- Table & Celebration Reservation Modal -->
   <div id="reservationModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="resModalTitle">
     <div class="modal-panel" onclick="event.stopPropagation()">
       <button class="modal-close-btn" onclick="closeReservationModal()" aria-label="Close dialog">&times;</button>
@@ -562,7 +581,7 @@
 
           <div class="form-group">
             <label class="form-label" for="resNotes">Special Requests (Optional)</label>
-            <textarea id="resNotes" class="form-textarea" placeholder="E.g. Candlelight setup, birthday cake sparkler, pure veg preference..."></textarea>
+            <textarea id="resNotes" class="form-textarea" placeholder="E.g. Candlelight setup, birthday sparkler, pure veg table segregation..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit-res">
@@ -571,13 +590,13 @@
           </button>
         </form>
 
-        <!-- Interactive Instant Confirmation Preview Card -->
+        <!-- Interactive Instant Confirmation Preview Voucher Card -->
         <div id="resConfirmationCard" class="res-confirmation-card">
           <div class="confirm-icon-wrap">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
           </div>
           <h3 class="res-title" style="margin-bottom: 0.25rem;">Bistro Table Reserved!</h3>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1rem;">We've reserved your table at Shastri Nagar, Jammu.</p>
+          <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1rem;">We've reserved your table at Shastri Nagar, Jammu.</p>
 
           <div class="confirm-code">
             <span>Booking ID: </span><span id="confirmCodeVal">MB-JAMMU-3921</span>
@@ -606,9 +625,9 @@
             </div>
           </div>
 
-          <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-bottom: 1.25rem;">A 1-click confirmation note is prepared for our bistro team on WhatsApp.</p>
+          <p style="font-size: 0.82rem; color: var(--text-subtle); margin-bottom: 1.25rem;">A 1-click confirmation note is prepared for our bistro desk on WhatsApp.</p>
 
-          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; width: 100%;">
             <a id="resWaConfirmBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-cta-main" style="width: 100%;">
               <span>Send 1-Click WhatsApp Sync</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>

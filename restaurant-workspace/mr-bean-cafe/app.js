@@ -498,9 +498,9 @@ function initLiveHours() {
 
   statusTexts.forEach(txt => {
     if (isOpen) {
-      txt.textContent = "Open Now • Closes at 11:00 PM";
+      txt.textContent = "Open Now • 11:00 AM – 11:00 PM • Shastri Nagar, Jammu";
     } else {
-      txt.textContent = "Closed Now • Opens tomorrow at 11:00 AM";
+      txt.textContent = "Closed Now • Opens at 11:00 AM • Shastri Nagar, Jammu";
     }
   });
 }
@@ -514,6 +514,7 @@ function initCategoryTabs() {
     tab.addEventListener("click", () => {
       tabs.forEach(t => t.classList.remove("active"));
       tab.classList.add("active");
+      tab.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
       state.currentCategory = tab.dataset.category;
       renderMenu();
     });
@@ -617,7 +618,7 @@ function renderMenu() {
   }
 
   grid.innerHTML = filtered.map(item => `
-    <article class="menu-card" onclick="openDishModal('${item.id}')" tabindex="0" role="button" aria-label="View details for ${item.name}">
+    <article class="menu-card" onclick="openDishModal('${item.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openDishModal('${item.id}');}" tabindex="0" role="button" aria-label="View details for ${item.name}">
       <div class="card-thumb-wrap">
         <img class="card-thumb-img" src="${item.image}" alt="${item.name}" loading="lazy" />
         <div class="card-top-badges">

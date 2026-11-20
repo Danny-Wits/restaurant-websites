@@ -1,14 +1,14 @@
 /**
  * Starbucks Coffee — Wave Mall, Jammu
- * Pure Vanilla JS Engine: Menu Filtering, Interactive Cup Sizing, Live IST Status, Modals & Starbucks Digital Pass
+ * Appetizing Light Theme Engine: Menu Filtering, Interactive Cup Sizing, Live IST Status, Modals & Starbucks Digital Pass
  */
 
 (function () {
   'use strict';
 
-  // Master Menu Data fallback (matches brand-spec.json)
+  // 28 Curated Starbucks Offerings (matches brand-spec.json)
   const MENU_DATA = [
-    // Master Espresso & Cold Brews
+    // Master Espresso & Cold Brews (6 items)
     {
       id: "sb-e01",
       name: "Jammu Saffron Kahwa Nitro Cold Brew",
@@ -106,7 +106,7 @@
       imageUrl: "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=800&q=80"
     },
 
-    // Frappuccino®
+    // Frappuccino® Blended Magic (5 items)
     {
       id: "sb-f01",
       name: "Signature Java Chip Frappuccino®",
@@ -188,7 +188,7 @@
       imageUrl: "https://images.unsplash.com/photo-1579888944880-d98341245702?auto=format&fit=crop&w=800&q=80"
     },
 
-    // Teavana™ Teas & Refreshers
+    // Teavana™ Teas & Refreshers (5 items)
     {
       id: "sb-t01",
       name: "Kashmiri Green Kahwa Reserve Blend",
@@ -270,7 +270,7 @@
       imageUrl: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
     },
 
-    // Bakery & Croissants
+    // Artisanal Bakeries & Croissants (4 items)
     {
       id: "sb-b01",
       name: "Authentic French Butter Croissant",
@@ -336,7 +336,7 @@
       imageUrl: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80"
     },
 
-    // Gourmet Sandwiches & Savory
+    // Gourmet Sandwiches & Savories (4 items)
     {
       id: "sb-s01",
       name: "Smoked Chicken & English Cheddar Brioche",
@@ -402,7 +402,7 @@
       imageUrl: "https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=800&q=80"
     },
 
-    // Master Patisserie & Cakes
+    // Master Confectionery & Cakes (4 items)
     {
       id: "sb-d01",
       name: "Signature New York Style Cheesecake",
@@ -476,7 +476,7 @@
     searchQuery: '',
     items: MENU_DATA,
     activeDish: null,
-    selectedCupModifier: 30 // default Grande
+    selectedCupModifier: 0 // Tall (base)
   };
 
   // DOM Elements
@@ -502,7 +502,7 @@
   const sizeSelectorWrap = document.getElementById('sizeSelectorWrap');
   const sizePills = document.querySelectorAll('.size-pill');
 
-  // Reservation triggers
+  // Reservation Triggers
   const openHoldBtnNav = document.getElementById('openHoldBtnNav');
   const openHoldBtnMobile = document.getElementById('openHoldBtnMobile');
   const heroHoldBtn = document.getElementById('heroHoldBtn');
@@ -515,12 +515,12 @@
   const mobileDrawer = document.getElementById('mobileDrawer');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-  // Status Indicator
+  // Live Status Indicator
   const liveStatusDot = document.getElementById('liveStatusDot');
   const liveStatusText = document.getElementById('liveStatusText');
 
   /**
-   * Initialize Starbucks Application
+   * Application Initialization
    */
   function init() {
     setupLiveJammuStatus();
@@ -536,6 +536,8 @@
    */
   function setupLiveJammuStatus() {
     function updateStatus() {
+      if (!liveStatusDot || !liveStatusText) return;
+
       const now = new Date();
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const istTime = new Date(utc + (3600000 * 5.5));
@@ -581,11 +583,13 @@
         matchDiet = item.diet === 'veg' || item.diet === 'vegan';
       } else if (state.selectedDiet === 'vegan') {
         matchDiet = item.diet === 'vegan';
+      } else if (state.selectedDiet === 'non-veg') {
+        matchDiet = item.diet === 'non-veg';
       } else if (state.selectedDiet === 'special') {
         matchDiet = item.isChefSpecial === true;
       }
 
-      // Search match
+      // Live search match
       let matchSearch = true;
       if (q) {
         matchSearch = (
@@ -601,15 +605,17 @@
     });
 
     // Update count display
-    countTextEl.textContent = `Showing ${filtered.length} of ${state.items.length} reserve items`;
+    if (countTextEl) {
+      countTextEl.textContent = `Showing ${filtered.length} of ${state.items.length} reserve items`;
+    }
 
     if (filtered.length === 0) {
       gridEl.innerHTML = '';
-      emptyStateEl.style.display = 'block';
+      if (emptyStateEl) emptyStateEl.style.display = 'block';
       return;
     }
 
-    emptyStateEl.style.display = 'none';
+    if (emptyStateEl) emptyStateEl.style.display = 'none';
 
     gridEl.innerHTML = filtered.map(item => {
       const dietClass = item.diet === 'veg' ? 'veg' : (item.diet === 'vegan' ? 'vegan' : 'non-veg');
@@ -641,7 +647,7 @@
       `;
     }).join('');
 
-    // Attach card click handlers
+    // Attach card click & keyboard handlers
     gridEl.querySelectorAll('.menu-card').forEach(card => {
       card.addEventListener('click', () => {
         const id = card.dataset.dishId;
@@ -666,7 +672,7 @@
     if (!item) return;
 
     state.activeDish = item;
-    state.selectedCupModifier = 0; // reset to Tall as base
+    state.selectedCupModifier = 0; // default Tall (0 mod)
 
     document.getElementById('modalDishImage').src = item.imageUrl;
     document.getElementById('modalDishImage').alt = item.name;
@@ -685,9 +691,8 @@
     tagsContainer.innerHTML = (item.tags || []).map(t => `<span class="tag-badge">#${t}</span>`).join('');
 
     // Beverage Cup Size Selector Handling
-    if (item.isBeverage) {
+    if (item.isBeverage && sizeSelectorWrap) {
       sizeSelectorWrap.style.display = 'block';
-      // Reset active pill to Tall
       sizePills.forEach(p => {
         p.classList.remove('active');
         if (p.dataset.size === 'tall') p.classList.add('active');
@@ -695,7 +700,7 @@
       state.selectedCupModifier = 0;
       updateModalPrice(item.price);
     } else {
-      sizeSelectorWrap.style.display = 'none';
+      if (sizeSelectorWrap) sizeSelectorWrap.style.display = 'none';
       document.getElementById('modalDishPrice').textContent = `₹${item.price}`;
     }
 
@@ -821,19 +826,25 @@
     });
 
     // Search input
-    searchInput.addEventListener('input', (e) => {
-      state.searchQuery = e.target.value;
-      searchClearBtn.style.display = state.searchQuery ? 'block' : 'none';
-      renderMenu();
-    });
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        state.searchQuery = e.target.value;
+        if (searchClearBtn) {
+          searchClearBtn.style.display = state.searchQuery ? 'flex' : 'none';
+        }
+        renderMenu();
+      });
+    }
 
-    searchClearBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      state.searchQuery = '';
-      searchClearBtn.style.display = 'none';
-      renderMenu();
-      searchInput.focus();
-    });
+    if (searchClearBtn) {
+      searchClearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        state.searchQuery = '';
+        searchClearBtn.style.display = 'none';
+        renderMenu();
+        searchInput.focus();
+      });
+    }
 
     // Category Tabs
     catTabs.forEach(tab => {
@@ -856,33 +867,41 @@
     });
 
     // Reset filters
-    resetFiltersBtn.addEventListener('click', () => {
-      state.searchQuery = '';
-      state.selectedCategory = 'all';
-      state.selectedDiet = 'all';
-      searchInput.value = '';
-      searchClearBtn.style.display = 'none';
+    if (resetFiltersBtn) {
+      resetFiltersBtn.addEventListener('click', () => {
+        state.searchQuery = '';
+        state.selectedCategory = 'all';
+        state.selectedDiet = 'all';
+        if (searchInput) searchInput.value = '';
+        if (searchClearBtn) searchClearBtn.style.display = 'none';
 
-      catTabs.forEach(t => t.classList.remove('active'));
-      document.querySelector('.cat-tab[data-category="all"]').classList.add('active');
+        catTabs.forEach(t => t.classList.remove('active'));
+        const allCat = document.querySelector('.cat-tab[data-category="all"]');
+        if (allCat) allCat.classList.add('active');
 
-      dietPills.forEach(p => p.classList.remove('active'));
-      document.querySelector('.filter-pill[data-diet="all"]').classList.add('active');
+        dietPills.forEach(p => p.classList.remove('active'));
+        const allDiet = document.querySelector('.filter-pill[data-diet="all"]');
+        if (allDiet) allDiet.classList.add('active');
 
-      renderMenu();
-    });
+        renderMenu();
+      });
+    }
 
     // Modal close triggers
-    closeDishModalBtn.addEventListener('click', closeDishModal);
-    closeReserveModalBtn.addEventListener('click', closeReserveModal);
+    if (closeDishModalBtn) closeDishModalBtn.addEventListener('click', closeDishModal);
+    if (closeReserveModalBtn) closeReserveModalBtn.addEventListener('click', closeReserveModal);
 
-    dishModal.addEventListener('click', (e) => {
-      if (e.target === dishModal) closeDishModal();
-    });
+    if (dishModal) {
+      dishModal.addEventListener('click', (e) => {
+        if (e.target === dishModal) closeDishModal();
+      });
+    }
 
-    reserveModal.addEventListener('click', (e) => {
-      if (e.target === reserveModal) closeReserveModal();
-    });
+    if (reserveModal) {
+      reserveModal.addEventListener('click', (e) => {
+        if (e.target === reserveModal) closeReserveModal();
+      });
+    }
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
@@ -930,13 +949,17 @@
     }
 
     // Reservation Form
-    reservationForm.addEventListener('submit', handleReservationSubmit);
-    resetReserveFormBtn.addEventListener('click', () => {
-      reservationForm.reset();
-      setupDateConstraints();
-      reserveConfirmationView.style.display = 'none';
-      reserveFormView.style.display = 'block';
-    });
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', handleReservationSubmit);
+    }
+    if (resetReserveFormBtn) {
+      resetReserveFormBtn.addEventListener('click', () => {
+        reservationForm.reset();
+        setupDateConstraints();
+        reserveConfirmationView.style.display = 'none';
+        reserveFormView.style.display = 'block';
+      });
+    }
 
     // Mobile Navigation Drawer Toggle
     if (mobileMenuToggle && mobileDrawer) {

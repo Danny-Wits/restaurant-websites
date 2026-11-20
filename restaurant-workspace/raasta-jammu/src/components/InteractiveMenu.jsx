@@ -92,23 +92,23 @@ export default function InteractiveMenu({ onSelectDish }) {
   }, [allDishes, activeCategory, selectedFilter, searchQuery]);
 
   return (
-    <section id="menu" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#161917]/70 w-full max-w-full overflow-hidden">
+    <section id="menu" className="relative py-16 sm:py-20 px-3 sm:px-6 lg:px-8 bg-[#FFFDF9] w-full max-w-full overflow-hidden">
       <div className="max-w-7xl mx-auto w-full max-w-full">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-400 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full">
-            <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-700 text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-3 max-w-full shadow-xs">
+            <Sparkles className="w-4 h-4 text-orange-600 shrink-0" />
             <span className="truncate sm:hidden">40 Artisanal Creations</span>
             <span className="hidden sm:inline">40 Artisanal Creations &bull; Panama Chowk Kitchen</span>
           </div>
-          <h2 className="font-['Syne'] font-extrabold text-2xl sm:text-5xl text-zinc-100 tracking-tight mb-4 break-words">
+          <h2 className="font-['Syne'] font-extrabold text-3xl sm:text-5xl text-stone-900 tracking-tight mb-4 break-words">
             The Digital{' '}
-            <span className="text-amber-400 drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]">
+            <span className="text-orange-600">
               Culinary Menu
             </span>
           </h2>
-          <p className="text-xs sm:text-base text-zinc-400 leading-relaxed">
+          <p className="text-xs sm:text-base text-stone-600 leading-relaxed">
             From 18-hour slow nitro extractions and 48-hour fermented sourdough crusts to double-smashed brioche burgers and hissing cast-iron platters.
           </p>
         </div>
@@ -116,18 +116,18 @@ export default function InteractiveMenu({ onSelectDish }) {
         {/* Search & Quick Filter Controls */}
         <div className="max-w-3xl mx-auto mb-8 w-full max-w-full">
           <div className="relative mb-4">
-            <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" />
+            <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-stone-400" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search dishes (e.g. cold brew, truffle, sourdough, smash burger, bao, sizzler)..."
-              className="w-full pl-12 pr-10 py-3.5 rounded-2xl bg-[#1E2220] border border-amber-500/25 focus:border-amber-400 text-zinc-100 placeholder-zinc-500 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/30 transition-all shadow-lg"
+              className="w-full pl-12 pr-10 py-3.5 rounded-2xl bg-white border border-stone-200 focus:border-orange-500 text-stone-900 placeholder-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-orange-200 transition-all shadow-xs"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 rounded-full bg-zinc-800 text-zinc-400 hover:text-white"
+                className="absolute right-3.5 top-1/2 -translate-y-1/2 p-1 rounded-full bg-stone-100 text-stone-500 hover:text-stone-900 hover:bg-stone-200"
                 title="Clear search"
               >
                 <X className="w-4 h-4" />
@@ -143,10 +143,10 @@ export default function InteractiveMenu({ onSelectDish }) {
                 <button
                   key={tab.id}
                   onClick={() => setSelectedFilter(tab.id)}
-                  className={`px-3 sm:px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 cursor-pointer flex items-center gap-1.5 shrink-0 ${
+                  className={`px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-200 cursor-pointer flex items-center gap-1.5 shrink-0 ${
                     isSelected
-                      ? 'bg-amber-500 text-zinc-950 shadow-[0_0_15px_rgba(245,158,11,0.4)] scale-102'
-                      : 'bg-[#1E2220] text-zinc-400 hover:text-zinc-200 border border-zinc-800 hover:border-zinc-700'
+                      ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-md shadow-orange-500/25 scale-[1.02]'
+                      : 'bg-white text-stone-700 hover:text-stone-900 hover:bg-orange-50/50 border border-stone-200 shadow-xs'
                   }`}
                 >
                   {tab.icon && <span>{tab.icon}</span>}
@@ -159,7 +159,7 @@ export default function InteractiveMenu({ onSelectDish }) {
 
         {/* Sticky Category Bar (Only visible when not actively searching) */}
         {!searchQuery && (
-          <div className="sticky top-14 sm:top-16 z-30 py-3 mb-8 bg-[#0F1110]/95 backdrop-blur-md border-y border-amber-500/20 shadow-md w-full max-w-full overflow-hidden">
+          <div className="sticky top-14 sm:top-16 z-30 py-3 mb-8 bg-white/95 backdrop-blur-md border-y border-orange-100 shadow-xs w-full max-w-full overflow-hidden">
             <div className="flex items-center gap-2 overflow-x-auto no-scrollbar max-w-5xl mx-auto px-3 sm:px-2 w-full">
               {categories.map((cat) => {
                 const isCatActive = activeCategory === cat.id;
@@ -169,16 +169,16 @@ export default function InteractiveMenu({ onSelectDish }) {
                   <button
                     key={cat.id}
                     onClick={() => setActiveCategory(cat.id)}
-                    className={`shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl font-medium text-xs sm:text-sm transition-all duration-200 cursor-pointer ${
+                    className={`shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 cursor-pointer ${
                       isCatActive
-                        ? 'bg-amber-500 text-zinc-950 font-bold shadow-[0_0_20px_rgba(245,158,11,0.4)] scale-105'
-                        : 'bg-[#1E2220] text-zinc-400 hover:text-zinc-200 border border-zinc-800/80 hover:border-amber-500/30'
+                        ? 'bg-gradient-to-r from-orange-600 to-orange-500 text-white shadow-md shadow-orange-500/30 scale-105'
+                        : 'bg-orange-50/70 text-stone-700 hover:text-stone-900 border border-orange-200/60 hover:bg-orange-100/70'
                     }`}
                   >
                     <Icon className="w-4 h-4" />
                     <span>{cat.name}</span>
                     <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                      isCatActive ? 'bg-zinc-900/30 text-zinc-950' : 'bg-white/[0.06] text-zinc-400'
+                      isCatActive ? 'bg-white/25 text-white' : 'bg-stone-200/80 text-stone-700'
                     }`}>
                       {cat.items.length}
                     </span>
@@ -190,12 +190,12 @@ export default function InteractiveMenu({ onSelectDish }) {
         )}
 
         {/* Current Filter Meta Header */}
-        <div className="flex items-center justify-between text-xs text-zinc-400 mb-6 px-1">
+        <div className="flex items-center justify-between text-xs text-stone-500 mb-6 px-1">
           <span>
-            Showing <strong className="text-amber-400 font-mono text-sm">{filteredDishes.length}</strong> creations
-            {searchQuery && <span> matching &ldquo;<span className="text-zinc-200">{searchQuery}</span>&rdquo;</span>}
+            Showing <strong className="text-orange-600 font-mono text-sm">{filteredDishes.length}</strong> creations
+            {searchQuery && <span> matching &ldquo;<span className="text-stone-900 font-semibold">{searchQuery}</span>&rdquo;</span>}
           </span>
-          <span className="font-mono text-[11px] text-zinc-400">
+          <span className="font-mono text-[11px] text-stone-500 font-medium">
             Panama Chowk Craft Kitchen
           </span>
         </div>
@@ -210,42 +210,42 @@ export default function InteractiveMenu({ onSelectDish }) {
                 <div
                   key={dish.id}
                   onClick={() => onSelectDish(dish)}
-                  className="group rounded-3xl bg-[#1E2220] border border-amber-500/15 hover:border-amber-500/50 shadow-lg hover:shadow-[0_0_30px_rgba(245,158,11,0.2)] hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between cursor-pointer"
+                  className="group rounded-3xl bg-white border border-orange-100 shadow-[0_4px_20px_-2px_rgba(234,88,12,0.06),0_2px_6px_-1px_rgba(0,0,0,0.04)] hover:border-orange-300 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 overflow-hidden flex flex-col justify-between cursor-pointer"
                 >
                   {/* Dish Image */}
-                  <div className="relative h-48 w-full overflow-hidden bg-zinc-900">
+                  <div className="relative h-48 w-full overflow-hidden bg-stone-100">
                     <img
                       src={dish.image}
                       alt={dish.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#1E2220] via-transparent to-black/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-transparent to-black/25" />
 
                     {/* Dietary Icon Top Left */}
                     <div className="absolute top-3 left-3 flex items-center gap-2">
                       <div
-                        className={`w-5 h-5 rounded-md border flex items-center justify-center p-0.5 bg-black/70 backdrop-blur-md ${
-                          isVeg ? 'border-emerald-500' : 'border-rose-500'
+                        className={`w-5 h-5 rounded-md border-2 flex items-center justify-center p-0.5 bg-white/95 backdrop-blur-md shadow-xs ${
+                          isVeg ? 'border-emerald-600' : 'border-rose-600'
                         }`}
                         title={isVeg ? 'Pure Vegetarian' : 'Non-Vegetarian'}
                       >
                         <span
                           className={`w-2.5 h-2.5 rounded-full ${
-                            isVeg ? 'bg-emerald-500' : 'bg-rose-500'
+                            isVeg ? 'bg-emerald-600' : 'bg-rose-600'
                           }`}
                         />
                       </div>
 
                       {dish.isChefSpecial && (
-                        <span className="px-2 py-0.5 rounded-full bg-amber-500 text-zinc-950 font-extrabold text-[10px] tracking-wide shadow-sm flex items-center gap-1">
-                          <Star className="w-2.5 h-2.5 fill-zinc-950" />
-                          <span>Chef's Special</span>
+                        <span className="px-2 py-0.5 rounded-full bg-amber-400 text-stone-950 font-extrabold text-[10px] tracking-wide shadow-xs flex items-center gap-1">
+                          <Star className="w-2.5 h-2.5 fill-stone-950 text-stone-950" />
+                          <span>Chef&apos;s Special</span>
                         </span>
                       )}
 
                       {dish.isCrowdFavorite && (
-                        <span className="px-2 py-0.5 rounded-full bg-rose-500/90 text-white font-extrabold text-[10px] tracking-wide shadow-sm flex items-center gap-1">
+                        <span className="px-2 py-0.5 rounded-full bg-rose-600 text-white font-extrabold text-[10px] tracking-wide shadow-xs flex items-center gap-1">
                           <span>🔥</span>
                           <span>Bestseller</span>
                         </span>
@@ -254,15 +254,15 @@ export default function InteractiveMenu({ onSelectDish }) {
 
                     {/* Quick View Button on Image */}
                     <div className="absolute bottom-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-black/80 backdrop-blur-md text-amber-400 text-xs font-semibold border border-amber-500/40">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-orange-600 text-xs font-bold border border-orange-200 shadow-md">
                         <Eye className="w-3.5 h-3.5" />
                         <span>Inspect Recipe</span>
                       </span>
                     </div>
 
                     {/* Prep Time & Calories Tag */}
-                    <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-[10px] font-mono text-zinc-300 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded-md">
-                      <Clock className="w-3 h-3 text-amber-400" />
+                    <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-[10px] font-mono font-semibold text-stone-700 bg-white/90 backdrop-blur-md px-2 py-0.5 rounded-md border border-stone-200 shadow-xs">
+                      <Clock className="w-3 h-3 text-orange-600" />
                       <span>{dish.prepTime}</span>
                       <span>&bull;</span>
                       <span>{dish.calories}</span>
@@ -274,16 +274,16 @@ export default function InteractiveMenu({ onSelectDish }) {
                     <div>
                       {/* Name and Price Header */}
                       <div className="flex items-start justify-between gap-3 mb-2">
-                        <h3 className="font-['Syne'] font-bold text-lg text-zinc-100 group-hover:text-amber-400 transition-colors leading-snug">
+                        <h3 className="font-['Syne'] font-bold text-lg text-stone-900 group-hover:text-orange-600 transition-colors leading-snug">
                           {dish.name}
                         </h3>
-                        <div className="shrink-0 font-['JetBrains_Mono'] font-bold text-lg text-amber-400">
+                        <div className="shrink-0 font-['JetBrains_Mono'] font-extrabold text-lg text-orange-600">
                           ₹{dish.price}
                         </div>
                       </div>
 
                       {/* Description */}
-                      <p className="text-xs text-zinc-400 leading-relaxed mb-4 line-clamp-3">
+                      <p className="text-xs text-stone-600 leading-relaxed mb-4 line-clamp-3">
                         {dish.description}
                       </p>
 
@@ -291,7 +291,7 @@ export default function InteractiveMenu({ onSelectDish }) {
                       <div className="flex flex-wrap items-center gap-1.5 mb-4">
                         {dish.spiceLevel > 0 && (
                           <span
-                            className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-md bg-rose-500/10 border border-rose-500/25 text-rose-400 text-[10px] font-bold"
+                            className="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200 text-rose-700 text-[10px] font-bold"
                             title={`Spice Level: ${dish.spiceLevel}/3`}
                           >
                             {'🌶️'.repeat(dish.spiceLevel)}
@@ -302,17 +302,17 @@ export default function InteractiveMenu({ onSelectDish }) {
                         {dish.tags && dish.tags.slice(0, 2).map((tag, i) => (
                           <span
                             key={i}
-                            className="px-2 py-0.5 rounded-md bg-white/[0.04] border border-zinc-800 text-zinc-400 text-[10px] font-medium"
+                            className="px-2 py-0.5 rounded-md bg-stone-100 border border-stone-200 text-stone-600 text-[10px] font-semibold"
                           >
-                            {tag}
+                            #{tag}
                           </span>
                         ))}
                       </div>
                     </div>
 
                     {/* Card Footer CTA */}
-                    <div className="pt-3 border-t border-zinc-800/80 flex items-center justify-between">
-                      <span className="text-[11px] text-zinc-400 group-hover:text-zinc-300 transition-colors">
+                    <div className="pt-3 border-t border-orange-100 flex items-center justify-between">
+                      <span className="text-[11px] text-stone-500 font-medium">
                         Tap for pairing &amp; craft notes
                       </span>
                       <button
@@ -320,7 +320,7 @@ export default function InteractiveMenu({ onSelectDish }) {
                           e.stopPropagation();
                           onSelectDish(dish);
                         }}
-                        className="inline-flex items-center gap-1 text-xs font-semibold text-amber-400 group-hover:translate-x-0.5 transition-transform"
+                        className="inline-flex items-center gap-1 text-xs font-bold text-orange-600 group-hover:translate-x-0.5 transition-transform"
                       >
                         <span>Details</span>
                         <span>&rarr;</span>
@@ -334,14 +334,14 @@ export default function InteractiveMenu({ onSelectDish }) {
         ) : (
           /* Empty Search State */
           <div className="py-16 text-center max-w-md mx-auto">
-            <div className="w-16 h-16 rounded-3xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 rounded-3xl bg-orange-100 border border-orange-200 text-orange-600 flex items-center justify-center mx-auto mb-4 shadow-xs">
               <Search className="w-8 h-8" />
             </div>
-            <h4 className="font-['Syne'] font-bold text-xl text-zinc-200 mb-2">
+            <h4 className="font-['Syne'] font-bold text-xl text-stone-900 mb-2">
               No Culinary Creations Match
             </h4>
-            <p className="text-xs text-zinc-400 mb-6">
-              We couldn't find any dishes matching &ldquo;{searchQuery}&rdquo;. Try another keyword like &ldquo;truffle&rdquo;, &ldquo;sourdough&rdquo;, &ldquo;burger&rdquo;, or reset your filters.
+            <p className="text-xs text-stone-600 mb-6">
+              We couldn&apos;t find any dishes matching &ldquo;{searchQuery}&rdquo;. Try another keyword like &ldquo;truffle&rdquo;, &ldquo;sourdough&rdquo;, &ldquo;burger&rdquo;, or reset your filters.
             </p>
             <button
               onClick={() => {
@@ -349,7 +349,7 @@ export default function InteractiveMenu({ onSelectDish }) {
                 setSelectedFilter('all');
                 setActiveCategory('all-day-sips');
               }}
-              className="px-5 py-2.5 rounded-xl bg-amber-500 text-zinc-950 font-bold text-xs"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 text-white font-bold text-xs shadow-md cursor-pointer"
             >
               Reset Filters &amp; View All Dishes
             </button>

@@ -90,44 +90,59 @@
     ]
   },
   "visualIdentity": {
-    "designTheme": "Warm Caramel Velvet Noir & Hairline Brass",
-    "aestheticPhilosophy": "Cozy European bistro minimalism meets contemporary cafe comfort. Matte smoked espresso backgrounds, razor-thin hairline borders, amber-gold accents reflecting candlelight and sizzling skillet embers.",
+    "designTheme": "Appetizing Sunlit Bistro & Belgian Waffles (Light Theme)",
+    "aestheticPhilosophy": "Bright, cheerful, mouth-watering bistro & dessert cafe aesthetic. Warm buttermilk cream canvas (#FFFDF9), crisp pure white cards (#FFFFFF) with delicate peach borders (#F3E8E2), flame tangerine orange (#EA580C) buttons and prices, golden waffle honey (#F59E0B) highlights, sizzling strawberry red (#DC2626), and fresh herb green (#16A34A).",
     "heroImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1400&q=80",
     "colorTokens": {
       "primary": {
-        "hex": "#F59E0B",
-        "name": "Caramel Honey Gold",
-        "description": "Warm bistro highlight accent"
+        "hex": "#EA580C",
+        "name": "Flame Tangerine Orange",
+        "description": "Primary action buttons, active pills, prices"
       },
       "primaryHover": {
-        "hex": "#FBBF24",
-        "name": "Amber Glow",
+        "hex": "#C2410C",
+        "name": "Deep Tangerine Glow",
         "description": "Hover interaction color"
       },
+      "secondary": {
+        "hex": "#F59E0B",
+        "name": "Golden Honey Waffle",
+        "description": "Star ratings, chef specials, highlight accents"
+      },
       "background": {
-        "hex": "#0E0D10",
-        "name": "Velvet Espresso Noir",
-        "description": "Matte dark backdrop"
+        "hex": "#FFFDF9",
+        "name": "Warm Buttermilk Cream",
+        "description": "Strict light theme canvas"
       },
       "surface": {
-        "hex": "#16141A",
-        "name": "Smoked Bistrot Slate",
+        "hex": "#FFFFFF",
+        "name": "Crisp Pure White",
         "description": "Card backgrounds and dialogs"
       },
       "surfaceHover": {
-        "hex": "#1E1B24",
-        "name": "Elevated Bistro Card",
+        "hex": "#FFF9F3",
+        "name": "Warm Bistro Surface",
         "description": "Hover card elevation"
       },
       "border": {
-        "hex": "rgba(255, 255, 255, 0.08)",
-        "name": "Hairline White 08"
+        "hex": "#F3E8E2",
+        "name": "Warm Peach Biscuit Hairline"
       },
       "accentVeg": {
-        "hex": "#10B981"
+        "hex": "#16A34A",
+        "name": "Cardamom Basil Green"
       },
       "accentNonVeg": {
-        "hex": "#EF4444"
+        "hex": "#DC2626",
+        "name": "Strawberry Sizzler Red"
+      },
+      "textMain": {
+        "hex": "#1C1917",
+        "name": "Deep Roasted Charcoal"
+      },
+      "textMuted": {
+        "hex": "#57534E",
+        "name": "Warm Umber"
       }
     },
     "typography": {
